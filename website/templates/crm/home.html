@@ -1,0 +1,17 @@
+{% extends "crm/base.html" %}
+
+{% block main %}
+
+  <div id="dashboard">
+
+  <h2>{{ _("Recent activities in the CRM application") }}</h2>
+
+  {%- for day, entries in entries %}
+    <ul class="unstyled"><h3>{{ day.strftime('%d-%m-%Y') }}</h3>
+      {%- for e in entries %}
+        <li>{{ e.msg }}</li>
+      {%- endfor %}
+    </ul>
+  {%- endfor %}
+
+{% endblock %}

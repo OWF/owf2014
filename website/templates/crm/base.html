@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+
+{% from "macros.html" import m_breadcrumbs, m_box, m_flashed_messages with context %}
+
+{% block container %}
+
+  {% call m_box() %}
+    {{ m_flashed_messages() }}
+
+    {{ m_breadcrumbs(breadcrumbs) }}
+
+    <ul class="nav nav-tabs" id="crm-tabs">
+      {%- for module in modules %}
+        <li {% if module.is_current() %}class="active"{% endif %}>
+          <a href="{{ module.url }}/"><i class="icon-{{ module.icon }}"></i>
+            {{ module.label }}</a>
+        </li>
+      {%- endfor %}
+    </ul>
+
+    <div class="row">
+      <div class="span12" style="padding-top: 20px;">
+        {% block main %}
+        {% endblock %}
+      </div>
+      <!--/span-->
+    </div>
+    <!--/row-->
+  {% endcall %}
+
+{% endblock %}

@@ -1,0 +1,10 @@
+abilian-core
+fabric
+fabtools
+Flask-Admin
+Flask-Bootstrap==2.3.1-1
+Flask-FlatPages
+Flask-Markdown
+Frozen-Flask
+icalendar
+

@@ -1,0 +1,213 @@
+{% extends "_base.html" %}
+
+{% block main %}
+  <div class="clear"></div>
+
+  <div class="container">
+    <div id="middle-img">
+      <h1>
+        {% if lang == 'fr' %}
+          Le premier forum libre et open source européen<br/>
+          <span>Paris, 3-5 octobre 2013</span>
+        {% else %}
+          The first free and open source european forum<br/>
+          <span>Paris, October 3-5, 2013</span>
+        {% endif %}
+      </h1>
+    </div>
+  </div>
+
+{#
+  <div class="container" style="margin-bottom: 30px;">
+          <h2>{{ _("Watch the event live!") }}</h2>
+
+  <iframe width="940" height="460" frameborder="0" scrolling="no"
+      src="http://api.dmcloud.net/player/embed/5072e9f306361d1c4a000710/524a765a94a6f67e38000009?auth=1696091725-0-fbp87awq-afd14de1ac25718707bf01364b8ad220"></iframe>
+  </div>
+#}
+
+  <div class="container" style="width: 940px;">
+    <div id="domains" class="row">
+      <div class="span4 domain">
+        <img src="/static/pictures/idea-img.png" alt=""/>
+
+        <h2>THINK</h2>
+
+        {{ blocks['think'] }}
+
+        <p>
+          <a href="/{{ lang }}/think/">
+            <span class="btn">{{ _("Learn more") }}</span>
+          </a>
+        </p>
+      </div>
+
+      <div class="span4 domain">
+        <img src="/static/pictures/keyboard-img.png" alt=""/>
+
+        <h2>CODE</h2>
+
+        {{ blocks['code'] }}
+
+        <p>
+          <a href="/{{ lang }}/code/">
+            <span class="btn">{{ _("Learn more") }}</span>
+          </a>
+        </p>
+      </div>
+
+      <div class="span4 domain">
+        <img src="/static/pictures/experience-img.png" alt=""/>
+
+        <h2>EXPERIMENT</h2>
+
+        {{ blocks['experiment'] }}
+
+        <p>
+          <a href="/{{ lang }}/experiment/">
+            <span class="btn">{{ _("Learn more") }}</span>
+          </a>
+        </p>
+      </div>
+    </div>
+  </div>
+
+  {# ######################################################################## #}
+
+  {% if speakers %}
+    <div id="home-speakers">
+      <div class="container">
+        <div class="container">
+          <h1 class="section-title speaker-title">{{ _("Some speakers") }}</h1>
+
+          <h3 class="section-button"><a class="section-button-a"
+              href="speakers/">{{ _("All the speakers") }}</a></h3>
+        </div>
+
+        <div class="row">
+          {% for speaker in speakers[0:6] %}
+            <div class="span2">
+              <a href="{{ url_for(speaker) }}">
+                <img class="speaker-img"
+                    src="{{ url_for(".photo", speaker_id=speaker.id, s=140) }}"
+                    alt=""/>
+
+                <h5 class="speaker-name">{{ speaker.first_name }}
+                  <br>{{ speaker.last_name }}
+                </h5>
+
+                <h6 class="speaker-job">
+                  {% if speaker.organisation %}{{ speaker.organisation }}
+                  {% else %}&nbsp;
+                  {% endif %}
+                </h6>
+              </a>
+            </div>
+          {% endfor %}
+          {% for speaker in speakers[6:12] %}
+            <div class="span2">
+              <a href="{{ url_for(speaker) }}">
+                <img class="speaker-img"
+                    src="{{ url_for(".photo", speaker_id=speaker.id, s=140) }}"
+                    alt=""/>
+
+                <h5 class="speaker-name">{{ speaker.first_name }}
+                  <br>{{ speaker.last_name }}
+                </h5>
+
+                <h6 class="speaker-job">
+                  {% if speaker.organisation %}{{ speaker.organisation }}
+                  {% else %}&nbsp;
+                  {% endif %}
+                </h6>
+              </a>
+            </div>
+          {% endfor %}
+        </div>
+
+      </div>
+    </div>
+  {% endif %}
+
+  {# ############################# NEWS #################################### #}
+
+  <div id="latest-news-div">
+    <div class="container">
+      <div class="container">
+        <h1 class="section-title latest-news-title">{{ _("Latest news") }}</h1>
+
+        <button id="all-latest-news" class="section-button"><a
+            class="section-button-a"
+            href="{{ url_for(".news") }}">{{ _("All the latest news") }}</a>
+        </button>
+      </div>
+      <div id="myCarousel" class="carousel slide">
+        <div class="carousel-inner">
+          <div class="item active">
+            <div class="row">
+              {% for item in news[0:3] %}
+                <div class="span4 latest-news-card">
+                  <a href="{{ url_for(".news_item", slug=item.slug) }}">
+                  <img
+                      src="{{ url_for(".image_for_news", slug=item.slug, size="small") }}"
+                      width="300" height="225" alt=""/>
+                  </a>
+
+                  <div class="latest-news-content">
+                    <h2><a
+                        href="{{ url_for(".news_item", slug=item.slug) }}">{{ item.title }}</a>
+                    </h2>
+                    <span
+                        class="latest-news-date">{{ item.date | dateformat }}</span>
+
+                    <p><a
+                        href="{{ url_for(".news_item", slug=item.slug) }}">{{ item.abstract }}</a>
+                    </p>
+                  </div>
+                </div>
+              {% endfor %}
+            </div>
+          </div>
+          <div class="item">
+            <div class="row">
+              {% for item in news[3:6] %}
+                <div class="span4 latest-news-card">
+                  <img
+                      src="{{ url_for(".image_for_news", slug=item.slug, size="small") }}"
+                      width="300" height="225" alt=""/>
+
+                  <div class="latest-news-content">
+                    <h2><a
+                        href="{{ url_for(".news_item", slug=item.slug) }}">{{ item.title }}</a>
+                    </h2>
+                    <span
+                        class="latest-news-date">{{ item.date | dateformat }}</span>
+
+                    <p><a
+                        href="{{ url_for(".news_item", slug=item.slug) }}">{{ item.abstract }}</a>
+                    </p>
+                  </div>
+                </div>
+              {% endfor %}
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div id="carousel-control" class="latest-news-slide-control">
+          <a id="carousel-button1" href="#myCarousel" data-slide-to="0">
+            <img id="carousel-button-img1"
+                src="/static/pictures/ellipse-red.png"
+                alt="actualités précédentes"/>
+          </a>
+          <a id="carousel-button2" href="#myCarousel" data-slide-to="1">
+            <img id="carousel-button-img2"
+                src="/static/pictures/ellipse-grey.png"
+                alt="actualités suivantes"/>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+{% endblock %}
