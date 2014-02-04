@@ -4,7 +4,7 @@
   sudo: True
 
   vars:
-    host_name: www.openworldforum.org
+    host_names: ['openworldforum.org', 'www.openworldforum.org']
     app_user: owf
     app_group: owf
     app_name: owf2014
@@ -14,11 +14,6 @@
     app_env: /srv/{{app_name}}/env
 
   tasks:
-    #- shell: sudo apt-get update
-
-    - name: debug
-      setup:
-
     - name: update apt-cache
       apt: update_cache=yes cache_valid_time=3600
 
@@ -69,12 +64,12 @@
       notify:
         - restart nginx
 
-    - name: write nginx config
+    - name: write nginx config for our site
       template: src=nginx-site.conf dest=/etc/nginx/sites-enabled/{{app_name}}.conf
       notify:
         - restart nginx
 
-    - name: write uwsgi config
+    - name: write uwsgi config for our app
       template: src=uwsgi-app.ini dest=/etc/uwsgi/apps-enabled/{{app_name}}.ini
       notify:
         - restart uwsgi
