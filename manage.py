@@ -3,6 +3,7 @@
 
 from datetime import datetime
 from dircache import listdir
+from logging import FileHandler
 from os import mkdir, system
 import os
 from os.path import exists
@@ -19,37 +20,7 @@ from website.crm.models import Speaker, Talk, Track2
 
 DEBUG = True
 
-OSDC_DATA = u"""Maik,Aussendorf,maik.aussendorf@dass-it.de
-Sam,Bessalah,samkiller@gmail.com
-Sébastien,Blanc,scm.blanc@gmail.com
-François-Xavier,Bois,fxbois@gmail.com
-Amaury,Bouchard,amaury@amaury.net
-Julien,Bourdin,julien.bourdin@webtales.fr
-Remi,Collet,rcollet@redhat.com
-Christian,Couder,chriscool@tuxfamily.org
-Bertrand,Dechoux,dechouxb@gmail.com
-Kamel Ibn Aziz,Derouiche,kamel.derouiche@gmail.com
-Christophe,Desclaux,christophe@zone-project.org
-Laurent,Doguin,ldoguin@nuxeo.com
-Sébastien,Douche,sdouche@gmail.com
-Christophe,Fergeau,cfergeau@redhat.com
-Haïkel,Guémar,karlthered@gmail.com
-Viktor,Horvath,viktor.h@laposte.net
-Damien,Krotkine,dams@zarb.org
-Fabrice,Le Fessant,fabrice.le_fessant@ocamlpro.com
-Mathieu,Lecarme,mlecarme@bearstech.com
-Jonathan,MERCIER,bioinfornatics@gmail.com
-Bruno,Michel,bruno.michel@af83.com
-Gael,Pasgrimaud,gael@gawel.org
-Julien,Pauli,julienpauli@gmail.com
-Rodolphe,Quiédeville,rodolphe@quiedeville.org
-Philippe,Robin,philippe.robin@technoveo.com
-Frank,Rousseau,frank.rousseau@cozycloud.cc
-Romuald,Rozan,romualdx.z.rozan@intel.com
-Michael,Scherer,misc@zarb.org
-Pierre,Schweitzer,pierre@reactos.org
-Basile,Starynkevitch,basile.starynkevitch@cea.fr
-Christophe,Villeneuve,hellsct1@gmail.com"""
+OSDC_DATA = u""""""
 
 
 manager = Manager(create_app)
@@ -210,7 +181,7 @@ def update_osdc():
   db.session.commit()
 
 @manager.command
-def serve(server='0.0.0.0', port=5002, debug=DEBUG):
+def serve(server='0.0.0.0', port=5000, debug=DEBUG):
   """ Serves this site.
   """
   if not debug:

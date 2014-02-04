@@ -3,19 +3,19 @@
 
 python_version = "python2.7"
 
-Vagrant::Config.run do |config|
-  config.vm.define :box do |config|
-    config.ssh.username = "vagrant"
+Vagrant.configure("2") do |config|
+  config.vm.define :box do |server|
+    server.ssh.username = "vagrant"
 
-    config.vm.box = "precise64"
-    config.vm.box_url = "http://files.vagrantup.com/precise64.box"
-    config.vm.host_name = "owf2013"
-    config.vm.forward_port 80, 8080
+    server.vm.box = "precise64"
+    server.vm.box_url = "http://files.vagrantup.com/precise64.box"
+    server.vm.host_name = "owf2014"
+    server.vm.network :forwarded_port, guest: 80, host: 8080, auto_correct: true
+    server.vm.network :forwarded_port, guest: 5000, host: 5000, auto_correct: true
+    server.vm.network :private_network, ip: "192.168.100.2"
 
-    config.vm.provision :salt do |salt|
-      salt.minion_config = "salt/minion.conf"
-      salt.run_highstate = true
-      salt.salt_install_type = "stable"
+    config.vm.provision :ansible do |ansible|
+      ansible.playbook = "deployment/server.yml"
     end
   end
 end
