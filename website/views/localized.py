@@ -19,7 +19,8 @@ from flask.ext.babel import gettext as _
 from werkzeug.exceptions import NotFound
 
 from ..config import MAIN_MENU, FEED_MAX_LINKS, IMAGE_SIZES
-from ..content import Page, get_news, get_page_or_404, get_pages, get_blocks
+from ..content import Page, get_news, get_page_or_404, get_pages, get_blocks,\
+  get_page
 from ..crm.models import Speaker, Track2, Talk, Room
 
 
@@ -114,7 +115,7 @@ def pull_lang(endpoint, values):
 @route('/')
 def home():
   template = "index.html"
-  page = {'title': 'Open World Forum 2013'}
+  page = {'title': 'Open World Forum 2014'}
   news = get_news(lang=g.lang, limit=6)
   speakers = Speaker.query.all()
   if len(speakers) >= 12:
@@ -144,7 +145,10 @@ def news():
 
 @route('/news/<slug>/')
 def news_item(slug):
-  page = get_page_or_404(g.lang + "/news/" + slug)
+  page = get_page(g.lang + "/news/" + slug)
+  if not page:
+    url = 'http://2013.openworldforum.org/{}/news/{}'.format(g.lang, slug)
+    return redirect(url, 301)
   recent_news = get_news(lang=g.lang, limit=5)
   return render_template('news_item.html', page=page,
                          recent_news=recent_news)
