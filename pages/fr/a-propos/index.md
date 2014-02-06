@@ -10,9 +10,9 @@ Le forum est gouverné par une structure de pilotage rassemblant les principales
 
 L’organisation de l’Open World Forum 2013 est pilotée par le pôle de compétitivité Systematic Paris-Region assisté d’un Comité d’organisation (Forum Committee) qui regroupe les principaux partenaires et contributeurs de l’OWF (Smile, AF83, Alter Way, Inria et le Groupe Thématique Logiciel Libre de Systematic ainsi que Cap Digital).
 
-## Bilan 2012
+## Bilan 2013
 
-Vous pouvez retrouver ci-dessous le bilan de l'édition 2012 de l'Open World Forum:
+Vous pouvez retrouver ci-dessous le bilan de l'édition 2013 de l'Open World Forum:
 
-<iframe title="Slideshare Open World Forum 2012" src="http://fr.slideshare.net/slideshow/embed_code/16005999" width="600" height="500" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC;border-width:1px 1px 0;margin-bottom:5px" allowfullscreen webkitallowfullscreen mozallowfullscreen> </iframe>
+<iframe src="http://www.slideshare.net/slideshow/embed_code/30905313" width="476" height="400" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>
 
