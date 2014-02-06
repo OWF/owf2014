@@ -1,5 +1,17 @@
 title: Editions précédentes
 
+
+## 6ème édition (2013)
+
+[Le site](http://2013.openworldforum.org/)
+
+Les supports de présentation: [sur SlideShare](http://fr.slideshare.net/OpenWorldForum/presentations).
+
+Les videos: [sur notre webTV](http://openworldforum.tv/) et [sur YouTube](http://www.youtube.com/user/OpenWorldForum)
+
+Les photos: [sur Flickr](http://www.flickr.com/photos/67985356@N07/)
+
+
 ## 5ème édition (2012)
 
 [Le site](http://2012.openworldforum.org/) 

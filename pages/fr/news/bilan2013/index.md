@@ -1,4 +1,4 @@
-title: Découvrez le bilan de l'Open World Forum
+title: Découvrez le bilan de l'Open World Forum 2013
 date: 2013/10/11
 
 Venez decouvrir le bilan de la 6eme edition de l'Open World Forum avec le president de cette annee, Pierre Queinnec

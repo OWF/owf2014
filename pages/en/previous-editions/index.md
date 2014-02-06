@@ -1,5 +1,15 @@
 title: Previous Editions
 
+## 6th edition (2013)
+
+[The Site](http://2013.openworldforum.org/)
+
+The presentations: [on SlideShare](http://fr.slideshare.net/OpenWorldForum/presentations).
+
+The videos on our [WebTV](http://openworldforum.tv/) and [Youtube](http://www.youtube.com/user/OpenWorldForum)
+
+The pictures on [Flickr](http://www.flickr.com/photos/67985356@N07/)
+
 ## 5th edition (2012)
 
 [The Site](http://2012.openworldforum.org/)

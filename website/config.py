@@ -23,7 +23,7 @@ CELERY_RESULT_DBURI = SQLALCHEMY_DATABASE_URI
 # Application configuration
 #
 SITE_URL = 'http://www.openworldforum.org/'
-SITE_TITLE = 'Open World Forum 2013'
+SITE_TITLE = 'Open World Forum 2014'
 SITE_DESCRIPTION = "TODO"
 
 ABSTRACT_LENGTH = 350
@@ -34,25 +34,27 @@ SECTION_MAX_LINKS = 12
 ALLOWED_LANGS = ['fr', 'en']
 
 MAIN_MENU = {'fr': [('', u'Accueil'),
-                    #('a-propos/', u'A propos'),
-                    ('speakers/', u"Orateurs"),
-                    ('schedule/', u'Programme'),
+                    ('a-propos/', u'A propos'),
+                    #('speakers/', u"Orateurs"),
+                    #('schedule/', u'Programme'),
                     ('infos-pratiques/', u'Informations Pratiques'),
                     ('espace-expo/', u'Exposition'),
                     ('partners/', u'Partenaires'),
                     #('news/', u'Actualités'),
-                    ('/registration/', u'Inscription', 'menu-registration')],
+                    #('/registration/', u'Inscription', 'menu-registration'),
+             ],
              'en': [('', u'Home'),
-                    #('about/', u'About'),
-                    ('speakers/', u"Speakers"),
-                    ('schedule/', u'Schedule'),
+                    ('about/', u'About'),
+                    #('speakers/', u"Speakers"),
+                    #('schedule/', u'Schedule'),
                     ('practical-information/', u'Practical Information'),
                     ('exhibiton-area/', u'Exhibition'),
                     ('partners/', u'Partners'),
                     #('news/', u'News'),
-                    ('/registration/', u'Registration', 'menu-registration')]}
+                    #('/registration/', u'Registration', 'menu-registration'),
+             ]}
 
 IMAGE_SIZES = {
-    'small': (300, 180),
-    'large': (620, 348),
+  'small': (300, 180),
+  'large': (620, 348),
 }

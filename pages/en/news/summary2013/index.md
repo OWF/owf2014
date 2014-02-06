@@ -1,4 +1,4 @@
-title: Check out the 6th edition review
+title: Check out the 2013 edition review
 date: 2013/10/11
 
 Look at this year's review of the Open World Forum, by the president of this edition, Pierre Queinnec.
