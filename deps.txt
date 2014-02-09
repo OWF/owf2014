@@ -1,3 +1,6 @@
+# Need a recent version of setuptools for some reason
+setuptools==2.1.2
+
 abilian-core
 fabric
 fabtools

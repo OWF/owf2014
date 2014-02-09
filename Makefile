@@ -24,6 +24,9 @@ clean:
 	find . -name packed.js | xargs rm -f
 	find . -name packed.css | xargs rm -f
 
+deploy:
+	ansible-playbook -i deployment/hosts -v deployment/server.yml
+
 push:
 	rsync -e ssh -avz --exclude .git --exclude .tox \
 		./ dedi:owf2013/

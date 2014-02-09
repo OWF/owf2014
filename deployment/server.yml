@@ -1,6 +1,6 @@
 ---
 - hosts: all
-  user: vagrant
+  user: root
   sudo: True
 
   vars:
@@ -45,7 +45,8 @@
       user: name={{app_user}} group={{app_group}}
 
     - name: create app home
-      file: dest={{app_root}} state=directory owner={{app_user}}
+      file: dest={{app_root}} state=directory owner={{app_user}} group={{app_group}}
+
 
     - name: create virtualenv
       command: virtualenv {{app_env}} creates={{app_env}}
@@ -58,6 +59,7 @@
     - name: install deps
       pip: requirements={{app_src}}/deps-frozen.txt virtualenv={{app_env}}
       sudo_user: "{{app_user}}"
+
 
     - name: remove default nginx host
       file: path=/etc/nginx/sites-enabled/default state=absent
