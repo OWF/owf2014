@@ -7,3 +7,6 @@ def register_plugin(app):
 
   from .main import main
   app.register_blueprint(main)
+
+  from .redirects import register
+  register(app)

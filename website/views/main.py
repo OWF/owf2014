@@ -15,61 +15,13 @@ from flask import Blueprint, redirect, url_for, request, abort, make_response, \
 from ..content import get_pages
 from website.crm.models import Talk, Speaker, Track2
 from website.util import preferred_language
+from werkzeug.routing import RequestRedirect
 
 
 __all__ = ['setup']
 
 main = Blueprint('main', __name__, url_prefix='/')
 
-ROOT = 'http://www.openworldforum.org'
-REDIRECTS = [
-  ('en/program/', '/en/schedule/'),
-  ('en/Schedule', '/en/schedule/'),
-  ('programme/', '/fr/programme/'),
-  ('Programme/', '/fr/programme/'),
-  ('Register', '/registration/'),
-  ('en/register/', '/registration/'),
-  ('join_form', '/registration/'),
-  ('fre', '/fr/'),
-  ('en/Sponsors', '/en/'),
-  ('fr/accueil', '/fr/'),
-  ('en/News', '/en/news/'),
-  ('News', '/fr/news/'),
-  ('open-innovation-summit-fr', '/'),
-  ('connect/', '/'),
-  ('awards/', '/'),
-  ('Univers/Think/', '/fr/think/'),
-  ('Univers/Code/', '/fr/code/'),
-  ('Univers/Experiment/', '/fr/experiment/'),
-  ('Univers/', '/fr/'),
-  ('Conferences/', '/fr/programme/'),
-  ('News/', '/fr/news/'),
-  ('rss/feed/news', '/en/feed/'),
-  ('rss/RSS', '/en/feed/'),
-  ('fr/press/', '/fr/presse/'),
-  ('fr/inscription/', '/fr/registration/'),
-  ('fr/venue/', '/fr/lieu/'),
-  ('fr/about/', '/fr/a-propos/'),
-  ('2010/', '/fr/'),
-  ('Articles/', '/fr/news/'),
-  ('Conferences/', '/fr/programme/'),
-  ('News/', '/fr/news/'),
-  ('fr/News/', '/fr/news/'),
-  ('Partenaires-presse/', '/fr/presse/'),
-  ('Sponsors/', '/fr/sponsors/'),
-  ('Tracks/', '/fr/programme/'),
-  ('Univers/Schedule/', '/fr/programme/'),
-  ('Users/', '/fr/'),
-  ('attend/', '/fr/lieu/'),
-  ('en/News/', '/en/news/'),
-  ('en/Sponsors/', '/en/sponsors/'),
-  ('en/Users/', '/en/'),
-  ('eng/Univers/Code', '/en/code/'),
-  ('press/', '/fr/presse/'),
-  ('fre/', '/fr/'),
-  ('eng/', '/en/'),
-  ('index.php/', '/fr/'),
-]
 
 #
 # Global (app-level) routes
@@ -88,15 +40,6 @@ def index():
 @main.route('robots.txt')
 def robots_txt():
   return ""
-
-
-@main.route('<path:path>')
-def catch_all(path):
-  for source, target in REDIRECTS:
-    if path.startswith(source):
-      return redirect(ROOT + target)
-
-  abort(404)
 
 
 @main.route('image/<path:path>')

@@ -1,9 +1,9 @@
 title : Les partenaires de l'Open World Forum
 
 
-## <a name="orga">Les organisateurs</a>
+## <a name="orga"></a>Les organisateurs
 
-<a href="/partners/#top">Revenir en haut</a>
+<a href="#top">Revenir en haut</a>
 
 ### Organisateur
 
