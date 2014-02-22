@@ -23,6 +23,10 @@ __all__ = ['setup']
 main = Blueprint('main', __name__, url_prefix='/')
 
 
+def register(app):
+  app.register_blueprint(main)
+
+
 #
 # Global (app-level) routes
 #

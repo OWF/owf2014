@@ -53,14 +53,13 @@ REDIRECTS = [
 ]
 
 
+def check_redirect():
+  path = request.path
+  for source, target in REDIRECTS:
+    if path.startswith(source):
+      url = "http://{}{}".format(request.host, target)
+      raise RequestRedirect(url)
+
+
 def register(app):
-
-  @app.before_request
-  def check_redirect():
-    path = request.path
-    for source, target in REDIRECTS:
-      if path.startswith(source):
-        url = "http://{}{}".format(request.host, target)
-        raise RequestRedirect(url)
-
-
+  app.before_request(check_redirect)

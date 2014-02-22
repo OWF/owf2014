@@ -25,6 +25,17 @@ Paris-Région.
 
 ### Co-Organisateurs
 
+<a name="abilian" href="http://www.abilian.com/"><img src="/static/pictures/page%20sponsor%20et%20organisateurs/abilian_page%20sponsor.png" alt=""></a>
+
+Abilian est un éditeur de logiciels open source qui propose des solutions innovantes pour votre entreprise ou votre organisation, dans les domaines de la collaboration émergente (entreprise 2.0), des processus métiers et de la gestion de l'information.
+
+Une plateforme de collaboration émergente est l'outil idéal pour partager des informations, communiquer, collaborer et dynamiser l’activité de votre organisation au quotidien.
+
+Les réseaux sociaux d’entreprises, et autres applications “entreprise 2.0”, connaissent actuellement un engouement irréfutable. Ainsi, les 3/4 des DRH interrogés par l’Observatoire des DRH et de la e-transformation en 2011 considèrent la mise à disposition d’un réseau social d’entreprise comme nécessaire ou souhaitable. Après la mise à disposition d’espaces de partage documentaire collaboratif, c’est la deuxième priorité pour ces mêmes DRH.
+
+Cet engouement s’inscrit dans un contexte général de transformation profonde de la façon dont travaillent les entreprises à l’aube du 21ème siècle.
+
+
 <a name="alter way"><a href="http://www.alterway.fr/" target="_blank"><img src="/static/pictures/page sponsor et organisateurs/alter way_sponsor page.jpg" width="400" alt="Alter Way"></a></a>
 
 **Alter Way**, opérateur de services Open Source, fourni 5 types de services : consulting, formation, intégration et

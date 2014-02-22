@@ -29,6 +29,11 @@ __all__ = ['setup']
 localized = Blueprint('localized', __name__, url_prefix='/<string(length=2):lang>')
 route = localized.route
 
+
+def register(app):
+  app.register_blueprint(localized)
+
+
 #
 # Menu management
 #
