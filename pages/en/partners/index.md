@@ -21,9 +21,7 @@ Government, its economic development agencies and from the Paris-Region local au
 
 ###Co-Organizers
 
-<a name="af83"><a href="http://www.af83.com" target="_blank"><img src="/static/pictures/page sponsor et organisateurs/af83_sponsor page.jpg" width="400" alt="af83"></a></a>
-
-<a href="/partners/#top">Back to Top</a>
+<a href="#top">Back to Top</a>
 
 <a name="alter way"><a href="http://www.alterway.fr/" target="_blank"><img src="/static/pictures/page sponsor et organisateurs/alter way_sponsor page.jpg" width="400" alt="Alter Way"></a></a>
 
