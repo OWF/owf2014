@@ -1,10 +1,14 @@
 <!DOCTYPE html>
-<html>
+<html xmlns:og="http://ogp.me/ns#">
 <head {% if lang == 'fr' %}lang="fr-FR"{% else %}lang="en-EN"{% endif %}>
   <title>{{ title or page.title }}</title>
 
   <meta name="google-site-verification"
       content="kfGFousDWgE8TxYr_Ue4OywCllC4hTPHvBvybFodLPM"/>
+
+  {%- for name, content in g.metadata.items() %}
+  <meta name="{{ name }}" content="{{ content }}">
+  {%- endfor %}
 
   <link rel="shortcut icon" type="image/x-icon"
       href="/static/pictures/favicon.ico"/>

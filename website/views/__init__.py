@@ -10,3 +10,6 @@ def register_plugin(app):
 
   from .redirects import register
   register(app)
+
+  from .metadata import register
+  register(app)

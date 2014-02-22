@@ -114,6 +114,11 @@ def pull_lang(endpoint, values):
   g.lang = values.pop('lang')
 
 
+@localized.before_request
+def set_metadata():
+  g.metadata['og:locale'] = g.lang
+
+
 #
 # Localized routes
 #
@@ -135,6 +140,16 @@ def home():
 @route('/<path:path>/')
 def page(path=""):
   page = get_page_or_404(g.lang + "/" + path + "/index")
+
+  title = page.meta['title']
+  g.metadata['DC.title'] = title
+
+  g.metadata['og:title'] = g.metadata['DC.title']
+  g.metadata['og:url'] = url_for('.page', path=path)
+
+  g.metadata['twitter:card'] = 'summary'
+  g.metadata['twitter:title'] = g.metadata['DC.title']
+
   template = page.meta.get('template', '_page.html')
   return render_template(template, page=page)
 
@@ -154,6 +169,18 @@ def news_item(slug):
   if not page:
     url = 'http://2013.openworldforum.org/{}/news/{}'.format(g.lang, slug)
     return redirect(url, 301)
+
+  title = page.meta['title']
+  g.metadata['DC.title'] = title
+
+  g.metadata['og:title'] = g.metadata['DC.title']
+  g.metadata['og:url'] = url_for('.news_item', slug=slug)
+  g.metadata['og:image'] = url_for('.image_for_news', slug=slug)
+
+  g.metadata['twitter:card'] = 'summary'
+  g.metadata['twitter:title'] = g.metadata['DC.title']
+  g.metadata['twitter:image'] = g.metadata['og:image']
+
   recent_news = get_news(lang=g.lang, limit=5)
   return render_template('news_item.html', page=page,
                          recent_news=recent_news)
