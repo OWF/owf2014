@@ -71,6 +71,17 @@ Cap Digital organise le festival Futur en Seine, rendez-vous mondial annuel des 
 de l’innovation et de l’économie numérique désireuse d’exposer, rencontrer, débattre, d’exprimer et de partager une
 vision du futur avec le grand public.
 
+<a name="henix"><a href="http://henix.com" target="_blank"><img src="/static/pictures/page sponsor et organisateurs/henix.png" width="400" alt="Henix"></a></a>
+
+Henix, créée en 1999, est une société spécialiste en qualité logicielle.
+Sur les volets expertise outillage, conseil méthodologique, formation (via l'Ecole de la Qualité Logicielle) et réalisation de tests, nous adressons la globalité des tests permettant aux grands comptes de piloter/contrôler leur patrimoine applicatif :
+
+- la qualification fonctionnelle (test applicatifs, recette métier, accessibilité, automatisation de la non régression...)
+- la qualification technique (qualimétrie, sécurité applicative, performance, portabilité, conformité open source...)
+
+Dans ce contexte, nous avons une forte activité de R&D, notamment dans le libre depuis 2005. Nous sommes notamment éditeur de la suite libre <a href="http://www.squashtest.org" target="_blank">Squash</a> d’industrialisation de la qualification fonctionnelle, leader sur la gestion du patrimoine de test. Notre implication, au service de la communauté du libre, a progressivement augmenté et il nous a paru aujourd'hui logique de participer davantage à l'organisation de l'Open World Forum, via une co-organisation et en assurant sa présidence.
+
+
 
 <a name="inria"><a href="http://www.inria.fr/" target="_blank"><img src="/static/pictures/page sponsor et organisateurs/INRIA_sponsor page.jpg" width="400" alt="Inria"></a></a>
 
