@@ -27,9 +27,9 @@ clean:
 deploy:
 	ansible-playbook -i deployment/hosts -v deployment/server.yml
 
-push:
-	rsync -e ssh -avz --exclude .git --exclude .tox \
-		./ dedi:owf2013/
+#push:
+#	rsync -e ssh -avz --exclude .git --exclude .tox \
+#		./ dedi:owf2013/
 
 fetch-db:
 	rsync -vz -e ssh dedi:websites/owf2013/data/abilian.db data/abilian.db
