@@ -6,21 +6,21 @@
   <div class="container" style="width: 940px;">
 
     <div class="row show-grid">
-      <div class="span12">
+      <div class="col-md-12">
 
         <div class="row clear-both">
-          <div class="span12 main-column two-columns-right">
+          <div class="col-md-12 main-column two-columns-right">
             <article class="speakers" id="speakers">
               <h1 class="page-title">{{ _("Speakers") }}</h1>
 
               {% for speaker in speakers %}
                 <div class="row" style="border-top: solid 1px #eee;">
-                  <span class="span2">
+                  <span class="col-md-2">
                     <img style="border-radius: 50%;"
                         src="{{ url_for(".photo", speaker_id=speaker.id, s=150) }}">
                   </span>
 
-                  <span class="span7">
+                  <span class="col-md-7">
                     <h2><a href="{{ url_for(speaker) }}">{{ speaker }}</a>
                     </h2>
 
@@ -41,7 +41,7 @@
                     {% endif %}
                   </span>
 
-                  <span class="span3 details">
+                  <span class="col-md-12 details">
                     {{ m_speaker_details(speaker) }}
                   </span>
                 </div>

@@ -3,22 +3,25 @@
 {% from "_macros.html" import m_sidebar %}
 
 {% block main %}
-  <div class="container" style="width: 940px;">
+  <div class="container">
     <div class="row show-grid news">
       <h1 class="page-title">{{ page.title }}</h1>
 
-      <div class="span12">
+      <div class="col-sm-12">
         <div class="row show-grid clear-both">
-          <div class="span8 main-column two-columns-right blog-posts">
+          <div class="col-sm-8 main-column two-columns-right blog-posts">
             {% for entry in news %}
               <article>
-                <a href="{{ url_for(".news_item", slug=entry.slug) }}"><h2>{{ entry.title }}</h2></a>
+                <a href="{{ url_for(".news_item", slug=entry.slug) }}">
+                  <h2>{{ entry.title }}</h2></a>
+
                 <p class="news-date">{{ entry.date | dateformat }}</p>
-                <img alt="" src="{{ url_for(".image_for_news", slug=entry.slug, size="large") }}"/>
+                <img alt=""
+                    src="{{ url_for(".image_for_news", slug=entry.slug, size="large") }}"/>
 
                 {{ entry.html|safe }}
 
-                    {#
+                {#
                 <div class="post-item-panel">
                   <ul>
                     <li class="date">

@@ -4,10 +4,10 @@
   <div class="clear"></div>
 
   <div class="container">
-    <img id="jumbotron" src="/static/pictures/middle-img.png">
+    <img id="home-jumbotron" src="/static/pictures/middle-img.png">
   </div>
 
-{#
+  {#
   <div class="container" style="margin-bottom: 30px;">
           <h2>{{ _("Watch the event live!") }}</h2>
 
@@ -16,10 +16,12 @@
   </div>
 #}
 
-  <div class="container" style="width: 940px;">
-    <div id="domains" class="row">
-      <div class="span4 domain">
-        <img src="/static/pictures/idea-img.png" alt=""/>
+  {# ######################################################################## #}
+
+  <div class="container" id="home-domains">
+    <div class="row">
+      <div class="col-sm-4 domain">
+        <img class="hidden-xs" src="/static/pictures/idea-img.png" alt=""/>
 
         <h2>THINK</h2>
 
@@ -27,13 +29,13 @@
 
         <p>
           <a href="/{{ lang }}/think/">
-            <span class="btn">{{ _("Learn more") }}</span>
+            <button class="btn btn-default">{{ _("Learn more") }}</button>
           </a>
         </p>
       </div>
 
-      <div class="span4 domain">
-        <img src="/static/pictures/keyboard-img.png" alt=""/>
+      <div class="col-sm-4 domain">
+        <img class="hidden-xs" src="/static/pictures/keyboard-img.png" alt=""/>
 
         <h2>CODE</h2>
 
@@ -41,13 +43,14 @@
 
         <p>
           <a href="/{{ lang }}/code/">
-            <span class="btn">{{ _("Learn more") }}</span>
+            <button class="btn btn-default">{{ _("Learn more") }}</button>
           </a>
         </p>
       </div>
 
-      <div class="span4 domain">
-        <img src="/static/pictures/experience-img.png" alt=""/>
+      <div class="col-sm-4 domain">
+        <img class="hidden-xs" src="/static/pictures/experience-img.png"
+            alt=""/>
 
         <h2>EXPERIMENT</h2>
 
@@ -55,7 +58,7 @@
 
         <p>
           <a href="/{{ lang }}/experiment/">
-            <span class="btn">{{ _("Learn more") }}</span>
+            <button class="btn btn-default">{{ _("Learn more") }}</button>
           </a>
         </p>
       </div>
@@ -68,15 +71,15 @@
     <div id="home-speakers">
       <div class="container">
         <div class="container">
-          <h1 class="section-title speaker-title">{{ _("Some speakers") }}</h1>
+          <h1 class="section-title">{{ _("Some speakers") }}</h1>
 
-          <h3 class="section-button"><a class="section-button-a"
-              href="speakers/">{{ _("All the speakers") }}</a></h3>
+          <button class="btn section-button"><a
+              href="speakers/">{{ _("All the speakers") }}</a></button>
         </div>
 
         <div class="row">
           {% for speaker in speakers[0:6] %}
-            <div class="span2">
+            <div class="col-md-2">
               <a href="{{ url_for(speaker) }}">
                 <img class="speaker-img"
                     src="{{ url_for(".photo", speaker_id=speaker.id, s=140) }}"
@@ -95,7 +98,7 @@
             </div>
           {% endfor %}
           {% for speaker in speakers[6:12] %}
-            <div class="span2">
+            <div class="col-md-2">
               <a href="{{ url_for(speaker) }}">
                 <img class="speaker-img"
                     src="{{ url_for(".photo", speaker_id=speaker.id, s=140) }}"
@@ -121,38 +124,41 @@
 
   {# ############################# NEWS #################################### #}
 
-  <div id="latest-news-div">
+  <div id="home-latest-news">
     <div class="container">
-      <div class="container">
-        <h1 class="section-title latest-news-title">{{ _("Latest news") }}</h1>
+      <h1 class="section-title">{{ _("Latest news") }}</h1>
 
-        <button id="all-latest-news" class="section-button"><a
-            class="section-button-a"
-            href="{{ url_for(".news") }}">{{ _("All the latest news") }}</a>
-        </button>
-      </div>
+      <button class="btn section-button"><a
+          href="{{ url_for(".news") }}">{{ _("All the latest news") }}</a>
+      </button>
+
+      <div class="clear"></div>
+
       <div id="myCarousel" class="carousel slide">
         <div class="carousel-inner">
           <div class="item active">
             <div class="row">
               {% for item in news[0:3] %}
-                <div class="span4 latest-news-card">
-                  <a href="{{ url_for(".news_item", slug=item.slug) }}">
-                  <img
-                      src="{{ url_for(".image_for_news", slug=item.slug, size="small") }}"
-                      width="300" height="225" alt=""/>
-                  </a>
+                <div class="col-sm-4">
+                  <div class="latest-news-card">
+                    <a href="{{ url_for(".news_item", slug=item.slug) }}">
+                      <img
+                          src="{{ url_for(".image_for_news", slug=item.slug, size="small") }}"
+                          alt=""/>
+                    </a>
 
-                  <div class="latest-news-content">
-                    <h2><a
-                        href="{{ url_for(".news_item", slug=item.slug) }}">{{ item.title }}</a>
-                    </h2>
-                    <span
-                        class="latest-news-date">{{ item.date | dateformat }}</span>
+                    <div class="latest-news-content">
+                      <h2><a
+                          href="{{ url_for(".news_item", slug=item.slug) }}">{{ item.title }}</a>
+                      </h2>
 
-                    <p><a
-                        href="{{ url_for(".news_item", slug=item.slug) }}">{{ item.abstract }}</a>
-                    </p>
+                      <span
+                          class="latest-news-date">{{ item.date | dateformat }}</span>
+
+                      <p><a
+                          href="{{ url_for(".news_item", slug=item.slug) }}">{{ item.abstract }}</a>
+                      </p>
+                    </div>
                   </div>
                 </div>
               {% endfor %}
@@ -161,21 +167,23 @@
           <div class="item">
             <div class="row">
               {% for item in news[3:6] %}
-                <div class="span4 latest-news-card">
-                  <img
-                      src="{{ url_for(".image_for_news", slug=item.slug, size="small") }}"
-                      width="300" height="225" alt=""/>
+                <div class="col-sm-4">
+                  <div class="latest-news-card">
+                    <img
+                        src="{{ url_for(".image_for_news", slug=item.slug, size="small") }}"
+                        width="300" height="225" alt=""/>
 
-                  <div class="latest-news-content">
-                    <h2><a
-                        href="{{ url_for(".news_item", slug=item.slug) }}">{{ item.title }}</a>
-                    </h2>
+                    <div class="latest-news-content">
+                      <h2><a
+                          href="{{ url_for(".news_item", slug=item.slug) }}">{{ item.title }}</a>
+                      </h2>
                     <span
                         class="latest-news-date">{{ item.date | dateformat }}</span>
 
-                    <p><a
-                        href="{{ url_for(".news_item", slug=item.slug) }}">{{ item.abstract }}</a>
-                    </p>
+                      <p><a
+                          href="{{ url_for(".news_item", slug=item.slug) }}">{{ item.abstract }}</a>
+                      </p>
+                    </div>
                   </div>
                 </div>
               {% endfor %}

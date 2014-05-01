@@ -3,232 +3,37 @@
 <head {% if lang == 'fr' %}lang="fr-FR"{% else %}lang="en-EN"{% endif %}>
   <title>{{ title or page.title }}</title>
 
+  <meta charset="UTF-8">
   <meta name="google-site-verification"
       content="kfGFousDWgE8TxYr_Ue4OywCllC4hTPHvBvybFodLPM"/>
 
   {%- for name, content in g.metadata.items() %}
-  <meta name="{{ name }}" content="{{ content }}">
+    <meta name="{{ name }}" content="{{ content }}">
   {%- endfor %}
 
   <link rel="shortcut icon" type="image/x-icon"
       href="/static/pictures/favicon.ico"/>
 
-  <script src="/static/js/jquery.js"></script>
-  <script src="/static/js/bootstrap.js"></script>
-  <!--<link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:light&v1' rel='stylesheet' type='text/css'>-->
   <link
       href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,300italic,700'
       rel='stylesheet' type='text/css'>
   <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet'
       type='text/css'>
-  <meta charset="UTF-8">
 
-  <link href="/static/css/bootstrap.css" rel="stylesheet">
+  <link href="/static/bootstrap3/css/bootstrap.min.css" rel="stylesheet">
   <link href="/static/css/owf.css" rel="stylesheet">
 </head>
 
 <body>
-<div id="fast-acces-div">
-  <ul id="fast-acces-menu" class="container">
-    {% if lang == 'fr' %}
-      {% include "_skiplink_fr.html" %}
-    {% else %}
-      {% include "_skiplink_en.html" %}
-    {% endif %}
-    <li class="fast-acces-right"><a
-        class="fast-acces-a lang {% if lang =='en' %}lang-actif{% endif %}"
-        href="/en/">English</a>
-    </li>
-    <li class="fast-acces-right"><a
-        class="fast-acces-a lang {% if lang =='fr' %}lang-actif{% endif %}"
-        href="/fr/">Français</a>
-    </li>
-  </ul>
-</div>
 
-<header class="container" role="banner">
-  <a href="{{ url_for("localized.home") }}"><img id="logo"
-      src="/static/pictures/Calque1.png"/ alt="Open World Forum"></a>
-
-  <ul id="navbar-ul">
-    <li class="navbar-newsletter">
-      <a href="http://eepurl.com/dACrj"><img alt="newsletter" width="25px" height="19px"
-          src="/static/pictures/1366984852_White_Email.png"> Newsletter</a>
-    </li>
-    <li class="share-a">
-      <a href="https://www.facebook.com/OpenWorldForum">
-        <img alt="Facebook Open Word Forum" src="/static/pictures/1366984111_picons06.png" width="18px"
-            height="18px"/>
-      </a>
-    </li>
-    <li class="share-a">
-      <a href="https://twitter.com/openworldforum">
-        <img alt="Twitter Open World Forum" src="/static/pictures/1366984104_picons03.png" width="23px"
-            height="23px"/>
-      </a>
-    </li>
-    <li class="share-a">
-      <a href="http://www.linkedin.com/groups?gid=1561767&trk=group-name">
-        <img alt="Linkedin" src="/static/pictures/1366984119_picons11.png" width="18px"
-            height="18px"/>
-      </a>
-    </li>
-    <li class="share-a">
-      <a href="http://lanyrd.com/2013/owf2013/">
-        <img src="/static/pictures/Calque2.png" width="15px" height="17px"
-            alt="Lanyrd"/>
-      </a>
-    </li>
-    <li class="share-a">
-      <a href="{{ url_for("localized.feed") }}">
-        <img src="/static/pictures/1366984127_picons20.png" width="18px"
-            height="18px" alt="Feed"/>
-      </a>
-    </li>
-    <li class="search-form" id="search-form">
-      <!--<img src="/static/pictures/MagnifyingGlass.png" width="16px" height="16px"/>-->
-      <form action="/{{ lang }}/search">
-        <input name="qs" type="text" value="{{ request.args.get('qs', '') }}"/>
-        <a onclick="submit();">{{ _("Search") }}</a>
-      </form>
-    </li>
-  </ul>
-
-
-  <div id="menu-nav-div" class="navbar" role="navigation">
-    <ul id="menu-nav" class="nav">
-      {% for entry in menu %}
-        {% if entry.path.startswith("/") %}
-          {% set url=entry.path %}
-        {% else %}
-          {% set url=url_for("localized.home") + entry.path %}
-        {% endif %}
-        <li><a href="{{ url }}"
-            class="{{ entry.class }}">{{ entry.label }}</a></li>
-      {% endfor %}
-    </ul>
-  </div>
-</header>
+{% include "_header.html" %}
 
 <div id="main">
-
   {% block main %}
   {% endblock %}
 </div>
 
-<div>
-  <div id="partners" class="container">
-    <div class="container">
-      <h1 class="section-title partners-title">{{ _("Our partners") }}</h1>
-    </div>
-
-    <div class="container">
-
-    <!--
-      <div class="row-fluid" style="margin-bottom: 30px">
-        <div class="span12 partners-span" id="institutional-partners">
-          <p class="partners-sub-title">{{ _("Institutional partners") }} (2013)</p>
-
-          <a href="http://www.iledefrance.fr/" target="_blank"><img
-              src="/static/pictures/Region-Ile-de-France_logoSponsor.jpg"
-              width="130"/></a>
-         </div>
-      </div>-->
-
-      <!--<div class="row-fluid" style="margin-bottom: 30px;">
-         <div class="span4">
-          <p class="partners-sub-title">{{ _("Diamond Sponsor") }} (2013)</p>
-          
-          <a href="/{{ lang }}/partners/#inria"><img alt="Inria"
-              src="/static/pictures/page sponsor et organisateurs/INRIA_sponsor page.jpg" width="200"/></a>
-          
-         </div>-->
-        
-         <!--<div class="span4">
-          <p class="partners-sub-title">{{ _("Platinum sponsors") }} (2013)</p>
-
-          <a href="/{{ lang }}/partners/#alter way"><img alt="Ater Way"
-              src="/static/pictures/partners/logo_aw_rvb_copie.png"/></a>
-         </div>-->
-         
-         <!--<div class="span4">
-          <p class="partners-sub-title">{{ _("Gold sponsors") }} (2013)</p>
-
-            <a href="http://www.redhat.com/"><img alt="Red Hat"
-              src="/static/pictures/partners/redhat-logo - partners.jpg"/></a>
-             
-        </div>
-        
-      </div>-->
-         
-      <!--<div class="row-fluid" style="margin-bottom: 30px;">
-         <div class="span12">
-          <p class="partners-sub-title">{{ _("Silver sponsors") }} (2013)</p>
-
-          
-          
-         </div>
-
-      </div>
-      -->
-      
-      <div class="row-fluid" style="margin-bottom: 30px">
-        <div class="span4 partners-span">
-          <p class="partners-sub-title">{{ _("Organizer") }}</p>
-          <a href="/{{ lang }}/partners/#systematic" target="_blank"><img 
-              src="/static/pictures/partners/Systematic_large.png" alt="Systematic"/></a>
-        </div>
-
-        <div class="span8 partners-span">
-          <p class="partners-sub-title">{{ _("Co-organizers") }}</p>
-
-          <a href="/{{ lang }}/partners/#abilian"><img alt='Abilian'
-              src="/static/pictures/partners/abilian_logosponsors.png"/></a>
-          <a href="/{{ lang }}/partners/#alter way"><img alt="Alter Way"
-              src="/static/pictures/partners/logo_aw_rvb_copie-orga.png"/></a>
-          <a href="/{{ lang }}/partners/#cap"><img alt="Cap Digital"
-              src="/static/pictures/partners/cap_digital_logosponsors.jpg"/></a>
-          <a href="http://www.henix.com/" target="_blank"><img alt="Henix"
-              src="/static/pictures/partners/henix.png"/></a>    
-          <a href="/{{ lang }}/partners/#inria"><img alt="Inria"
-              src="/static/pictures/partners/INRIA_logoSponsor.jpg"/></a>
-          <a href="/{{ lang }}/partners/#smile"><img alt="Smile"
-              src="/static/pictures/partners/Smile_logoSponsor.png"/></a>
-        </div>
-        
-       </div>
-      <!--<div class="row-fluid" style="margin-bottom: 30px">
-        <div class="span12 partners-span" id="community partners">
-          <p class="partners-sub-title">{{ _("Community Partners") }} (2013)</p>
-          
-          <a href="http://www.adullact.org/"><img alt="adullact"
-              src="/static/pictures/partners/logo ADULLACT [Converti] 1.jpg"/></a>
-        </div>
-      </div>-->
-      
-      <!--<div class="row-fluid" style="margin-bottom: 30px">
-        <div class="span12 partners-span" id="webtv-partner">
-          <p class="partners-sub-title">{{ _("WebTV Partner") }} (2013)</p>
-          
-          <a href="http://www.intelli-n.fr/"><img alt="Intelli'N"
-              src="/static/pictures/presse/intellin-test.png"/></a>
-          
-        </div>
-      </div>-->  
-
-       <!--<div class="row-fluid">
-        <div class="span12 partners-span" id="press-partners">
-          <p class="partners-sub-title">{{ _("Press partners") }} (2013)</p>
-
-          <a href="http://pro.01net.com/" target="_blank"><img alt="01business"
-              src="/static/pictures/presse/logo_01Business.jpg"></a>
-        </div>
-      </div>-->
-
-    </div>
-  </div>
-</div>
-
+{% include "_sponsors.html" %}
 
 {% if lang == 'fr' %}
   {% include "_footer_fr.html" %}
@@ -237,27 +42,8 @@
 {% endif %}
 </body>
 
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+<script src="/static/jquery/js/jquery-1.9.1.min.js"></script>
+<script src="/static/bootstrap3/js/bootstrap.min.js"></script>
+<script src="/static/js/owf.js"></script>
 
-  ga('create', 'UA-9730554-4', 'openworldforum.org');
-  ga('send', 'pageview');
-</script>
-
-<script>
-  $('#myCarousel').bind("slide", function() {
-    var img1 = $('#carousel-button-img1');
-    var img2 = $('#carousel-button-img2');
-    if (img1.attr('src') == '/static/pictures/ellipse-red.png') {
-      img1.attr('src', '/static/pictures/ellipse-grey.png');
-      img2.attr('src', '/static/pictures/ellipse-red.png');
-    } else {
-      img1.attr('src', '/static/pictures/ellipse-red.png');
-      img2.attr('src', '/static/pictures/ellipse-grey.png');
-    }
-  });
-</script>
 </html>

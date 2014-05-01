@@ -6,10 +6,10 @@
   <div class="container" style="width: 940px;">
 
     <div class="row show-grid">
-      <div class="span12">
+      <div class="col-md-12">
 
         <div class="row show-grid clear-both">
-          <div class="span12 main-column two-columns-right">
+          <div class="col-md-12 main-column two-columns-right">
             <article>
               <h1 class="page-title">{{ page.title }}</h1>
 
@@ -21,12 +21,15 @@
                 {% for track in tracks %}
                   <h3><a href="{{ url_for(track) }}">{{ track.name }}</a></h3>
 
-                  <p>Theme: <a href="{{ url_for(track.theme) }}">{{ track.theme }}</a></p>
+                  <p>Theme: <a
+                      href="{{ url_for(track.theme) }}">{{ track.theme }}</a>
+                  </p>
 
-                  <p>Room: <a href="{{ url_for(track.room) }}">{{ track.room }}</a></p>
+                  <p>Room: <a
+                      href="{{ url_for(track.room) }}">{{ track.room }}</a></p>
 
                   <p>From: {{ track.starts_at.strftime("%H:%M") }}
-                  to {{ track.ends_at.strftime("%H:%M") }}</p>
+                    to {{ track.ends_at.strftime("%H:%M") }}</p>
 
                   {% if track.track_leaders %}
                     <p>Track leader(s):
@@ -69,4 +72,5 @@
       </div>
     </div>
     <hr>
-  </div>{% endblock %}
+  </div>
+{% endblock %}
