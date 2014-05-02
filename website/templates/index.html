@@ -4,7 +4,7 @@
   <div class="clear"></div>
 
   <div class="container">
-    <img id="home-jumbotron" src="/static/pictures/middle-img.png">
+    <img id="home-jumbotron" src="/static/pictures/middle-img-{{ lang }}.png">
   </div>
 
   {#
@@ -70,12 +70,12 @@
   {% if speakers %}
     <div id="home-speakers">
       <div class="container">
-        <div class="container">
-          <h1 class="section-title">{{ _("Some speakers") }}</h1>
+        <h1 class="section-title">{{ _("Some speakers") }}</h1>
 
-          <button class="btn section-button"><a
-              href="speakers/">{{ _("All the speakers") }}</a></button>
-        </div>
+        <button class="btn section-button"><a
+            href="speakers/">{{ _("All the speakers") }}</a></button>
+
+        <div class="clear"></div>
 
         <div class="row">
           {% for speaker in speakers[0:6] %}
