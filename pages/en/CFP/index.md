@@ -1,4 +1,4 @@
-Title: Call For Paper
+title: Call For Paper
 
 ## Take Back Control !
 
@@ -19,6 +19,7 @@ If you aren’t sure which Track is the best fit for your submission, just take 
 THINK will be held over the course of the first two days, and will outline the major role of Openness (Free and Open-Source Software, Open Data, Open Hardware, Open Design, etc.) in the digital society. It will show you how it can help you manage "Degrees of Freedom", find unsuspected resources, regain trust, security and independence, setup a virtuousVRM (Vendor Relationship Management), etc.
 
 These reflections could focus on changes resulting from the openness wave:
+
 * **Focus 1 |** Openness as a whole system: **new Actors and their roles**
 * **Focus 1 |** Openness as a whole system: **Collaborations** and **Relationship** between actors
 * **Focus 2 |** Openness as a value: **Societal Aspects** in FLO(ss)
@@ -46,6 +47,7 @@ During two days (Friday and Saturday) CODE is there to bring back an engineering
 * Video Games
 
 ### Experiment
+
 Experiment is there to share with the general public the interest of Free and Open Source software in their day-to-day life. How it helps them regain their privacy and control their personal data. These two days will present how one may benefit from open content and freely shared knowledge (Open Street Map, Wikipedia, OKFN, Open Food Facts, Framasoft, Etalab… ). It will also exhibit and demonstrate connected objects (aka Internet of Things), 3D printers, drones, etc.
 
 * KidExperiment
@@ -62,7 +64,9 @@ Experiment is there to share with the general public the interest of Free and Op
  
 
 ## Guidelines to submit proposals
+
 Unless stated otherwise in the track description, presentations must be written in English. You will need to prepare the following mandatory information, in English and, whether possible, in French :
+
 * Your full name, title and organization
 * Contact information
 * A 100-word speaker bio + photo
@@ -72,16 +76,22 @@ Unless stated otherwise in the track description, presentations must be written 
 * Language of your presentation
 
 Please submit your proposal through the CFP form, which will be avalaible really soon. 
+
 Your proposal will be submitted to the appropriate track leaders for approval.
+
 Important deadlines :
-Early-bird submission deadline : May 11th, 2014
-Submission deadline:: May 25th, 2014
+
+* Early-bird submission deadline : May 11th, 2014
+* Submission deadline:: May 25th, 2014
+
 Notification due: June 30th, 2014
+
 Do not hesitate to contact us if you have special needs, especially for the Experiment part !
 
 Stay tuned for #OWF14 !
 
 ### About the Open World Forum
+
 The Open World Forum is the first European summit to gather political  representatives, decision-makers and experts to debate the technological, economic and social impacts of Free and Open-Source technologies on the market. It also welcomes the general public, with a specific cycle of conferences and demonstrations to make them aware of what is at stake in the digital open world.
 
 The forum was first held in 2008 and is now organized annually in Paris, France, with more than 200 speakers coming from 24 countries, and a global audience that was 2200-people strong in 2013. The Open World Forum is held in partnership with all the major international communities in Free Software and with the key players in the digital economy. The Open World Forum is back for its seventh edition.  It will occur on October 30th, 31th and November 1st, 2014, in the same place, Paris Beffroi (Subway station "Mairie de Montrouge") and will again be organized by Systematic Paris-Region. More than 3,000 attendees are expected for this Edition, with a program reflecting the current digital issues everyone's facing. #OWF14 is an international event.
