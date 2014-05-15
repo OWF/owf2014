@@ -1,6 +1,9 @@
 title: Meet the OWF 2014 Team!
 date: 2014/05/15
 
+
+This year's program will show you how to take back control of your digital world, including IT/IS and data, professional or not. Stop losing control and discover how Free and Open Source software may help you be more and more independent technologically, legally or financially.
+
 ## Think
 
 ### Benjamin JEAN
