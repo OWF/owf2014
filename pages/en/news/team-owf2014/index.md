@@ -1,9 +1,9 @@
-Title: Meet the OWF 2014 Team!
-Date: 2014/05/15
+title: Meet the OWF 2014 Team!
+date: 2014/05/15
 
-##Think
+## Think
 
-###Benjamin JEAN
+### Benjamin JEAN
 
 <img src="/static/pictures/Team/BJean.jpg">  
 

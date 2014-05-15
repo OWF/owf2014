@@ -1,5 +1,5 @@
-Title: Présentation de l'équipe OWF 2014
-Date: 2014/05/15
+title: Présentation de l'équipe OWF 2014
+date: 2014/05/15
 
 ##Think
 
