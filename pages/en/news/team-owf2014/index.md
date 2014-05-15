@@ -10,7 +10,7 @@ date: 2014/05/15
 Co-organizator of the annual European Opensource and free software Law Event, Benjamin Jean is currently the [inno³](http://inno3.fr/) company's CEO, an open innovation consulting firm focused on IP and collaborative project management . He also works as lecturer at Sciences Po Paris, teachs IP in several Masters and as consultant within the Gilles Vercken Law firm. He is author of a book titled “Option Libre. The good usage of [Free Licences](http://framabook.org), co-author of the “Open Source Guide” professional whitepaper published by the Syntec Numerique and is involved in several working teams about open source and Open Data governance and/or licensing. During it past position, he created the first CJOS *(Open Source Law Center)* He also co-founded, a few years ago, a French (community) project, named Veni Vidi Libri, which aims to inform creators and developers about free/OS licenses and to help them using free licenses. Finally, he is an active member of both professionnal association *(like AFPIDA or PLOSS)* and community ones *(among them: Framasoft, Veni Vidi Libri or the April)*
 
 More information on Twitter and LinkedIn:
-<a href="https://www.linkedin.com/in/benjaminjean/fr " target="_blank"><img src="/static/pictures/linkedin.png" width="34" ></a></a>  <a href="https://twitter.com/mben_vvl" target="_blank"><img src="/static/pictures/twitter.jpg" width="34" ></a></a>
+<a href="https://www.linkedin.com/in/benjaminjean/fr " target="_blank"><img src="/static/pictures/linkedin.png" width="34" ></a></a>  <a href="https://twitter.com/mben_vvl" target="_blank"><img src="/static/pictures/Twitter.jpg" width="34" ></a></a>
 
 ##Code
 
@@ -23,7 +23,7 @@ IN the FLOSS community, Nicolas is president of [LinuxFr.org](http://linuxfr.org
 He recently founded Nayego.
 
 More information on Twitter and LinkedIn:
-<a href="https://www.linkedin.com/in/nicolasverite" target="_blank"><img src="/static/pictures/linkedin.png" width="34" ></a></a> <a href="https://twitter.com/nyconyco" target="_blank"><img src="/static/pictures/twitter.jpg" width="34" ></a></a>
+<a href="https://www.linkedin.com/in/nicolasverite" target="_blank"><img src="/static/pictures/linkedin.png" width="34" ></a></a> <a href="https://twitter.com/nyconyco" target="_blank"><img src="/static/pictures/Twitter.jpg" width="34" ></a></a>
 
 ##Experiment
 
@@ -35,7 +35,7 @@ After having assisted companies in the establishment of management solutions and
 Since 10 years, with his associate Charly CLAIRMONT, Marc SALLIERES defend  the free software and the Open Source solutions as an alternative for organisations and companies for IT system. Member of most of the Open Source associations such as ASS2L, PLOSS, CNLL, OW2, April, HUG, he leaded the Opendays during the two first Open World Forum, event dedicate to companies. With his team, Marc SALLIERES spread the Open Source, the free software  and alternatives IT systems values in several Universities in Paris *(UPCM, Dauphine, Jussieu, Paris XIII)*.
 
 More information on Twitter and LinkedIn:
-<a href="https://www.linkedin.com/pub/marc-sallieres/2/a63/407" target="_blank"><img src="/static/pictures/linkedin.png" width="34" ></a></a> <a href="https://twitter.com/msallieres" target="_blank"><img src="/static/pictures/twitter.jpg" width="34" ></a></a>
+<a href="https://www.linkedin.com/pub/marc-sallieres/2/a63/407" target="_blank"><img src="/static/pictures/linkedin.png" width="34" ></a></a> <a href="https://twitter.com/msallieres" target="_blank"><img src="/static/pictures/Twitter.jpg" width="34" ></a></a>
 
 ##Community
 
@@ -48,7 +48,7 @@ Since summer 2013, he joined the [Eclipse Foundation](http://www.eclipse.org/) a
 Since he started in the software industry in 1996, he has been working mainly in Telco, Java and SOA Technologies. He started at Alcatel as a software engineer and in 2000, he became consultant and trainer on Java, J2EE, XML and Web Services technologies at Valtech. He then acted as a middleware architect at France Telecom where he started working professionally in Open Source sphere in 2003. In 2004, Gaël co-founded PetalsLink, the company that created the Open Source ESB Petals.
 
 More information on Twitter and LinkedIn:
-<a href="https://www.linkedin.com/in/gblondelle" target="_blank"><img src="/static/pictures/linkedin.png" width="34" ></a></a> <a href="https://twitter.com/gblondelle" target="_blank"><img src="/static/pictures/twitter.jpg" width="34" ></a></a>
+<a href="https://www.linkedin.com/in/gblondelle" target="_blank"><img src="/static/pictures/linkedin.png" width="34" ></a></a> <a href="https://twitter.com/gblondelle" target="_blank"><img src="/static/pictures/Twitter.jpg" width="34" ></a></a>
 
 ##Key Users
 
