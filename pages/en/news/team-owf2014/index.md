@@ -10,7 +10,7 @@ Date: 2014/05/15
 Co-organizator of the annual European Opensource and free software Law Event, Benjamin Jean is currently the [inno³](http://inno3.fr/) company's CEO, an open innovation consulting firm focused on IP and collaborative project management . He also works as lecturer at Sciences Po Paris, teachs IP in several Masters and as consultant within the Gilles Vercken Law firm. He is author of a book titled “Option Libre. The good usage of [Free Licences](http://framabook.org), co-author of the “Open Source Guide” professional whitepaper published by the Syntec Numerique and is involved in several working teams about open source and Open Data governance and/or licensing. During it past position, he created the first CJOS *(Open Source Law Center)* He also co-founded, a few years ago, a French (community) project, named Veni Vidi Libri, which aims to inform creators and developers about free/OS licenses and to help them using free licenses. Finally, he is an active member of both professionnal association *(like AFPIDA or PLOSS)* and community ones *(among them: Framasoft, Veni Vidi Libri or the April)*
 
 More information on Twitter and LinkedIn:
-<a href=" https://www.linkedin.com/in/benjaminjean " target="_blank"><img src="/static/pictures/linkedin.png" width="34" ></a></a>  <a href="https://twitter.com/mben_vvl " target="_blank"><img src="/static/pictures/twitter.jpg" width="34" ></a></a>
+<a href="https://www.linkedin.com/in/benjaminjean/fr " target="_blank"><img src="/static/pictures/linkedin.png" width="34" ></a></a>  <a href="https://twitter.com/mben_vvl" target="_blank"><img src="/static/pictures/twitter.jpg" width="34" ></a></a>
 
 ##Code
 
@@ -23,7 +23,7 @@ IN the FLOSS community, Nicolas is president of [LinuxFr.org](http://linuxfr.org
 He recently founded Nayego.
 
 More information on Twitter and LinkedIn:
-<a href=" https://www.linkedin.com/in/nicolasverite" target="_blank"><img src="/static/pictures/linkedin.png" width="34" ></a></a> <a href="https://twitter.com/nyconyco" target="_blank"><img src="/static/pictures/twitter.jpg" width="34" ></a></a>
+<a href="https://www.linkedin.com/in/nicolasverite" target="_blank"><img src="/static/pictures/linkedin.png" width="34" ></a></a> <a href="https://twitter.com/nyconyco" target="_blank"><img src="/static/pictures/twitter.jpg" width="34" ></a></a>
 
 ##Experiment
 
@@ -32,7 +32,7 @@ More information on Twitter and LinkedIn:
 <img src="/static/pictures/Team/MSallieres.jpg">
 
 More information on Twitter and LinkedIn:
-<a href=" https://www.linkedin.com/pub/marc-sallieres/2/a63/407" target="_blank"><img src="/static/pictures/linkedin.png" width="34" ></a></a> <a href="https://twitter.com/msallieres" target="_blank"><img src="/static/pictures/twitter.jpg" width="34" ></a></a>
+<a href="https://www.linkedin.com/pub/marc-sallieres/2/a63/407" target="_blank"><img src="/static/pictures/linkedin.png" width="34" ></a></a> <a href="https://twitter.com/msallieres" target="_blank"><img src="/static/pictures/twitter.jpg" width="34" ></a></a>
 
 ##Community
 
@@ -59,4 +59,4 @@ He started to work with Free/Libre Open Source Software at the end of the 80s, i
 For this year edition, he will serve as vice president user, helping the Free/Libre communities to link with information systems communities, and sharing his knowledge and vision of the current and future needs of corporate IT departments. 
 
 More information on LinkedIn:
-<a href=" https://www.linkedin.com/in/huberttournier" target="_blank"><img src="/static/pictures/linkedin.png" width="34" ></a></a>
+<a href=”https://www.linkedin.com/in/huberttournier" target="_blank"><img src="/static/pictures/linkedin.png" width="34" ></a></a>
