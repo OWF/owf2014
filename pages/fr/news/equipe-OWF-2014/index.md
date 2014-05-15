@@ -9,7 +9,7 @@ Juriste spécialisé en propriété intellectuelle et cofondateur de la sociét�
 Il est l'auteur du livre « Option Libre. Du bon usage des licences libres » [Framabook](http://framabook.org), et co-auteur du livre blanc sur l'Open Source publié par le Syntec Numérique et est impliqué dans plusieurs groupes de travail sur l'Open Source et l'Open Data.
 
 Retrouvez-le sur LinkedIn et Twitter: 
-<a href=" https://www.linkedin.com/in/benjaminjean/fr " target="_blank"><img src="/static/pictures/linkedin.png" width="34" ></a></a>  <a href="https://twitter.com/mben_vvl" target="_blank"><img src="/static/pictures/twitter.jpg" width="34" ></a></a>
+<a href="https://www.linkedin.com/in/benjaminjean/fr " target="_blank"><img src="/static/pictures/linkedin.png" width="34" ></a></a>  <a href="https://twitter.com/mben_vvl" target="_blank"><img src="/static/pictures/twitter.jpg" width="34" ></a></a>
 
 ##Code
 
@@ -21,7 +21,7 @@ Il a également contribué à la communauté XMPP, en passant par la Board of Di
 Il a récemment fondé la société Nayego.
 
 Retrouvez-le sur LinkedIn et Twitter: 
-<a href=" https://www.linkedin.com/in/nicolasverite" target="_blank"><img src="/static/pictures/linkedin.png" width="34" ></a></a> <a href="https://twitter.com/nyconyco" target="_blank"><img src="/static/pictures/twitter.jpg" width="34" ></a></a>
+<a href="https://www.linkedin.com/in/nicolasverite" target="_blank"><img src="/static/pictures/linkedin.png" width="34" ></a></a> <a href="https://twitter.com/nyconyco" target="_blank"><img src="/static/pictures/twitter.jpg" width="34" ></a></a>
 
 ##Experiment
 
@@ -31,7 +31,7 @@ Après avoir accompagné des entreprises dans la mise en place de solutions de g
 Depuis 10 ans, il défend et promeut avec son associé Charly Clairmont le logiciel libre et les solutions en Open Source comme alternative au système d'information et de communication des organisations et des entreprises. Membres de la plupart des associations de l'open source ASS2L, PLOSS, CNLL, OW2, April, HUG France, il a animé lors des 2 premiers Open World Forum les Openday, format d'événement dédié aux entreprises. Avec son équipe, il diffuse aussi la bonne parole du libre et des systèmes d'information alternatifs au sein de plusieurs Universités de Paris (UPMC, Dauphine, Jussieu, Paris XIII). 
 
 Retrouvez-le sur LinkedIn et Twitter: 
-<a href=" https://www.linkedin.com/pub/marc-sallieres/2/a63/407" target="_blank"><img src="/static/pictures/linkedin.png" width="34" ></a></a> <a href="https://twitter.com/msallieres" target="_blank"><img src="/static/pictures/twitter.jpg" width="34" ></a></a>
+<a href="https://www.linkedin.com/pub/marc-sallieres/2/a63/407" target="_blank"><img src="/static/pictures/linkedin.png" width="34" ></a></a> <a href="https://twitter.com/msallieres" target="_blank"><img src="/static/pictures/twitter.jpg" width="34" ></a></a>
 
 ##Community
 
@@ -54,5 +54,5 @@ Il a commencé à travailler avec des logiciels "libérés" ou à "code ouvert" 
 Pour l'édition 2014, il officiera en tant que vice-président utilisateurs, pour aider les communautés du libre/open source et des DSI à mieux travailler ensemble, et partager sa connaissance et sa vision des besoins actuels et futurs des directions des systèmes d'information.
 
 Retrouvez-le sur LinkedIn: 
-<a href=” https://www.linkedin.com/in/huberttournier" target="_blank"><img src="/static/pictures/linkedin.png" width="34" ></a></a>
+<a href=”https://www.linkedin.com/in/huberttournier" target="_blank"><img src="/static/pictures/linkedin.png" width="34" ></a></a>
 
