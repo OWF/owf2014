@@ -82,7 +82,7 @@ Your proposal will be submitted to the appropriate track leaders for approval.
 Important deadlines :
 
 * Early-bird submission deadline : June 22th, 2014
-* Submission deadline:: June 1st, 2014
+* Submission deadline: June 1st, 2014
 
 Notification due: July, 2014
 
