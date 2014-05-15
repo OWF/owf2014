@@ -86,8 +86,10 @@ Veuillez soumettre votre papier sous format CFP, l'outil sera disponible très p
 
 Date à retenir :
 
-* Date limite de soumission des contributions : May 25th, 2014
-* Annonce des contributions retenues : June 30th, 2014
+
+* Soumission "early-bird" : 22 juin 2014
+* Date limite de soumission des contributions : 1er juin 2014
+* Annonce des contributions retenues : juillet 2014
 
 N'hésitez pas à nous contacter en cas de besoins particuliers, notamment concernant la partie « Experiment ». 
 
