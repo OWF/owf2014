@@ -1,8 +1,9 @@
 title: Meet the OWF 2014 Team!
 date: 2014/05/15
 
-
-This year's program will show you how to take back control of your digital world, including IT/IS and data, professional or not. Stop losing control and discover how Free and Open Source software may help you be more and more independent technologically, legally or financially.
+Open World Forum is back for a whole new edition! It will occur on October 30th, 31th and November 1st. Last year's edition was a big success, and we are looking forward to another event with even more talks, more workshops, and more social networking. 
+This year's program will show you how to take back control of your digital world, including IT/IS and data, professional or not. Stop losing control and discover how Free and Open Source software may help you be more and more independent technologically, legally or financially. 
+The President of the Open World Forum, Florent ZARA, is pleased to introduce you the Vice-Presidents for this edition.
 
 ## Think
 
