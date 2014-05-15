@@ -12,7 +12,7 @@ date: 2014/05/15
 
 <img src="/static/pictures/Team/BJean.jpg">  
 
-<br>Co-organizator of the annual European Opensource and free software Law Event, Benjamin Jean is currently the [inno³](http://inno3.fr/) company's CEO, an open innovation consulting firm focused on IP and collaborative project management . He also works as lecturer at Sciences Po Paris, teachs IP in several Masters and as consultant within the Gilles Vercken Law firm.
+<br>Co-organizer of the annual European Opensource and free software Law Event, Benjamin Jean is currently the [inno³](http://inno3.fr/) company's CEO, an open innovation consulting firm focused on IP and collaborative project management . He also works as lecturer at Sciences Po Paris, teachs IP in several Masters and as consultant within the Gilles Vercken Law firm.
 <br>He is author of a book titled “Option Libre. The good usage of [Free Licences](http://framabook.org), co-author of the “Open Source Guide” professional whitepaper published by the Syntec Numerique and is involved in several working teams about open source and Open Data governance and/or licensing. 
 <br>During it past position, he created the first CJOS *(Open Source Law Center)* He also co-founded, a few years ago, a French (community) project, named Veni Vidi Libri, which aims to inform creators and developers about free/OS licenses and to help them using free licenses.
 <br>Finally, he is an active member of both professionnal association *(like AFPIDA or PLOSS)* and community ones *(among them: Framasoft, Veni Vidi Libri or the April)*
