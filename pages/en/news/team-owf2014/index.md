@@ -62,4 +62,4 @@ He started to work with Free/Libre Open Source Software at the end of the 80s, i
 For this year edition, he will serve as vice president user, helping the Free/Libre communities to link with information systems communities, and sharing his knowledge and vision of the current and future needs of corporate IT departments. 
 
 More information on LinkedIn:
-<a href=”https://www.linkedin.com/in/huberttournier" target="_blank"><img src="/static/pictures/linkedin.png" width="34" ></a></a>
+<a href="https://www.linkedin.com/in/huberttournier/fr" target="_blank"><img src="/static/pictures/linkedin.png" width="34" ></a></a>
