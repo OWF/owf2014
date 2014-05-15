@@ -9,7 +9,7 @@ Juriste spécialisé en propriété intellectuelle et cofondateur de la sociét�
 Il est l'auteur du livre « Option Libre. Du bon usage des licences libres » [Framabook](http://framabook.org), et co-auteur du livre blanc sur l'Open Source publié par le Syntec Numérique et est impliqué dans plusieurs groupes de travail sur l'Open Source et l'Open Data.
 
 Retrouvez-le sur LinkedIn et Twitter: 
-<a href=" https://www.linkedin.com/in/benjaminjean " target="_blank"><img src="/static/pictures/linkedin.png" width="34" ></a></a>  <a href="https://twitter.com/mben_vvl" target="_blank"><img src="/static/pictures/twitter.jpg" width="34" ></a></a>
+<a href=" https://www.linkedin.com/in/benjaminjean/fr " target="_blank"><img src="/static/pictures/linkedin.png" width="34" ></a></a>  <a href="https://twitter.com/mben_vvl" target="_blank"><img src="/static/pictures/twitter.jpg" width="34" ></a></a>
 
 ##Code
 
