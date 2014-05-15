@@ -81,10 +81,10 @@ Your proposal will be submitted to the appropriate track leaders for approval.
 
 Important deadlines :
 
-* Early-bird submission deadline : May 11th, 2014
-* Submission deadline:: May 25th, 2014
+* Early-bird submission deadline : June 22th, 2014
+* Submission deadline:: June 1st, 2014
 
-Notification due: June 30th, 2014
+Notification due: July, 2014
 
 Do not hesitate to contact us if you have special needs, especially for the Experiment part !
 
