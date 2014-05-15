@@ -64,5 +64,5 @@ Il a commencé à travailler avec des logiciels "libérés" ou à "code ouvert" 
 Pour l'édition 2014, il officiera en tant que vice-président utilisateurs, pour aider les communautés du libre/open source et des DSI à mieux travailler ensemble, et partager sa connaissance et sa vision des besoins actuels et futurs des directions des systèmes d'information.
 
 Retrouvez-le sur LinkedIn: 
-<a href=”https://www.linkedin.com/in/huberttournier" target="_blank"><img src="/static/pictures/linkedin.png" width="34" ></a></a>
+<a href="https://www.linkedin.com/in/huberttournier/fr" target="_blank"><img src="/static/pictures/linkedin.png" width="34" ></a></a>
 
