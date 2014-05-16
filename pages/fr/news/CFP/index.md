@@ -1,4 +1,4 @@
-title: Le CFP est lancé !
+title: L'appel à contribution est lancé!
 date: 2014/05/16
 
 Le programme de cette 7e édition, construit autour du fil conducteur « Take Back Control »  démontrera qu’il est possible de retrouver la maîtrise de son environnement numérique, en matière d’IT / IS comme de données (personnelles).
