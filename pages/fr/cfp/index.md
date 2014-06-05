@@ -1,4 +1,4 @@
-title: Call for Paper 
+title: Appel à participation
 
 ##Take back control! 
 

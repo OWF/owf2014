@@ -34,6 +34,7 @@ SECTION_MAX_LINKS = 12
 ALLOWED_LANGS = ['fr', 'en']
 
 MAIN_MENU = {'fr': [('', u'Accueil'),
+                    ('cfp/', u'Participez'),
                     ('a-propos/', u'A propos'),
                     #('speakers/', u"Orateurs"),
                     #('schedule/', u'Programme'),
@@ -44,6 +45,7 @@ MAIN_MENU = {'fr': [('', u'Accueil'),
                     #('/registration/', u'Inscription', 'menu-registration'),
              ],
              'en': [('', u'Home'),
+                    ('cfp/', u'CFP'),
                     ('about/', u'About'),
                     #('speakers/', u"Speakers"),
                     #('schedule/', u'Schedule'),
