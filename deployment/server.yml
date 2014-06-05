@@ -4,7 +4,11 @@
   sudo: True
 
   vars:
-    host_names: ['openworldforum.org', 'www.openworldforum.org']
+    host_names:
+      - openworldforum.paris
+      - www.openworldforum.paris
+      - openworldforum.org
+      - www.openworldforum.org
     app_user: owf
     app_group: owf
     app_name: owf2014
