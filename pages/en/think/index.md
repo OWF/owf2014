@@ -1,34 +1,35 @@
-title:  THINK - Make It Happen!
+title:  THINK - Because innovation is in Openness
 
-THINK will take place over the course of the two first days, and will outline the major role of FLOSS in the digital economy. The “<b>Make it Happen!</b>” baseline **very concretely** sums up the focus on building a successful free and open-source strategy, from a technological and commercial standpoint.
+**Slow down & think about innovation in terms of openness.**
 
-The **opening day** format will differ from the previous editions as talks will happen in a **single-track schedule** in the largest auditorium. This enables us to concentrate on having the best schedule in a unique plenary session dedicated to decision-makers in the private and public sectors. Talks will be more concise and will introduce the **think tanks and workshops**  held on the **second day**.
-
-This renewed format will support the 2013 focus: **making it happen**. The FLOSS industry is now at a point where we need to have IT departments **take the step from intention**, either from strategy or political decision, **to actual use or purchase**.
-
-We will demonstrate that **innovation** with FLOSS is accessible **to all companies and organisations**. It is nowadays easier to innovate in each market because of the availability of free and innovative technologies. **This demystification of practical innovation** will be the major theme of this sixth edition of the Open World Forum.
-
-All of our speakers have **successfully innovated** with free and open-source software and will **share their experiences** around its use and impact. Shared innovation and the platforms available for **collaborative innovation** will be represented. More practically, speakers will document the way they succeeded in bringing innovation through FLOSS in the following sectors:
-
-* Digital economy
-* Media
-* Education
-* Public sector
-* Foundations and Communities
+**Innovation** really does matter. It must be a **strategic priority** for our society which is locking itself between boundaries we have created, victim of a constant increase and a rhythm to grow weaker its ability to differentiate. This area concerns everyone and is not reserved for the use of experts, it is on the contrary a common purpose and today everyone could find a way to contribute and/or to **reinforce innovation's processes**.
 
 
-The **opening day** will be dedicated to **keynotes, conferences and panels**. The individual talk slot format will be shorter than previous editions, so we can have a **very dynamic and interesting program**. The morning will be the opportunity to approach **the real impact** of Open-Source in the digital economic world, as well as the impact of **state policies**, the governance, educational and business issues. We'll end this sequence with some **industrial, organizational, community and government success stories** that might inspire attendees to choose Free and Open-Source Software for their next projects.
+That is why, in this society where actions preceded thoughts, the *“Think”* theme will give us the opportunity to move away from this propensity, to slow things down to think with a new vision in order to take a big picture. *“Think”* won't be a race but a break, these few days intended to raise and define what are the stakes leading to the necessary means to achieve this goal, to take the power back on societal subjects that matter to all of us.
 
-The afternoon will focus on the innovation catalyst role that Open-Source plays in the major technological and educational projects, especially in **infrastructure** and **Cloud**, in **Big Data** and the **Hadoop** platforms, in the **Web** of tomorrow and in **Mobility**.
 
-**CIOs** and major users of FLOSS will be invited to take part in the fifth edition of the **Open CIO Summit**, which is scheduled for the end of the day.
+*“Think”* will take place the couple of event first days (included a day dedicated to leaders and to users from companies, administrations and local authorities) with the ambition to share different ideas, to question, even shake deeply, the ancient foundations and evaluate the use and the importance of such creative and open collaborations models in our society. In other words, we will have to rethink our tools, our practices, but also our way to think & evaluate both innovation and creation in this age of interconnected people, of the digital technology and of the convergence. We will have to (re)think our society in terms of **openness**, **innovation** and **value**, with the ambition to turn down every preconceptions and obstructions that prevent us to go forward.
 
-These topics will be explored deeper **during the second day**, through **workshops and think tanks** led by industry and community leaders. This will enable attendees to contribute to the **evolution of our field**, and of course provide the meeting point where the **world experts** will get together and talk about the present and the future.
 
-<iframe width="550" height="413" src="//www.youtube.com/embed/tSM60KljPOs" frameborder="0" allowfullscreen></iframe>
+Thus, *“Think”* will be the occasion to understand how the innovation's and openness' combination could be as much as a solution to the issues from the past as the factor for success for the future stakes. Therefore, this model will be presented in its valuation side, from both private and public sector innovations.
 
-## Discover the "THINK" sessions
+Please <a class="btn" href="/en/cfp">submit your proposal</a> for the THINK theme while the CFP is open.
 
-<a class="btn" href="/en/tracks/?theme=think">Discover the sessions</a>
+### Benjamin JEAN, Vice-President for THINK theme
+
+<img src="/static/pictures/Team/BJean.jpg">  
+
+
+Co-organizer of the annual European Opensource and free software Law Event, Benjamin Jean is currently the [inno³](http://inno3.fr/) company's CEO, an open innovation consulting firm focused on IP and collaborative project management . He also works as lecturer at Sciences Po Paris, teachs IP in several Masters and as consultant within the Gilles Vercken Law firm.
+
+He is author of a book titled “Option Libre. The right usage of [Free Licences](http://framabook.org)", co-author of the “Open Source Guide” professional whitepaper published by the Syntec Numerique and is involved in several working teams about open source and Open Data governance and/or licensing.
+
+During it past position, he created the first CJOS *(Open Source Law Center)* He also co-founded, a few years ago, a French (community) project, named Veni Vidi Libri, which aims to inform creators and developers about free/OS licenses and to help them using free licenses.
+
+Finally, he is an active member of both professionnal association *(like AFPIDA or PLOSS)* and community ones *(among them: Framasoft, Veni Vidi Libri or the April)*
+
+More information on Twitter and LinkedIn:
+<a href="https://www.linkedin.com/in/benjaminjean/fr " target="_blank"><img src="/static/pictures/linkedin.png" width="34" ></a></a>  <a href="https://twitter.com/mben_vvl" target="_blank"><img src="/static/pictures/Twitter.jpg" width="34" ></a></a>
+
 
 
