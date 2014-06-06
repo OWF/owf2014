@@ -57,7 +57,7 @@ cssmin==0.1.4
 decorator==3.4.0
 docutils==0.11
 guess-language==0.2
-guess-language-spirit==0.5a4
+# guess_language-spirit==0.5a4  # The hell wit Python 2.x
 html5lib==0.95
 icalendar==3.6.1
 infinity==1.3
@@ -72,7 +72,7 @@ paramiko==1.11.0
 passlib==1.6.1
 pep8==1.4.6
 phonenumbers==5.9.2
-progressbar==2.3
+progressbar==2.3-dev
 psycopg2==2.4.6
 py==1.4.20
 py-bcrypt==0.3
