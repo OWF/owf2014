@@ -23,7 +23,7 @@
       <div class="col-sm-4 domain">
         <img class="hidden-xs" src="/static/pictures/idea-img.png" alt=""/>
 
-        <h2>THINK</h2>
+        <h2 class="think">THINK</h2>
 
         {{ blocks['think'] }}
 
@@ -37,7 +37,7 @@
       <div class="col-sm-4 domain">
         <img class="hidden-xs" src="/static/pictures/keyboard-img.png" alt=""/>
 
-        <h2>CODE</h2>
+        <h2 class="code">CODE</h2>
 
         {{ blocks['code'] }}
 
@@ -52,7 +52,7 @@
         <img class="hidden-xs" src="/static/pictures/experience-img.png"
             alt=""/>
 
-        <h2>EXPERIMENT</h2>
+        <h2 class="experiment">EXPERIMENT</h2>
 
         {{ blocks['experiment'] }}
 
@@ -128,14 +128,14 @@
     <div class="container">
       <h1 class="section-title">{{ _("Latest news") }}</h1>
 
-      <button class="btn section-button"><a
+      <button class="btn section-button hidden-xs"><a
           href="{{ url_for(".news") }}">{{ _("All the latest news") }}</a>
       </button>
 
       <div class="clear"></div>
 
       <div id="myCarousel" class="carousel slide">
-        <div class="carousel-inner">
+        <div class="carousel-inner hidden-xs">
           <div class="item active">
             <div class="row">
               {% for item in news[0:3] %}
@@ -190,8 +190,41 @@
             </div>
           </div>
         </div>
-      </div>
-      <div class="container">
+
+        <div id="myCarousel" class="carousel slide visible-xs">
+          <div class="carousel-inner">
+            <div class="item active">
+              <div class="row">
+                {% for item in news[0:2] %}
+                  <div class="col-sm-4">
+                    <div class="latest-news-card">
+                      <a href="{{ url_for(".news_item", slug=item.slug) }}" class="hidden-xs hidden-sm">
+                        <img
+                            src="{{ url_for(".image_for_news", slug=item.slug, size="small") }}"
+                            alt=""/>
+                      </a>
+
+                      <div class="latest-news-content">
+                        <h2><a
+                            href="{{ url_for(".news_item", slug=item.slug) }}">{{ item.title }}</a>
+                        </h2>
+
+                        <!-- <span
+                            class="latest-news-date">{{ item.date | dateformat }}</span>
+
+                        <p><a
+                            href="{{ url_for(".news_item", slug=item.slug) }}">{{ item.abstract }}</a>
+                        </p> -->
+                      </div>
+                    </div>
+                  </div>
+                {% endfor %}
+              </div>
+            </div>
+          </div>
+        </div>
+
+      <div class="container hidden-xs">
         <div id="carousel-control" class="latest-news-slide-control">
           <a id="carousel-button1" href="#myCarousel" data-slide-to="0">
             <img id="carousel-button-img1"
@@ -206,6 +239,12 @@
         </div>
       </div>
     </div>
+
+    <a href="{{ url_for(".news") }}">
+      <button class="btn section-button visible-xs">{{ _("All the latest news") }}
+      </button>
+    </a>
+
   </div>
 
 {% endblock %}

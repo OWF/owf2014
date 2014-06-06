@@ -1,17 +1,68 @@
 <footer style="background-color: #4f5962">
   <div style="padding-top: 30px; padding-bottom: 30px" class="container">
     <div class="row">
+
+    <div class="navbar-footer">
+      <div class="navbar-footer-newsletter visible-xs">
+        <ul id="navbar-ul">
+          <li class="navbar-newsletter">
+            <a href="http://eepurl.com/dACrj"><img alt="newsletter" width="25px"
+                height="19px" src="/static/pictures/1366984852_White_Email.png">
+              Newsletter</a>
+          </li>
+       </ul>
+      </div>
+
+      <div class="navbar-footer-rs visible-xs">
+        <ul id="navbar-ul">
+          <li class="share-a">
+            <a href="https://www.facebook.com/OpenWorldForum">
+              <img alt="Facebook Open Word Forum"
+                  src="/static/pictures/1366984111_picons06.png" width="18px"
+                  height="18px"/>
+            </a>
+          </li>
+          <li class="share-a">
+            <a href="https://twitter.com/openworldforum">
+              <img alt="Twitter Open World Forum"
+                  src="/static/pictures/1366984104_picons03.png" width="23px"
+                  height="22px"/>
+            </a>
+          </li>
+          <li class="share-a">
+            <a href="http://www.linkedin.com/groups?gid=1561767&trk=group-name">
+              <img alt="Linkedin" src="/static/pictures/1366984119_picons11.png"
+                  width="18px" height="18px"/>
+            </a>
+          </li>
+          <li class="share-a">
+            <a href="http://lanyrd.com/2013/owf2013/">
+              <img src="/static/pictures/Calque2.png" width="15px" height="17px"
+                  alt="Lanyrd"/>
+            </a>
+          </li>
+          <li class="share-a">
+            <a href="{{ url_for("localized.feed") }}">
+              <img src="/static/pictures/1366984127_picons20.png" width="18px"
+                  height="18px" alt="Feed"/>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
       <div id="footer-links" class="col-sm-4">
-        <a href="/fr/a-propos/">A propos de l'Open World Forum</a><br/>
-        <a href="/fr/infos-pratiques/">Informations pratiques</a><br/>
+        <a href="/fr/a-propos/">A propos de l'Open World Forum</a><br/>        
         <a href="/fr/presse/">Presse</a><br/>
         <a href="/fr/mentions-legales/">Mentions légales</a><br/>
         <a href="/fr/politique-confidentialite/">Politique de
-          confidentialité</a><br/>
-        <a href="/fr/sitemap/">Plan du site</a><br/>
+          confidentialité</a><br/> 
+        <a href="/fr/editions-precedentes/" class="visible-xs">Éditions précédentes</a><br/>
+        <a href="/fr/sitemap/" class="hidden-xs">Plan du site</a><br/>
+        <a href="/fr/infos-pratiques/" class="hidden-xs">Informations pratiques</a><br/>
       </div>
 
-      <div id="footer-button" class="col-sm-4">
+      <div id="footer-button" class="col-sm-4 hidden-xs">
         <div id="edition-pre">
           <a href="/fr/editions-precedentes/">Éditions précédentes</a>
         </div>
@@ -20,7 +71,7 @@
         </div>
       </div>
 
-      <div id="application" class="col-sm-4">
+      <div id="application" class="col-sm-4 hidden-xs">
         <h1 id="application-title">Télécharger</h1>
 
         <h2 id="application-sub-title">L'application Mobile</h2>

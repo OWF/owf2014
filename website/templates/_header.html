@@ -1,4 +1,4 @@
-<div id="fast-acces-div">
+<div id="fast-acces-div" class="hidden-xs">
   <ul id="fast-acces-menu" class="container">
     {% if lang == 'fr' %}
       {% include "_skiplink_fr.html" %}
@@ -16,12 +16,13 @@
   </ul>
 </div>
 
+
 <header class="container" role="banner">
 
-  <a href="{{ url_for("localized.home") }}"><img id="logo" class="hidden-xs"
+  <a href="{{ url_for("localized.home") }}"><img id="logo" class=""
       src="/static/pictures/Calque1.png" alt="Open World Forum"></a>
 
-  <ul id="navbar-ul">
+  <ul id="navbar-ul" class="hidden-xs">
     <li class="navbar-newsletter">
       <a href="http://eepurl.com/dACrj"><img alt="newsletter" width="25px"
           height="19px" src="/static/pictures/1366984852_White_Email.png">
@@ -69,19 +70,61 @@
   </ul>
 
 
-  <div id="menu-nav-div" class="navbar navbar-default" role="navigation">
-    <ul id="menu-nav" class="nav navbar-nav">
-      {% for entry in menu %}
-        {% if entry.path.startswith("/") %}
-          {% set url=entry.path %}
-        {% else %}
-          {% set url=url_for("localized.home") + entry.path %}
-        {% endif %}
-        <li><a href="{{ url }}" class="{{ entry.class }}">{{ entry.label }}</a>
-        </li>
-      {% endfor %}
+  <div class="visible-xs menu-lang">
+    <ul id="fast-acces-menu" class="container">
+      <li><a
+          class="fast-acces-a lang {% if lang =='en' %}lang-actif{% endif %}"
+          href="/en/">En</a>
+      </li>
+      <li><a
+          class="fast-acces-a lang {% if lang =='fr' %}lang-actif{% endif %}"
+          href="/fr/">Fr</a>
+      </li>
     </ul>
   </div>
+
+  <!-- <ul id="navbar-ul" class="visible-xs">
+    <li class="search-form" id="search-form"> -->
+      <!--<img src="/static/pictures/MagnifyingGlass.png" width="16px" height="16px"/>-->
+     <!--  <form action="/{{ lang }}/search">
+        <input name="qs" type="text" value="{{ request.args.get('qs', '') }}"/>
+        <a onclick="submit();">{{ _("Search") }}</a>
+      </form>
+    </li>
+  </ul> -->
+
+  <nav class="navbar-default" role="navigation">
+    <div class="container-fluid">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#menu-nav-div">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+
+
+      <div id="menu-nav-div"  class="collapse navbar-collapse" role="navigation">
+        <ul id="menu-nav" class="nav navbar-nav">
+          {% for entry in menu %}
+            {% if entry.path.startswith("/") %}
+              {% set url=entry.path %}
+            {% else %}
+              {% set url=url_for("localized.home") + entry.path %}
+            {% endif %}
+            <li><a href="{{ url }}" class="{{ entry.class }}">{{ entry.label }}</a>
+            </li>
+          {% endfor %}
+          <li class="search-form hidden-sm visible-xs" id="search-form">
+            <!--<img src="/static/pictures/MagnifyingGlass.png" width="16px" height="16px"/>-->
+            <form action="/{{ lang }}/search">
+              <input name="qs" type="text" value="{{ request.args.get('qs', '') }}"/>
+              <a onclick="submit();">{{ _("Search") }}</a>
+            </form>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
 
 
 </header>
