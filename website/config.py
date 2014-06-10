@@ -58,3 +58,16 @@ IMAGE_SIZES = {
   'small': (300, 180),
   'large': (620, 348),
 }
+
+# Mail settings through Gmail smtp for tests.
+# export USE_GMAIL_SMTP_FOR=my.gmail.nick:my_gmail_password
+
+import os
+
+if 'USE_GMAIL_SMTP_FOR' in os.environ:
+    gmail_user, gmail_password = os.environ['USE_GMAIL_SMTP_FOR'].split(':')
+    MAIL_SERVER = 'smtp.gmail.com'
+    MAIL_PORT = 587
+    MAIL_USE_TLS = True
+    MAIL_USERNAME = gmail_user
+    MAIL_PASSWORD = gmail_password
