@@ -1,11 +1,4 @@
 title: Programme
-bloc1: |
-    ## Un titre MD
-
-    Le baratin de bloc1
-
-    <a class="btn" href="/fr/news/cfp/#envoi-proposition">Envoyez une proposition d'intervention</a>
-
 
 ## Programme 
 
