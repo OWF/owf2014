@@ -34,7 +34,7 @@ Etre étudiant où l'avoir été au moins dans les deux dernières années. Par 
 
 - Le dossier de candidature complété via le formulaire  :&nbsp;
 
-<a href="../../formulaire/student_demo_cup/formulaire.md"> Provoquez votre destin</a>
+<a href="/sdc">Provoquez votre destin</a>
 
 	
 **Faites-nous parvenir votre projet avant le 30 septembre 2014 :**  <br>
