@@ -6,43 +6,43 @@ date: 2014/10/30
 Appel à la candidature.
 
 
-<form role="form" action="remerciement.md">
+<form role="form" method="POST" action="remerciement.md">
 
 	<h3>Porteur du projet </h3>
   	<div class="form-group col-md-6">
 	    <label for="nom">Nom</label>
-	    <input type="text" class="form-control" id="nom" placeholder="Votre nom">
+	    <input type="text" class="form-control" id="nom" name="nom" placeholder="Votre nom">
   	</div>
   	<div class="form-group col-md-6">
 	    <label for="prenom">Prénom</label>
-	    <input type="text" class="form-control" id="prenom" placeholder="Votre prénom">
+	    <input type="text" class="form-control" id="prenom" name="prenom" placeholder="Votre prénom">
   	</div>
   	<div class="form-group col-md-6">
 	    <label for="mail">E-mail </label>
-	    <input type="email" class="form-control" id="mail" placeholder="Votre e-mail">
+	    <input type="email" class="form-control" id="mail" name="mail" placeholder="Votre e-mail">
   	</div>
   	<div class="form-group col-md-6">
 	    <label for="telephone">Téléphone</label>
-	    <input type="text" class="form-control" id="telephone" placeholder="Votre téléphone">
+	    <input type="text" class="form-control" id="telephone" name="telephone" placeholder="Votre téléphone">
   	</div>
 
 	<h3>Catégories</h3>
 	<div class="form-group col-md-12">
 	  	<div class="checkbox-inline">
 		  <label>
-		    <input type="checkbox" id="think" value="think" checked>
+		    <input type="checkbox" id="think" name="think" value="think" checked>
 		    Think
 		  </label>
 		</div>
 		<div class="checkbox-inline">
 		  <label>
-		    <input type="checkbox" id="code" value="code">
+		    <input type="checkbox" id="code" name="code" value="code">
 		    Code
 		  </label>
 		</div>
 		<div class="checkbox-inline">
 		  <label>
-		    <input type="checkbox"id="experiment" value="experiment">
+		    <input type="checkbox" id="experiment" name="experiment" value="experiment">
 		    Experiment
 		  </label>
 		</div>
