@@ -14,6 +14,7 @@ from flask.ext.flatpages import FlatPages
 from flask.ext.markdown import Markdown
 from flask.ext.assets import Environment as AssetManager
 from flask.ext.login import current_user
+from flask_security.core import AnonymousUser
 
 import abilian
 from abilian.i18n import babel
@@ -201,7 +202,7 @@ def setup_filters_and_processors(app):
         return redirect("/login")
 
     # FIXME
-    g.user = None
+    g.user = AnonymousUser()
     #g.user = current_user._get_current_object()
     g.recent_items = []
 
