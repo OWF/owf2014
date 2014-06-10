@@ -44,7 +44,7 @@ def submit_form():
     if form.validate():
         proposal = SDCApplication()
         form.populate_obj(proposal)
-        send_proposal_by_email(proposal)
+        #send_proposal_by_email(proposal)
         db.session.add(proposal)
         db.session.commit()
         msg = Markup(
@@ -61,7 +61,7 @@ def send_proposal_by_email(proposal):
     if app.config.get('TESTING'):
         recipients = ["gilles.lenfant@alterway.fr"]
     else:
-        recipients = ["sf@fermigier.com", "program@openworldforum.org"]
+        recipients = ["gilles.lenfant@alterway.fr"]
 
     body = render_template("email.txt", proposal=proposal)
     msg = Message("New application to the student demo cup",
