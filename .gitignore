@@ -22,3 +22,4 @@ packed.js
 
 *.egg-info
 *.egg
+*.log
