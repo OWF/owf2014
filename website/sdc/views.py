@@ -32,7 +32,7 @@ route = sdc.route
 @route('/', methods=['GET'])
 def display_form():
     form = SDCApplicationForm()
-    page = dict(title=_l(u"Apply to the Student Demo Cup"))
+    page = dict(title=_l(u"Candidature pour la Student Demo Cup"))
     return render_template("sdc/form.html", page=page, form=form)
 
 
@@ -48,7 +48,7 @@ def submit_form():
         db.session.add(proposal)
         db.session.commit()
         msg = Markup(
-            "Thank you for your submission. <a href='/'>Back to the home page.</a>")
+            "Merci pour votre participation. <a href='/'>Back to the home page.</a>")
         flash(msg, "success")
         return redirect(url_for(".display_form"))
 

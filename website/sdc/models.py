@@ -19,9 +19,11 @@ class SDCApplication(Entity):
     recorded_at = Column(DateTime, default=datetime.datetime.utcnow)
     theme = Column(UnicodeText, nullable=False, default=unicode(THEMES[0], encoding='utf-8'))
     leader = Column(UnicodeText, nullable=False)
+    prenom = Column(UnicodeText, nullable=False)
     email = Column(UnicodeText, unique=True, nullable=False)
+    telephone = Column(UnicodeText, nullable=False)
     organization = Column(UnicodeText, default=u"", nullable=False)
-    speakers = Column(UnicodeText, default=u"", nullable=False)
+    intervenants = Column(UnicodeText, default=u"", nullable=False)
     summary = Column(UnicodeText, default=u"", nullable=False)
 
     @property

@@ -22,6 +22,24 @@
   <a href="{{ url_for("localized.home") }}"><img id="logo" class=""
       src="/static/pictures/Calque1.png" alt="Open World Forum"></a>
 
+  <div id="fast-acces-div" class="visible-xs">
+    <ul id="fast-acces-menu" class="container">
+      {% if lang == 'fr' %}
+        {% include "_skiplink_fr.html" %}
+      {% else %}
+        {% include "_skiplink_en.html" %}
+      {% endif %}
+      <li class="fast-acces-right"><a
+          class="fast-acces-a lang {% if lang =='en' %}lang-actif{% endif %}"
+          href="/en/">English</a>
+      </li>
+      <li class="fast-acces-right"><a
+          class="fast-acces-a lang {% if lang =='fr' %}lang-actif{% endif %}"
+          href="/fr/">Français</a>
+      </li>
+    </ul>
+  </div>
+
   <ul id="navbar-ul" class="hidden-xs">
     <li class="navbar-newsletter">
       <a href="http://eepurl.com/dACrj"><img alt="newsletter" width="25px"
@@ -70,29 +88,6 @@
   </ul>
 
 
-  <div class="visible-xs menu-lang">
-    <ul id="fast-acces-menu" class="container">
-      <li><a
-          class="fast-acces-a lang {% if lang =='en' %}lang-actif{% endif %}"
-          href="/en/">En</a>
-      </li>
-      <li><a
-          class="fast-acces-a lang {% if lang =='fr' %}lang-actif{% endif %}"
-          href="/fr/">Fr</a>
-      </li>
-    </ul>
-  </div>
-
-  <!-- <ul id="navbar-ul" class="visible-xs">
-    <li class="search-form" id="search-form"> -->
-      <!--<img src="/static/pictures/MagnifyingGlass.png" width="16px" height="16px"/>-->
-     <!--  <form action="/{{ lang }}/search">
-        <input name="qs" type="text" value="{{ request.args.get('qs', '') }}"/>
-        <a onclick="submit();">{{ _("Search") }}</a>
-      </form>
-    </li>
-  </ul> -->
-
   <nav class="navbar-default" role="navigation">
     <div class="container-fluid">
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#menu-nav-div">
@@ -116,8 +111,9 @@
           <li class="search-form hidden-sm visible-xs" id="search-form">
             <!--<img src="/static/pictures/MagnifyingGlass.png" width="16px" height="16px"/>-->
             <form action="/{{ lang }}/search">
-              <input name="qs" type="text" value="{{ request.args.get('qs', '') }}"/>
               <a onclick="submit();">{{ _("Search") }}</a>
+              <input name="qs" type="text" value="{{ request.args.get('qs', '') }}"/>
+              
             </form>
           </li>
         </ul>

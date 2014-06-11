@@ -22,9 +22,12 @@ __all__ = ['SDCApplicationForm']
 
 
 class SDCApplicationForm(Form):
-    theme = SelectField(label=_l(u"Please choose a theme"), choices=THEMES_AS_CHOICE, validators=[required()])
-    leader = StringField(label=_l(u"Your name"), validators=[required()])
+    theme = SelectField(label=_l(u"Merci de choisir une catégorie"), choices=THEMES_AS_CHOICE, validators=[required()])
+    leader = StringField(label=_l(u"Votre nom"), validators=[required()])
+    prenom = StringField(label=_l(u"Votre prénom"), validators=[required()])
     email = EmailField(label=_l(u"Your email address"), validators=[required(), email()])
-    organization = StringField(label=_l(u"Your organization"), validators=[required()])
-    speakers = StringField(label=_l(u"Other speakers"))
-    summary = TextAreaField(label=_l(u"Your project summary"), validators=[required()])
+    telephone = StringField(label=_l(u"Votre téléphone"), validators=[required()])
+    organization = StringField(label=_l(u"Etablissement / entreprise"), validators=[required()])
+    intervenants = TextAreaField(label=_l(u"Autres intervenants (autant de possible"), validators=[required()])
+    summary = TextAreaField(label=_l(u"Résumé du projet"), validators=[required()])
+
