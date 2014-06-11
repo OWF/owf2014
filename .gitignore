@@ -20,3 +20,6 @@ error.log
 packed.css
 packed.js
 
+*.egg-info
+*.egg
+*.log

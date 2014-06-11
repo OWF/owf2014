@@ -45,11 +45,9 @@
             </div>
 
             <div class="col-md-3">
-              {% if speaker.photo %}
+              
               <img class="speaker-img" src="{{ url_for(".photo", speaker_id=speaker.id, s=220) }}">
-              {% endif %}
-
-              {{ m_speaker_details(speaker) }}
+             
             </div>
 
           </article>

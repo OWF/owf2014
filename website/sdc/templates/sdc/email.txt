@@ -1,0 +1,19 @@
+{% with p=proposal %}
+
+Speaker:
+
+- first name : {{ p.prenom }}
+- family name: {{ p.leader }}
+- email: {{ p.email }}
+- tel.: {{ p.telephone }}
+- organization: {{ p.organization }}
+
+Other participants: {{ p.intervenants }}
+
+Theme: {{ p.theme }}
+
+Summary:
+
+{{ p.summary }}
+
+{% endwith %}
