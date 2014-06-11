@@ -201,7 +201,6 @@ def setup_filters_and_processors(app):
       if not current_user.is_authenticated():
         return redirect("/login")
 
-    # FIXME
     g.user = AnonymousUser()
     #g.user = current_user._get_current_object()
     g.recent_items = []
