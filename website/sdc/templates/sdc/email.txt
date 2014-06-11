@@ -1,6 +1,6 @@
 {% with p=proposal %}
 
-Speaker:
+Candidate:
 
 - first name : {{ p.prenom }}
 - family name: {{ p.leader }}
