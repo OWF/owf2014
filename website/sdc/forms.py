@@ -7,14 +7,11 @@ sdc.forms
 Form definition
 """
 
-from flask.ext.wtf.html5 import EmailField
-from wtforms import StringField, TextAreaField, RadioField, SelectField
+from wtforms import StringField, SelectField
 
-from flask.ext.wtf import Form, BooleanField, TextField, TextAreaField, required, email
+from flask.ext.wtf import Form, TextAreaField, required, email
 from flask.ext.wtf.html5 import EmailField
 from flask.ext.babel import lazy_gettext as _l
-
-# from website.sdc.models import Registration
 
 from .common import THEMES_AS_CHOICE
 

@@ -42,10 +42,10 @@ def submit_form():
         return redirect("/")
     form = SDCApplicationForm(request.form)
     if form.validate():
-        proposal = SDCApplication()
-        form.populate_obj(proposal)
-        #send_proposal_by_email(proposal)
-        db.session.add(proposal)
+        application = SDCApplication()
+        form.populate_obj(application)
+        send_application_by_email(application)
+        db.session.add(application)
         db.session.commit()
         msg = Markup(
             "Merci pour votre participation. <a href='/'>Back to the home page.</a>")
@@ -57,13 +57,9 @@ def submit_form():
         return render_template("sdc/form.html", page=page, form=form)
 
 
-def send_proposal_by_email(proposal):
-    if app.config.get('TESTING'):
-        recipients = ["gilles.lenfant@alterway.fr"]
-    else:
-        recipients = ["gilles.lenfant@alterway.fr"]
-
-    body = render_template("email.txt", proposal=proposal)
+def send_application_by_email(application):
+    recipients = app.config.get('SDC_RECIPIENTS')
+    body = render_template("sdc/email.txt", proposal=application)
     msg = Message("New application to the student demo cup",
                   body=body,
                   sender="robot@openworldforum.org",

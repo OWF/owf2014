@@ -64,10 +64,17 @@ IMAGE_SIZES = {
 
 import os
 
-if 'USE_GMAIL_SMTP_FOR' in os.environ:
-    gmail_user, gmail_password = os.environ['USE_GMAIL_SMTP_FOR'].split(':')
+if DEBUG and ('OWF_USE_GMAIL_SMTP' in os.environ):
+    gmail_user, gmail_password = os.environ['OWF_USE_GMAIL_SMTP'].split(':')
     MAIL_SERVER = 'smtp.gmail.com'
     MAIL_PORT = 587
     MAIL_USE_TLS = True
     MAIL_USERNAME = gmail_user
     MAIL_PASSWORD = gmail_password
+
+# Settings for Students Demo Cup
+
+if DEBUG and ('OWF_SDC_RECIPIENTS' in os.environ):
+    SDC_RECIPIENTS = os.environ.get('OWF_SDC_RECIPIENTS').split(':')
+else:
+    SDC_RECIPIENTS = ['studentdemocup@openworldforum.org']

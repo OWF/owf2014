@@ -53,3 +53,28 @@
 ## Production environment
 
 The Ansible config still needs to be tweaked a bit to be able to deploy to production.
+
+## Development configuration
+
+### Sending mail
+
+If you have a GMail account (say "foobar@gmail.com"), you may use GMail SMTP
+to send mail in place of "localhost" that may be denied for delivery (RBL, no
+MX record ...)
+
+Just add **OWF_USE_GMAIL_SMTP** environment variable:
+
+   export OWF_USE_GMAIL_SMTP=foobar:foobar_gmail_password
+
+Joining the first part of the GMail address and the associated password with a
+":".
+
+And activate, if not done, the DEBUG mode. 
+
+### Student Demo Cup application
+
+When in **DEBUG** mode, you may change the recipients of application
+notifications with the **OWF_SDC_RECIPIENTS** environment variable that joins
+all recipients mail addresses with a ":"like this:
+
+   export OWF_SDC_RECIPIENTS=me@somewhere.org:myboss@mycompany.com
