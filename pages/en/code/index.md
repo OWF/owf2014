@@ -17,6 +17,8 @@ The Free and Open Source are at the forefront of innovation on topics such as Cl
 
 
 Take back your independence on software and infrastructure solutions.
+
+
 Take back control with cloud and code !
 
 
