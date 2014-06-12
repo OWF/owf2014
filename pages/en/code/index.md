@@ -1,21 +1,23 @@
-title: CODE - Open Innovation
+title: CODE - Openness to take back technical control
 
 
-From a technological standpoint, **during the CODE days**, the focus will be on the following topics: Web, Infrastructure (Cloud, but not exclusively), Data and Mobility. The Web, especially with the user aspects, like the **UX** movement and the **Responsive Design** requirements, but also **accessibility**, a topic that will be increasingly important in the future.
-
-**Infrastructure** is not solely a technical topic and we want to approach it from its organizational point of view within the IT departments as well, with a focus on the **devops** movement, the internal impacts for development teams of the new VM provisioning platforms and technologies.
-
-The Data topics, which include **Open Data**, and the necessary thinking to have when considering opening a data set; but also **Big Data**, the batch or semi-real time analysis of large quantities of data and the commercial or professional advantages that we can expect.
-
-Lastly, we will talk about **Mobility** as it is a vital and fast-evolving subject, that has the important characteristic to be largely dominated by Open Source with Android, Tizen, Ubuntu or FirefoxOS.
-
-The CODE topics will be led by a **track-leader team that has been almost entirely renewed**.
+## The CODE thematic will develop "Take Back Control" on code, software, platforms and infrastructure.
 
 
-<iframe width="550" height="413" src="//www.youtube.com/embed/AYqhWokc0jE" frameborder="0" allowfullscreen></iframe>
+Apparently, there seems not to be many solutions when you're facing GAFA or the "big four" (Google, Apple, Facebook, and Amazon). They can literally cannibalize your data. Apparently only. Because in the first place, we think about workarounds or hacks while we should consider a complete, global replacement.
 
 
-## Discover the "CODE" sessions
+Moreover, in a context of rapidly changing technology and, paradoxically, the technical thinning out of IT staff, individuals who develop FLOSS solutions or rely on them are a more attractive pool of vaulable ressources. It seems to be a good way to deal with an uncertain future. FLOSS people openness, curiosity, versatility and technical skills should turn them into highly chased asset for large IT in the coming years. At least those who are committed to help the business facing the perils of digital revolution we are currently experiencing. Beyond technology, the human element is and will be very important. **CODE** will strive to help you bring back an engineering and technical excellence after years of sales and marketing domination.
 
-<a class="btn" href="/en/tracks/?theme=code">Discover the sessions</a>
+
+The Free and Open Source are at the forefront of innovation on topics such as Cloud computing (OpenStack, CloudStack, Docker, Cozy, ownCloud, etc.), Data (Open Data, Big Data with Hadoop, etc..), Internet of Things (Raspberry Pi, Arduino, BeagleBoard, etc.), mobility (Android derivatives like CyanogenMod, Replicant, OmniROM, or specific distributions such as Linux Tizen, Ubuntu Touch, Firefox OS, etc.),  the Web (HTML5, CSS3, ECMAScript6, responsive design, etc.) or encryption (TLS, PGP, OTR, etc.). One must use them to restore control and confidence tarnished everyday on aspects such as confidentiality, privacy, security, data sovereignty, whether you are mobile or not.
+
+
+**The Open World Forum 2014** will provide you with a series of conferences, lectures and round tables on all those technical topics.
+
+
+Take back your independence on software and infrastructure solutions.
+Take back control with cloud and code !
+
+
 
