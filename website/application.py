@@ -170,7 +170,7 @@ def setup_filters_and_processors(app):
     if not dt:
       return
     current_locale = locale.getlocale(locale.LC_TIME)
-    locale.setlocale(locale.LC_TIME, "en_US")
+    locale.setlocale(locale.LC_TIME, "en_US.UTF-8")
     formatted = dt.strftime("%a, %d %b %Y %H:%M:%S +0000")
     locale.setlocale(locale.LC_TIME, current_locale)
     return formatted
