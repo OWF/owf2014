@@ -59,14 +59,14 @@ Les ? (en attente) personnalités du numérique qui composent le jury du concou
 ## Les partenaires : 
 
 
-<a href="/{{ lang }}/partners/#abilian" class="hidden-xs"><img alt='Abilian'
+<a href="/fr/partners/#abilian" class="hidden-xs"><img alt='Abilian'
     src="/static/pictures/partners/abilian_logosponsors.png"/></a>
-<a href="/{{ lang }}/partners/#alter way"><img alt="Alter Way"
+<a href="/fr/partners/#alter way"><img alt="Alter Way"
     src="/static/pictures/partners/logo_aw_rvb_copie-orga.png"/></a>
-<a href="/{{ lang }}/partners/#cap" class="hidden-xs"><img alt="Cap Digital"
+<a href="/fr/partners/#cap" class="hidden-xs"><img alt="Cap Digital"
     src="/static/pictures/partners/cap_digital_logosponsors.jpg"/></a>
-<a href="/{{ lang }}/partners/#inria" class="hidden-xs"><img alt="Inria"
+<a href="/fr/partners/#inria" class="hidden-xs"><img alt="Inria"
     src="/static/pictures/partners/INRIA_logoSponsor.jpg"/></a>
-<a href="/{{ lang }}/partners/#smile" class="hidden-xs"><img alt="Smile"
+<a href="/fr/partners/#smile" class="hidden-xs"><img alt="Smile"
     src="/static/pictures/partners/Smile_logoSponsor.png"/></a>
 
