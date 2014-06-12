@@ -1,5 +1,5 @@
 title : Student Demo Cup
-date: 2014/10/30
+date: 2014/06/12
 
 #Open World Forum
 
