@@ -29,6 +29,11 @@ sdc = Blueprint('sdc', __name__, template_folder='templates',
 route = sdc.route
 
 
+@sdc.context_processor
+def inject_context():
+  return dict(lang='fr')
+
+
 @route('/', methods=['GET'])
 def display_form():
     form = SDCApplicationForm()
