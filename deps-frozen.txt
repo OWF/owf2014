@@ -72,7 +72,7 @@ paramiko==1.11.0
 passlib==1.6.1
 pep8==1.4.6
 phonenumbers==5.9.2
-progressbar==2.3-dev
+progressbar==2.3
 psycopg2==2.4.6
 py==1.4.20
 py-bcrypt==0.3
