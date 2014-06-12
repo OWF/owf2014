@@ -1,8 +1,10 @@
 title: Our partners
 
+<a name="top"></a>
+
 ## <a name="orga">The Organizers</a>
 
-<a href="/partners/#top">Back to Top</a>
+<a href="#top">Back to Top</a>
 
 ###Organizer
 
@@ -38,7 +40,7 @@ large enterprise, public sector and SMB.
 
 Alter Way has a distinctive skill on the Free market and can be a robust partner at your side for a long time.
 
-<a href="/partners/#top">Back to Top</a>
+<a href="#top">Back to Top</a>
 
 <a name="cap"><a href="http://www.capdigital.com/" target="_blank"><img src="/static/pictures/page sponsor et organisateurs/Cap_sponsor page.jpg" width="400" alt="Cap Digital"></a></a>
 
@@ -59,7 +61,7 @@ de l’innovation et de l’économie numérique désireuse d’exposer, rencont
 une vision du futur avec le grand public. 
 
 
-<a href="/partners/#top">Back to Top</a>
+<a href="#top">Back to Top</a>
 
 <a name="inria"><a href="http://www.inria.fr/" target="_blank"><img src="/static/pictures/page sponsor et organisateurs/INRIA_sponsor page.jpg" width="400" alt="Inria"></a></a>
 
