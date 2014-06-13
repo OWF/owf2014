@@ -64,7 +64,7 @@ def setup(app):
   setup_filters_and_processors(app)
 
   app.register_plugin("website.views")
-  app.register_plugin("website.cfp")
+  #app.register_plugin("website.cfp")
   app.register_plugin("website.registration")
   app.register_plugin("website.crm")
   app.register_plugin("website.sdc")  # Students demo cup
