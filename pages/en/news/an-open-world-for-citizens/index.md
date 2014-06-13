@@ -1,4 +1,4 @@
-title: An Open World for Citizens
+title: Open Access: for an Open and accessible to all Research ?
 date: 2014/06/12
 
 Thus, **THINK** will be the occasion to understand how the innovation's and openness' combination could be as much as a solution to the issues from the past as the factor for success for the future stakes. Therefore, this model will be presented in its valuation side, from both private and public sector innovations. This following article is part of a bundle of short analyzes that will be published to illustrate the various topics discussed within **THINK theme during the 2014 edition**.
