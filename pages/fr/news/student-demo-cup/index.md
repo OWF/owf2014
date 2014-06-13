@@ -34,7 +34,7 @@ Etre étudiant où l'avoir été au moins dans les deux dernières années. Par 
 
 - Le dossier de candidature complété via le formulaire
 
-<a class="btn btn-default btn-project" href="/sdc/?lang=">Lance ton projet !</a>
+<a class="btn btn-default btn-project" href="/sdc/">Lance ton projet !</a>
 
 
 **Faites-nous parvenir votre projet avant le 30 septembre 2014 :**  
