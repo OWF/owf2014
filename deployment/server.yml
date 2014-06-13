@@ -5,9 +5,10 @@
 
   vars:
     host_names:
-      - openworldforum.paris
       - www.openworldforum.paris
+    host_aliases:
       - openworldforum.org
+      - openworldforum.paris
       - www.openworldforum.org
     app_user: owf
     app_group: owf
