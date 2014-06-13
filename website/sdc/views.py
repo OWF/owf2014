@@ -53,7 +53,7 @@ def submit_form():
         db.session.add(application)
         db.session.commit()
         msg = Markup(
-            "Merci pour votre participation. <a href='/'>Back to the home page.</a>")
+            "Merci de votre participation. <a href='/'>Back to the home page.</a>")
         flash(msg, "success")
         return redirect(url_for(".display_form"))
 
