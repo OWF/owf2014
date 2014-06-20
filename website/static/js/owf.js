@@ -10,7 +10,7 @@
   m.parentNode.insertBefore(a, m)
 })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
 
-ga('create', 'UA-9730554-4', 'openworldforum.org');
+ga('create', 'UA-9730554-4', 'openworldforum.paris');
 ga('send', 'pageview');
 
 $('#myCarousel').bind("slide", function() {
