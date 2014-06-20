@@ -84,11 +84,10 @@ Sauf exception (se reporter aux spécificités de candidature par thèmes), votr
 
 Veuillez soumettre votre papier sous format CFP. Celui-ci sera transmis au responsable du thème pour approbation.
 
-<a class="btn" href="http://cfp.openworldforum.org/submission/OWF2014 ">Envoyez votre proposition</a>
+<a class="btn btn-primary" href="http://cfp.openworldforum.org/submission/OWF2014 ">Envoyez votre proposition</a>
 
 Dates à retenir :
 
-* Soumission "early-bird" : 1er juin 2014
 * Date limite de soumission des contributions : 22 juin 2014
 * Annonce des contributions retenues : juillet 2014
 

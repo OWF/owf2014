@@ -79,11 +79,10 @@ Please submit your proposal through the CFP form, which will be avalaible really
 
 Your proposal will be submitted to the appropriate track leaders for approval.
 
-<a class="btn" href="http://cfp.openworldforum.org/submission/OWF2014 ">Submit your proposal</a>
+<a class="btn btn-primary" href="http://cfp.openworldforum.org/submission/OWF2014 ">Submit your proposal</a>
 
 Important deadlines :
 
-* Early-bird submission deadline : June 1st, 2014
 * Submission deadline: June 22th, 2014
 
 Notification due: July, 2014
