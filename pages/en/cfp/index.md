@@ -1,5 +1,8 @@
 title: Call For Paper
 
+## **Deadline extended : Tuesday 15th of July**
+
+
 ## Take Back Control !
 
 Open World Forum is back for a wholly new edition ! It will occur this year on October 30th, 31th and November 1st. Last year's edition was a big success, and we are looking forward to another event with even more talks, more workshops, and more social networking. We need you to make this happen! We encourage you to submit a talk if you have a great story to tell on any of the following topics. 
