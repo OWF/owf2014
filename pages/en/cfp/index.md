@@ -86,9 +86,9 @@ Your proposal will be submitted to the appropriate track leaders for approval.
 
 Important deadlines :
 
-* Submission deadline: June 22th, 2014
+* Submission deadline: July 15th, 2014
 
-Notification due: July, 2014
+Notification due: End of July, 2014
 
 Do not hesitate to contact us if you have special needs, especially for the Experiment part !
 
