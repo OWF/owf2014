@@ -92,8 +92,8 @@ Veuillez soumettre votre papier sous format CFP. Celui-ci sera transmis au respo
 
 Dates à retenir :
 
-* Date limite de soumission des contributions : 22 juin 2014
-* Annonce des contributions retenues : juillet 2014
+* Date limite de soumission des contributions : mardi 15 juillet 2014
+* Annonce des contributions retenues : fin juillet 2014
 
 N'hésitez pas à nous contacter en cas de besoins particuliers, notamment concernant la partie « Experiment ». 
 
