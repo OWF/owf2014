@@ -25,6 +25,6 @@ class SDCApplicationForm(Form):
     email = EmailField(label=_l(u"Your email address"), validators=[required(), email()])
     telephone = StringField(label=_l(u"Votre téléphone"), validators=[required()])
     organization = StringField(label=_l(u"Etablissement / entreprise"), validators=[required()])
-    intervenants = TextAreaField(label=_l(u"Autres intervenants (autant de possible"), validators=[required()])
+    intervenants = TextAreaField(label=_l(u"Autres intervenants (autant de possible)"))
     summary = TextAreaField(label=_l(u"Résumé du projet"), validators=[required()])
 

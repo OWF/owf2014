@@ -1,6 +1,6 @@
 <!DOCTYPE html>
-<html xmlns:og="http://ogp.me/ns#">
-<head {% if lang == 'fr' %}lang="fr-FR"{% else %}lang="en-EN"{% endif %}>
+<html xmlns:og="http://ogp.me/ns#" {% if lang == 'fr' %}lang="fr-FR"{% else %}lang="en-EN"{% endif %}>
+<head >
   <title>{{ title or page.title }}</title>
 
   <meta charset="UTF-8">
@@ -10,6 +10,10 @@
   {%- for name, content in g.metadata.items() %}
     <meta name="{{ name }}" content="{{ content }}">
   {%- endfor %}
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="shortcut icon" type="image/x-icon"
       href="/static/pictures/favicon.ico"/>

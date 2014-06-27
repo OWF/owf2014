@@ -5,16 +5,18 @@
     {% set placeholder = field.label.text %}
   {% endif %}
 
-  <div class="control-group {% if field.errors %}error{% endif %}">
+
+
+  <div class="form-group {% if field.errors %}error{% endif %}">
     {% if with_label %}
-      <label for="{{ field.id }}" class="control-label">
+      <label for="{{ field.id }}">
         {{ field.label.text }}{% if field.flags.required %} *{% endif %}:
       </label>
     {% endif %}
-    <div class="controls">
+
       {% set class_ = kwargs.pop('class_', '') %}
       {% if field.flags.required %}
-        {% set class_ = class_ + ' required' %}
+        {% set class_ = class_ + 'form-control required' %}
       {% endif %}
       {% if field.type == 'BooleanField' %}
         <label class="checkbox">
@@ -23,7 +25,7 @@
         </label>
       {% else %}
         {% if field.type in ('TextField', 'TextAreaField', 'PasswordField') %}
-          {% set class_ = class_ + ' input-xlarge' %}
+          {% set class_ = class_ + ' form-control' %}
         {% elif field.type == 'FileField' %}
           {% set class_ = class_ + ' input-file' %}
         {% endif %}
@@ -35,6 +37,6 @@
       {% if field.description %}
         <p class="help-block">{{ field.description|safe }}</p>
       {% endif %}
-    </div>
+
   </div>
 {%- endmacro %}
