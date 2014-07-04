@@ -24,7 +24,7 @@ L’événement a été fondé en 2008 et se tient désormais chaque année à P
 Etre étudiant où l'avoir été au moins dans les deux dernières années. Par dérogation, le projet est éligible si vous n'êtes plus actuellement étudiant mais avez amorcé et réalisé une partie significative de votre projet lors de vos études ou thèse. 
 **Concernant le projet :** 
 
-- Le projet peut être soumis dans l'un des trois thèmes suivants : Think, Code, Experiment, Firefox OS, Ada Initiative
+- Le projet peut être soumis dans l'un des trois thèmes suivants : Think, Code, Experiment.
 - Doit présenter un **caractère innovant et ouvert.**
 - Doit présenter un **certain degré d'avancement et de concrétisation.**
 - Doit avoir pour ambition **la promotion et l'amélioration du Logiciel Libre et de son écosystème.**
