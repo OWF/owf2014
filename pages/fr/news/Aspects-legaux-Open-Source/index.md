@@ -1,5 +1,5 @@
 title: Aspects légaux de l'Open Source 
-date:2014/07/08
+date: 2014/07/08
 
 
 ## Aspects légaux de l'Open Source : maîtriser les licences Open Source  
