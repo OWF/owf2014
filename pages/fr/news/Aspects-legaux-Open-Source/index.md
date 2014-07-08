@@ -1,8 +1,8 @@
 title: Aspects légaux de l'Open Source 
-date: 08/07/2014
+date:2014/07/08
 
 
-Aspects légaux de l'Open Source : maîtriser les licences Open Source  
+##Aspects légaux de l'Open Source : maîtriser les licences Open Source  
 
 L'Open Source vous permet de reprendre le contrôle.  
 Les licences Open Source participent de ce mouvement en permettant l'octroi de beaucoup de pouvoirs et de libertés. 
@@ -20,6 +20,7 @@ par les aspects légaux de l'Open Source. N'hésitez pas à venir partager vos r
 les licences Open Source vous ont permis de reprendre le contrôle, ou encore sur les difficultés juridiques rencontrées 
 au moment de l'adoption ou de la contribution à des projets Open Source.  
 
+
 Ce track se déroulera le 31 octobre et permettra de traiter notamment de sujets tels que :
-politiques de contribution, Contributor License Agreement (CLAs), Enjeux juridiques du Cloud, Open Source et Contrats,
+Politiques de contribution, Contributor License Agreement (CLAs), Enjeux juridiques du Cloud, Open Source et Contrats,
 Open Source : standards et compliance… 
