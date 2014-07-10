@@ -1,12 +1,12 @@
-title: Sommet des Communaut￩s Open Source
+title: Sommet des Communautés Open Source
 date: 2014/07/10
 
 
-##Sommet des Communautés Open Source : Les outils de la cooperation Open Source
+##Sommet des Communautés Open Source: Les outils de la cooperation Open Source
 
 
-Date et durée: Vendredi 31 octobre, 2014 (*), 1/2 journée 
-Organisateur de la Session: OW2, Cedric Thomas, cedric.thomas@ow2.org 
+*Date et durée:* **Vendredi 31 octobre, 2014, 1/2 journée**
+*Organisateur de la Session:* **Cedric Thomas, OW2**
 
 
 Le Sommet des Communautés de l'Open World Forum est une rencontre annuelle sur les thèmes de la la gestion et de la 
