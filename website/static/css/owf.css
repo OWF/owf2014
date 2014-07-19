@@ -5470,10 +5470,7 @@ img#home-jumbotron {
   width: 100%;
 }
 #home-latest-news .latest-news-content {
-  padding-left: 10px;
-  padding-right: 10px;
-  padding-top: 7px;
-  padding-bottom: 10px;
+  padding: 7px 10px 10px;
   min-height: 376px;
 }
 #home-latest-news .latest-news-content h4 {
