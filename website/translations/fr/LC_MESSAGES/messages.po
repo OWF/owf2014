@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2013-10-03 06:35+0200\n"
+"POT-Creation-Date: 2014-07-19 19:11+0200\n"
 "PO-Revision-Date: 2013-05-06 17:34+0200\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: fr <LL@li.org>\n"
@@ -15,7 +15,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 0.9.6\n"
+"Generated-By: Babel 1.3\n"
 
 #: website/crm/forms.py:112 website/crm/forms.py:117
 msgid "Only PNG or JPG image files are accepted"
@@ -97,53 +97,14 @@ msgstr ""
 "La participation à l'Open World Forum est gratuite, mais vous devez "
 "obigatoirement vous inscrire à l'avance afin de pouvoir participer."
 
-#: website/templates/_base.html:86 website/templates/base.html:75
+#: website/sdc/views.py:40
+msgid "Candidature pour la Student Demo Cup"
+msgstr ""
+
+#: website/templates/_header.html:85 website/templates/_header.html:114
+#: website/templates/base.html:75
 msgid "Search"
 msgstr "Rechercher"
-
-#: website/templates/_base.html:116
-msgid "Our partners"
-msgstr "Nos partenaires"
-
-#: website/templates/_base.html:123
-msgid "Institutional partners"
-msgstr "Partenaires institutionnels"
-
-#: website/templates/_base.html:141
-msgid "Diamond Sponsor"
-msgstr "Sponsor Diamant"
-
-#: website/templates/_base.html:149
-msgid "Platinum sponsors"
-msgstr "Sponsors Platine"
-
-#: website/templates/_base.html:160
-msgid "Gold sponsors"
-msgstr "Sponsors Or"
-
-#: website/templates/_base.html:172
-msgid "Silver sponsors"
-msgstr "Sponsors Argent"
-
-#: website/templates/_base.html:198
-msgid "Organizer"
-msgstr "Organisateur"
-
-#: website/templates/_base.html:204
-msgid "Co-organizers"
-msgstr "Co-organisateurs"
-
-#: website/templates/_base.html:221
-msgid "Community Partners"
-msgstr "Partenaires communautaires"
-
-#: website/templates/_base.html:243
-msgid "WebTV Partner"
-msgstr "Partenaire WebTV"
-
-#: website/templates/_base.html:253
-msgid "Press partners"
-msgstr "Partenaires presse"
 
 #: website/templates/_macros.html:26
 msgid "Title"
@@ -165,6 +126,54 @@ msgstr "Jour 2 - Vendredi 4 oct."
 msgid "Day 3 - Saturday Oct. 5th"
 msgstr "Jour 3 - Samedi 5 oct."
 
+#: website/templates/_sponsors.html:6
+msgid "Our partners"
+msgstr "Nos partenaires"
+
+#: website/templates/_sponsors.html:12
+msgid "Institutional partners"
+msgstr "Partenaires institutionnels"
+
+#: website/templates/_sponsors.html:34
+msgid "Diamond Sponsor"
+msgstr "Sponsor Diamant"
+
+#: website/templates/_sponsors.html:43
+msgid "Organizer"
+msgstr "Organisateur"
+
+#: website/templates/_sponsors.html:50
+msgid "Co-organizers"
+msgstr "Co-organisateurs"
+
+#: website/templates/_sponsors.html:69
+msgid "Platinum sponsors"
+msgstr "Sponsors Platine"
+
+#: website/templates/_sponsors.html:76
+msgid "Gold sponsors"
+msgstr "Sponsors Or"
+
+#: website/templates/_sponsors.html:85
+msgid "Silver sponsors"
+msgstr "Sponsors Argent"
+
+#: website/templates/_sponsors.html:94
+msgid "Community Partners"
+msgstr "Partenaires communautaires"
+
+#: website/templates/_sponsors.html:109
+msgid "Tous nos partenaires"
+msgstr ""
+
+#: website/templates/_sponsors.html:115
+msgid "WebTV Partner"
+msgstr "Partenaire WebTV"
+
+#: website/templates/_sponsors.html:125
+msgid "Press partners"
+msgstr "Partenaires presse"
+
 #: website/templates/base.html:68
 msgid "Log out"
 msgstr "Déconnexion"
@@ -182,7 +191,7 @@ msgid "The plenary session takes place in room \"Grand Auditorium\"."
 msgstr "La session plénière a lieu dans le Grand Auditorium."
 
 #: website/templates/day1.html:33 website/templates/speakers.html:14
-#: website/templates/track.html:66 website/views/localized.py:305
+#: website/templates/track.html:66 website/views/localized.py:341
 msgid "Speakers"
 msgstr "Orateurs"
 
@@ -237,28 +246,24 @@ msgstr "Plus d'info"
 msgid "Tracks details"
 msgstr "Détails de la session"
 
-#: website/templates/index.html:21
-msgid "Watch the event live!"
-msgstr "Assistez à l'événement en direct !"
-
-#: website/templates/index.html:38 website/templates/index.html:52
-#: website/templates/index.html:66
+#: website/templates/index.html:34 website/templates/index.html:49
+#: website/templates/index.html:64
 msgid "Learn more"
 msgstr "En savoir plus"
 
-#: website/templates/index.html:79
+#: website/templates/index.html:76
 msgid "Some speakers"
 msgstr "Quelques orateurs"
 
-#: website/templates/index.html:82
+#: website/templates/index.html:79
 msgid "All the speakers"
 msgstr "Tous les orateurs"
 
-#: website/templates/index.html:135
+#: website/templates/index.html:132
 msgid "Latest news"
 msgstr "Dernières nouvelles"
 
-#: website/templates/index.html:139
+#: website/templates/index.html:135 website/templates/index.html:249
 msgid "All the latest news"
 msgstr "Toutes les nouvelles"
 
@@ -274,26 +279,18 @@ msgstr ""
 msgid "Recent items"
 msgstr ""
 
-#: website/templates/program.html:50 website/templates/speaker.html:35
-#: website/templates/track.html:43 website/views/localized.py:266
+#: website/templates/program.html:54 website/templates/speaker.html:35
+#: website/templates/track.html:43 website/views/localized.py:302
 msgid "Talks"
 msgstr "Présentations"
 
-#: website/templates/search.html:13
-msgid "Résultat de la recherche"
-msgstr ""
-
-#: website/templates/search.html:15 website/views/localized.py:223
+#: website/templates/search.html:10 website/views/localized.py:259
 msgid "Search results"
-msgstr ""
+msgstr "Résultats de la recherche"
 
-#: website/templates/search.html:24
-msgid "Aucun résultat connu pour votre requête."
-msgstr ""
-
-#: website/templates/search.html:26
+#: website/templates/search.html:17
 msgid "Your request didn't produce any results."
-msgstr ""
+msgstr "Votre recherche n'a retourné aucun résultat."
 
 #: website/templates/speaker.html:25
 msgid "Track leader on"
@@ -471,42 +468,45 @@ msgstr ""
 msgid "Delete attachment?"
 msgstr ""
 
-#: website/views/localized.py:140
+#: website/views/localized.py:161
 msgid "News"
 msgstr "Actualités"
 
-#: website/views/localized.py:214
+#: website/views/localized.py:250
 msgid "Site map"
 msgstr "Plan du site"
 
-#: website/views/localized.py:237 website/views/localized.py:255
+#: website/views/localized.py:273 website/views/localized.py:291
 msgid "Program"
 msgstr "Programme"
 
-#: website/views/localized.py:253
+#: website/views/localized.py:289
 #, python-format
 msgid "Program for theme %(theme)s"
 msgstr "Programme du thème %(theme)s"
 
-#: website/views/localized.py:276
+#: website/views/localized.py:312
 msgid "Rooms"
 msgstr "Salles"
 
-#: website/views/localized.py:291
+#: website/views/localized.py:327
 #, python-format
 msgid "Program for room %(room)s"
 msgstr "Programme de la salle %(room)s"
 
-#: website/views/localized.py:352
+#: website/views/localized.py:388
 msgid "Day 1 - Plenary session"
 msgstr "Jour 1 - Session plénière"
 
-#: website/views/localized.py:389
+#: website/views/localized.py:425
 #, python-format
 msgid "Day %(day)d - At a glance"
 msgstr "Jour %(day)d - Vue d'ensemble"
 
-#: website/views/localized.py:396
+#: website/views/localized.py:432
 msgid "Page not found"
 msgstr "Page introuvable"
+
+#~ msgid "Watch the event live!"
+#~ msgstr "Assistez à l'événement en direct !"
 
