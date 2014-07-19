@@ -2,9 +2,6 @@ title: Quand l'Open Source favorise l'Open Innovation
 date: 2014/07/11
 
 
-## When Open Source Fosters Open Innovation
-
-
 ### « We need to be innovative in the area of innovation itself » *1*
 
 

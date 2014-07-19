@@ -1,18 +1,17 @@
 {% extends "_base.html" %}
 
 {% block main %}
-  <div class="container" style="width: 940px;">
-  <div class="row show-grid">
-    <h1 class="page-title">{{ page.title }}</h1>
+  <div class="container">
+    <div class="row">
+      <h1 class="page-title">{{ page.title }}</h1>
 
-    <ul>
-      {% for page in pages %}
-        <li>
-          <a href="{{ url_for(page) }}">{{ page.title }}</a>
-        </li>
-      {% endfor %}
-    </ul>
-    <hr>
-  </div>
+      <ul>
+        {% for page in pages %}
+          <li>
+            <a href="{{ url_for(page) }}">{{ page.title }}</a>
+          </li>
+        {% endfor %}
+      </ul>
+    </div>
   </div>
 {% endblock %}

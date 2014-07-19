@@ -7,27 +7,19 @@ title : Les partenaires de l'Open World Forum
 
 ### Organisateur
 
-<a name="systematic"><a href="http://systematic-paris-region.org/" target="_blank"><img src="/static/pictures/page sponsor et organisateurs/Logo Systematic_sponsor page.jpg" width="750" alt="Pôle Systematic Paris-Region"></a></a>
+<a name="systematic" href="http://systematic-paris-region.org/" target="_blank"><img src="/static/pictures/page sponsor et organisateurs/Logo Systematic_sponsor page.jpg" width="750" alt="Pôle Systematic Paris-Region"></a>
 
-Le pôle de compétitivité **SYSTEMATIC PARIS-REGION** rassemble 600 acteurs clés dans la région parisienne,
-tous centrés sur le champ des systèmes à dominante logicielle et se concentrant sur des marchés à forte dimension
-sociale. Basé sur 5 secteurs clés, automobile et transport, logiciel libre et Open Source, sécurité et défense,
-design de système et outils de développement, télécommunications, ce pôle de compétitivité cherche à développer
-l'économie régionale et à dynamiser la compétitivité en insistant sur l'innovation, la formation et les opportunités
-de partenariat. Depuis 2009 Systematic déploie ses technologies vers d'autres marchés, dont "TIC & Ville durable",
-"TIC & santé" qui sont au coeur des défis du XXIème siècle et dont le développement dépend de plus en plus du
-savoir-faire des membres de Systematic.
+Au cœur de la révolution numérique, le Pôle de compétitivité [**Systematic**](http://systematic-paris-region.org/) a pour finalité de faire de l’Ile-de-France l’un des quelques territoires visibles au niveau mondial sur le thème de la conception, de la réalisation et de la maîtrise des systèmes complexes. Le Pôle est à la fois une « usine à innovations technologiques » par le biais des projets de R&D et un cluster d’innovation ancré sur le territoire francilien.
 
-Depuis 2005, Systematic a développé 258 projets R&D représentant un investissement R&D de 1,2Mds € dont 450M €
-financé par le gouvernent français, ses agences de développement économique et par les autorités locales de
-Paris-Région.
+Il fédère en Ile-de-France près de 800 acteurs industriels, PME et scientifiques à la croisée de 4 marchés applicatifs à forte dimension sociétale (Automobile & Transports,  Télécoms,  Confiance Numérique & Sécurité, Gestion Intelligente de l’Energie)  et 2 domaines technologiques ([**Logiciel Libre**](http://www.gt-logiciel-libre.org/) et Outils de Conception et développement de Systèmes). 
 
 
 ### Co-Organisateurs
 
-<a name="abilian" href="http://www.abilian.com/"><img src="/static/pictures/page%20sponsor%20et%20organisateurs/abilian_page%20sponsor.png" alt=""></a>
+<a name="abilian" href="http://www.abilian.com/"><img src="/static/pictures/page%20sponsor%20et%20organisateurs/abilian_page%20sponsor.png"
+ width="400" alt="Abilian"></a>
 
-Abilian est un éditeur de logiciels open source qui propose des solutions innovantes pour votre entreprise ou votre organisation, dans les domaines de la collaboration émergente (entreprise 2.0), des processus métiers et de la gestion de l'information.
+[Abilian](http://www.abilian.com/) est un éditeur de logiciels open source qui propose des solutions innovantes pour votre entreprise ou votre organisation, dans les domaines de la collaboration émergente (entreprise 2.0), des processus métiers et de la gestion de l'information.
 
 Une plateforme de collaboration émergente est l'outil idéal pour partager des informations, communiquer, collaborer et dynamiser l’activité de votre organisation au quotidien.
 
@@ -36,9 +28,9 @@ Les réseaux sociaux d’entreprises, et autres applications “entreprise 2.0�
 Cet engouement s’inscrit dans un contexte général de transformation profonde de la façon dont travaillent les entreprises à l’aube du 21ème siècle.
 
 
-<a name="alter way"><a href="http://www.alterway.fr/" target="_blank"><img src="/static/pictures/page sponsor et organisateurs/alter way_sponsor page.jpg" width="400" alt="Alter Way"></a></a>
+<a name="alter way" href="http://www.alterway.fr/" target="_blank"><img src="/static/pictures/page sponsor et organisateurs/alter way_sponsor page.jpg" width="400" alt="Alter Way"></a>
 
-**Alter Way**, opérateur de services Open Source, fourni 5 types de services : consulting, formation, intégration et
+[**Alter Way**](http://www.alterway.fr/), opérateur de services Open Source, fournit 5 types de services : consulting, formation, intégration et
 services professionnels (solutions), hébergement à valeur ajoutée et web design et consulting e-marketing.
 
 Alter Way couvre les besoins principaux en terme de technologies de l'information : CMS, ECM, e-commerce, CRM,
@@ -53,9 +45,9 @@ particulières pour les grandes entreprises et le secteur public.
 Alter Way, c'est une compétence reconnue sur le marché du libre et votre partenaire de qualité pour longtemps !
 
 
-<a name="cap"><a href="http://www.capdigital.com/" target="_blank"><img src="/static/pictures/page sponsor et organisateurs/Cap_sponsor page.jpg" width="400" alt="Cap Digital"></a></a>
+<a name="cap" href="http://www.capdigital.com/" target="_blank"><img src="/static/pictures/page sponsor et organisateurs/Cap_sponsor page.jpg" width="400" alt="Cap Digital"></a>
 
-**Cap Digital** est le pôle de compétitivité de la filière des contenus et services numériques. Il regroupe plus de
+[**Cap Digital**](http://www.capdigital.com/) est le pôle de compétitivité de la filière des contenus et services numériques. Il regroupe plus de
 700 adhérents : 650 PME, 25 grands groupes, 50 établissements publics, écoles, et universités ainsi que 10 investisseurs
 en capital.
 
@@ -71,9 +63,9 @@ Cap Digital organise le festival Futur en Seine, rendez-vous mondial annuel des 
 de l’innovation et de l’économie numérique désireuse d’exposer, rencontrer, débattre, d’exprimer et de partager une
 vision du futur avec le grand public.
 
-<a name="henix"><a href="http://henix.com" target="_blank"><img src="/static/pictures/page sponsor et organisateurs/henix.png" width="400" alt="Henix"></a></a>
+<a name="henix" href="http://henix.com/" target="_blank"><img src="/static/pictures/page sponsor et organisateurs/henix.png" width="400" alt="Henix"></a>
 
-Henix, créée en 1999, est une société spécialiste en qualité logicielle.
+[**Henix**](http://www.henix.com/), créée en 1999, est une société spécialiste en qualité logicielle.
 Sur les volets expertise outillage, conseil méthodologique, formation (via l'Ecole de la Qualité Logicielle) et réalisation de tests, nous adressons la globalité des tests permettant aux grands comptes de piloter/contrôler leur patrimoine applicatif :
 
 - la qualification fonctionnelle (test applicatifs, recette métier, accessibilité, automatisation de la non régression...)
@@ -83,16 +75,16 @@ Dans ce contexte, nous avons une forte activité de R&D, notamment dans le libre
 
 
 
-<a name="inria"><a href="http://www.inria.fr/" target="_blank"><img src="/static/pictures/page sponsor et organisateurs/INRIA_sponsor page.jpg" width="400" alt="Inria"></a></a>
+<a name="inria" href="http://www.inria.fr/" target="_blank"><img src="/static/pictures/page sponsor et organisateurs/INRIA_sponsor page.jpg" width="400" alt="Inria"></a>
 
-Etablissement public de recherche à caractère scientifique et technologique (EPST), **Inria**, créé en 1967, est le
+Etablissement public de recherche à caractère scientifique et technologique (EPST), [**Inria**](http://inria.fr/), créé en 1967, est le
 seul institut public de recherche entièrement dédié aux sciences du numérique. A l’interface des sciences informatiques
 et des mathématiques, les 3 400 chercheurs d'Inria inventent les technologies numériques de demain.
 
 
-<a name="smile"><a href="http://www.smile.fr/" target="_blank"><img src="/static/pictures/page sponsor et organisateurs/smile_sponsor page.png" width="400" alt="Smile"></a></a>
+<a name="smile" href="http://www.smile.fr/" target="_blank"><img src="/static/pictures/page sponsor et organisateurs/smile_sponsor page.png" width="400" alt="Smile"></a>
 
-Créé en 1991, **Smile** est le premier intégrateur français et européen de solutions open source. Multi-spécialiste et
+Créé en 1991, [**Smile**](http://www.smile.fr/) est le premier intégrateur français et européen de solutions open source. Multi-spécialiste et
 forte d'une gamme de 18 domaines d'expertise, la société explore les meilleures solutions du marché dans les domaines
 de la gestion de contenus, des portails, de la GED, de l’e-commerce, du mobile, des ERP, du décisionnel, du CRM et des
 outils systèmes en développant une pratique opérationnelle d’une large palette d’outils.
@@ -100,3 +92,7 @@ outils systèmes en développant une pratique opérationnelle d’une large pale
 Smile, c'est également 37,1 millions d’euros de CA en 2011 et, à ce jour, 600 collaborateurs répartis sur
 16 agences : Paris, Lyon, Nantes, Bordeaux, Montpellier, Marseille, Lille, Grenoble, Barcelone (Espagne), Kiev et
 Kharkov (Ukraine), Genève (Suisse), Casablanca (Maroc), Amsterdam, Utrecht et Bruxelles (Benelux).
+
+## Les sponsors
+
+Coming soon.

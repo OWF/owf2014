@@ -1,8 +1,6 @@
 title: L'Open Access
+subtitle: Pour une recherche ouverte et accessible à tous ?
 date: 2014/06/12
-
-
-## L'Open Access : pour une recherche ouverte et accessible à tous ?
 
 
 *"L'Open Access demeure le rêve à poursuivre, [mais] il faut l'accompagner des moyens permettant d'éviter ses dérives actuelles"* [1]

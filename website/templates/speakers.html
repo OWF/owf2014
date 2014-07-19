@@ -5,7 +5,7 @@
 {% block main %}
   <div class="container" style="width: 940px;">
 
-    <div class="row show-grid">
+    <div class="row">
       <div class="col-md-12">
 
         <div class="row clear-both">
@@ -35,7 +35,8 @@
 
                       {% for talk in speaker.talks %}
                         <p><a href="{{ url_for(talk) }}"><b>{{ talk.title }}</b></a>
-                        (Track: <a href="{{ url_for(talk.track) }}">{{ talk.track.name }}</a>)
+                          (Track: <a
+                              href="{{ url_for(talk.track) }}">{{ talk.track.name }}</a>)
                         </p>
                       {% endfor %}
                     {% endif %}
@@ -51,6 +52,5 @@
         </div>
       </div>
     </div>
-    <hr>
   </div>
 {% endblock %}

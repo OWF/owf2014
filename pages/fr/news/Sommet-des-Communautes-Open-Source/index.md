@@ -1,11 +1,10 @@
 title: Sommet des Communautés Open Source
+subtitle: Les outils de la cooperation Open Source
 date: 2014/07/10
 
 
-##Sommet des Communautés Open Source: Les outils de la cooperation Open Source
-
-
 *Date et durée:* **Vendredi 31 octobre, 2014, 1/2 journée**
+
 *Organisateur de la Session:* **Cedric Thomas, OW2**
 
 
@@ -27,6 +26,7 @@ technique. Si tel est le cas alors quel est l'avenir des communautés sans infra
 
 
 Qui devrait participer:
+
 - chefs de projets open source et contributeurs
 - responsables open source
 - membres des communautés

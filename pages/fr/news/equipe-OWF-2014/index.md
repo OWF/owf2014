@@ -9,9 +9,7 @@ Le programme de cette année va vous démontrer qu’il est possible de reprendr
 
 Le président de l’Open World Forum, Florent ZARA, est heureux de vous présenter les Vices-Présidents pour cette édition.
 
-##Think
-
-###Benjamin JEAN
+### THINK: Benjamin JEAN
 
 <img src="/static/pictures/Team/BJean.jpg">
 
@@ -22,9 +20,7 @@ Il est l'auteur du livre « Option Libre. Du bon usage des licences libres » [F
 Retrouvez-le sur LinkedIn et Twitter: 
 <a href="https://www.linkedin.com/in/benjaminjean/fr " target="_blank"><img src="/static/pictures/linkedin.png" width="34" ></a></a>  <a href="https://twitter.com/mben_vvl" target="_blank"><img src="/static/pictures/Twitter.jpg" width="34" ></a></a>
 
-##Code
-
-###Nicolas VERITE
+### CODE: Nicolas VERITE
 
 <img src="/static/pictures/Team/Nverite.jpg">
 
@@ -39,9 +35,7 @@ Il a récemment fondé la société Nayego.
 Retrouvez-le sur LinkedIn et Twitter: 
 <a href="https://www.linkedin.com/in/nicolasverite" target="_blank"><img src="/static/pictures/linkedin.png" width="34" ></a></a> <a href="https://twitter.com/nyconyco" target="_blank"><img src="/static/pictures/Twitter.jpg" width="34" ></a></a>
 
-##Experiment
-
-###Marc SALLIERES
+### EXPERIMENT: Marc SALLIERES
 
 <img src="/static/pictures/Team/MSallieres.jpg">
 
@@ -55,9 +49,7 @@ Avec son équipe, il diffuse aussi la bonne parole du libre et des systèmes d'i
 Retrouvez-le sur LinkedIn et Twitter: 
 <a href="https://www.linkedin.com/pub/marc-sallieres/2/a63/407" target="_blank"><img src="/static/pictures/linkedin.png" width="34" ></a></a> <a href="https://twitter.com/msallieres" target="_blank"><img src="/static/pictures/Twitter.jpg" width="34" ></a></a>
 
-##Community
-
-###Gaël BLONDELLE
+### Community: Gaël BLONDELLE
 
 <img src="/static/pictures/Team/GBlondelle.png">
 
@@ -71,12 +63,10 @@ Depuis 1996, il a successivement travaillé chez Alcatel, Valtech, et France Tel
 Retrouvez-le sur LinkedIn et Twitter: 
 <a href="https://www.linkedin.com/in/gblondelle" target="_blank"><img src="/static/pictures/linkedin.png" width="34" ></a></a> <a href="https://twitter.com/gblondelle" target="_blank"><img src="/static/pictures/Twitter.jpg" width="34" ></a></a>
 
-##Key Users
 
-###Hubert TOURNIER
+### Key Users: Hubert TOURNIER
 
 <img src="/static/pictures/Team/HTournier.jpg">
-
 
 Hubert Tournier exerce les fonctions de Directeur adjoint de l'organisation et des systèmes d'information du [Groupement des Mousquetaires](http://www.mousquetaires.com/) (146 000 personnes, 39,9 milliards d'€ de CA, dans le secteur de la distribution et de l'industrie agro-alimentaire), au sein de la STIME, la DSI filialisée du groupe, dont il est également directeur général adjoint.
 
@@ -84,7 +74,7 @@ Membre actif de la communauté des systèmes d'information, il a co-écrit 5 ouv
 
 Il a commencé à travailler avec des logiciels "libérés" ou à "code ouvert" (ses expressions personnelles sur le sujet...) à la fin des années 1980, est contributeur du système d'exploitation FreeBSD et a notamment participé aux projets Prométhée, HeV et CompatibleOne, ainsi qu'aux différentes éditions de l'Open CIO Summit, au sein de l'Open World Forum.
 
-Pour l'édition 2014, il officiera en tant que vice-président utilisateurs, pour aider les communautés du libre/open source et des DSI à mieux travailler ensemble, et partager sa connaissance et sa vision des besoins actuels et futurs des directions des systèmes d'information.
+Pour l'édition 2014, il officiera en tant que **vice-président utilisateurs**, pour aider les communautés du libre/open source et des DSI à mieux travailler ensemble, et partager sa connaissance et sa vision des besoins actuels et futurs des directions des systèmes d'information.
 
 Retrouvez-le sur LinkedIn: 
 <a href=”https://www.linkedin.com/in/huberttournier" target="_blank"><img src="/static/pictures/linkedin.png" width="34" ></a></a>
