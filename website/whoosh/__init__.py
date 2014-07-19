@@ -11,6 +11,7 @@ import os
 import whoosh.index
 from whoosh.qparser import QueryParser
 from whoosh import fields
+from whoosh.query import Term
 
 
 DEFAULT_WHOOSH_INDEX_NAME = 'whoosh_index'
@@ -39,7 +40,7 @@ class Whoosh(object):
 
   def add_document(self, doc):
     writer = self.index.writer()
-    writer.add_document(**doc)
+    writer.update_document(**doc)
     writer.commit()
 
   def search(self, qs, max=50):

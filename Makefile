@@ -9,7 +9,7 @@ run:
 	./manage.py serve
 
 index:
-	rm -f whoosh_index/*
+	rm -rf whoosh_index/*
 	./manage.py index_content
 
 all:

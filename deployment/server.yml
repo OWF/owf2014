@@ -84,7 +84,11 @@
       notify:
         - restart uwsgi
 
-    - name: update whoosh index
+    - name: delete whoosh index
+      command: rm -rf {{app_src}}/whoosh_index
+      sudo_user: "{{app_user}}"
+
+    - name: create whoosh index
       command: "{{app_env}}/bin/python manage.py index_content"
       args:
         chdir: "{{app_src}}"
