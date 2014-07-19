@@ -10,7 +10,7 @@ If you are interested in becoming a sponsor of the Open World Forum and getting 
 
 ## Speaker / Program Ideas/ Partnerships opportunities
 
-* You have a suggestion for a speaker or topic for the Open World Forum 2013? Want to contribute?
+* You have a suggestion for a speaker or topic for the Open World Forum 2014? Want to contribute?
 * For partnership opportunities
 * For organization and operations
 

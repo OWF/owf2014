@@ -12,7 +12,7 @@ gagner une très grande visibilité au cours de l'événement, merci de contacte
 
 ## Devenir Speaker, proposer des idées de programme ou devenir partenaire
 
-- Vous avez une suggestion de speaker ou de sujet pour l'Open World Forum 2013?
+- Vous avez une suggestion de speaker ou de sujet pour l'Open World Forum 2014?
   Vous voulez contribuer ?
 
 - Pour des possibilités de partenariat

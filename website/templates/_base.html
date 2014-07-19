@@ -1,6 +1,7 @@
 <!DOCTYPE html>
-<html xmlns:og="http://ogp.me/ns#" {% if lang == 'fr' %}lang="fr-FR"{% else %}lang="en-EN"{% endif %}>
-<head >
+<html xmlns:og="http://ogp.me/ns#" {% if lang == 'fr' %}lang="fr-FR"
+  {% else %}lang="en-EN"{% endif %}>
+<head>
   <title>{{ title or page.title }}</title>
 
   <meta charset="UTF-8">
@@ -25,13 +26,18 @@
       type='text/css'>
 
   <!-- <link href="/static/bootstrap3/css/bootstrap.min.css" rel="stylesheet"> -->
-  
+
   <link href="/static/css/owf.css" rel="stylesheet">
 </head>
 
 <body>
 
 {% include "_header.html" %}
+
+<div id="hero">
+  {% block hero %}
+  {% endblock %}
+</div>
 
 <div id="main">
   {% block main %}
