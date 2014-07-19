@@ -1,12 +1,10 @@
 title: Programme
 
-## Programme 
-
-L'Open World Forum 2013 se déroulera sur trois journées, du 3 au 5 octobre.
+L'Open World Forum 2014 se déroulera sur trois journées, du 30 octobre au 1er novembre.
 
 
+### Jeudi 30 octobre
 
-### Jeudi 3 octobre
 Le format de la première journée, consacrée entièrement au thème [THINK](/fr/think/), est rénové en 2013 afin de concentrer la conférence sur une unique plénière, permettant de réunir les meilleurs intervenants sur cette journée consacrée aux décideurs et aux entreprises, administrations et collectivités utilisatrices.
 
 Ce format permet aussi de porter le focus 2013 de l'événement: **la concrétisation**. L'industrie du Logiciel Libre et de l'Open-Source est aujourd'hui à un point où il faut faire passer de l'intention, de la décision politique ou stratégique, à l'application et à l'achat pratique. Ainsi, le focus 2013 portera sur ce passage à l'acte, aussi bien en termes d'achat que d'un point de vue technologique.
@@ -17,7 +15,7 @@ L'objectif étant de prouver que l'innovation, en grande majorité actuellement 
 
 
 
-### Vendredi 4 octobre
+### Vendredi 31 octobre
 
 La thématique [THINK](/fr/think/) se prolonge sur la deuxième journée, sous forme d'ateliers (*workshops*) et de les groupes de réflexion (*think tanks*) visant à approfondir les sujets présentés en plénière lors de la première journée.
 
@@ -26,7 +24,8 @@ En parallèle, la deuxième journée de l'OWF verra également le lancement du s
 <a class="btn" href="/fr/news/cfp/#envoi-proposition">Envoyez une proposition d'intervention</a>
 
 
-### Samedi 5 octobre
+### Samedi 1er novembre
+
 Ces conférences du cycle [CODE](/fr/code/) consacrées au développement se prolongeront le troisième jour.
 
 En parallèle, l'Open World Forum s'ouvrira au grand public avec la thématique [EXPERIMENT](/fr/experiment/), qui présentera les **innovations sociétales** apportées par le Logiciel Libre et l'Open Source - innovations logicielles bien entendu mais aussi **matérielles**, **artistiques** et **organisationnelles**.

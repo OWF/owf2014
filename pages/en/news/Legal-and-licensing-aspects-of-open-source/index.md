@@ -2,9 +2,6 @@ title: Legal and licensing aspects of Open Source
 date: 2014/07/08
 
 
-## Legal and licensing aspects of Open Source
-
-
 ### Open Source allows you to take back control  
 
 
@@ -21,5 +18,5 @@ Come and discuss how open source licenses have helped you take back control and 
 when adopting or contributing to open source.
 
 
-This track will stand **31th of October**, possible topics include: Contribution policies, Contributor License Agreement (CLAs),
+This track will stand **31th of October**. Possible topics include: Contribution policies, Contributor License Agreement (CLAs),
 Legal issues and the cloud, Open source and contracts, Open source and standards & Compliance processes.

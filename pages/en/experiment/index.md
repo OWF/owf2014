@@ -4,7 +4,7 @@ title: EXPERIMENT - An Open World for Citizens
 ### Data collection, knowledge sharing, right to oblivion : take back control !
 
 
-Fully in line with the theme of the Open World Forum 2014 "Take Back Control", Experiment 2014 will present the new societal challenges of today citizens. In front of a system which sometimes overtakes him, the citizen must be able to hold keys to regain control over his omnipresent digital life and personal data. To ensure this, he must be able to understand and thus learn. This is the stake of Experiment 2014. Based on a renewed dynamic of exchanges and knowledge sharing, that we will offer you  to study in depth questions of personal and open data.
+Fully in line with the theme of the Open World Forum 2014 "Take Back Control", EXPERIMENT 2014 will present the new societal challenges of today citizens. In front of a system which sometimes overtakes him, the citizen must be able to hold keys to regain control over his omnipresent digital life and personal data. To ensure this, he must be able to understand and thus learn. This is the stake of EXPERIMENT 2014. Based on a renewed dynamic of exchanges and knowledge sharing, that we will offer you  to study in depth questions of personal and open data.
 
 
 **EXPERIMENT 2014:  three highlights**

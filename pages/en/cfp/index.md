@@ -18,7 +18,7 @@ Please submit your proposal for subjects, talks, lectures or participation in pa
 
 If you aren’t sure which Track is the best fit for your submission, just take a best guess and the program committee may change it later. There’s no “wrong” type of submission and we want the conference to be appealing to a large audience. If you think your topic is interesting, there’s a good chance the program committee will too! We will also try to record much more talks than before to be available to a connected audience. Standard presentation duration is 35 minutes, including questions. We have designed this year's edition to maximize the opportunity to meet other attendees, visit the sponsors and get updated on what the community is doing. The program organization is simple. All talks are 35 minutes long, scheduled into a 45-minute time slot. Please note that the conference language will have to be mostly in English with a few part in French.
 
-### Think
+### THINK
 
 THINK will be held over the course of the first two days, and will outline the major role of Openness (Free and Open-Source Software, Open Data, Open Hardware, Open Design, etc.) in the digital society. It will show you how it can help you manage "Degrees of Freedom", find unsuspected resources, regain trust, security and independence, setup a virtuousVRM (Vendor Relationship Management), etc.
 
@@ -34,7 +34,7 @@ These reflections could focus on changes resulting from the openness wave:
 * **Focus 4 |** Openness as a generator for new opportunities: **Open Hardware, Open Design** and so.
 * **Focus 4 |** Openness as a generator for new opportunities: **Open Data, Open government** and so.
 
-### Code
+### CODE
 
 During two days (Friday and Saturday) CODE is there to bring back an engineering and technical excellence after years of sales and marketing domination.
 
@@ -53,9 +53,9 @@ The main topics we plan to address during the OWF are:
 * Student Demo Cup
 * Video Games
 
-### Experiment
+### EXPERIMENT
 
-Experiment is there to share with the general public the interest of Free and Open Source software in their day-to-day life. How it helps them regain their privacy and control their personal data. These two days will present how one may benefit from open content and freely shared knowledge (Open Street Map, Wikipedia, OKFN, Open Food Facts, Framasoft, Etalab… ). It will also exhibit and demonstrate connected objects (aka Internet of Things), 3D printers, drones, etc.
+EXPERIMENT is there to share with the general public the interest of Free and Open Source software in their day-to-day life. How it helps them regain their privacy and control their personal data. These two days will present how one may benefit from open content and freely shared knowledge (Open Street Map, Wikipedia, OKFN, Open Food Facts, Framasoft, Etalab… ). It will also exhibit and demonstrate connected objects (aka Internet of Things), 3D printers, drones, etc.
 
 * KidExperiment
 * OpenData for Citizen (Open Street Map, Wikipedia, Open Food Fact, OKFN...)
@@ -94,7 +94,7 @@ Important deadlines :
 
 - Notification due: End of July, 2014
 
-Do not hesitate to contact us if you have special needs, especially for the Experiment part !
+Do not hesitate to contact us if you have special needs, especially for the EXPERIMENT part !
 
 Stay tuned for #OWF14 !
 

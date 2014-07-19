@@ -27,14 +27,14 @@ particulièrement, et échanger avec les meilleurs experts du domaine.
 
 Nous avons eu des échanges sur des thématiques politiques nationales ou supra-nationales, les interventions 
 d’organisations professionnelles comme le Cigref ou Syntec Numérique, et celles des pères du Logiciel Libre – la Free 
-Software Foundation – pour les 30 ans du projet GNU. Le premier jour en plénière (thématique « Think ») a été 
+Software Foundation – pour les 30 ans du projet GNU. Le premier jour en plénière (thématique « THINK ») a été 
 particulièrement riche (voir les vidéos de ces interventions, NDLR).
 
-Bien entendu, les problématiques technologiques ont aussi eu un grand succès (thématique « Code »). Elles étaient 
+Bien entendu, les problématiques technologiques ont aussi eu un grand succès (thématique « CODE »). Elles étaient 
 structurées autour de trois axes : l’après-PC, mais aussi le Cloud, le Big Data et la qualité logicielle. 
 (Lire : S. Fermigier, Systematic : « Big Data, après-PC et qualité logicielle sont les défis du logiciel libre »).
 
-Le troisième et dernier jour aura marqué le début de la thématique « Experiment », qui adresse les aspects grand 
+Le troisième et dernier jour aura marqué le début de la thématique « EXPERIMENT », qui adresse les aspects grand 
 public du Libre. Le public, dont les plus jeunes, était au rendez-vous pour tester et évaluer l’Open Source, 
 s’initier aux imprimantes 3D et, plus largement, s’informer sur l’utilisation et les avantages du Logiciel Libre.
 

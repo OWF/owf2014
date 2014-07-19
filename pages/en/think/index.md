@@ -5,17 +5,17 @@ title:  THINK - Because innovation is in Openness
 **Innovation** really does matter. It must be a **strategic priority** for our society which is locking itself between boundaries we have created, victim of a constant increase and a rhythm to grow weaker its ability to differentiate. This area concerns everyone and is not reserved for the use of experts, it is on the contrary a common purpose and today everyone could find a way to contribute and/or to **reinforce innovation's processes**.
 
 
-That is why, in this society where actions preceded thoughts, the *“Think”* theme will give us the opportunity to move away from this propensity, to slow things down to think with a new vision in order to take a big picture. *“Think”* won't be a race but a break, these few days intended to raise and define what are the stakes leading to the necessary means to achieve this goal, to take the power back on societal subjects that matter to all of us.
+That is why, in this society where actions preceded thoughts, the *“THINK”* theme will give us the opportunity to move away from this propensity, to slow things down to think with a new vision in order to take a big picture. *“THINK”* won't be a race but a break, these few days intended to raise and define what are the stakes leading to the necessary means to achieve this goal, to take the power back on societal subjects that matter to all of us.
 
 
-*“Think”* will take place the couple of event first days (included a day dedicated to leaders and to users from companies, administrations and local authorities) with the ambition to share different ideas, to question, even shake deeply, the ancient foundations and evaluate the use and the importance of such creative and open collaborations models in our society. In other words, we will have to rethink our tools, our practices, but also our way to think & evaluate both innovation and creation in this age of interconnected people, of the digital technology and of the convergence. We will have to (re)think our society in terms of **openness**, **innovation** and **value**, with the ambition to turn down every preconceptions and obstructions that prevent us to go forward.
+*“THINK”* will take place the couple of event first days (included a day dedicated to leaders and to users from companies, administrations and local authorities) with the ambition to share different ideas, to question, even shake deeply, the ancient foundations and evaluate the use and the importance of such creative and open collaborations models in our society. In other words, we will have to rethink our tools, our practices, but also our way to think & evaluate both innovation and creation in this age of interconnected people, of the digital technology and of the convergence. We will have to (re)think our society in terms of **openness**, **innovation** and **value**, with the ambition to turn down every preconceptions and obstructions that prevent us to go forward.
 
 
-Thus, *“Think”* will be the occasion to understand how the innovation's and openness' combination could be as much as a solution to the issues from the past as the factor for success for the future stakes. Therefore, this model will be presented in its valuation side, from both private and public sector innovations.
+Thus, *“THINK”* will be the occasion to understand how the innovation's and openness' combination could be as much as a solution to the issues from the past as the factor for success for the future stakes. Therefore, this model will be presented in its valuation side, from both private and public sector innovations.
 
 Please <a class="btn" href="/en/cfp">submit your proposal</a> for the THINK theme while the CFP is open.
 
-### Benjamin JEAN, Vice-President for THINK theme
+### Benjamin JEAN, Vice-President for the THINK theme
 
 <img src="/static/pictures/Team/BJean.jpg">  
 

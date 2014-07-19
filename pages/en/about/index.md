@@ -6,9 +6,9 @@ The Open World Forum is the first European summit to gather political representa
 
 ## Organization and Governance
 
-The Open World Forum is held in partnership with all the major international communities ([Linux Foundation](http://www.linuxfoundation.org/), [Open Source Initiative](http://www.opensource.org/), and the main French Open Software organisations ([Adullact](http://www.adullact.org/), [AFUL](http://www.aful.org/), [CNLL](http://www.cnll.fr/), [PLOSS](http://www.ploss.fr/), [Silicon Sentier](http://siliconsentier.org/)), with the support of French (Paris City Hall, the Ile-de-France Region and the Regional Development Agency) local government. The Open World Forum is partnered with 70% of the major IT companies in the world.
+The Open World Forum is held in partnership with the major international communities ([Linux Foundation](http://www.linuxfoundation.org/), [Open Source Initiative](http://www.opensource.org/), [OW2](http://www.ow2.org/), [Eclipse Foundation](http://www.eclipse.org/)) and the main French Free / Open Source Software organisations ([Adullact](http://www.adullact.org/), [AFUL](http://www.aful.org/), [CNLL](http://www.cnll.fr/), [PLOSS](http://www.ploss.fr/), [NUMA](http://www.numa.paris/)), with the support of French national and local (Paris City Hall, the Ile-de-France Region and the Regional Development Agency) governments.
 
-The Open World Forum will take place at the Beffroi, in Montrouge and will be organized, this year as well, by Systematic Paris Region who will be assisted by a Forum Committee which groups the main partners and contributors to the event (Abilian, Alter Way, Cap Digital, the Free Software Working Group of Systematic, Henix, Inria, Smile).
+The Open World Forum will take place at [the Beffroi, in Montrouge](/en/practical-information/) and will be organized, this year as well, by [Systematic Paris Region](http://www.systematic-paris-region.org/fr/logiciel-libre/propos/presentation) who will be assisted by a Forum Committee which groups the main partners and contributors to the event ([Abilian](http://www.abilian.com/), [Alter Way](http://alterway.fr/), [Cap Digital](http://www.capdigital.com/), the Free Software Working Group of Systematic, [Henix](http://www.henix.fr/), [Smile](http://www.smile.fr/)).
 
 ## Summary for 2013
 

@@ -25,7 +25,7 @@ Si vous hésitez sur le choix du thème-cadre pour votre présentation, tentez v
 L'édition de cette année a été conçue pour optimiser au maximum les opportunités de rencontres entre participants et avec les sponsors présents, tout en permettant à chacun de se mettre à jour sur les activités et l'actualité de la communauté. L'organisation du programme est simple : **35 minutes de présentation (questions comprises) insérées dans un créneau de 45 minutes**. **Veuillez noter que la langue de travail principale sera l'anglais**, bien qu'il soit envisageable d'insérer quelques parties en français dans vos interventions.
 
 
-### Think
+### THINK
 
 THINK se déroulera pendant les deux premiers jours du forum (jeudi et vendredi), avec pour ambition de souligner le rôle majeur de l'Ouverture (Logiciels libres et Open Soruce, Open Data, Open Hardware, Open Design, etc.) dans l'économie numérique. Seront développés les impacts concrets résultant du choix d'une stratégie d'Ouverture : atteinte d'un certain « Degré de liberté », obtention de ressources insoupçonnées, amélioration en terme de confiance, de sécurité et d'indépendance, mise en place d'un système vertueux de VRM (Vendor Relationship Management), etc.
 
@@ -44,7 +44,7 @@ Ces réflexions permettront de mettre en avant les changements induits par ce co
 <a class="btn btn-primary" href="http://cfp.openworldforum.org/submission/OWF2014 ">Envoyez votre proposition</a>
 
 
-### Code
+### CODE
 
 Pendant deux jours (vendredi et samedi) CODE va remettre à l'ordre du jour **l'ingénierie et l'excellence technique** après des années de focalisation sur les enjeux commerciaux et marketing.
 
@@ -66,9 +66,9 @@ Les principaux sujets que nous souhaitons aborder:
 <a class="btn btn-primary" href="http://cfp.openworldforum.org/submission/OWF2014 ">Envoyez votre proposition</a>
 
 
-### Experiment
+### EXPERIMENT
 
-L'aspiration d'« Experiment » est de **communiquer au grand public l'intérêt du Libre et de l'Open Source software au quotidien**, notamment en ce qui concerne la protection de la vie privée et le contrôle des données personnelles. Ces deux jours seront également l'occasion de présenter les bénéfices qui peuvent être retirés des **contenus ouverts** et des **connaissances librement partagées** (Open Street Map, Wikipedia, OKFN, Open Food Facts, Framasoft, Etalab… ). Enfin, des démonstrations et des expositions d'**objets connectés** (aka Internet of Thing), d'**imprimantes 3D**, de **drones**, etc., sauront ravir les grands et les petits.
+L'aspiration d'« EXPERIMENT » est de **communiquer au grand public l'intérêt du Libre et de l'Open Source software au quotidien**, notamment en ce qui concerne la protection de la vie privée et le contrôle des données personnelles. Ces deux jours seront également l'occasion de présenter les bénéfices qui peuvent être retirés des **contenus ouverts** et des **connaissances librement partagées** (Open Street Map, Wikipedia, OKFN, Open Food Facts, Framasoft, Etalab… ). Enfin, des démonstrations et des expositions d'**objets connectés** (aka Internet of Thing), d'**imprimantes 3D**, de **drones**, etc., sauront ravir les grands et les petits.
 
 Les principaux sujets et manifestations qui auront lieu dans ce cadre:
 
@@ -108,7 +108,7 @@ Dates à retenir :
 * **Date limite de soumission des contributions : mardi 15 juillet 2014**
 * Annonce des contributions retenues : fin juillet 2014
 
-N'hésitez pas à nous contacter en cas de besoins particuliers, notamment concernant la partie « Experiment ». 
+N'hésitez pas à nous contacter en cas de besoins particuliers, notamment concernant la partie « EXPERIMENT ». 
 
 Restez connectés pour #OWF14 !
 

@@ -22,7 +22,7 @@ Etre étudiant où l'avoir été au moins dans les deux dernières années. Par 
 
 **Concernant le projet :** 
 
-- Le projet peut être soumis dans l'un des trois thèmes suivants : Think, Code, Experiment.
+- Le projet peut être soumis dans l'un des trois thèmes suivants : THINK, CODE, EXPERIMENT.
 - Doit présenter un **caractère innovant et ouvert.**
 - Doit présenter un **certain degré d'avancement et de concrétisation.**
 - Doit avoir pour ambition **la promotion et l'amélioration du Logiciel Libre et de son écosystème.**

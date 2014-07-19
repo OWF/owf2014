@@ -9,9 +9,7 @@ This year's program will show you how to take back control of your digital world
 
 The President of the Open World Forum, Florent ZARA, is pleased to introduce you the Vice-Presidents for this edition.
 
-## Think
-
-### Benjamin JEAN
+### THINK: Benjamin JEAN
 
 <img src="/static/pictures/Team/BJean.jpg">  
 
@@ -27,9 +25,7 @@ Finally, he is an active member of both professionnal association *(like AFPIDA 
 More information on Twitter and LinkedIn:
 <a href="https://www.linkedin.com/in/benjaminjean/fr " target="_blank"><img src="/static/pictures/linkedin.png" width="34" ></a></a>  <a href="https://twitter.com/mben_vvl" target="_blank"><img src="/static/pictures/Twitter.jpg" width="34" ></a></a>
 
-##Code
-
-###Nicolas VERITE
+### CODE: Nicolas VERITE
 
 <img src="/static/pictures/Team/Nverite.jpg">
 
@@ -42,9 +38,7 @@ He recently founded Nayego.
 More information on Twitter and LinkedIn:
 <a href="https://www.linkedin.com/in/nicolasverite" target="_blank"><img src="/static/pictures/linkedin.png" width="34" ></a></a> <a href="https://twitter.com/nyconyco" target="_blank"><img src="/static/pictures/Twitter.jpg" width="34" ></a></a>
 
-##Experiment
-
-###Marc SALLIERES
+### EXPERIMENT: Marc SALLIERES
 
 <img src="/static/pictures/Team/MSallieres.jpg">
 
@@ -57,9 +51,8 @@ With his team, Marc SALLIERES spread the Open Source, the free software  and alt
 More information on Twitter and LinkedIn:
 <a href="https://www.linkedin.com/pub/marc-sallieres/2/a63/407" target="_blank"><img src="/static/pictures/linkedin.png" width="34" ></a></a> <a href="https://twitter.com/msallieres" target="_blank"><img src="/static/pictures/Twitter.jpg" width="34" ></a></a>
 
-##Community
 
-###Gaël BLONDELLE
+### Community: Gaël BLONDELLE
 
 <img src="/static/pictures/Team/GBlondelle.png">
 
@@ -73,9 +66,7 @@ Since he started in the software industry in 1996, he has been working mainly in
 More information on Twitter and LinkedIn:
 <a href="https://www.linkedin.com/in/gblondelle" target="_blank"><img src="/static/pictures/linkedin.png" width="34" ></a></a> <a href="https://twitter.com/gblondelle" target="_blank"><img src="/static/pictures/Twitter.jpg" width="34" ></a></a>
 
-##Key Users
-
-###Hubert TOURNIER
+### Key Users: Hubert TOURNIER
 
 <img src="/static/pictures/Team/HTournier.jpg">
 

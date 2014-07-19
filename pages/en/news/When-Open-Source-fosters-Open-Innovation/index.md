@@ -2,10 +2,7 @@ title: « When Open Source Fosters Open Innovation »
 date: 2014/07/11
 
 
-## When Open Source Fosters Open Innovation
-
-
-### « We need to be innovative in the erea of innovation itself » **1**  
+### « We need to be innovative in the area of innovation itself » **1**  
 
 
 **Open Innovation** disrupts the traditional conception of innovation by establishing the idea of a social innovation 

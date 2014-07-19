@@ -1,18 +1,18 @@
-title: Think – car l'innovation est dans l'ouverture 
+title: THINK – car l'innovation est dans l'ouverture 
 
-## Ralentir pour réfléchir autour de l'inovation et de l'ouverture
+### Ralentir pour réfléchir autour de l'innovation et de l'ouverture
 
 
 **L'innovation** n'est pas un sujet qui se traite à la légère. Il s'agit au contraire d'une **priorité stratégique** pour notre société qui bute aujourd'hui sur les frontières du monde qu'elle a construit, victime d'une accélération constante et d'un rythme qui affaiblissent sa capacité de discernement. Pour autant qu'il l'ait été, le thème est encore moins réservé à quelques acteurs sachant : expert ou simple utilisateur, il en va en effet de l'intérêt de tous et chacun est aujourd'hui en mesure de trouver sa place pour contribuer et/ou **renforcer des processus d'innovation**.
 
 
-Ainsi, dans cette société où l'action précède trop souvent la réflexion, le thème « Think » sera l'occasion de prendre à contre-pied cette tendance, de ralentir pour réfléchir en prenant du recul et de la hauteur. « *Think* » ne sera donc pas une course, mais au contraire une pause. Une parenthèse de quelques jours destinée à poser et définir clairement les enjeux afin d'envisager dans un second temps les moyens nécessaires pour y parvenir. Cela afin de reprendre le contrôle sur des sujets sociétaux qui nous concernent tous.
+Ainsi, dans cette société où l'action précède trop souvent la réflexion, le thème « THINK » sera l'occasion de prendre à contre-pied cette tendance, de ralentir pour réfléchir en prenant du recul et de la hauteur. « *THINK* » ne sera donc pas une course, mais au contraire une pause. Une parenthèse de quelques jours destinée à poser et définir clairement les enjeux afin d'envisager dans un second temps les moyens nécessaires pour y parvenir. Cela afin de reprendre le contrôle sur des sujets sociétaux qui nous concernent tous.
 
 
-Le thème « *Think* » s'étendra sur les deux premiers jours de l'événement (dont une journée complète consacrée aux décideurs et aux entreprises, administrations et collectivités utilisatrices) avec pour ambition de partager des réflexions nouvelles, de questionner voire d'ébranler des fondements plus anciens, et d'évaluer le rôle et la place faite par notre société aux modèles de créations collaboratifs et ouverts. Plus simplement, il s'agira de repenser nos outils, nos usages, mais aussi notre façon d'évaluer l'innovation et la création à l'ère de l'interconnecté, du tout numérique et de la convergence. Il s'agira de (re)penser notre société autour des **idées d'ouverture, d'innovation et de valeur**, pour balayer dans un second temps tous les a priori et les obstacles qui nous empêchent d'y parvenir.
+Le thème « *THINK* » s'étendra sur les deux premiers jours de l'événement (dont une journée complète consacrée aux décideurs et aux entreprises, administrations et collectivités utilisatrices) avec pour ambition de partager des réflexions nouvelles, de questionner voire d'ébranler des fondements plus anciens, et d'évaluer le rôle et la place faite par notre société aux modèles de créations collaboratifs et ouverts. Plus simplement, il s'agira de repenser nos outils, nos usages, mais aussi notre façon d'évaluer l'innovation et la création à l'ère de l'interconnecté, du tout numérique et de la convergence. Il s'agira de (re)penser notre société autour des **idées d'ouverture, d'innovation et de valeur**, pour balayer dans un second temps tous les a priori et les obstacles qui nous empêchent d'y parvenir.
 
 
-« *Think* » sera ainsi l'occasion de comprendre comment la combinaison de l'innovation et de l'ouverture peuvent être les solutions aux problèmes du passé comme les facteurs de succès face aux enjeux de demain. Ainsi, ce modèle sera présenté dans sa facette de valorisation, tant de l'innovation privée que de l'innovation publique.
+« *THINK* » sera ainsi l'occasion de comprendre comment la combinaison de l'innovation et de l'ouverture peuvent être les solutions aux problèmes du passé comme les facteurs de succès face aux enjeux de demain. Ainsi, ce modèle sera présenté dans sa facette de valorisation, tant de l'innovation privée que de l'innovation publique.
 
 
 Ces réflexions permettront de mettre en avant les changements induits par ce courant d'ouverture.

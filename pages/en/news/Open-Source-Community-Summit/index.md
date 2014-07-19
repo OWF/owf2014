@@ -1,11 +1,10 @@
 title: Open Source Community Summit
+subtitle: The Tools of Open Source Cooperation
 date: 2014/07/10
 
 
-## Open Source Community Summit:  The Tools of Open Source Cooperation
-
-
 *Date and duration:* **Friday 31 October 2014, 1/2 day** 
+
 *Session Organizer:* **Cedric Thomas, OW2**
 
 
@@ -30,6 +29,7 @@ the future of the 'infrastructure-less' community?
 
 
 Who should attend: 
+
 - open source projects leaders and contributors
 - open source business managers
 - community members
