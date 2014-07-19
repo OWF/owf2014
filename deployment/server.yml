@@ -85,8 +85,9 @@
         - restart uwsgi
 
     - name: update whoosh index
-      command: {{app_env}}/bin/python manage.py index_content
-      chdir: {{app_src}}
+      command: "{{app_env}}/bin/python manage.py index_content"
+      args:
+        chdir: "{{app_src}}"
       sudo_user: "{{app_user}}"
 
 
