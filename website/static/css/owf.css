@@ -4979,6 +4979,9 @@ img.center {
   margin-left: 15px;
   margin-right: 15px;
 }
+.content {
+  padding-bottom: 2em;
+}
 .page-title {
   color: #4F5962;
   font-family: 'Open Sans Condensed', sans-serif;

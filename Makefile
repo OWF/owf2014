@@ -25,6 +25,7 @@ clean:
 	find . -name packed.css | xargs rm -f
 
 deploy:
+	git push
 	ansible-playbook -i deployment/hosts -v deployment/server.yml
 
 fetch-db:
