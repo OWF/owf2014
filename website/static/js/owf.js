@@ -26,35 +26,48 @@ $('#myCarousel').bind("slide", function() {
   }
 });
 
-
 /*** ajouter ou supprimer un champ pour le formulaire ***/
 
-$(document).ready(function(){
-  
+$(document).ready(function() {
   // Je compte le nombre de champs pour créer une base d'incrémentation
-  
   var nombreChamps = $('.form-control.fieldIntervenants').length;
 
   // J'ajoute un champs
-  
-  $('#plus').on('click', function(e){
-
+  $('#plus').on('click', function(e) {
     e.preventDefault();
-  
     var incrementation = nombreChamps++;
-  
-    $('#intervenantsWrapper').append("<input class='form-control fieldIntervenants' title='intervenants"+incrementation+"' name='intervenants"+incrementation+"' type='text' placeholder='ex : Nom - Prénom - E-mail'>");
-  
+    $('#intervenantsWrapper').append("<input class='form-control fieldIntervenants' title='intervenants" + incrementation + "' name='intervenants" + incrementation + "' type='text' placeholder='ex : Nom - Prénom - E-mail'>");
   })
-  
-  // Je supprime le dernier champs au click sur le bouton Moins
-  
-  $('#moins').on('click', function(e){
 
+  // Je supprime le dernier champs au click sur le bouton Moins
+
+  $('#moins').on('click', function(e) {
     e.preventDefault();
-  
-    $( ".form-control.fieldIntervenants:last-child" ).remove();
-  
+    $(".form-control.fieldIntervenants:last-child").remove();
   })
 
 });
+
+/* 2013 */
+function setupFlipboard() {
+  if (!$('.flipboard').length) {
+    return;
+  }
+  active_board = new Flipboard();
+  active_board.setup();
+
+  $('.flipboard').bind('inview', function(event, visible) {
+    if (visible == true) {
+      active_board.start();
+    }
+    else {
+      active_board.stop();
+    }
+  });
+}
+
+function main() {
+  setupFlipboard();
+}
+
+$(main);

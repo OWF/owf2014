@@ -128,81 +128,23 @@
   {# ############################# NEWS #################################### #}
 
   <div id="home-latest-news">
-  <div class="container">
-    <h1 class="section-title">{{ _("Latest news") }}</h1>
+    <div class="container">
+      <h1 class="section-title">{{ _("Latest news") }}</h1>
 
-    <button class="btn section-button hidden-xs"><a
-        href="{{ url_for(".news") }}">{{ _("All the latest news") }}</a>
-    </button>
+      <button class="btn section-button hidden-xs"><a
+          href="{{ url_for(".news") }}">{{ _("All the latest news") }}</a>
+      </button>
 
-    <div class="clear"></div>
+      <div class="clear"></div>
 
-    <div id="myCarousel" class="carousel slide">
-      <div class="carousel-inner hidden-xs">
-        <div class="item active">
-          <div class="row">
-            {% for item in news[0:3] %}
-              <div class="col-sm-4">
-                <div class="latest-news-card">
-                  <a href="{{ url_for(".news_item", slug=item.slug) }}">
-                    <img
-                        src="{{ url_for(".image_for_news", slug=item.slug, size="small") }}"
-                        alt=""/>
-                  </a>
-
-                  <div class="latest-news-content">
-                    <h2><a
-                        href="{{ url_for(".news_item", slug=item.slug) }}">{{ item.title }}</a>
-                    </h2>
-
-                      <span
-                          class="latest-news-date">{{ item.date | dateformat }}</span>
-
-                    <p><a
-                        href="{{ url_for(".news_item", slug=item.slug) }}">{{ item.abstract }}</a>
-                    </p>
-                  </div>
-                </div>
-              </div>
-            {% endfor %}
-          </div>
-        </div>
-        <div class="item">
-          <div class="row">
-            {% for item in news[3:6] %}
-              <div class="col-sm-4">
-                <div class="latest-news-card">
-                  <img
-                      src="{{ url_for(".image_for_news", slug=item.slug, size="small") }}"
-                      width="300" height="225" alt=""/>
-
-                  <div class="latest-news-content">
-                    <h2><a
-                        href="{{ url_for(".news_item", slug=item.slug) }}">{{ item.title }}</a>
-                    </h2>
-                    <span
-                        class="latest-news-date">{{ item.date | dateformat }}</span>
-
-                    <p><a
-                        href="{{ url_for(".news_item", slug=item.slug) }}">{{ item.abstract }}</a>
-                    </p>
-                  </div>
-                </div>
-              </div>
-            {% endfor %}
-          </div>
-        </div>
-      </div>
-
-      <div id="myCarousel" class="carousel slide visible-xs">
-        <div class="carousel-inner">
+      <div id="myCarousel" class="carousel slide">
+        <div class="carousel-inner hidden-xs">
           <div class="item active">
             <div class="row">
-              {% for item in news[0:2] %}
+              {% for item in news[0:3] %}
                 <div class="col-sm-4">
                   <div class="latest-news-card">
-                    <a href="{{ url_for(".news_item", slug=item.slug) }}"
-                        class="hidden-xs hidden-sm">
+                    <a href="{{ url_for(".news_item", slug=item.slug) }}">
                       <img
                           src="{{ url_for(".image_for_news", slug=item.slug, size="small") }}"
                           alt=""/>
@@ -213,12 +155,37 @@
                           href="{{ url_for(".news_item", slug=item.slug) }}">{{ item.title }}</a>
                       </h2>
 
-                      <!-- <span
-                            class="latest-news-date">{{ item.date | dateformat }}</span>
+                      <span
+                          class="latest-news-date">{{ item.date | dateformat }}</span>
 
-                        <p><a
-                            href="{{ url_for(".news_item", slug=item.slug) }}">{{ item.abstract }}</a>
-                        </p> -->
+                      <p><a
+                          href="{{ url_for(".news_item", slug=item.slug) }}">{{ item.abstract }}</a>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              {% endfor %}
+            </div>
+          </div>
+          <div class="item">
+            <div class="row">
+              {% for item in news[3:6] %}
+                <div class="col-sm-4">
+                  <div class="latest-news-card">
+                    <img
+                        src="{{ url_for(".image_for_news", slug=item.slug, size="small") }}"
+                        width="300" height="225" alt=""/>
+
+                    <div class="latest-news-content">
+                      <h2><a
+                          href="{{ url_for(".news_item", slug=item.slug) }}">{{ item.title }}</a>
+                      </h2>
+                    <span
+                        class="latest-news-date">{{ item.date | dateformat }}</span>
+
+                      <p><a
+                          href="{{ url_for(".news_item", slug=item.slug) }}">{{ item.abstract }}</a>
+                      </p>
                     </div>
                   </div>
                 </div>
@@ -226,30 +193,89 @@
             </div>
           </div>
         </div>
-      </div>
 
-      <div class="container hidden-xs">
-        <div id="carousel-control" class="latest-news-slide-control">
-          <a id="carousel-button1" href="#myCarousel" data-slide-to="0">
-            <img id="carousel-button-img1"
-                src="/static/pictures/ellipse-red.png"
-                alt="actualités précédentes"/>
-          </a>
-          <a id="carousel-button2" href="#myCarousel" data-slide-to="1">
-            <img id="carousel-button-img2"
-                src="/static/pictures/ellipse-grey.png"
-                alt="actualités suivantes"/>
-          </a>
+        <div id="myCarousel" class="carousel slide visible-xs">
+          <div class="carousel-inner">
+            <div class="item active">
+              <div class="row">
+                {% for item in news[0:2] %}
+                  <div class="col-sm-4">
+                    <div class="latest-news-card">
+                      <a href="{{ url_for(".news_item", slug=item.slug) }}"
+                          class="hidden-xs hidden-sm">
+                        <img
+                            src="{{ url_for(".image_for_news", slug=item.slug, size="small") }}"
+                            alt=""/>
+                      </a>
+
+                      <div class="latest-news-content">
+                        <h2><a
+                            href="{{ url_for(".news_item", slug=item.slug) }}">{{ item.title }}</a>
+                        </h2>
+
+                        <!-- <span
+                            class="latest-news-date">{{ item.date | dateformat }}</span>
+
+                        <p><a
+                            href="{{ url_for(".news_item", slug=item.slug) }}">{{ item.abstract }}</a>
+                        </p> -->
+                      </div>
+                    </div>
+                  </div>
+                {% endfor %}
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="container hidden-xs">
+          <div id="carousel-control" class="latest-news-slide-control">
+            <a id="carousel-button1" href="#myCarousel" data-slide-to="0">
+              <img id="carousel-button-img1"
+                  src="/static/pictures/ellipse-red.png"
+                  alt="actualités précédentes"/>
+            </a>
+            <a id="carousel-button2" href="#myCarousel" data-slide-to="1">
+              <img id="carousel-button-img2"
+                  src="/static/pictures/ellipse-grey.png"
+                  alt="actualités suivantes"/>
+            </a>
+          </div>
         </div>
       </div>
+
+      <a href="{{ url_for(".news") }}">
+        <button
+            class="btn section-button visible-xs">{{ _("All the latest news") }}
+        </button>
+      </a>
+
     </div>
-
-    <a href="{{ url_for(".news") }}">
-      <button
-          class="btn section-button visible-xs">{{ _("All the latest news") }}
-      </button>
-    </a>
-
   </div>
 
+  {# ############################# 2013 ################################### #}
+
+  <div id="2013" class="last-year legible nospace clearfix">
+    <div class="resetcoords full fill-dark">
+
+      <div class="band last-year white freeflow full">
+        <h1 class="huge centered">
+          2013 Edition</h1>
+        <ul class="large numbers-2012 centered">
+          <li class="numbers-2012-days">3 days</li>
+          <li class="numbers-2012-tracks">40 tracks</li>
+          <li class="numbers-2012-sessions">250 talks</li>
+          <li class="numbers-2012-participants">2200 participants</li>
+        </ul>
+      </div>
+      <ul class="flipboard"></ul>
+      <script id="card-template" type="text/template"><li>
+          <div class="flipcard">
+            <p class="face front"></p>
+
+            <p class="face back"></p>
+          </div></li>
+      </script>
+    </div>
+  </div>
 {% endblock %}

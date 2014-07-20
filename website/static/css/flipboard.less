@@ -1,0 +1,205 @@
+/* Flipboard for 2012 edition */
+.flipboard {
+  padding: 0;
+  margin: 0;
+  z-index: 10;
+  min-height: 40em;
+  //  background-image: url(http://farm9.staticflickr.com/8435/7851360194_1fab697a2b_c_d.jpg);
+  background-size: auto 100%;
+  background-position: 50% 70%;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+
+@media only screen and (min-width: 60em) {
+  .flipboard {
+    //    background-image: url(http://farm9.staticflickr.com/8435/7851360194_c505cc357e_h_d.jpg);
+    background-size: 100%;
+    min-height: 35em;
+  }
+}
+
+.flipboard.playing {
+  background-image: none;
+}
+
+.flipboard li {
+  float: left;
+  display: inline;
+  position: relative;
+  z-index: 10;
+  -webkit-perspective: 1000;
+  -moz-perspective: 1000;
+  -ms-perspective: 1000;
+  perspective: 1000;
+}
+
+.flipcard {
+  width: 100%;
+  height: 100%;
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  -ms-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  -webkit-transition: all 0.4s linear;
+  -moz-transition: all 0.4s linear;
+  -ms-transition: all 0.4s linear;
+  -o-transition: all 0.4s linear;
+  transition: all 0.4s linear;
+}
+
+.flipcard.reveal-backface {
+  -webkit-transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg);
+  -ms-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+}
+
+.flipcard.reveal-frontface {
+  -webkit-transform: rotateY(360deg);
+  -moz-transform: rotateY(360deg);
+  -ms-transform: rotateY(360deg);
+  transform: rotateY(360deg);
+}
+
+.flipboard .face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  overflow: hidden;
+  text-align: center;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flipboard .face.back {
+  -webkit-transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg);
+  -ms-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+}
+
+.flipboard .portrait {
+  background: black;
+}
+
+/* Last Year: 2012 edition */
+.last-year {
+  overflow: hidden;
+}
+
+.last-year .band {
+  margin: -10.85714rem 0 0;
+  top: 50%;
+  background-color: rgba(0, 0, 0, .7);
+  z-index: 100;
+}
+
+.last-year .band li {
+  margin: 1rem 0;
+}
+
+.last-year .band li.numbers-2012-participants:after {
+  content: normal;
+  margin: 0;
+}
+
+@media only screen and (min-width: 44em) {
+  .last-year .band {
+    margin: -7.111rem 0 0;
+  }
+
+  .last-year .band li {
+    margin: 1rem 0 .5rem;
+    width: 40%;
+    display: inline-block;
+  }
+
+  .last-year .band li.numbers-2012-days {
+    text-align: right;
+    margin-bottom: .5rem;
+  }
+
+  .last-year .band li.numbers-2012-tracks {
+    text-align: left;
+    margin-bottom: .5rem;
+  }
+
+  .last-year .band li.numbers-2012-sessions {
+    text-align: right;
+    margin-top: .5rem;
+  }
+
+  .last-year .band li.numbers-2012-participants {
+    text-align: left;
+    margin-top: .5rem;
+  }
+
+  .last-year .band li.numbers-2012-tracks:after {
+    content: normal;
+    margin: 0;
+  }
+
+  .last-year .band li:after {
+    content: '\2022';
+    font-size: 2rem;
+    margin: 0 .3rem 0 .7rem;
+  }
+
+  .last-year .band li.numbers-2012-days {
+    display: inline-block;
+  }
+}
+
+@media only screen and (min-width: 55em) {
+  .last-year .band {
+    margin: -5.1875rem 0 0;
+  }
+
+  .last-year .band li {
+    width: auto;
+    margin: 0 0 .5rem !important;
+  }
+
+  .last-year .band li.numbers-2012-tracks:after {
+    content: '\2022';
+    font-size: 2rem;
+    margin: 0 .3rem 0 .7rem;
+  }
+}
+
+.resetcoords {
+  position: relative;
+}
+
+.full,
+.stretch,
+.hundred {
+  width: 100%;
+}
+
+.fill-dark {
+  background-color: #2D3339;
+  color: #F6F6F6
+}
+
+.freeflow {
+  position: absolute;
+}
+
+.centered {
+  text-align: center;
+}
+
+.large {
+  font-size: 2.000rem;
+  line-height: 1.5000;
+}
+
+.huge {
+  font-size: 2.500em;
+  line-height: 1.1667;
+}
