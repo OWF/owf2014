@@ -258,16 +258,18 @@
   <div id="2013" class="hidden-xs last-year legible nospace clearfix">
     <div class="resetcoords full fill-dark">
 
-      <div class="band last-year white freeflow full">
-        <h1 class="huge centered">
-          2013 Edition</h1>
-        <ul class="large numbers-2012 centered">
-          <li class="numbers-2012-days">3 days</li>
-          <li class="numbers-2012-tracks">40 tracks</li>
-          <li class="numbers-2012-sessions">250 talks</li>
-          <li class="numbers-2012-participants">2200 participants</li>
-        </ul>
-      </div>
+      <a href="{% if lang == 'fr' %}/fr/editions-precedentes/{% else %}/en/previous-editions{% endif %}">
+        <div class="band last-year white freeflow full">
+          <h1 class="huge centered">
+            2013 Edition</h1>
+          <ul class="large numbers-2012 centered">
+            <li class="numbers-2012-days">3 days</li>
+            <li class="numbers-2012-tracks">40 tracks</li>
+            <li class="numbers-2012-sessions">250 talks</li>
+            <li class="numbers-2012-participants">2200 participants</li>
+          </ul>
+        </div>
+      </a>
       <ul class="flipboard"></ul>
       <script id="card-template" type="text/template"><li>
           <div class="flipcard">

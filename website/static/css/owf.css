@@ -6054,6 +6054,9 @@ img#home-jumbotron {
 .last-year {
   overflow: hidden;
 }
+.last-year a {
+  color: inherit;
+}
 .last-year .band {
   margin: -10.85714rem 0 0;
   top: 50%;
