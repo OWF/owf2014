@@ -5056,6 +5056,16 @@ ul#theme li label {
     padding-right: 13px;
   }
 }
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+  #main .content p,
+  #main .content li {
+    font-size: 1.2em;
+    line-height: 1.6em;
+  }
+}
 @media (max-width: 767px) {
   body {
     background-position: center 0;

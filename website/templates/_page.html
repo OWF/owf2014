@@ -4,21 +4,16 @@
   <div class="container content">
 
     <div class="row">
-      <div class="col-md-12">
+      <div class="col-sm-12">
+        <article>
+          <h1 class="page-title">{{ page.title }}</h1>
 
-        <div class="row clear-both">
-          <div class="col-md-12 main-column two-columns-right">
-            <article>
-              <h1 class="page-title">{{ page.title }}</h1>
+          {% if page.bloc1 %}
+            <blockquote>{{ page.bloc1 }}</blockquote>
+          {% endif %}
 
-              {% if page.bloc1 %}
-                <blockquote>{{ page.bloc1 }}</blockquote>
-              {% endif %}
-
-              {{ page.html|safe }}
-            </article>
-          </div>
-        </div>
+          {{ page.html|safe }}
+        </article>
       </div>
     </div>
   </div>
