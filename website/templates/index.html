@@ -151,9 +151,9 @@
                     </a>
 
                     <div class="latest-news-content">
-                      <h2><a
+                      <h4><a
                           href="{{ url_for(".news_item", slug=item.slug) }}">{{ item.title }}</a>
-                      </h2>
+                      </h4>
 
                       <span
                           class="latest-news-date">{{ item.date | dateformat }}</span>
@@ -177,9 +177,9 @@
                         width="300" height="225" alt=""/>
 
                     <div class="latest-news-content">
-                      <h2><a
+                      <h4><a
                           href="{{ url_for(".news_item", slug=item.slug) }}">{{ item.title }}</a>
-                      </h2>
+                      </h4>
                     <span
                         class="latest-news-date">{{ item.date | dateformat }}</span>
 
