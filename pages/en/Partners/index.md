@@ -21,7 +21,7 @@ This event is a beautiful opportunity to meet and exchange with different player
 
 
 ##ASSOCIATE YOUR COMPANY, YOUR BRAND TO OWF, MEANS:
-* itemBenefiting from high visibility through a great online presence f
+* itemBenefiting from high visibility through a great online presence 
 * itemStrengthen your leadership in France and abroad 
 * itemDevelop your business 
 * itemContribute to a sustainable digital future 
