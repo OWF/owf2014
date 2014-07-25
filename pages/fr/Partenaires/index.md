@@ -16,11 +16,11 @@ L’événement ne concerne pas uniquement les acteurs du Libre et de l’Open S
 
 
 ##ASSOCIER UNE ENTREPRISE, UNE MARQUE, A L’OWF C’EST :
-* item•	Bénéficier d’une visibilité forte à travers une présence en ligne incontournable
-* item•	Renforcer votre leadership en France et à l’international
-* item•	Développer votre business
-* item•	Contribuer à un futur digital durable
-* item•	Etre au cœur des réflexions sur le logiciel libre 
+* item	Bénéficier d’une visibilité forte à travers une présence en ligne incontournable
+* item	Renforcer votre leadership en France et à l’international
+* item	Développer votre business
+* item	Contribuer à un futur digital durable
+* item	Etre au cœur des réflexions sur le logiciel libre 
 
 
 
