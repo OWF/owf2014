@@ -24,4 +24,4 @@ L’événement ne concerne pas uniquement les acteurs du Libre et de l’Open S
 
 
 
-<a href="/static/Documents/Sponsoring opportunities 2014.pdf" target="_blank">Découvrez nos offres !</a>
+###<a href="/static/Documents/Sponsoring_opportunities_2014.pdf" target="_blank">Découvrez nos offres !</a>
