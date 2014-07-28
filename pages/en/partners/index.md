@@ -33,4 +33,4 @@ Being at the heart of the debate on free software
 
 We encourage you to take advantage of this unique opportunity and become an OWF sponsor.
 
-<a href="/static/Documents/Sponsoring opportunities 2014.pdf" target="_blank"> Discover our sponsorship opportunities </a>
+<p align="center"><a href="/static/Documents/Sponsoring opportunities 2014.pdf" target="_blank"> Discover our sponsorship opportunities </a> </p>
