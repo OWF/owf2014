@@ -1,4 +1,4 @@
-title: Partenaires
+title: Devenez partenaire de l'Open World Forum
 date: 2014/07/25
 
 
@@ -25,4 +25,4 @@ L’événement ne concerne pas uniquement les acteurs du Libre et de l’Open S
 
 
 
-###<a href="/static/Documents/Sponsoring opportunities 2014.pdf" target="_blank">Découvrez nos offres !</a>
+<p align="center">###<a href="/static/Documents/Sponsoring opportunities 2014.pdf" target="_blank">Découvrez nos offres !</a></p>
