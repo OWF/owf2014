@@ -11,16 +11,15 @@ class Registration(Entity):
 
   confirmed_at = Column(DateTime)
 
-  coming_on_oct_3 = Column(Boolean, nullable=False)
-  coming_on_oct_4 = Column(Boolean, nullable=False)
-  coming_on_oct_5 = Column(Boolean, nullable=False)
-
   ip_address = Column(String(20))
   preferred_lang = Column(String(5))
 
   first_name = Column(UnicodeText(100), default=u"", nullable=False)
   last_name = Column(UnicodeText(100), default=u"", nullable=False)
+  title = Column(UnicodeText(100), default=u"", nullable=False)
   organization = Column(UnicodeText(200), default=u"", nullable=False)
+  organization_type = Column(UnicodeText(100), default=u"", nullable=False)
+
   biography = Column(UnicodeText(2000), default=u"", nullable=False)
   url = Column(UnicodeText(200), default=u"", nullable=False)
 

@@ -4891,9 +4891,6 @@ body {
 body strong {
   font-weight: bold;
 }
-.container {
-  margin: 0 auto;
-}
 .clear {
   clear: both;
 }
@@ -4948,6 +4945,7 @@ img.center {
 }
 #main .sidebar {
   font-family: 'Open Sans Condensed', sans-serif;
+  margin-top: 30px;
 }
 #main .sidebar h2 {
   color: #F4F4F4;
@@ -4989,9 +4987,6 @@ img.center {
   font-size: 4.5em;
   line-height: 1.1em;
   padding: 0;
-}
-.news {
-  margin-top: 40px;
 }
 .news-date {
   color: #B40001;

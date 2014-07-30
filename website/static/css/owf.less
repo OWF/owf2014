@@ -1,6 +1,5 @@
 @import "../bootstrap3/less/bootstrap.less";
 
-
 body {
   background: white url("../pictures/background.png") no-repeat center 32px;
   font-family: "Open Sans", sans-serif;
@@ -8,10 +7,6 @@ body {
   strong {
     font-weight: bold;
   }
-}
-
-.container {
-  margin: 0 auto;
 }
 
 .clear {
@@ -73,6 +68,7 @@ img.center {
 
   .sidebar {
     font-family: 'Open Sans Condensed', sans-serif;
+    margin-top: 30px;
     h2 {
       color: #F4F4F4;
       background-color: #B40001;
@@ -119,10 +115,6 @@ img.center {
   padding: 0;
 }
 
-.news {
-  margin-top: 40px;
-}
-
 .news-date {
   color: #B40001;
   font-size: 1em;
@@ -144,7 +136,6 @@ ul#theme {
     }
   }
 }
-
 
 // Other pages
 #speaker {
@@ -190,11 +181,10 @@ ul#theme {
 }
 
 .alert {
-  color:red;
+  color: red;
   font-size: 2rem;
   margin-bottom: 10px;
 }
-
 
 //
 // Responsive fixes
@@ -203,11 +193,12 @@ ul#theme {
   #menu-nav-div {
     margin-top: 10px;
   }
+
   // #menu-nav-div #menu-nav > li > a{
   //   padding-left: 13px;
   //   padding-right: 13px;
   // }
-  html[lang="fr-FR"] #menu-nav li a{
+  html[lang="fr-FR"] #menu-nav li a {
     padding-left: 13px;
     padding-right: 13px;
   }
@@ -218,6 +209,7 @@ ul#theme {
   .container {
     width: 970px;
   }
+
   #main .content {
     p, li {
       font-size: 1.2em;
@@ -229,13 +221,14 @@ ul#theme {
 @media (max-width: @screen-xs-max) {
 
   body {
-    background-position:center 0;
+    background-position: center 0;
   }
 
   #fast-acces-menu {
     margin-bottom: 20px;
   }
-  #menu-nav-div  {
+
+  #menu-nav-div {
     width: 104%;
     float: none !important;
     margin-right: 0;
@@ -243,7 +236,7 @@ ul#theme {
   }
 
   .page-title {
-    font-size:3.6em;
+    font-size: 3.6em;
   }
 
   .search-form {
@@ -273,18 +266,22 @@ ul#theme {
       right: 0;
     }
   }
+
   .domain .think {
-    background-color: rgb(254,137,0);
+    background-color: rgb(254, 137, 0);
     padding: 10px;
   }
+
   .domain .code {
-    background-color: rgb(0,185,57);
+    background-color: rgb(0, 185, 57);
     padding: 10px;
   }
+
   .domain .experiment {
-    background-color: rgb(55,165,219);
+    background-color: rgb(55, 165, 219);
     padding: 10px;
   }
+
   .btn.section-button {
     margin-right: auto;
     margin-left: auto;
@@ -292,16 +289,20 @@ ul#theme {
     text-transform: none;
     color: #fff;
   }
+
   .btn:hover, .btn:focus {
     text-decoration: none;
-    color:white;
+    color: white;
   }
+
   #home-latest-news .latest-news-content {
     min-height: 0px !important;
   }
+
   #partners .btn.section-button {
     background-color: #4F5961;
   }
+
   #navbar-ul {
     list-style-type: none;
     overflow: hidden;
@@ -321,6 +322,7 @@ ul#theme {
       background: #4F5962;
     }
   }
+
   .navbar-newsletter {
     background-color: #b40001;
     margin-right: 10px;
@@ -332,17 +334,20 @@ ul#theme {
       padding-right: 8px;
     }
   }
-  .navbar-footer{
-   width: 180px;
-   margin: 0 auto;
-   clear: both;
-   height: 100px;
+
+  .navbar-footer {
+    width: 180px;
+    margin: 0 auto;
+    clear: both;
+    height: 100px;
   }
+
   #footer-links {
     margin-top: 0px !important;
     margin: 0 auto;
     width: 50%;
   }
+
   #footer-button {
     clear: both;
   }
@@ -352,26 +357,33 @@ ul#theme {
   #logo {
     width: 40%;
   }
+
   #fast-acces-menu {
     margin-bottom: 0px;
   }
+
   .container-fluid button {
     height: 65px !important;
   }
-  #menu-nav-div  {
+
+  #menu-nav-div {
     width: 104%;
   }
+
   #home-latest-news .latest-news-content h2 {
     margin: 0px;
   }
-  .navbar-footer{
-   width: 180px;
-   margin: 0 auto;
-   height: 100px;
+
+  .navbar-footer {
+    width: 180px;
+    margin: 0 auto;
+    height: 100px;
   }
+
   .navbar-footer-newsletter {
     margin-right: 20px;
   }
+
   #footer-links {
     display: block;
     margin-right: auto;
@@ -381,7 +393,7 @@ ul#theme {
 }
 
 .btn-project {
-    .button-variant(#f4f4f4; #333333; #333333;);
+  .button-variant(#f4f4f4; #333333; #333333;);
 }
 
 @import "header.less";

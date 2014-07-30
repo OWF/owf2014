@@ -9,7 +9,7 @@
 
       <div class="col-sm-12">
         <div class="row clear-both">
-          <div class="col-sm-8 main-column two-columns-right blog-posts">
+          <div class="col-sm-8">
             {% for entry in news %}
               <article>
                 <a href="{{ url_for(".news_item", slug=entry.slug) }}">

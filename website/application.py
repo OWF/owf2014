@@ -41,9 +41,11 @@ class Application(Flask, PluginManager, ServiceManager):
 
 
 def create_app(config=None):
-  app = Application(__name__)
+  app = Application(__name__, instance_relative_config=True)
   if not config:
     from . import config
+    #app.config.from_pyfile('secrets.cfg', silent=True)
+    app.config.from_pyfile('secrets.cfg')
   app.config.from_object(config)
   setup(app)
   return app
@@ -61,6 +63,7 @@ def setup(app):
   bootstrap = Bootstrap(app)
 
   app.register_plugin("website.security")
+  app.register_plugin("website.auth")
   setup_filters_and_processors(app)
 
   app.register_plugin("website.views")

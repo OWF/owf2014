@@ -8,6 +8,7 @@ Flask-Admin
 Flask-Bootstrap==2.3.1-1
 Flask-FlatPages
 Flask-Markdown
+Flask-OAuthlib
 Frozen-Flask
 icalendar
 

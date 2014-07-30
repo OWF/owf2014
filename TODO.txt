@@ -1,8 +1,20 @@
-Version live 1.0
-================
+Juillet 2014
+============
 
-+ Tracking Google Analytics
-- Vérifier que GA marche bien
+## Réactiver le module d'inscription
 
-- Google webmaster tools
-- Redirects depuis l'ancien site
+
+Nom*
+Prénom*
+Fonction*
+Société/Organisme*
+Type d’organisme*(PME, ETI, Auto-entrepreneur, Académique, Grand Groupe, Institutionnel, Investisseur,  Autre (préciser))
+Mail*
+(Téléphone)
+(Adresse + CP + Ville) Ces champs ne sont pas indispensables mais peuvent être utiles, notamment pour l’envoi d’invitations officielles dans le cadre du social Event (gérées par la Ville – donc sans frais)
+Pays*
+
++ champs partenaires presses (cases à cocher) – à définir et ajouter au fil de l’eau
+
++ champs intérêts (comme l’an dernier)  A confirmer
+

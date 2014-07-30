@@ -22,7 +22,7 @@ REDIRECTS = [
   ('/eng/Univers/Code', '/en/code/'),
   ('/fr/about/', '/fr/a-propos/'),
   ('/fr/accueil', '/fr/'),
-  ('/fr/inscription/', '/fr/registration/'),
+  ('/fr/inscription/', '/registration/'),
   ('/fr/News/', '/fr/news/'),
   ('/fr/press/', '/fr/presse/'),
   ('/fr/venue/', '/fr/lieu/'),
