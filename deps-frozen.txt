@@ -15,6 +15,7 @@ Flask-Login==0.2.3
 Flask-Mail==0.8.2
 Flask-Markdown==0.3
 Flask-Migrate==1.1.0
+Flask-OAuthlib==0.6.0
 Flask-Principal==0.4.0
 Flask-SQLAlchemy==0.16
 Flask-Script==0.6.6

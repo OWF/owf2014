@@ -26,6 +26,7 @@ clean:
 
 deploy:
 	git push
+	rsync -vz -e ssh instance/secrets.cfg root@openwf.nexen.net:/srv/owf2014/src/instance/
 	ansible-playbook -i deployment/hosts -v deployment/server.yml
 
 fetch-db:
