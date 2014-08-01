@@ -6,12 +6,13 @@ from . import route
 
 oauth = OAuth()
 
-# twitter = oauth.remote_app('twitter',
-# base_url='https://api.twitter.com/1/',
-# request_token_url='https://api.twitter.com/oauth/request_token',
-# access_token_url='https://api.twitter.com/oauth/access_token',
-# authorize_url='https://api.twitter.com/oauth/authenticate',
-# app_key="TWITTER")
+twitter = oauth.remote_app('twitter',
+                           base_url='https://api.twitter.com/1.1/',
+                           request_token_url='https://api.twitter.com/oauth/request_token',
+                           access_token_url='https://api.twitter.com/oauth/access_token',
+                           authorize_url='https://api.twitter.com/oauth/authenticate',
+                           app_key="TWITTER")
+
 
 github = oauth.remote_app('github',
                           base_url='https://api.github.com/',
@@ -64,6 +65,7 @@ stackoverflow = oauth.remote_app('stackoverflow',
 
 
 servers = {
+  'twitter': twitter,
   'github': github,
   'linkedin': linkedin,
   'google': google,
@@ -89,9 +91,30 @@ def login_screen():
   return render_template("auth/login.html", title="Login")
 
 
+#
+# Twitter
+#
+@route("/authorized_twitter")
+@twitter.authorized_handler
+def authorized_twitter(resp):
+  print resp
+  if resp is None:
+    return 'Access denied: reason=%s error=%s' % (
+      request.args['error_reason'],
+      request.args['error_description']
+    )
+  session['oauth_token'] = resp
+  me = twitter.get('account/verify_credentials.json')
+  return jsonify({"data": me.data})
+
+
+#
+# Google
+#
 @route("/authorized_google")
 @google.authorized_handler
 def authorized_google(resp):
+  print resp
   if resp is None:
     return 'Access denied: reason=%s error=%s' % (
       request.args['error_reason'],
@@ -102,9 +125,13 @@ def authorized_google(resp):
   return jsonify({"data": me.data})
 
 
+#
+# Github
+#
 @route("/authorized_github")
 @github.authorized_handler
 def authorized_github(resp):
+  print resp
   if resp is None:
     return 'Access denied: reason=%s error=%s' % (
       request.args['error_reason'],
@@ -115,9 +142,13 @@ def authorized_github(resp):
   return jsonify({"data": me.data})
 
 
+#
+# Linkedin
+#
 @route("/authorized_linkedin")
 @linkedin.authorized_handler
 def authorized_linkedin(resp):
+  print resp
   if resp is None:
     return 'Access denied: reason=%s error=%s' % (
       request.args['error_reason'],
@@ -128,9 +159,28 @@ def authorized_linkedin(resp):
   return jsonify({"data": me.data})
 
 
+def change_linkedin_query(uri, headers, body):
+  auth = headers.pop('Authorization')
+  headers['x-li-format'] = 'json'
+  if auth:
+    auth = auth.replace('Bearer', '').strip()
+    if '?' in uri:
+      uri += '&oauth2_access_token=' + auth
+    else:
+      uri += '?oauth2_access_token=' + auth
+  return uri, headers, body
+
+
+linkedin.pre_request = change_linkedin_query
+
+
+#
+# Stackoverflow
+#
 @route("/authorized_stackoverflow")
 @stackoverflow.authorized_handler
 def authorized_stackoverflow(resp):
+  print resp
   if resp is None:
     return 'Access denied: reason=%s error=%s' % (
       request.args['error_reason'],
