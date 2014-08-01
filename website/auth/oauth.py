@@ -22,6 +22,7 @@ github = oauth.remote_app('github',
                           authorize_url='https://github.com/login/oauth/authorize',
                           app_key='GITHUB')
 
+
 linkedin = oauth.remote_app('linkedin',
                             base_url='https://api.linkedin.com/v1/',
                             request_token_params={
@@ -110,20 +111,7 @@ def authorized_github(resp):
       request.args['error_description']
     )
   session['oauth_token'] = (resp['access_token'], '')
-  me = google.get('userinfo')
-  return jsonify({"data": me.data})
-
-
-@route("/authorized_stackoverflow")
-@stackoverflow.authorized_handler
-def authorized_stackoverflow(resp):
-  if resp is None:
-    return 'Access denied: reason=%s error=%s' % (
-      request.args['error_reason'],
-      request.args['error_description']
-    )
-  session['oauth_token'] = (resp['access_token'], '')
-  me = google.get('userinfo')
+  me = github.get('user')
   return jsonify({"data": me.data})
 
 
@@ -136,7 +124,20 @@ def authorized_linkedin(resp):
       request.args['error_description']
     )
   session['oauth_token'] = (resp['access_token'], '')
-  me = google.get('userinfo')
+  me = linkedin.get('people/~')
+  return jsonify({"data": me.data})
+
+
+@route("/authorized_stackoverflow")
+@stackoverflow.authorized_handler
+def authorized_stackoverflow(resp):
+  if resp is None:
+    return 'Access denied: reason=%s error=%s' % (
+      request.args['error_reason'],
+      request.args['error_description']
+    )
+  session['oauth_token'] = (resp['access_token'], '')
+  me = linkedin.get('people/~')
   return jsonify({"data": me.data})
 
 
