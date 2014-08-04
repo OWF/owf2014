@@ -61,7 +61,7 @@
       git: repo={{app_git}} dest={{app_src}}
       #sudo_user: "{{app_user}}" / Doesn't work. Hence the rule below.
       notify:
-        - restart nginx
+        - restart uwsgi
 
     - name: fix sources ownership
       file: path={{app_src}} owner={{app_user}} group={{app_group}} recurse=yes

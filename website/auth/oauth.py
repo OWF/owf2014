@@ -65,7 +65,7 @@ stackoverflow = oauth.remote_app('stackoverflow',
                                  base_url="https://api.stackexchange.com/2.1/",
                                  request_token_url=None,
                                  access_token_method='POST',
-                                 access_token_url='ttps://stackexchange.com/oauth/access_token',
+                                 access_token_url='https://stackexchange.com/oauth/access_token',
                                  authorize_url='https://stackexchange.com/oauth',
                                  app_key='STACKOVERFLOW')
 
@@ -88,9 +88,10 @@ servers = {
 def login(server_name):
   server = servers[server_name]
   next = request.args.get('next') or request.referrer or None
-  return server.authorize(
-    callback=url_for('.authorized_{}'.format(server_name), next=next,
-                     _external=True))
+  # url = url_for('.authorized_{}'.format(server_name), next=next,
+  #               _external=True)
+  url = "http://www.openworldforum.paris/auth/authorized_{}".format(server_name)
+  return server.authorize(callback=url)
 
 
 @route("/")
@@ -138,19 +139,18 @@ def authorized_google(resp):
 @route('authorized_facebook')
 @facebook.authorized_handler
 def authorized_facebook(resp):
-    if resp is None:
-        return 'Access denied: reason=%s error=%s' % (
-            request.args['error_reason'],
-            request.args['error_description']
-        )
-    if isinstance(resp, OAuthException):
-        return 'Access denied: %s' % resp.message
+  if resp is None:
+    return 'Access denied: reason=%s error=%s' % (
+      request.args['error_reason'],
+      request.args['error_description']
+    )
+  if isinstance(resp, OAuthException):
+    return 'Access denied: %s' % resp.message
 
-    session['oauth_token'] = (resp['access_token'], '')
-    me = facebook.get('/me')
-    return 'Logged in as id=%s name=%s redirect=%s' % \
-        (me.data['id'], me.data['name'], request.args.get('next'))
-
+  session['oauth_token'] = (resp['access_token'], '')
+  me = facebook.get('/me')
+  return 'Logged in as id=%s name=%s redirect=%s' % \
+         (me.data['id'], me.data['name'], request.args.get('next'))
 
 
 #
