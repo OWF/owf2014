@@ -181,7 +181,8 @@ def setup_filters_and_processors(app):
 
   @app.url_defaults
   def add_language_code(endpoint, values):
-    values.setdefault('lang', g.lang)
+    if g.lang:
+      values.setdefault('lang', g.lang)
 
   @app.url_value_preprocessor
   def pull_lang(endpoint, values):

@@ -87,10 +87,9 @@ servers = {
 @route('/login/<server_name>')
 def login(server_name):
   server = servers[server_name]
-  next = request.args.get('next') or request.referrer or None
-  url = url_for('.authorized_{}'.format(server_name), next=next,
-                _external=True)
-  #url = "http://www.openworldforum.paris/auth/authorized_{}".format(server_name)
+  next_url = request.args.get('next') or request.referrer or None
+  session['next_url'] = next_url
+  url = url_for('.authorized_{}'.format(server_name), _external=True)
   return server.authorize(callback=url)
 
 

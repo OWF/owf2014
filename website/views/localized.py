@@ -6,11 +6,11 @@ from cStringIO import StringIO
 from itertools import groupby
 import mimetypes
 from os.path import join, exists
-from pprint import pprint
 import random
 import re
 import datetime
 from PIL import Image
+
 from abilian.services.image import crop_and_resize
 
 from flask import Blueprint, request, render_template, make_response, g, url_for, session, redirect
@@ -78,6 +78,7 @@ def inject_menu():
 # Deal with language
 #
 def alt_url_for(obj, *args, **kw):
+  print kw
   if isinstance(obj, Page):
     if re.match("../news/", obj.path):
       return url_for("localized.news_item", slug=obj.meta['slug'])
@@ -93,15 +94,16 @@ def alt_url_for(obj, *args, **kw):
     return "%s#talk_%d" % (url_for("localized.track", track_id=obj.track.id), obj.id)
   elif obj in ('THINK', 'CODE', 'EXPERIMENT'):
     return url_for("localized.page", path=obj.lower())
-  else:
+  elif g.lang:
     return url_for(obj, *args, lang=g.lang, **kw)
+  else:
+    return url_for(obj, *args, **kw)
 
 
 @localized.context_processor
 def inject_context_variables():
   session['lang'] = g.lang
-  return dict(lang=g.lang,
-              url_for=alt_url_for)
+  return dict(lang=g.lang, url_for=alt_url_for)
 
 
 @localized.url_defaults

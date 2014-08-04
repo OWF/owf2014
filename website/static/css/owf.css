@@ -6198,3 +6198,19 @@ img#home-jumbotron {
   color: white;
   background-color: #075683;
 }
+.btn-stackoverflow {
+  color: white;
+  background-color: #fe7a15;
+}
+.btn-stackoverflow:hover {
+  color: white;
+  background-color: #df6101;
+}
+.btn-persona {
+  color: white;
+  background-color: #e05927;
+}
+.btn-persona:hover {
+  color: white;
+  background-color: #b9461b;
+}
