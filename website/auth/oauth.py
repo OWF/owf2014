@@ -88,9 +88,9 @@ servers = {
 def login(server_name):
   server = servers[server_name]
   next = request.args.get('next') or request.referrer or None
-  # url = url_for('.authorized_{}'.format(server_name), next=next,
-  #               _external=True)
-  url = "http://www.openworldforum.paris/auth/authorized_{}".format(server_name)
+  url = url_for('.authorized_{}'.format(server_name), next=next,
+                _external=True)
+  #url = "http://www.openworldforum.paris/auth/authorized_{}".format(server_name)
   return server.authorize(callback=url)
 
 
@@ -149,8 +149,7 @@ def authorized_facebook(resp):
 
   session['oauth_token'] = (resp['access_token'], '')
   me = facebook.get('/me')
-  return 'Logged in as id=%s name=%s redirect=%s' % \
-         (me.data['id'], me.data['name'], request.args.get('next'))
+  return jsonify({"data": me.data})
 
 
 #
