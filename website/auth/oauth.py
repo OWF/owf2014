@@ -136,7 +136,7 @@ def authorized_google(resp):
 #
 # Facebook
 #
-@route('authorized_facebook')
+@route('/authorized_facebook')
 @facebook.authorized_handler
 def authorized_facebook(resp):
   if resp is None:
