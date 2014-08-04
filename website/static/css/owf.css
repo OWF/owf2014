@@ -4923,7 +4923,6 @@ img.center {
   font-family: 'Open Sans Condensed', sans-serif;
   font-weight: normal;
   font-size: 3em;
-  line-height: 2em;
   margin: 30px 0 20px 0;
 }
 #main h3 {
@@ -6142,4 +6141,60 @@ img#home-jumbotron {
 .huge {
   font-size: 2.500em;
   line-height: 1.1667;
+}
+.login-box {
+  border: 1px solid #d8d8d8;
+  border-radius: 2px;
+  padding: 20px;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 450px;
+}
+.login-box h2 {
+  font-size: 1em;
+  margin: 20px 0 20px 0;
+}
+.login-box .row > div {
+  margin-bottom: 1em;
+}
+.btn-twitter {
+  color: white;
+  background-color: #55acee;
+}
+.btn-twitter:hover {
+  color: white;
+  background-color: #2795e9;
+}
+.btn-facebook {
+  color: white;
+  background-color: #3b5998;
+}
+.btn-facebook:hover {
+  color: white;
+  background-color: #2d4373;
+}
+.btn-github {
+  color: white;
+  background-color: #4183c4;
+}
+.btn-github:hover {
+  color: white;
+  background-color: #3269a0;
+}
+.btn-google {
+  color: white;
+  background-color: #dd4b39;
+}
+.btn-google:hover {
+  color: white;
+  background-color: #c23321;
+}
+.btn-linkedin {
+  color: white;
+  background-color: #0976b4;
+}
+.btn-linkedin:hover {
+  color: white;
+  background-color: #075683;
 }

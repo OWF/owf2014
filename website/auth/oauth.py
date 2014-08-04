@@ -1,5 +1,5 @@
 from flask import request, url_for, session, jsonify, render_template
-from flask.ext.oauthlib.client import OAuth
+from flask.ext.oauthlib.client import OAuth, OAuthException
 
 from . import route
 
@@ -13,7 +13,6 @@ twitter = oauth.remote_app('twitter',
                            authorize_url='https://api.twitter.com/oauth/authenticate',
                            app_key="TWITTER")
 
-
 github = oauth.remote_app('github',
                           base_url='https://api.github.com/',
                           request_token_params={'scope': 'user:email'},
@@ -22,7 +21,6 @@ github = oauth.remote_app('github',
                           access_token_url='https://github.com/login/oauth/access_token',
                           authorize_url='https://github.com/login/oauth/authorize',
                           app_key='GITHUB')
-
 
 linkedin = oauth.remote_app('linkedin',
                             base_url='https://api.linkedin.com/v1/',
@@ -47,6 +45,14 @@ google = oauth.remote_app('google',
                           authorize_url='https://accounts.google.com/o/oauth2/auth',
                           app_key='GOOGLE')
 
+facebook = oauth.remote_app('facebook',
+                            request_token_params={'scope': 'email'},
+                            base_url='https://graph.facebook.com',
+                            request_token_url=None,
+                            access_token_url='/oauth/access_token',
+                            authorize_url='https://www.facebook.com/dialog/oauth',
+                            app_key='FACEBOOK')
+
 xing = oauth.remote_app('xing',
                         base_url="https://api.xing.com/v1/",
                         request_token_url="https://api.xing.com/v1/request_token",
@@ -56,16 +62,16 @@ xing = oauth.remote_app('xing',
                         app_key='XING')
 
 stackoverflow = oauth.remote_app('stackoverflow',
-                        base_url="https://api.stackexchange.com/2.1/",
-                        request_token_url=None,
-                        access_token_method='POST',
-                        access_token_url='ttps://stackexchange.com/oauth/access_token',
-                        authorize_url='https://stackexchange.com/oauth',
-                        app_key='STACKOVERFLOW')
-
+                                 base_url="https://api.stackexchange.com/2.1/",
+                                 request_token_url=None,
+                                 access_token_method='POST',
+                                 access_token_url='ttps://stackexchange.com/oauth/access_token',
+                                 authorize_url='https://stackexchange.com/oauth',
+                                 app_key='STACKOVERFLOW')
 
 servers = {
   'twitter': twitter,
+  'facebook': facebook,
   'github': github,
   'linkedin': linkedin,
   'google': google,
@@ -83,7 +89,8 @@ def login(server_name):
   server = servers[server_name]
   next = request.args.get('next') or request.referrer or None
   return server.authorize(
-    callback=url_for('.authorized_{}'.format(server_name), next=next, _external=True))
+    callback=url_for('.authorized_{}'.format(server_name), next=next,
+                     _external=True))
 
 
 @route("/")
@@ -123,6 +130,27 @@ def authorized_google(resp):
   session['oauth_token'] = (resp['access_token'], '')
   me = google.get('userinfo')
   return jsonify({"data": me.data})
+
+
+#
+# Facebook
+#
+@route('authorized_facebook')
+@facebook.authorized_handler
+def authorized_facebook(resp):
+    if resp is None:
+        return 'Access denied: reason=%s error=%s' % (
+            request.args['error_reason'],
+            request.args['error_description']
+        )
+    if isinstance(resp, OAuthException):
+        return 'Access denied: %s' % resp.message
+
+    session['oauth_token'] = (resp['access_token'], '')
+    me = facebook.get('/me')
+    return 'Logged in as id=%s name=%s redirect=%s' % \
+        (me.data['id'], me.data['name'], request.args.get('next'))
+
 
 
 #

@@ -48,7 +48,25 @@ $(document).ready(function() {
 
 });
 
-/* 2013 */
+/* Mozilla persona */
+$(document).ready(function() {
+  var signinLink = document.getElementById('persona-signin');
+  if (signinLink) {
+    signinLink.onclick = function() {
+      navigator.id.request();
+    };
+  }
+
+  var signoutLink = document.getElementById('persona-signout');
+  if (signoutLink) {
+    signoutLink.onclick = function() {
+      navigator.id.logout();
+    };
+  }
+});
+
+
+/* Image flipboard for 2013 */
 function setupFlipboard() {
   if (!$('.flipboard').length) {
     return;

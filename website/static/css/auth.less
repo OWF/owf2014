@@ -1,0 +1,54 @@
+@import "mixins.less";
+
+@twitter-color: color("#55acee");
+@facebook-color: color("#3b5998");
+@github-color: color("#4183c4");
+@google-color: color("#dd4b39");
+@linkedin-color: color("#0976b4");
+
+.login-box {
+  .makeBox();
+  padding: 20px;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 450px;
+
+  h2 {
+    font-size: 1em;
+    margin: 20px 0 20px 0
+  }
+  .row > div {
+    margin-bottom: 1em;
+  }
+}
+
+.makeBtn(@color) {
+  color: white;
+  background-color: @color;
+
+  &:hover {
+    color: white;
+    background-color: darken(@color, 10%);
+  }
+}
+
+.btn-twitter {
+  .makeBtn(@twitter-color);
+}
+
+.btn-facebook {
+  .makeBtn(@facebook-color);
+}
+
+.btn-github {
+  .makeBtn(@github-color);
+}
+
+.btn-google {
+  .makeBtn(@google-color);
+}
+
+.btn-linkedin {
+  .makeBtn(@linkedin-color);
+}

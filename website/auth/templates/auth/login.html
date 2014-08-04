@@ -2,25 +2,73 @@
 
 {% block main %}
 
-  <div class="container">
+  <div class="container content">
 
-    <div class="row">
-      <div class="col-md-12">
+    <div class="login-box">
 
-        <div><a class="btn btn-default" href="/auth/login/github">Login using GitHub</a></div>
+      <h2>{{ _("Please sign in to your account") }}</h2>
 
-        <div><a class="btn btn-default" href="/auth/login/twitter">Login using Twitter</a></div>
+      <div class="row">
 
-        <div><a class="btn btn-default" href="/auth/login/google">Login using Google</a></div>
+        <div class="col-sm-6">
+          <a href="{{url_for(".login", server_name="google")}}" class="btn btn-google btn-block">
+            <i class="fa fa-lg fa-google-plus"></i>
+            &nbsp;Log in with Google
+          </a>
+        </div>
 
-        <div><a class="btn btn-default" href="/auth/login/linkedin">Login using Linkedin</a></div>
+        <div class="col-sm-6">
+          <a href="{{url_for(".login", server_name="facebook")}}" class="btn btn-facebook btn-block">
+            <i class="fa fa-lg fa-facebook"></i>
+            &nbsp;Log in with Facebook
+          </a>
+        </div>
 
-        <div><a class="btn btn-default" href="/auth/login/stackoverflow">Login using Stackoverflow</a></div>
-
-        <div><a class="btn btn-default" href="/auth/login/xing">Login using Xing</a></div>
+        <div class="col-sm-6">
+          <a id="persona-signin" class="btn btn-default btn-block">Log in with
+            Persona</a>
+        </div>
       </div>
-    </div>
 
+      <hr>
+      <p style="text-align: center;">Or</p>
+      <hr>
+
+      <form method="POST" action=".">
+
+        <div class="form-group">
+          <input type="text" class="form-control" id="login-username"
+              placeholder="Username" tabindex="1">
+        </div>
+
+        <div class="form-group">
+          <input type="password" class="form-control" id="login-password"
+              placeholder="Password" tabindex="2">
+        </div>
+
+        <div class="form-group clearfix">
+          <div class="pull-left">
+            <label class="checkbox-inline">
+              <input type="checkbox" class="" value="" tabindex="3">
+              <small>Remember me</small>
+            </label>
+          </div>
+
+          <div class="pull-right">
+            <small><a href="TODO">Forgot Password?</a></small>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <button type="submit" class="btn btn-primary btn-block btn-lg"
+              tabindex="4"><i class="fa fa-sign-in"></i>&nbsp;&nbsp;Signin
+          </button>
+        </div>
+      </form>
+
+    </div>
   </div>
+
+  <script src="https://login.persona.org/include.js"></script>
 
 {% endblock %}
