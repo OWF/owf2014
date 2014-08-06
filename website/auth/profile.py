@@ -20,7 +20,7 @@ def edit_profile():
 
   user = g.user
   if user.is_anonymous():
-    return redirect(url_for(".login_screen"))
+    return redirect(url_for(".login"))
 
   if request.method == 'GET':
     form = RegistrationForm(obj=user)

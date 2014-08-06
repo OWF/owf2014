@@ -30,6 +30,7 @@ def persona_login():
       user = get_or_create_user(email)
       # Log the user in by setting a secure session cookie
       session['user_id'] = user.id
+      session['auth_provider'] = 'persona'
       return 'You are logged in'
 
   # Oops, something failed. Abort.

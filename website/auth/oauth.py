@@ -1,7 +1,7 @@
 from flask import request, url_for, session, jsonify, render_template, redirect, \
   g, flash
 from flask.ext.oauthlib.client import OAuth, OAuthException
-from flask.ext.babel import gettext as _
+from flask.ext.babel import lazy_gettext as _l, gettext as _
 
 from . import route
 from .models import User2, db
@@ -97,7 +97,7 @@ def login_with(server_name):
 @route("/")
 def login():
   next_url = request.args.get('next') or request.referrer or None
-  if next_url:
+  if next_url and not "/auth/" in next_url:
     session['next_url'] = next_url
   if g.user.is_anonymous():
     return render_template("auth/login.html", title="Login")
@@ -157,7 +157,9 @@ def authorized_google(resp):
   user.picture_url = me.data['picture']
   db.session.commit()
 
+  flash(_(u"Login successful."), "success")
   session['user_id'] = user.id
+  session['auth_provider'] = 'google'
   next_url = session.get('next_url')
   if next_url:
     del session['next_url']
@@ -202,7 +204,9 @@ def authorized_facebook(resp):
   user.gender = me.data['gender']
   db.session.commit()
 
+  flash(_(u"Login successful."), "success")
   session['user_id'] = user.id
+  session['auth_provider'] = 'facebook'
   next_url = session.get('next_url')
   if next_url:
     del session['next_url']
@@ -245,7 +249,9 @@ def authorized_github(resp):
   user.organization = me.data['company']
   db.session.commit()
 
+  flash(_(u"Login successful."), "success")
   session['user_id'] = user.id
+  session['auth_provider'] = 'github'
   next_url = session.get('next_url')
   if next_url:
     del session['next_url']
