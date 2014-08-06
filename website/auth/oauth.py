@@ -157,6 +157,7 @@ def authorized_google(resp):
   user.picture_url = me.data['picture']
   db.session.commit()
 
+  session['user_id'] = user.id
   next_url = session.get('next_url')
   if next_url:
     del session['next_url']
@@ -201,6 +202,7 @@ def authorized_facebook(resp):
   user.gender = me.data['gender']
   db.session.commit()
 
+  session['user_id'] = user.id
   next_url = session.get('next_url')
   if next_url:
     del session['next_url']
@@ -243,6 +245,7 @@ def authorized_github(resp):
   user.organization = me.data['company']
   db.session.commit()
 
+  session['user_id'] = user.id
   next_url = session.get('next_url')
   if next_url:
     del session['next_url']
