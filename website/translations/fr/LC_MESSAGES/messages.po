@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2014-08-06 16:45+0200\n"
+"POT-Creation-Date: 2014-08-06 16:50+0200\n"
 "PO-Revision-Date: 2013-05-06 17:34+0200\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: fr <LL@li.org>\n"
@@ -50,10 +50,9 @@ msgid "Biography"
 msgstr "Biographie"
 
 #: website/auth/oauth.py:142 website/auth/oauth.py:190
-#, fuzzy
 msgid "Your email needs to be verified with your identity provider."
 msgstr ""
-"Votre adresse email a besoin d'être vérifiée auprès d'un fournisseur "
+"Votre adresse email a besoin d'être vérifiée auprès de votre fournisseur "
 "d'identité numérique."
 
 #: website/auth/oauth.py:160 website/auth/oauth.py:207
@@ -86,11 +85,14 @@ msgstr "Veuillez vous connecter"
 #: website/auth/templates/auth/login.html:15
 msgid ""
 "You need to create an account on the OWF or sign in, using one of the "
-"identity providers below (in case of doubt use Mozilla Persona)."
+"identity providers below (in case of doubt use <a "
+"href=\"https://login.persona.org\" target=\"_blank\">Mozilla "
+"Persona</a>)."
 msgstr ""
 "Vous devez créer un compte sur le site de l'OWF ou vous connecter, en "
 "utilisant l'un des fournisseurs d'identité numérique ci-dessous (en cas "
-"de doute, nous vous recommandons Mozilla Persona)."
+"de doute, nous vous recommandons <a href=\"https://login.persona.org\" "
+"target=\"_blank\">Mozilla Persona</a>)."
 
 #: website/auth/templates/auth/logout.html:12 website/templates/base.html:68
 msgid "Log out"
@@ -113,20 +115,20 @@ msgid "Candidature pour la Student Demo Cup"
 msgstr ""
 
 #: website/templates/_header.html:4
-msgid "Aller au contenu"
-msgstr ""
+msgid "Go to content"
+msgstr "Aller au contenu"
 
 #: website/templates/_header.html:7
-msgid "Aller à la navigation"
-msgstr ""
+msgid "Go to navigation"
+msgstr "Aller à la navigation"
 
 #: website/templates/_header.html:10
-msgid "Aller à la recherche"
-msgstr ""
+msgid "Go to search"
+msgstr "Aller à la recherche"
 
 #: website/templates/_header.html:23
 msgid "Profile"
-msgstr ""
+msgstr "Votre profil"
 
 #: website/templates/_header.html:28
 msgid "Logout"
@@ -564,5 +566,14 @@ msgstr "Page introuvable"
 #~ msgstr "Inscription"
 
 #~ msgid "Tous nos partenaires"
+#~ msgstr ""
+
+#~ msgid "Aller au contenu"
+#~ msgstr ""
+
+#~ msgid "Aller à la navigation"
+#~ msgstr ""
+
+#~ msgid "Aller à la recherche"
 #~ msgstr ""
 

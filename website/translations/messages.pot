@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2014-08-06 16:45+0200\n"
+"POT-Creation-Date: 2014-08-06 16:50+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -83,7 +83,9 @@ msgstr ""
 #: website/auth/templates/auth/login.html:15
 msgid ""
 "You need to create an account on the OWF or sign in, using one of the "
-"identity providers below (in case of doubt use Mozilla Persona)."
+"identity providers below (in case of doubt use <a "
+"href=\"https://login.persona.org\" target=\"_blank\">Mozilla "
+"Persona</a>)."
 msgstr ""
 
 #: website/auth/templates/auth/logout.html:12 website/templates/base.html:68
@@ -107,15 +109,15 @@ msgid "Candidature pour la Student Demo Cup"
 msgstr ""
 
 #: website/templates/_header.html:4
-msgid "Aller au contenu"
+msgid "Go to content"
 msgstr ""
 
 #: website/templates/_header.html:7
-msgid "Aller à la navigation"
+msgid "Go to navigation"
 msgstr ""
 
 #: website/templates/_header.html:10
-msgid "Aller à la recherche"
+msgid "Go to search"
 msgstr ""
 
 #: website/templates/_header.html:23
