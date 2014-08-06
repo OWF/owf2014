@@ -7,6 +7,7 @@
   <meta charset="UTF-8">
   <meta name="google-site-verification"
       content="kfGFousDWgE8TxYr_Ue4OywCllC4hTPHvBvybFodLPM"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
 
   {%- for name, content in g.metadata.items() %}
     <meta name="{{ name }}" content="{{ content }}">
@@ -44,6 +45,18 @@
 </div>
 
 <div id="main">
+  {%- with messages = get_flashed_messages(with_categories=true) %}
+    {% if messages %}
+      <div class="container">
+        {%- for category, message in messages %}
+          <div class="alert alert-{{ category }}">
+            {{ message }}
+          </div>
+        {%- endfor %}
+      </div>
+    {% endif %}
+  {%- endwith %}
+
   {% block main %}
   {% endblock %}
 </div>

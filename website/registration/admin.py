@@ -1,17 +1,18 @@
 import StringIO
+import csv
+
 from flask import make_response, current_app
 from flask.ext.admin import expose
 from flask.ext.admin.contrib.sqlamodel import ModelView
 from flask.ext.login import current_user
 from abilian.core.extensions import db
-import csv
 
 from .models import Registration, Track
+from website.auth.models import User2
 
 
-class RegistrationView(ModelView):
-  column_list = ['email', 'confirmed_at',
-                 'coming_on_oct_3', 'coming_on_oct_4', 'coming_on_oct_5']
+class UserView(ModelView):
+  column_list = ['email', 'first_name', 'last_name', 'confirmed_at']
 
   def is_accessible(self):
     if current_app.config.get('DEBUG'):
@@ -26,10 +27,7 @@ class RegistrationView(ModelView):
     for r in Registration.query.all():
       row = [r.created_at.strftime("%Y/%m/%d"),
              r.confirmed_at,
-             r.email.encode("utf8"),
-             r.coming_on_oct_3,
-             r.coming_on_oct_4,
-             r.coming_on_oct_5]
+             r.email.encode("utf8")]
       #for track in tracks:
       #  row.append()
 
@@ -64,6 +62,6 @@ class TrackView(ModelView):
 
 def register_plugin(app):
   admin = app.extensions['admin'][0]
-  admin.add_view(RegistrationView(Registration, db.session))
+  admin.add_view(UserView(User2, db.session))
   admin.add_view(TrackView(Track, db.session))
 

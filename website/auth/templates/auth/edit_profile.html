@@ -1,0 +1,40 @@
+{% extends "_base.html" %}
+
+{% from "auth/macros.html" import m_renderfield %}
+
+{% block main %}
+
+  <div class="container content">
+
+    <div class="row">
+      <div class="col-md-12">
+
+        <h1>{{ page.title }}</h1>
+
+        <form method="post" action="#">
+
+          {{ form.csrf_token() }}
+
+          {{ m_renderfield(form.first_name) }}
+          {{ m_renderfield(form.last_name) }}
+          {{ m_renderfield(form.title) }}
+          {{ m_renderfield(form.organization) }}
+          {{ m_renderfield(form.organization_type) }}
+
+          <div class="form-actions">
+            <button type="submit" class="btn btn-primary" name="_action"
+                value="add">
+              Save
+            </button>
+            <button type="submit" class="btn cancel" name="_action"
+                value="cancel">
+              Cancel
+            </button>
+          </div>
+        </form>
+
+      </div>
+    </div>
+  </div>
+
+{% endblock %}

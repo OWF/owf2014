@@ -1,19 +1,37 @@
-<div id="fast-acces-div" class="hidden-xs">
+<div id="fast-acces-div">
   <ul id="fast-acces-menu" class="container">
-    {% if lang == 'fr' %}
-      {% include "_skiplink_fr.html" %}
-    {% else %}
-      {% include "_skiplink_en.html" %}
-    {% endif %}
+    <li class="hidden-xs">
+      <a href="#main">{{ _("Aller au contenu") }}</a>
+    </li>
+    <li class="hidden-xs">
+      <a href="#menu-nav">{{ _("Aller à la navigation") }}</a>
+    </li>
+    <li class="hidden-xs">
+      <a href="#search-form">{{ _("Aller à la recherche") }}</a>
+    </li>
 
     <li class="fast-acces-right">
-      {% if not g.user.is_anonymous %}
-        {{ g.user.name }}
-      {% else %}
-        {#
-        <a href="/auth/" class=signin>Sign in</a>
-        #}
-      {% endif %}
+      | {% if not g.user.is_anonymous() %}
+      <span class="dropdown">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span
+            class="fa fa-user"></span>
+          {{ g.user.name or g.user.email }}
+          <span class="caret"></span></a>
+        <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+          <li role="presentation">
+            <a role="menuitem" tabindex="-1"
+                href="{{ url_for("auth.profile") }}">{{ _("Profile") }}</a>
+          </li>
+          <li role="presentation" class="divider"></li>
+          <li role="presentation">
+            <a role="menuitem" tabindex="-1"
+                href="{{ url_for("auth.logout") }}">{{ _("Logout") }}</a>
+          </li>
+        </ul>
+      </span>
+    {% else %}
+      <a href="/auth/" class=signin>{{ _("Sign in") }}</a>
+    {% endif %}
     </li>
 
     <li class="fast-acces-right"><a
@@ -102,14 +120,15 @@
 
   <nav class="navbar-default" role="navigation">
     <div class="container-fluid">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#menu-nav-div">
+      <button type="button" class="navbar-toggle" data-toggle="collapse"
+          data-target="#menu-nav-div">
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
 
 
-      <div id="menu-nav-div"  class="collapse navbar-collapse" role="navigation">
+      <div id="menu-nav-div" class="collapse navbar-collapse" role="navigation">
         <ul id="menu-nav" class="nav navbar-nav">
           {% for entry in menu %}
             {% if entry.path.startswith("/") %}
@@ -117,15 +136,17 @@
             {% else %}
               {% set url=url_for("localized.home") + entry.path %}
             {% endif %}
-            <li><a href="{{ url }}" class="{{ entry.class }}">{{ entry.label }}</a>
+            <li><a href="{{ url }}"
+                class="{{ entry.class }}">{{ entry.label }}</a>
             </li>
           {% endfor %}
           <li class="search-form hidden-sm visible-xs" id="search-form">
             <!--<img src="/static/pictures/MagnifyingGlass.png" width="16px" height="16px"/>-->
             <form action="/{{ lang }}/search">
               <a onclick="submit();">{{ _("Search") }}</a>
-              <input name="qs" type="text" value="{{ request.args.get('qs', '') }}"/>
-              
+              <input name="qs" type="text"
+                  value="{{ request.args.get('qs', '') }}"/>
+
             </form>
           </li>
         </ul>

@@ -3,23 +3,25 @@
 }
 
 #fast-acces-menu {
+  color: white;
   list-style-type: none;
-  overflow: hidden;
+  //overflow: hidden;
   padding: 6px 0;
-  li {
+
+  > li {
     float: left;
   }
-  a {
-    color: white;
+  &>li>a, &>li>span>a {
     font-family: 'Open Sans', sans-serif;
     padding: 4px 10px;
+    color: white;
+    text-decoration: none;
+    &:hover {
+      text-decoration: none;
+    }
   }
   .lang-actif {
     color: #4F5962;
-    text-decoration: none;
-  }
-  .lang {
-    text-decoration: underline;
   }
   li.fast-acces-right {
     float: right;

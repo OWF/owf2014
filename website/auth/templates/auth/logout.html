@@ -1,0 +1,28 @@
+{% extends "_base.html" %}
+
+{% block main %}
+  <script>
+    var $CURRENT_USER = "{{ g.user.email }}";
+    var $PERSONA_ROOT = '/auth/persona';
+  </script>
+
+  <div class="container content">
+
+    <div class="login-box">
+      <h2>{{ _("Log out") }}</h2>
+
+      <p>{{ _("Are you sure you want to log out?") }}</p>
+
+      <div class="form-group">
+        <button id="persona-signout" type="submit"
+            class="btn btn-primary btn-block btn-lg" tabindex="4"><i
+            class="fa fa-sign-out"></i>&nbsp;&nbsp;Log out
+        </button>
+      </div>
+
+    </div>
+  </div>
+
+  <script src="https://login.persona.org/include.js"></script>
+
+{% endblock %}

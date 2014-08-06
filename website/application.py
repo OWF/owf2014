@@ -4,7 +4,6 @@ import locale
 from os import mkdir
 from os.path import join, dirname, exists
 import re
-from abilian.services import audit_service, activity_service
 
 from flask import Flask, abort, request, g, session, redirect
 from flask.ext.admin import Admin
@@ -14,7 +13,6 @@ from flask.ext.flatpages import FlatPages
 from flask.ext.markdown import Markdown
 from flask.ext.assets import Environment as AssetManager
 from flask.ext.login import current_user
-from flask_security.core import AnonymousUser
 
 import abilian
 from abilian.i18n import babel
@@ -23,9 +21,7 @@ from abilian.core.extensions import db, mail
 from abilian.web.filters import init_filters
 
 from .registration.models import Track
-from .tracks import TRACKS
 from .util import preferred_language
-from .security import User2
 from .whoosh import Whoosh
 from . import linuxipsum
 
@@ -62,13 +58,12 @@ def setup(app):
   admin = Admin(app)
   bootstrap = Bootstrap(app)
 
-  app.register_plugin("website.security")
   app.register_plugin("website.auth")
   setup_filters_and_processors(app)
 
   app.register_plugin("website.views")
   #app.register_plugin("website.cfp")
-  app.register_plugin("website.registration")
+  #app.register_plugin("website.registration")
   app.register_plugin("website.crm")
   app.register_plugin("website.sdc")  # Students demo cup
 
@@ -157,11 +152,12 @@ def create_db(app):
 
 def load_tracks(app):
   with app.app_context():
-    if Track.query.count() == 0:
-      for track_id, track_title, track_theme, track_day in TRACKS:
-        track = Track(title=track_title, theme=track_theme, day=track_day)
-        db.session.add(track)
-      db.session.commit()
+    pass
+    # if Track.query.count() == 0:
+    #   for track_id, track_title, track_theme, track_day in TRACKS:
+    #     track = Track(title=track_title, theme=track_theme, day=track_day)
+    #     db.session.add(track)
+    #   db.session.commit()
 
 
 def setup_filters_and_processors(app):
@@ -196,8 +192,7 @@ def setup_filters_and_processors(app):
 
   @app.context_processor
   def inject_context():
-    return dict(app=app,
-                linuxipsum=linuxipsum.generate)
+    return dict(app=app, linuxipsum=linuxipsum.generate)
 
   @app.before_request
   def before_request():
@@ -205,8 +200,6 @@ def setup_filters_and_processors(app):
       if not current_user.is_authenticated():
         return redirect("/login")
 
-    g.user = AnonymousUser()
-    #g.user = current_user._get_current_object()
     g.recent_items = []
 
 

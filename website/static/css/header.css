@@ -2,24 +2,26 @@
   background-color: black;
 }
 #fast-acces-menu {
+  color: white;
   list-style-type: none;
-  overflow: hidden;
   padding: 6px 0;
 }
-#fast-acces-menu li {
+#fast-acces-menu > li {
   float: left;
 }
-#fast-acces-menu a {
-  color: white;
+#fast-acces-menu > li > a,
+#fast-acces-menu > li > span > a {
   font-family: 'Open Sans', sans-serif;
   padding: 4px 10px;
+  color: white;
+  text-decoration: none;
+}
+#fast-acces-menu > li > a:hover,
+#fast-acces-menu > li > span > a:hover {
+  text-decoration: none;
 }
 #fast-acces-menu .lang-actif {
   color: #4F5962;
-  text-decoration: none;
-}
-#fast-acces-menu .lang {
-  text-decoration: underline;
 }
 #fast-acces-menu li.fast-acces-right {
   float: right;

@@ -1,7 +1,9 @@
-from flask import request, url_for, session, jsonify, render_template
+from flask import request, url_for, session, jsonify, render_template, redirect, \
+  g
 from flask.ext.oauthlib.client import OAuth, OAuthException
 
 from . import route
+from .models import User2, db
 
 
 oauth = OAuth()
@@ -95,7 +97,22 @@ def login(server_name):
 
 @route("/")
 def login_screen():
-  return render_template("auth/login.html", title="Login")
+  if g.user.is_anonymous():
+    return render_template("auth/login.html", title="Login")
+  else:
+    return redirect(url_for(".logout"))
+
+
+@route("/logout", methods=['GET', 'POST'])
+def logout():
+  if request.method == 'GET':
+    return render_template("auth/logout.html", title="Logout")
+
+  if 'user_id' in session:
+    del session['user_id']
+  if 'user_email' in session:
+    del session['user_email']
+  return redirect(url_for(".login_screen"))
 
 
 #
@@ -129,7 +146,15 @@ def authorized_google(resp):
     )
   session['oauth_token'] = (resp['access_token'], '')
   me = google.get('userinfo')
-  return jsonify({"data": me.data})
+  email = me['email']
+  user = User2.query.filter(User2.email == email).first()
+  if not user:
+    user = User2(email=email, first_name=me['first_name'],
+                 last_name=me['last_name'])
+    db.session.add(user)
+    db.session.commit()
+
+  return redirect(session['next_url'] or "/")
 
 
 #

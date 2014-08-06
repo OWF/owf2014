@@ -27,7 +27,7 @@ def display_form():
 
   page = dict(title=_l(u"Register as a participant"))
   tracks = Track.query.all()
-  print g.lang
+  print g.lang, g.user
   return render_template("registration/form.html",
                          page=page, tracks=tracks, form=form, lang="en")
 

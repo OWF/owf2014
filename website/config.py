@@ -5,7 +5,7 @@
 #
 DEBUG = True
 ASSETS_DEBUG = DEBUG
-SECRET_KEY = "joouqxounbuttuyctuyctuvycrwvtyuew"
+SECRET_KEY = "CHANGEME"
 # FIXME later
 #ASSETS_DEBUG = True
 FLATPAGES_AUTO_RELOAD = True
@@ -18,6 +18,7 @@ BROKER_URL = "sqla+" + SQLALCHEMY_DATABASE_URI
 CELERY_RESULT_BACKEND = "database"
 CELERY_RESULT_DBURI = SQLALCHEMY_DATABASE_URI
 
+SUPER_USERS = ['sf@fermigier.com']
 
 #
 # Application configuration

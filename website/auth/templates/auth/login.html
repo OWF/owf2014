@@ -1,6 +1,10 @@
 {% extends "_base.html" %}
 
 {% block main %}
+  <script>
+    var $CURRENT_USER = "{{ g.user.email }}";
+    var $PERSONA_ROOT = '/auth/persona';
+  </script>
 
   <div class="container content">
 
@@ -11,6 +15,19 @@
       <h3>{{ _("Using an external identity provider") }}</h3>
 
       <div class="row">
+
+        <div class="col-sm-6">
+          <a id="persona-signin" class="btn btn-persona btn-block">Log in with
+            Mozilla Persona</a>
+        </div>
+
+        <div class="col-sm-6">
+          <a href="{{ url_for(".login", server_name="github") }}"
+              class="btn btn-github btn-block">
+            <span class="fa fa-lg fa-github"></span>
+            &nbsp;Log in with GitHub
+          </a>
+        </div>
 
         <div class="col-sm-6">
           <a href="{{ url_for(".login", server_name="google") }}"
@@ -28,81 +45,69 @@
           </a>
         </div>
 
-        <div class="col-sm-6">
-          <a href="{{ url_for(".login", server_name="linkedin") }}"
-              class="btn btn-linkedin btn-block">
-            <span class="fa fa-lg fa-linkedin"></span>
-            &nbsp;Log in with Linkedin
-          </a>
-        </div>
-
-        <div class="col-sm-6">
-          <a href="{{ url_for(".login", server_name="github") }}"
-              class="btn btn-github btn-block">
-            <span class="fa fa-lg fa-github"></span>
-            &nbsp;Log in with GitHub
-          </a>
-        </div>
-
-        <div class="col-sm-6">
-          <a href="{{ url_for(".login", server_name="stackoverflow") }}"
-              class="btn btn-stackoverflow btn-block">
-            <span class="fa fa-lg fa-stackoverflow"></span>
-            &nbsp;Log in with StackOverflow
-          </a>
-        </div>
-
-        <div class="col-sm-6">
-          <a id="persona-signin" class="btn btn-persona btn-block">Log in with Mozilla
-            Persona</a>
-        </div>
+{#        <div class="col-sm-6">#}
+{#          <a href="{{ url_for(".login", server_name="linkedin") }}"#}
+{#              class="btn btn-linkedin btn-block">#}
+{#            <span class="fa fa-lg fa-linkedin"></span>#}
+{#            &nbsp;Log in with Linkedin#}
+{#          </a>#}
+{#        </div>#}
+{##}
+{#        <div class="col-sm-6">#}
+{#          <a href="{{ url_for(".login", server_name="stackoverflow") }}"#}
+{#              class="btn btn-stackoverflow btn-block">#}
+{#            <span class="fa fa-lg fa-stackoverflow"></span>#}
+{#            &nbsp;Log in with StackOverflow#}
+{#          </a>#}
+{#        </div>#}
       </div>
 
-      <h3>{{ _("Or with your email and password") }}</h3>
 
-      <form method="POST" action=".">
-        <div class="form-group">
-          <label for="login-email">{{ _("Email address") }}</label>
-          <input type="text" class="form-control" id="login-email" tabindex="1">
-        </div>
-
-        <div class="form-group">
-          <label for="login-password">{{ _("Password") }}</label>
-
-          <div class="pull-right">
-            <a href="TODO">Forgot Password?</a>
-          </div>
-          <input type="password" class="form-control" id="login-password"
-              tabindex="2">
-        </div>
-
-        <div class="form-group">
-          <button type="submit" class="btn btn-primary btn-block btn-lg"
-              tabindex="4"><i class="fa fa-sign-in"></i>&nbsp;&nbsp;Signin
-          </button>
-        </div>
-      </form>
-
-      <h3>{{ _("Or register with your email and password") }}</h3>
-
-      <form method="POST" action=".">
-        <div class="form-group">
-          <label for="register-email">{{ _("Email address") }}</label>
-          <input type="text" class="form-control" id="login-email" tabindex="1">
-        </div>
-
-        <div class="form-group">
-          <label for="register-password">{{ _("Choose a password") }}</label>
-          <input type="password" class="form-control" id="login-password"
-              tabindex="2">
-        </div>
-
-        <div class="form-group">
-          <button type="submit" class="btn btn-primary btn-block btn-lg"
-              tabindex="4"><i class="fa fa-sign-in"></i>&nbsp;&nbsp;Register
-          </button>
-        </div>
-      </form>
+{#      <h3>{{ _("Or with your email and password") }}</h3>#}
+{##}
+{#      <form method="POST" action=".">#}
+{#        <div class="form-group">#}
+{#          <label for="login-email">{{ _("Email address") }}</label>#}
+{#          <input type="text" class="form-control" id="login-email" tabindex="1">#}
+{#        </div>#}
+{##}
+{#        <div class="form-group">#}
+{#          <label for="login-password">{{ _("Password") }}</label>#}
+{##}
+{#          <div class="pull-right">#}
+{#            <a href="TODO">Forgot Password?</a>#}
+{#          </div>#}
+{#          <input type="password" class="form-control" id="login-password"#}
+{#              tabindex="2">#}
+{#        </div>#}
+{##}
+{#        <div class="form-group">#}
+{#          <button type="submit" class="btn btn-primary btn-block btn-lg"#}
+{#              tabindex="4"><i class="fa fa-sign-in"></i>&nbsp;&nbsp;Signin#}
+{#          </button>#}
+{#        </div>#}
+{#      </form>#}
+{##}
+{#      <h3>{{ _("Or register with your email and password") }}</h3>#}
+{##}
+{#      <form method="POST" action=".">#}
+{#        <div class="form-group">#}
+{#          <label for="register-email">{{ _("Email address") }}</label>#}
+{#          <input type="text" class="form-control" id="login-email" tabindex="1">#}
+{#        </div>#}
+{##}
+{#        <div class="form-group">#}
+{#          <label for="register-password">{{ _("Choose a password") }}</label>#}
+{#          <input type="password" class="form-control" id="login-password"#}
+{#              tabindex="2">#}
+{#        </div>#}
+{##}
+{#        <div class="form-group">#}
+{#          <button type="submit" class="btn btn-primary btn-block btn-lg"#}
+{#              tabindex="4"><i class="fa fa-sign-in"></i>&nbsp;&nbsp;Register#}
+{#          </button>#}
+{#        </div>#}
+{#      </form>#}
 
     </div>
   </div>
