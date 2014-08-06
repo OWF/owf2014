@@ -97,7 +97,8 @@ def login_with(server_name):
 @route("/")
 def login():
   next_url = request.args.get('next') or request.referrer or None
-  session['next_url'] = next_url
+  if next_url:
+    session['next_url'] = next_url
   if g.user.is_anonymous():
     return render_template("auth/login.html", title="Login")
   else:
@@ -120,21 +121,6 @@ def logout():
 
 
 #
-# Twitter
-#
-@route("/authorized_twitter")
-@twitter.authorized_handler
-def authorized_twitter(resp):
-  if resp is None:
-    return 'Access denied: reason=%s error=%s' % (
-      request.args['error_reason'],
-      request.args['error_description']
-    )
-  session['oauth_token'] = resp
-  me = twitter.get('account/verify_credentials.json')
-  return jsonify({"data": me.data})
-
-
 #
 # Google
 #
@@ -221,7 +207,6 @@ def authorized_facebook(resp):
   return redirect(next_url or "/")
 
 
-
 #
 # Github
 #
@@ -265,8 +250,21 @@ def authorized_github(resp):
 
 
 #
-# These ones are currently not working
+# These ones are currently not working or not used
 #
+@route("/authorized_twitter")
+@twitter.authorized_handler
+def authorized_twitter(resp):
+  if resp is None:
+    return 'Access denied: reason=%s error=%s' % (
+      request.args['error_reason'],
+      request.args['error_description']
+    )
+  session['oauth_token'] = resp
+  me = twitter.get('account/verify_credentials.json')
+  return jsonify({"data": me.data})
+
+
 @route("/authorized_linkedin")
 @linkedin.authorized_handler
 def authorized_linkedin(resp):

@@ -41,7 +41,7 @@ def retrieve_user():
   if g.user.is_anonymous() or request.path.startswith("/static/"):
     return
 
-  if not g.user.is_complete() and request.path != "/auth/edit_profile":
+  if not g.user.is_complete() and not request.path.startswith("/auth/"):
     raise HTTPRedirectException("/auth/edit_profile")
 
 

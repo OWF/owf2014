@@ -35,9 +35,10 @@ class RegistrationForm(Form):
                                   validators=[required()])
 
   url = TextField(label=_l("URL"))
+  twitter_handle = TextField(label=_l("Twitter handle"))
   biography = TextAreaField(label=_l("Biography"))
 
-  # twitter_handle = Column(UnicodeText(100), default="", nullable=False)
+
   # github_handle = Column(UnicodeText(200), default="", nullable=False)
   # sourceforge_handle = Column(UnicodeText(200), default="", nullable=False)
   # linkedin_url = Column(UnicodeText(200), default="", nullable=False)

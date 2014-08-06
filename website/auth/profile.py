@@ -40,9 +40,13 @@ def edit_profile():
 
     msg = _(u"Profile edited successfully.")
     flash(msg, "success")
-    if 'next_url' in session:
+
+    next_url = session.get('next_url')
+    if next_url:
+      del session['next_url']
       return redirect(session['next_url'])
-    return redirect(url_for(".profile"))
+    else:
+      return redirect(url_for(".profile"))
 
   else:
     msg = _(u"Please fix the errors belows.")
