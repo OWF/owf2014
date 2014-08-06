@@ -20,7 +20,6 @@ from abilian.app import PluginManager, ServiceManager
 from abilian.core.extensions import db, mail
 from abilian.web.filters import init_filters
 
-from .registration.models import Track
 from .util import preferred_language
 from .whoosh import Whoosh
 from . import linuxipsum

@@ -1,0 +1,54 @@
+{% extends "_base.html" %}
+
+{% from "_macros.html" import m_sidebar, m_speaker_details %}
+
+{% block main %}
+  <div class="container content">
+
+    <div class="row">
+      <div class="col-md-12">
+
+        <div class="row clear-both">
+          <div class="col-md-12">
+            <article class="speakers" id="speakers">
+              <h1 class="page-title">{{ _("Speakers") }}</h1>
+
+              {% for participant in participants %}
+                <div class="row" style="border-top: solid 1px #eee;">
+                  <span class="col-md-2">
+{#                    <img style="border-radius: 50%;"#}
+{#                        src="{{ url_for(".photo", participant_id=participant.id, s=150) }}">#}
+                  </span>
+
+                  <span class="col-md-7">
+                    <h2><a href="{{ url_for(participant) }}">{{ participant }}</a>
+                    </h2>
+
+                    {% if participant.bio %}
+                      <p>{{ participant.bio }}</p>
+                    {% endif %}
+
+                    {% if participant.talks %}
+                      <h3>Talks</h3>
+
+                      {% for talk in participant.talks %}
+                        <p><a href="{{ url_for(talk) }}"><b>{{ talk.title }}</b></a>
+                          (Track: <a
+                              href="{{ url_for(talk.track) }}">{{ talk.track.name }}</a>)
+                        </p>
+                      {% endfor %}
+                    {% endif %}
+                  </span>
+
+                  <span class="col-md-12 details">
+                    {{ m_speaker_details(participant) }}
+                  </span>
+                </div>
+              {% endfor %}
+            </article>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+{% endblock %}

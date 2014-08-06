@@ -22,6 +22,7 @@ from ..config import MAIN_MENU, FEED_MAX_LINKS, IMAGE_SIZES
 from ..content import Page, get_news, get_page_or_404, get_pages, get_blocks,\
   get_page
 from ..crm.models import Speaker, Track2, Talk, Room
+from website.auth import User2
 
 
 __all__ = ['setup']
@@ -85,6 +86,9 @@ def alt_url_for(obj, *args, **kw):
       return url_for("localized.page", path=obj.meta['path'][3:])
   elif isinstance(obj, Speaker):
     return url_for("localized.speaker", speaker_id=obj.id)
+  elif isinstance(obj, User2):
+    return "#" # TODO
+    #return url_for("localized.participant", participant_id=obj.id)
   elif isinstance(obj, Track2):
     return url_for("localized.track", track_id=obj.id)
   elif isinstance(obj, Room):
@@ -312,6 +316,15 @@ def rooms():
   rooms.sort(key=lambda r: -r[0].capacity)
   page = dict(title=_(u"Rooms"))
   return render_template("rooms.html", page=page, rooms=rooms)
+
+
+# TODO
+#
+# @route('/participants/')
+# def participants():
+#   users = User2.query.order_by(User2.last_name).all()
+#   page = dict(title=_("Participants"))
+#   return render_template("participants.html", page=page, participants=users)
 
 
 @route('/rooms/<int:room_id>')

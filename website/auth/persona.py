@@ -28,6 +28,8 @@ def persona_login():
     if verification_data['status'] == 'okay':
       email = verification_data['email']
       user = get_or_create_user(email)
+      user.auth_provider = "persona"
+
       # Log the user in by setting a secure session cookie
       session['user_id'] = user.id
       session['auth_provider'] = 'persona'

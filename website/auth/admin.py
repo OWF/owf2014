@@ -14,7 +14,12 @@ class SecureModelView(ModelView):
       return False
 
 
+class UserModelView(SecureModelView):
+  column_list = ('id', 'email', 'first_name', 'last_name', 'organization',
+                 'organization_type')
+
+
 def register_admin_views(app):
   admin = app.extensions['admin'][0]
-  admin.add_view(SecureModelView(User2, db.session))
+  admin.add_view(UserModelView(User2, db.session))
   admin.add_view(SecureModelView(Role, db.session))

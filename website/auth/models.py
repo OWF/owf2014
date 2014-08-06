@@ -68,6 +68,20 @@ class User2(db.Model, UserMixin):
   def __repr__(self):
     return '<User2 {}>'.format(self.email)
 
+  #
+  # Aliases
+  #
+  @property
+  def bio(self):
+    return self.biography
+
+  @property
+  def _name(self):
+    return '%s %s' % (self.first_name, self.last_name)
+
+  name = _name
+
+
 
 # For Flask-Security
 user_datastore = SQLAlchemyUserDatastore(db, User2, Role)
