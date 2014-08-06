@@ -228,7 +228,6 @@ def authorized_facebook(resp):
 @route("/authorized_github")
 @github.authorized_handler
 def authorized_github(resp):
-  print resp
   if resp is None:
     return 'Access denied: reason=%s error=%s' % (
       request.args['error_reason'],
@@ -266,12 +265,11 @@ def authorized_github(resp):
 
 
 #
-# Linkedin
+# These ones are currently not working
 #
 @route("/authorized_linkedin")
 @linkedin.authorized_handler
 def authorized_linkedin(resp):
-  print resp
   if resp is None:
     return 'Access denied: reason=%s error=%s' % (
       request.args['error_reason'],
@@ -297,13 +295,9 @@ def change_linkedin_query(uri, headers, body):
 linkedin.pre_request = change_linkedin_query
 
 
-#
-# Stackoverflow
-#
 @route("/authorized_stackoverflow")
 @stackoverflow.authorized_handler
 def authorized_stackoverflow(resp):
-  print resp
   if resp is None:
     return 'Access denied: reason=%s error=%s' % (
       request.args['error_reason'],
@@ -317,7 +311,6 @@ def authorized_stackoverflow(resp):
 @route("/authorized_xing")
 @xing.authorized_handler
 def authorized_xing(resp):
-  print resp
   if resp is None:
     return 'Access denied: reason=%s error=%s' % (
       request.args['error_reason'],

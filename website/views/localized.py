@@ -78,7 +78,6 @@ def inject_menu():
 # Deal with language
 #
 def alt_url_for(obj, *args, **kw):
-  print kw
   if isinstance(obj, Page):
     if re.match("../news/", obj.path):
       return url_for("localized.news_item", slug=obj.meta['slug'])
@@ -390,7 +389,6 @@ def schedule(day=None):
     page = dict(title=_(u"Day 1 - Plenary session"))
 
     def get_track(id):
-      print id, type(id)
       return Track2.query.get(int(id))
 
     return render_template("day1.html", day=day, page=page, talks=talks,
