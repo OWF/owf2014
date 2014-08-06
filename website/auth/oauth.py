@@ -151,8 +151,8 @@ def authorized_google(resp):
   session['oauth_token'] = (access_token, '')
 
   me = google.get('userinfo')
-  email = me['email']
-  if not me['verified_email']:
+  email = me.data['email']
+  if not me.data['verified_email']:
     msg = _(u"Your email need to be verified with your identity provider.")
     flash(msg, "danger")
     return redirect(".login")
@@ -163,12 +163,12 @@ def authorized_google(resp):
     db.session.add(user)
 
   user.auth_provider = "google"
-  user.oauth_id = me['id']
+  user.oauth_id = me.data['id']
   user.access_token = access_token
-  user.first_name = me['given_name']
-  user.last_name = me['family_name']
-  user.gender = me['gender']
-  user.picture_url = me['picture']
+  user.first_name = me.data['given_name']
+  user.last_name = me.data['family_name']
+  user.gender = me.data['gender']
+  user.picture_url = me.data['picture']
   db.session.commit()
 
   next_url = session.get('next_url')
@@ -196,8 +196,8 @@ def authorized_facebook(resp):
 
   me = facebook.get('/me')
 
-  email = me['email']
-  if not me['verified']:
+  email = me.data['email']
+  if not me.data['verified']:
     msg = _(u"Your email need to be verified with your identity provider.")
     flash(msg, "danger")
     return redirect(".login")
@@ -208,11 +208,11 @@ def authorized_facebook(resp):
     db.session.add(user)
 
   user.auth_provider = "facebook"
-  user.oauth_id = me['id']
+  user.oauth_id = me.data['id']
   user.access_token = access_token
-  user.first_name = me['first_name']
-  user.last_name = me['last_name']
-  user.gender = me['gender']
+  user.first_name = me.data['first_name']
+  user.last_name = me.data['last_name']
+  user.gender = me.data['gender']
   db.session.commit()
 
   next_url = session.get('next_url')
@@ -240,23 +240,23 @@ def authorized_github(resp):
 
   me = github.get('user')
 
-  email = me['email']
+  email = me.data['email']
   user = User2.query.filter(User2.email == email).first()
   if not user:
     user = User2(email=email)
     db.session.add(user)
 
   user.auth_provider = "github"
-  user.oauth_id = me['id']
+  user.oauth_id = me.data['id']
   user.access_token = access_token
   try:
-    user.first_name, user.last_name = me['name'].split(" ", 2)
+    user.first_name, user.last_name = me.data['name'].split(" ", 2)
   except:
     pass
-  user.url = me['blog']
-  user.picture_url = me['avatar_url']
-  user.github_handle = me['login']
-  user.organization = me['company']
+  user.url = me.data['blog']
+  user.picture_url = me.data['avatar_url']
+  user.github_handle = me.data['login']
+  user.organization = me.data['company']
   db.session.commit()
 
   next_url = session.get('next_url')
