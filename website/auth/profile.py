@@ -44,7 +44,7 @@ def edit_profile():
     next_url = session.get('next_url')
     if next_url:
       del session['next_url']
-      return redirect(session['next_url'])
+      return redirect(next_url)
     else:
       return redirect(url_for(".profile"))
 
