@@ -1,4 +1,4 @@
-from flask import Blueprint, session, g, request, url_for
+from flask import Blueprint, session, g, request
 from flask.ext.security import Security, AnonymousUser
 from werkzeug.exceptions import HTTPException
 
@@ -32,29 +32,17 @@ def retrieve_user():
   g.user = AnonymousUser()
   user_id = session.get('user_id')
   if user_id:
-    g.user = User2.query.get(user_id)
+    user = User2.query.get(user_id)
+    if user:
+      g.user = user
+    else:
+      del session['user_id']
+
+  if g.user.is_anonymous() or request.path.startswith("/static/"):
     return
 
-  if 'user_email' in session:
-    email = session['user_email']
-  else:
-    email = None
-
-  if not email:
-    return
-
-  if email:
-    user = User2.query.filter(User2.email == email).first()
-    if not user:
-      user = User2(email=email)
-      db.session.add(user)
-      db.session.commit()
-    g.user = user
-    session['user_id'] = user.id
-
-  if not g.user.registered and request.path != "/auth/edit_profile":
+  if not g.user.is_complete() and request.path != "/auth/edit_profile":
     raise HTTPRedirectException("/auth/edit_profile")
-
 
 
 #

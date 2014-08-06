@@ -64,41 +64,42 @@ $(document).ready(function() {
     };
   }
 
-  navigator.id.watch({
-    loggedInEmail: $CURRENT_USER,
-    onlogin:       function(assertion) {
-      // Un utilisateur est connecté ! Voici ce qu'il faut faire :
-      // 1. Envoyer l'assertion à votre backend pour vérification et pour créer la session.
-      // 2. Mettre à jour l'interface utilisateur.
-      $.ajax({
-        type:    'POST',
-        url:     $PERSONA_ROOT + '/login', // L'URL sur votre site web.
-        data:    {assertion: assertion},
-        success: function(res, status, xhr) {
-          window.location.reload();
-        },
-        error:   function(res, status, xhr) {
-          alert("login failure" + res);
-        }
-      });
-    },
-    onlogout:      function() {
-      // Un utilisateur s'est déconnecté ! Voici ce qu'il faut faire :
-      // Détruire la session de l'utilisateur en redirigeant l'utilisateur ou en appelant votre backend.
-      $.ajax({
-        type:    'POST',
-        url:     $PERSONA_ROOT + '/logout', // L'URL sur votre site web.
-        success: function(res, status, xhr) {
-          window.location.reload();
-        },
-        error:   function(res, status, xhr) {
-          alert("logout failure" + res);
-        }
-      });
-    }
-  });
+  if (signinLink || signoutLink) {
+    navigator.id.watch({
+      loggedInEmail: $CURRENT_USER || null,
+      onlogin:       function(assertion) {
+        // Un utilisateur est connecté ! Voici ce qu'il faut faire :
+        // 1. Envoyer l'assertion à votre backend pour vérification et pour créer la session.
+        // 2. Mettre à jour l'interface utilisateur.
+        $.ajax({
+          type:    'POST',
+          url:     $PERSONA_ROOT + '/login', // L'URL sur votre site web.
+          data:    {assertion: assertion},
+          success: function(res, status, xhr) {
+            window.location.reload();
+          },
+          error:   function(res, status, xhr) {
+            alert("Mozilla Persona login failure" + res);
+          }
+        });
+      },
+      onlogout:      function() {
+        // Un utilisateur s'est déconnecté ! Voici ce qu'il faut faire :
+        // Détruire la session de l'utilisateur en redirigeant l'utilisateur ou en appelant votre backend.
+        $.ajax({
+          type:    'POST',
+          url:     $PERSONA_ROOT + '/logout', // L'URL sur votre site web.
+          success: function(res, status, xhr) {
+            window.location.reload();
+          },
+          error:   function(res, status, xhr) {
+            alert("Mozilla Persona logout failure" + res);
+          }
+        });
+      }
+    });
+  }
 });
-
 
 /*
  * Image flipboard for 2013

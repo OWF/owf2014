@@ -2,7 +2,7 @@
 
 {% block main %}
   <script>
-    var $CURRENT_USER = "{{ g.user.email }}";
+    var $CURRENT_USER = "{{ g.user.email }}" || null;
     var $PERSONA_ROOT = '/auth/persona';
   </script>
 

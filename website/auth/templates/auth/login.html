@@ -2,7 +2,7 @@
 
 {% block main %}
   <script>
-    var $CURRENT_USER = "{{ g.user.email }}";
+    var $CURRENT_USER = "{{ g.user.email }}" || null;
     var $PERSONA_ROOT = '/auth/persona';
   </script>
 
@@ -22,7 +22,7 @@
         </div>
 
         <div class="col-sm-6">
-          <a href="{{ url_for(".login", server_name="github") }}"
+          <a href="{{ url_for(".login_with", server_name="github") }}"
               class="btn btn-github btn-block">
             <span class="fa fa-lg fa-github"></span>
             &nbsp;Log in with GitHub
@@ -30,7 +30,7 @@
         </div>
 
         <div class="col-sm-6">
-          <a href="{{ url_for(".login", server_name="google") }}"
+          <a href="{{ url_for(".login_with", server_name="google") }}"
               class="btn btn-google btn-block">
             <span class="fa fa-lg fa-google-plus"></span>
             &nbsp;Log in with Google
@@ -38,7 +38,7 @@
         </div>
 
         <div class="col-sm-6">
-          <a href="{{ url_for(".login", server_name="facebook") }}"
+          <a href="{{ url_for(".login_with", server_name="facebook") }}"
               class="btn btn-facebook btn-block">
             <span class="fa fa-lg fa-facebook"></span>
             &nbsp;Log in with Facebook
@@ -46,7 +46,7 @@
         </div>
 
 {#        <div class="col-sm-6">#}
-{#          <a href="{{ url_for(".login", server_name="linkedin") }}"#}
+{#          <a href="{{ url_for(".login_with", server_name="linkedin") }}"#}
 {#              class="btn btn-linkedin btn-block">#}
 {#            <span class="fa fa-lg fa-linkedin"></span>#}
 {#            &nbsp;Log in with Linkedin#}
@@ -54,7 +54,7 @@
 {#        </div>#}
 {##}
 {#        <div class="col-sm-6">#}
-{#          <a href="{{ url_for(".login", server_name="stackoverflow") }}"#}
+{#          <a href="{{ url_for(".login_with", server_name="stackoverflow") }}"#}
 {#              class="btn btn-stackoverflow btn-block">#}
 {#            <span class="fa fa-lg fa-stackoverflow"></span>#}
 {#            &nbsp;Log in with StackOverflow#}

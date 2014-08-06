@@ -30,7 +30,7 @@
         </ul>
       </span>
     {% else %}
-      <a href="/auth/" class=signin>{{ _("Sign in") }}</a>
+      <a href="{{ url_for("auth.login", next=request.url) }}" class=signin>{{ _("Sign in") }}</a>
     {% endif %}
     </li>
 

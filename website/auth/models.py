@@ -2,9 +2,9 @@
 from sqlalchemy import Column, Integer, String, Boolean, DateTime, UnicodeText
 from flask.ext.security import RoleMixin, UserMixin, SQLAlchemyUserDatastore
 from abilian.core.extensions import db
+from website.auth.forms import RegistrationForm, UnsecureRegistrationForm
 
 __all__ = ['db', 'Role', 'User2', 'user_datastore']
-
 
 roles_users = db.Table(
   'roles_users',
@@ -28,16 +28,23 @@ class User2(db.Model, UserMixin):
   active = Column(Boolean())
   confirmed_at = Column(DateTime())
 
-  registered = Column(Boolean(), default=False)
+  auth_provider = Column(String(20))
+  oauth_id = Column(String(100))
+  access_token = Column(String(100))
 
   ip_address = Column(String(20))
-  preferred_lang = Column(String(5))
+  preferred_lang = Column(String(5), default='en')
 
   first_name = Column(UnicodeText(100), default=u"", nullable=False)
   last_name = Column(UnicodeText(100), default=u"", nullable=False)
+  gender = Column(UnicodeText(10), default=u"")
+
   title = Column(UnicodeText(100), default=u"", nullable=False)
   organization = Column(UnicodeText(200), default=u"", nullable=False)
   organization_type = Column(UnicodeText(100), default=u"", nullable=False)
+
+  # TODO
+  partners = Column(UnicodeText)
 
   biography = Column(UnicodeText(2000), default=u"", nullable=False)
   url = Column(UnicodeText(200), default=u"", nullable=False)
@@ -50,10 +57,16 @@ class User2(db.Model, UserMixin):
 
   twitter_handle = Column(UnicodeText(100), default=u"", nullable=False)
   github_handle = Column(UnicodeText(200), default=u"", nullable=False)
-  linkedin_url = Column(UnicodeText(200), default=u"", nullable=False)
 
   roles = db.relationship('Role', secondary=roles_users,
                           backref=db.backref('users', lazy='dynamic'))
+
+  def is_complete(self):
+    form = UnsecureRegistrationForm(obj=self)
+    return form.validate()
+
+  def __repr__(self):
+    return '<User2 {}>'.format(self.email)
 
 
 # For Flask-Security
