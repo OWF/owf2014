@@ -139,7 +139,7 @@ def authorized_google(resp):
   me = google.get('userinfo')
   email = me.data['email']
   if not me.data['verified_email']:
-    msg = _(u"Your email need to be verified with your identity provider.")
+    msg = _(u"Your email needs to be verified with your identity provider.")
     flash(msg, "danger")
     return redirect(".login")
 
@@ -187,7 +187,7 @@ def authorized_facebook(resp):
 
   email = me.data['email']
   if not me.data['verified']:
-    msg = _(u"Your email need to be verified with your identity provider.")
+    msg = _(u"Your email needs to be verified with your identity provider.")
     flash(msg, "danger")
     return redirect(".login")
 

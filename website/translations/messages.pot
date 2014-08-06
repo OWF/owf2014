@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2014-07-19 19:11+0200\n"
+"POT-Creation-Date: 2014-08-06 16:45+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,6 +16,83 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 1.3\n"
+
+#: website/auth/forms.py:24
+msgid "First name"
+msgstr ""
+
+#: website/auth/forms.py:26
+msgid "Last name"
+msgstr ""
+
+#: website/auth/forms.py:28 website/templates/_macros.html:26
+msgid "Title"
+msgstr ""
+
+#: website/auth/forms.py:31 website/templates/_macros.html:30
+msgid "Organization"
+msgstr ""
+
+#: website/auth/forms.py:33
+msgid "Organization type"
+msgstr ""
+
+#: website/auth/forms.py:37
+msgid "URL"
+msgstr ""
+
+#: website/auth/forms.py:38
+msgid "Twitter handle"
+msgstr ""
+
+#: website/auth/forms.py:39
+msgid "Biography"
+msgstr ""
+
+#: website/auth/oauth.py:142 website/auth/oauth.py:190
+msgid "Your email needs to be verified with your identity provider."
+msgstr ""
+
+#: website/auth/oauth.py:160 website/auth/oauth.py:207
+#: website/auth/oauth.py:252
+msgid "Login successful."
+msgstr ""
+
+#: website/auth/profile.py:18
+msgid "Please complete or update your profile"
+msgstr ""
+
+#: website/auth/profile.py:41
+msgid "Profile edited successfully."
+msgstr ""
+
+#: website/auth/profile.py:52
+msgid "Please fix the errors belows."
+msgstr ""
+
+#: website/auth/templates/auth/edit_profile.html:25
+msgid ""
+"These information will appear on the OWF\n"
+"          website."
+msgstr ""
+
+#: website/auth/templates/auth/login.html:13
+msgid "Please sign in"
+msgstr ""
+
+#: website/auth/templates/auth/login.html:15
+msgid ""
+"You need to create an account on the OWF or sign in, using one of the "
+"identity providers below (in case of doubt use Mozilla Persona)."
+msgstr ""
+
+#: website/auth/templates/auth/logout.html:12 website/templates/base.html:68
+msgid "Log out"
+msgstr ""
+
+#: website/auth/templates/auth/logout.html:14
+msgid "Are you sure you want to log out?"
+msgstr ""
 
 #: website/crm/forms.py:112 website/crm/forms.py:117
 msgid "Only PNG or JPG image files are accepted"
@@ -25,85 +102,37 @@ msgstr ""
 msgid "Could not decode image file"
 msgstr ""
 
-#: website/registration/forms.py:28 website/registration/forms.py:42
-msgid "Your email address"
-msgstr ""
-
-#: website/registration/forms.py:31 website/registration/forms.py:45
-msgid "Will you come on Oct. 3th? (Thursday)"
-msgstr ""
-
-#: website/registration/forms.py:32 website/registration/forms.py:46
-msgid "Will you come on Oct. 4th? (Friday)"
-msgstr ""
-
-#: website/registration/forms.py:33 website/registration/forms.py:47
-msgid "Will you come on Oct. 5th? (Saturday)"
-msgstr ""
-
-#: website/registration/forms.py:49
-msgid "First name"
-msgstr ""
-
-#: website/registration/forms.py:50
-msgid "Last name"
-msgstr ""
-
-#: website/registration/forms.py:51 website/templates/_macros.html:30
-msgid "Organization"
-msgstr ""
-
-#: website/registration/forms.py:52
-msgid "URL"
-msgstr ""
-
-#: website/registration/forms.py:53
-msgid "Biography"
-msgstr ""
-
-#: website/registration/views.py:28
-msgid "Register as a participant"
-msgstr ""
-
-#: website/registration/views.py:47
-msgid "This is not your email"
-msgstr ""
-
-#: website/registration/views.py:74
-msgid ""
-"Thanks for registering to the OWF. An email has been sent to you with "
-"further instructions."
-msgstr ""
-
-#: website/registration/views.py:93
-msgid "Your registration has been confirmed."
-msgstr ""
-
-#: website/registration/views.py:132
-msgid "Please confirm your participation at the Open World Forum 2013"
-msgstr ""
-
-#: website/registration/templates/registration/form.html:12
-msgid "Registration"
-msgstr ""
-
-#: website/registration/templates/registration/form.html:15
-msgid ""
-"Participation to the Open Wolrd Forum is free but you must register "
-"beforehand to be able to participate."
-msgstr ""
-
 #: website/sdc/views.py:40
 msgid "Candidature pour la Student Demo Cup"
 msgstr ""
 
-#: website/templates/_header.html:85 website/templates/_header.html:114
-#: website/templates/base.html:75
-msgid "Search"
+#: website/templates/_header.html:4
+msgid "Aller au contenu"
 msgstr ""
 
-#: website/templates/_macros.html:26
-msgid "Title"
+#: website/templates/_header.html:7
+msgid "Aller à la navigation"
+msgstr ""
+
+#: website/templates/_header.html:10
+msgid "Aller à la recherche"
+msgstr ""
+
+#: website/templates/_header.html:23
+msgid "Profile"
+msgstr ""
+
+#: website/templates/_header.html:28
+msgid "Logout"
+msgstr ""
+
+#: website/templates/_header.html:34
+msgid "Sign in"
+msgstr ""
+
+#: website/templates/_header.html:116 website/templates/_header.html:147
+#: website/templates/base.html:75
+msgid "Search"
 msgstr ""
 
 #: website/templates/_macros.html:34
@@ -154,12 +183,8 @@ msgstr ""
 msgid "Silver sponsors"
 msgstr ""
 
-#: website/templates/_sponsors.html:94
+#: website/templates/_sponsors.html:97
 msgid "Community Partners"
-msgstr ""
-
-#: website/templates/_sponsors.html:109
-msgid "Tous nos partenaires"
 msgstr ""
 
 #: website/templates/_sponsors.html:115
@@ -168,10 +193,6 @@ msgstr ""
 
 #: website/templates/_sponsors.html:125
 msgid "Press partners"
-msgstr ""
-
-#: website/templates/base.html:68
-msgid "Log out"
 msgstr ""
 
 #: website/templates/day1.html:15 website/templates/day23.html:14
@@ -187,7 +208,7 @@ msgid "The plenary session takes place in room \"Grand Auditorium\"."
 msgstr ""
 
 #: website/templates/day1.html:33 website/templates/speakers.html:14
-#: website/templates/track.html:66 website/views/localized.py:341
+#: website/templates/track.html:66 website/views/localized.py:342
 msgid "Speakers"
 msgstr ""
 
@@ -272,11 +293,11 @@ msgid "Recent items"
 msgstr ""
 
 #: website/templates/program.html:54 website/templates/speaker.html:35
-#: website/templates/track.html:43 website/views/localized.py:302
+#: website/templates/track.html:43 website/views/localized.py:303
 msgid "Talks"
 msgstr ""
 
-#: website/templates/search.html:10 website/views/localized.py:259
+#: website/templates/search.html:10 website/views/localized.py:260
 msgid "Search results"
 msgstr ""
 
@@ -460,33 +481,33 @@ msgstr ""
 msgid "Delete attachment?"
 msgstr ""
 
-#: website/views/localized.py:161
+#: website/views/localized.py:162
 msgid "News"
 msgstr ""
 
-#: website/views/localized.py:250
+#: website/views/localized.py:251
 msgid "Site map"
 msgstr ""
 
-#: website/views/localized.py:273 website/views/localized.py:291
+#: website/views/localized.py:274 website/views/localized.py:292
 msgid "Program"
 msgstr ""
 
-#: website/views/localized.py:289
+#: website/views/localized.py:290
 #, python-format
 msgid "Program for theme %(theme)s"
 msgstr ""
 
-#: website/views/localized.py:312
+#: website/views/localized.py:313
 msgid "Rooms"
 msgstr ""
 
-#: website/views/localized.py:327
+#: website/views/localized.py:328
 #, python-format
 msgid "Program for room %(room)s"
 msgstr ""
 
-#: website/views/localized.py:388
+#: website/views/localized.py:389
 msgid "Day 1 - Plenary session"
 msgstr ""
 

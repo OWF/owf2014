@@ -43,7 +43,7 @@ MAIN_MENU = {'fr': [('', u'Accueil'),
                     ('espace-expo/', u'Exposition'),
                     ('partners/', u'Partenaires'),
                     #('news/', u'Actualités'),
-                    #('/registration/', u'Inscription', 'menu-registration'),
+                    ('/auth/', u'Inscription', 'menu-registration'),
              ],
              'en': [('', u'Home'),
                     ('cfp/', u'CFP'),
@@ -54,7 +54,7 @@ MAIN_MENU = {'fr': [('', u'Accueil'),
                     ('exhibiton-area/', u'Exhibition'),
                     ('partners/', u'Partners'),
                     #('news/', u'News'),
-                    #('/registration/', u'Registration', 'menu-registration'),
+                    ('/auth/', u'Registration', 'menu-registration'),
              ]}
 
 IMAGE_SIZES = {

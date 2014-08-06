@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2014-07-19 19:11+0200\n"
+"POT-Creation-Date: 2014-08-06 16:45+0200\n"
 "PO-Revision-Date: 2013-05-06 17:34+0200\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: fr <LL@li.org>\n"
@@ -17,6 +17,89 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 1.3\n"
 
+#: website/auth/forms.py:24
+msgid "First name"
+msgstr "Prénom"
+
+#: website/auth/forms.py:26
+msgid "Last name"
+msgstr "Nom"
+
+#: website/auth/forms.py:28 website/templates/_macros.html:26
+msgid "Title"
+msgstr "Fonction"
+
+#: website/auth/forms.py:31 website/templates/_macros.html:30
+msgid "Organization"
+msgstr "Organisation"
+
+#: website/auth/forms.py:33
+msgid "Organization type"
+msgstr "Type d'organisation"
+
+#: website/auth/forms.py:37
+msgid "URL"
+msgstr "URL"
+
+#: website/auth/forms.py:38
+msgid "Twitter handle"
+msgstr "Identifiant twitter"
+
+#: website/auth/forms.py:39
+msgid "Biography"
+msgstr "Biographie"
+
+#: website/auth/oauth.py:142 website/auth/oauth.py:190
+#, fuzzy
+msgid "Your email needs to be verified with your identity provider."
+msgstr ""
+"Votre adresse email a besoin d'être vérifiée auprès d'un fournisseur "
+"d'identité numérique."
+
+#: website/auth/oauth.py:160 website/auth/oauth.py:207
+#: website/auth/oauth.py:252
+msgid "Login successful."
+msgstr "Vous vous êtes connecté avec succès."
+
+#: website/auth/profile.py:18
+msgid "Please complete or update your profile"
+msgstr "Veuillez compléter ou mettre à jour votre profil"
+
+#: website/auth/profile.py:41
+msgid "Profile edited successfully."
+msgstr "Votre profil a été édité avec succès."
+
+#: website/auth/profile.py:52
+msgid "Please fix the errors belows."
+msgstr "Veuillez corriger les erreurs ci-dessous."
+
+#: website/auth/templates/auth/edit_profile.html:25
+msgid ""
+"These information will appear on the OWF\n"
+"          website."
+msgstr "Ces informations apparaîtront publiquement sur le site de l'OWF."
+
+#: website/auth/templates/auth/login.html:13
+msgid "Please sign in"
+msgstr "Veuillez vous connecter"
+
+#: website/auth/templates/auth/login.html:15
+msgid ""
+"You need to create an account on the OWF or sign in, using one of the "
+"identity providers below (in case of doubt use Mozilla Persona)."
+msgstr ""
+"Vous devez créer un compte sur le site de l'OWF ou vous connecter, en "
+"utilisant l'un des fournisseurs d'identité numérique ci-dessous (en cas "
+"de doute, nous vous recommandons Mozilla Persona)."
+
+#: website/auth/templates/auth/logout.html:12 website/templates/base.html:68
+msgid "Log out"
+msgstr "Déconnexion"
+
+#: website/auth/templates/auth/logout.html:14
+msgid "Are you sure you want to log out?"
+msgstr "Etes-vous sûr(e) de vouloir vous déconnecter?"
+
 #: website/crm/forms.py:112 website/crm/forms.py:117
 msgid "Only PNG or JPG image files are accepted"
 msgstr ""
@@ -25,90 +108,38 @@ msgstr ""
 msgid "Could not decode image file"
 msgstr ""
 
-#: website/registration/forms.py:28 website/registration/forms.py:42
-msgid "Your email address"
-msgstr "Votre adresse email"
-
-#: website/registration/forms.py:31 website/registration/forms.py:45
-msgid "Will you come on Oct. 3th? (Thursday)"
-msgstr "Comptez-vous venir le 3 octobre (jeudi) ?"
-
-#: website/registration/forms.py:32 website/registration/forms.py:46
-msgid "Will you come on Oct. 4th? (Friday)"
-msgstr "Comptez-vous venir le 4 octobre (vendredi) ?"
-
-#: website/registration/forms.py:33 website/registration/forms.py:47
-msgid "Will you come on Oct. 5th? (Saturday)"
-msgstr "Comptez-vous venir le 5 octobre (samedi) ?"
-
-#: website/registration/forms.py:49
-msgid "First name"
-msgstr "Prénom"
-
-#: website/registration/forms.py:50
-msgid "Last name"
-msgstr "Nom"
-
-#: website/registration/forms.py:51 website/templates/_macros.html:30
-msgid "Organization"
-msgstr "Organisation"
-
-#: website/registration/forms.py:52
-msgid "URL"
-msgstr "URL"
-
-#: website/registration/forms.py:53
-msgid "Biography"
-msgstr "Biographie"
-
-#: website/registration/views.py:28
-msgid "Register as a participant"
-msgstr "Inscrivez-vous comme participant"
-
-#: website/registration/views.py:47
-msgid "This is not your email"
-msgstr "Ce n'est pas votre email"
-
-#: website/registration/views.py:74
-msgid ""
-"Thanks for registering to the OWF. An email has been sent to you with "
-"further instructions."
-msgstr ""
-"Merci de vous être inscrit(e) à l'OWF. Un mail vous a été envoyé avec "
-"plus d'instructions."
-
-#: website/registration/views.py:93
-msgid "Your registration has been confirmed."
-msgstr "Votre inscription a été confirmée."
-
-#: website/registration/views.py:132
-msgid "Please confirm your participation at the Open World Forum 2013"
-msgstr "Veuillez confirmer votre participation à l'Open World Forum 2013"
-
-#: website/registration/templates/registration/form.html:12
-msgid "Registration"
-msgstr "Inscription"
-
-#: website/registration/templates/registration/form.html:15
-msgid ""
-"Participation to the Open Wolrd Forum is free but you must register "
-"beforehand to be able to participate."
-msgstr ""
-"La participation à l'Open World Forum est gratuite, mais vous devez "
-"obigatoirement vous inscrire à l'avance afin de pouvoir participer."
-
 #: website/sdc/views.py:40
 msgid "Candidature pour la Student Demo Cup"
 msgstr ""
 
-#: website/templates/_header.html:85 website/templates/_header.html:114
+#: website/templates/_header.html:4
+msgid "Aller au contenu"
+msgstr ""
+
+#: website/templates/_header.html:7
+msgid "Aller à la navigation"
+msgstr ""
+
+#: website/templates/_header.html:10
+msgid "Aller à la recherche"
+msgstr ""
+
+#: website/templates/_header.html:23
+msgid "Profile"
+msgstr ""
+
+#: website/templates/_header.html:28
+msgid "Logout"
+msgstr "Déconnexion"
+
+#: website/templates/_header.html:34
+msgid "Sign in"
+msgstr "Connexion"
+
+#: website/templates/_header.html:116 website/templates/_header.html:147
 #: website/templates/base.html:75
 msgid "Search"
 msgstr "Rechercher"
-
-#: website/templates/_macros.html:26
-msgid "Title"
-msgstr "Fonction"
 
 #: website/templates/_macros.html:34
 msgid "Website"
@@ -158,13 +189,9 @@ msgstr "Sponsors Or"
 msgid "Silver sponsors"
 msgstr "Sponsors Argent"
 
-#: website/templates/_sponsors.html:94
+#: website/templates/_sponsors.html:97
 msgid "Community Partners"
 msgstr "Partenaires communautaires"
-
-#: website/templates/_sponsors.html:109
-msgid "Tous nos partenaires"
-msgstr ""
 
 #: website/templates/_sponsors.html:115
 msgid "WebTV Partner"
@@ -173,10 +200,6 @@ msgstr "Partenaire WebTV"
 #: website/templates/_sponsors.html:125
 msgid "Press partners"
 msgstr "Partenaires presse"
-
-#: website/templates/base.html:68
-msgid "Log out"
-msgstr "Déconnexion"
 
 #: website/templates/day1.html:15 website/templates/day23.html:14
 msgid "Schedule"
@@ -191,7 +214,7 @@ msgid "The plenary session takes place in room \"Grand Auditorium\"."
 msgstr "La session plénière a lieu dans le Grand Auditorium."
 
 #: website/templates/day1.html:33 website/templates/speakers.html:14
-#: website/templates/track.html:66 website/views/localized.py:341
+#: website/templates/track.html:66 website/views/localized.py:342
 msgid "Speakers"
 msgstr "Orateurs"
 
@@ -280,11 +303,11 @@ msgid "Recent items"
 msgstr ""
 
 #: website/templates/program.html:54 website/templates/speaker.html:35
-#: website/templates/track.html:43 website/views/localized.py:302
+#: website/templates/track.html:43 website/views/localized.py:303
 msgid "Talks"
 msgstr "Présentations"
 
-#: website/templates/search.html:10 website/views/localized.py:259
+#: website/templates/search.html:10 website/views/localized.py:260
 msgid "Search results"
 msgstr "Résultats de la recherche"
 
@@ -468,33 +491,33 @@ msgstr ""
 msgid "Delete attachment?"
 msgstr ""
 
-#: website/views/localized.py:161
+#: website/views/localized.py:162
 msgid "News"
 msgstr "Actualités"
 
-#: website/views/localized.py:250
+#: website/views/localized.py:251
 msgid "Site map"
 msgstr "Plan du site"
 
-#: website/views/localized.py:273 website/views/localized.py:291
+#: website/views/localized.py:274 website/views/localized.py:292
 msgid "Program"
 msgstr "Programme"
 
-#: website/views/localized.py:289
+#: website/views/localized.py:290
 #, python-format
 msgid "Program for theme %(theme)s"
 msgstr "Programme du thème %(theme)s"
 
-#: website/views/localized.py:312
+#: website/views/localized.py:313
 msgid "Rooms"
 msgstr "Salles"
 
-#: website/views/localized.py:327
+#: website/views/localized.py:328
 #, python-format
 msgid "Program for room %(room)s"
 msgstr "Programme de la salle %(room)s"
 
-#: website/views/localized.py:388
+#: website/views/localized.py:389
 msgid "Day 1 - Plenary session"
 msgstr "Jour 1 - Session plénière"
 
@@ -509,4 +532,37 @@ msgstr "Page introuvable"
 
 #~ msgid "Watch the event live!"
 #~ msgstr "Assistez à l'événement en direct !"
+
+#~ msgid "Your email address"
+#~ msgstr "Votre adresse email"
+
+#~ msgid "Will you come on Oct. 3th? (Thursday)"
+#~ msgstr "Comptez-vous venir le 3 octobre (jeudi) ?"
+
+#~ msgid "Will you come on Oct. 4th? (Friday)"
+#~ msgstr "Comptez-vous venir le 4 octobre (vendredi) ?"
+
+#~ msgid "Will you come on Oct. 5th? (Saturday)"
+#~ msgstr "Comptez-vous venir le 5 octobre (samedi) ?"
+
+#~ msgid "Register as a participant"
+#~ msgstr "Inscrivez-vous comme participant"
+
+#~ msgid "This is not your email"
+#~ msgstr "Ce n'est pas votre email"
+
+#~ msgid ""
+#~ msgstr ""
+
+#~ msgid "Your registration has been confirmed."
+#~ msgstr "Votre inscription a été confirmée."
+
+#~ msgid "Please confirm your participation at the Open World Forum 2013"
+#~ msgstr "Veuillez confirmer votre participation à l'Open World Forum 2013"
+
+#~ msgid "Registration"
+#~ msgstr "Inscription"
+
+#~ msgid "Tous nos partenaires"
+#~ msgstr ""
 

@@ -5,6 +5,6 @@ Listen to what this year's edition of the **Open World Forum** has in store for 
 
 If you still hesitate to attend, we now have the perfect solution for you: **14 teaser videos** that will showcase some of the good things that will happen this year at the Open World Forum.
 
-And don't forget to <a href="http://www.openworldforum.org/registration/" target="_blank">register</a>!
+And don't forget to <a href="/auth/">register</a>!
 
 <iframe width="600" height="338" src="//www.youtube.com/embed/Vf7div91I4U?list=PLZQbEigpCyl-Cdd95tgY1poIle8bDqmxs" frameborder="0" allowfullscreen></iframe>

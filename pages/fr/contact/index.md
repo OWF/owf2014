@@ -2,7 +2,7 @@ title: Contact
 
 ## Participer en tant que visiteur
 
-[Inscrivez-vous](/fr/registration/)
+[Inscrivez-vous](/auth/)
 
 ## Devenir Sponsor
 
