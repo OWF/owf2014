@@ -48,21 +48,11 @@ Alter Way, c'est une compétence reconnue sur le marché du libre et votre parte
 <a name="cap"></a>
 <a href="http://www.capdigital.com/" target="_blank"><img src="/static/pictures/page sponsor et organisateurs/Cap_sponsor page.jpg" width="400" alt="Cap Digital"></a>
 
-[**Cap Digital**](http://www.capdigital.com/) est le pôle de compétitivité de la filière des contenus et services numériques. Il regroupe plus de
-700 adhérents : 650 PME, 25 grands groupes, 50 établissements publics, écoles, et universités ainsi que 10 investisseurs
-en capital.
+[**Cap Digital**](http://www.capdigital.com/) est le pôle de compétitivité de la transformation numérique. Il regroupe 800 adhérents : 670 PME, 50 ETI/GE/EPIC, 70 écoles et universités ainsi que 12 investisseurs en capital. Le développement de la R&D, la croissance des entreprises, la mise en réseau de ses adhérents et leur promotion à l’international sont autant de missions pour soutenir la créativité et la compétitivité de cet important secteur industriel. 
+Cap Digital organise le festival Futur en Seine, rendez-vous mondial annuel des forces vives de la création, de l’innovation et de l’économie numérique désireuse d’exposer, rencontrer, débattre, d’exprimer et de partager une vision du futur avec le grand public. 
 
-Cap Digital œuvre à faire de la Région Île-de-France l’une des références mondiales du numérique, tant d’un point de
-vue industriel que stratégique. Le développement de la R&D, la croissance des entreprises, la mise en réseau de ses
-adhérents et leur promotion à l’international sont autant de missions pour soutenir la créativité et la compétitivité
-de cet important secteur industriel.
+[www.capdigital.com](http://www.capdigital.com/) / [www.futur-en-seine.paris](http://futur-en-seine.paris)
 
-Avec en moyenne 280 projets de R&D reçus chaque année, dont 140 labellisés et 76 financés, Cap Digital a soutenu plus
-d'1,1 Milliard de recherche et développement depuis sa création dont 460M€ d’aides publiques.
-
-Cap Digital organise le festival Futur en Seine, rendez-vous mondial annuel des forces vives de la création,
-de l’innovation et de l’économie numérique désireuse d’exposer, rencontrer, débattre, d’exprimer et de partager une
-vision du futur avec le grand public.
 
 <a name="henix"></a>
 <a href="http://henix.com/" target="_blank"><img src="/static/pictures/page sponsor et organisateurs/henix.png" width="400" alt="Henix"></a>
