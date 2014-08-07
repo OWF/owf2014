@@ -6284,3 +6284,68 @@ img#home-jumbotron {
   color: white;
   background-color: #b9461b;
 }
+.card {
+  display: inline;
+  float: left;
+  padding: 0 20px 20px 0;
+}
+.card-content {
+  padding: 0px;
+  border-radius: 2px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.06), 0 1px 3px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+  position: relative;
+  height: 116px;
+}
+.member-card {
+  display: inline;
+  float: left;
+  padding: 0 20px 20px 0;
+}
+.member-card-content {
+  padding: 0px;
+  border-radius: 2px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.06), 0 1px 3px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+  position: relative;
+  height: 116px;
+  padding: 10px 10px 10px 120px;
+}
+.member-card .member-image {
+  border-radius: 6px;
+  width: 100px;
+  margin: 8px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.nowrap {
+  display: block;
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.member-name {
+  display: block;
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-weight: bold;
+  font-size: 120%;
+}
+.member-org {
+  display: block;
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.member-bio {
+  display: block;
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

@@ -20,8 +20,8 @@ class Role(db.Model, RoleMixin):
 
 class User2(db.Model, UserMixin):
   __tablename__ = 'user2'
-  id = db.Column(Integer, primary_key=True)
 
+  id = db.Column(Integer, primary_key=True)
   email = Column(String(255), unique=True)
 
   password = Column(String(255))
@@ -49,7 +49,7 @@ class User2(db.Model, UserMixin):
   biography = Column(UnicodeText(2000), default=u"", nullable=False)
   url = Column(UnicodeText(200), default=u"", nullable=False)
 
-  picture_url = String(500)
+  picture_url = Column(String(500))
 
   google_id = Column(String(200))
   facebook_id = Column(String(200))
@@ -80,7 +80,6 @@ class User2(db.Model, UserMixin):
     return '%s %s' % (self.first_name, self.last_name)
 
   name = _name
-
 
 
 # For Flask-Security

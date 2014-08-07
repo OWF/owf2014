@@ -3,23 +3,26 @@ Localized view (i.e. language-specific subsites).
 """
 
 from cStringIO import StringIO
+import hashlib
 from itertools import groupby
 import mimetypes
 from os.path import join, exists
 import random
 import re
 import datetime
+import urllib
 from PIL import Image
 
 from abilian.services.image import crop_and_resize
 
-from flask import Blueprint, request, render_template, make_response, g, url_for, session, redirect
+from flask import Blueprint, request, render_template, make_response, g, \
+  url_for, session, redirect
 from flask import current_app as app
 from flask.ext.babel import gettext as _
 from werkzeug.exceptions import NotFound
 
 from ..config import MAIN_MENU, FEED_MAX_LINKS, IMAGE_SIZES
-from ..content import Page, get_news, get_page_or_404, get_pages, get_blocks,\
+from ..content import Page, get_news, get_page_or_404, get_pages, get_blocks, \
   get_page
 from ..crm.models import Speaker, Track2, Talk, Room
 from website.auth import User2
@@ -27,7 +30,8 @@ from website.auth import User2
 
 __all__ = ['setup']
 
-localized = Blueprint('localized', __name__, url_prefix='/<string(length=2):lang>')
+localized = Blueprint('localized', __name__,
+                      url_prefix='/<string(length=2):lang>')
 route = localized.route
 
 
@@ -87,14 +91,15 @@ def alt_url_for(obj, *args, **kw):
   elif isinstance(obj, Speaker):
     return url_for("localized.speaker", speaker_id=obj.id)
   elif isinstance(obj, User2):
-    return "#" # TODO
-    #return url_for("localized.participant", participant_id=obj.id)
+    return "#"  # TODO
+    # return url_for("localized.participant", participant_id=obj.id)
   elif isinstance(obj, Track2):
     return url_for("localized.track", track_id=obj.id)
   elif isinstance(obj, Room):
     return url_for("localized.room", room_id=obj.id)
   elif isinstance(obj, Talk):
-    return "%s#talk_%d" % (url_for("localized.track", track_id=obj.track.id), obj.id)
+    return "%s#talk_%d" % (
+    url_for("localized.track", track_id=obj.track.id), obj.id)
   elif obj in ('THINK', 'CODE', 'EXPERIMENT'):
     return url_for("localized.page", path=obj.lower())
   elif g.lang:
@@ -163,7 +168,7 @@ def page(path=""):
 def news():
   all_news = get_news(lang=g.lang)
   recent_news = get_news(lang=g.lang, limit=5)
-  page = {'title': _("News") }
+  page = {'title': _("News")}
   return render_template('news.html', page=page, news=all_news,
                          recent_news=recent_news)
 
@@ -196,11 +201,14 @@ def image_for_news(slug):
   assert not '/' in slug
   size = request.args.get('size', 'large')
 
-  file_path = join(app.root_path, "..", "pages", g.lang, "news", slug, "image.png")
+  file_path = join(app.root_path, "..", "pages", g.lang, "news", slug,
+                   "image.png")
   if not exists(file_path):
-    file_path = join(app.root_path, "..", "pages", g.lang, "news", slug, "image.jpg")
+    file_path = join(app.root_path, "..", "pages", g.lang, "news", slug,
+                     "image.jpg")
   if not exists(file_path):
-    file_path = join(app.root_path, "..", "pages", g.lang, "news", slug, "image.gif")
+    file_path = join(app.root_path, "..", "pages", g.lang, "news", slug,
+                     "image.gif")
 
   if not exists(file_path):
     file_path = join(app.root_path, "static", "pictures", "actu.png")
@@ -215,15 +223,15 @@ def image_for_news(slug):
     x2 = int(float(x) * y1 / y)
     assert x2 >= x1
     img1 = img.resize((x2, y2), Image.ANTIALIAS)
-    x3 = (x2-x1)/2
-    img2 = img1.crop((x3, 0, x1+x3, y1))
+    x3 = (x2 - x1) / 2
+    img2 = img1.crop((x3, 0, x1 + x3, y1))
   else:
     x2 = x1
     y2 = int(float(y) * x1 / x)
     assert y2 >= y1
     img1 = img.resize((x2, y2), Image.ANTIALIAS)
-    y3 = (y2-y1)/2
-    img2 = img1.crop((0, y3, x1, y1+y3))
+    y3 = (y2 - y1) / 2
+    img2 = img1.crop((0, y3, x1, y1 + y3))
 
   assert img2.size == (x1, y1)
 
@@ -245,7 +253,8 @@ def feed():
   now = datetime.datetime.now()
 
   response = make_response(render_template('base.rss',
-                                           news_items=news_items, build_date=now))
+                                           news_items=news_items,
+                                           build_date=now))
   response.headers['Content-Type'] = 'text/xml'
   return response
 
@@ -254,7 +263,7 @@ def feed():
 def sitemap():
   page = {'title': _(u"Site map")}
   pages = get_pages()
-  pages = [ p for p in pages if p.path.startswith(g.lang) ]
+  pages = [p for p in pages if p.path.startswith(g.lang)]
 
   return render_template('sitemap.html', page=page, pages=pages)
 
@@ -265,14 +274,14 @@ def search():
   qs = request.args.get('qs', '')
   whoosh = app.extensions['whoosh']
   results = whoosh.search(qs)
-  results = [ r for r in results if r['path'].startswith(g.lang) ]
+  results = [r for r in results if r['path'].startswith(g.lang)]
   return render_template("search.html", page=page, results=results)
 
 
 @route('/program/')
 def program():
   tracks = Track2.query.order_by(Track2.starts_at).all()
-  tracks = [ t for t in tracks if t.starts_at]
+  tracks = [t for t in tracks if t.starts_at]
   days = groupby(tracks, lambda t: t.starts_at.date())
   days = [(day, list(tracks)) for day, tracks in days]
   page = dict(title=_(u"Program"))
@@ -287,7 +296,7 @@ def tracks():
     theme = theme.upper()
     q = q.filter(Track2.theme == theme)
   tracks = q.all()
-  tracks = [ t for t in tracks if t.starts_at]
+  tracks = [t for t in tracks if t.starts_at]
   days = groupby(tracks, lambda t: t.starts_at.date())
   days = [(day, list(tracks)) for day, tracks in days]
   if theme:
@@ -301,7 +310,7 @@ def tracks():
 @route('/talks/')
 def talks():
   talks = Talk.query.order_by(Talk.starts_at).all()
-  talks = [ t for t in talks if t.starts_at]
+  talks = [t for t in talks if t.starts_at]
   days = groupby(talks, lambda t: t.starts_at.date())
   days = [(day, list(talks)) for day, talks in days]
   page = dict(title=_(u"Talks"))
@@ -312,19 +321,11 @@ def talks():
 def rooms():
   tracks = Track2.query.order_by(Track2.room_id).all()
   rooms = groupby(tracks, lambda t: t.room)
-  rooms = [(room, sorted(list(tracks), key=lambda t: t.starts_at)) for room, tracks in rooms]
+  rooms = [(room, sorted(list(tracks), key=lambda t: t.starts_at)) for
+           room, tracks in rooms]
   rooms.sort(key=lambda r: -r[0].capacity)
   page = dict(title=_(u"Rooms"))
   return render_template("rooms.html", page=page, rooms=rooms)
-
-
-# TODO
-#
-# @route('/participants/')
-# def participants():
-#   users = User2.query.order_by(User2.last_name).all()
-#   page = dict(title=_("Participants"))
-#   return render_template("participants.html", page=page, participants=users)
 
 
 @route('/rooms/<int:room_id>')
@@ -333,8 +334,9 @@ def room(room_id):
   if not room:
     raise NotFound()
 
-  tracks = Track2.query.order_by(Track2.starts_at).filter(Track2.room == room).all()
-  tracks = [ t for t in tracks if t.starts_at]
+  tracks = Track2.query.order_by(Track2.starts_at).filter(
+    Track2.room == room).all()
+  tracks = [t for t in tracks if t.starts_at]
   days = groupby(tracks, lambda t: t.starts_at.date())
   days = [(day, list(tracks)) for day, tracks in days]
 
@@ -390,6 +392,7 @@ def photo(speaker_id):
   response.headers['content-type'] = 'image/jpeg'
   return response
 
+
 @route("/schedule/")
 @route("/schedule/<int:day>/")
 def schedule(day=None):
@@ -419,13 +422,14 @@ def schedule(day=None):
     for room in rooms:
       column = []
       talks = talks_for_room_and_day(room, None)
-      t = datetime.datetime(2013, 10, 2+day, 9, 0)
+      t = datetime.datetime(2013, 10, 2 + day, 9, 0)
       dt = datetime.timedelta(minutes=60)
-      while t < datetime.datetime(2013, 10, 2+day, 20, 0):
-        talks_for_slot = [ talk for talk in talks if t <= talk.starts_at < t+dt]
+      while t < datetime.datetime(2013, 10, 2 + day, 20, 0):
+        talks_for_slot = [talk for talk in talks if
+                          t <= talk.starts_at < t + dt]
         track = None
         if talks_for_slot:
-          if t <= talks_for_slot[0].track.starts_at < t+dt:
+          if t <= talks_for_slot[0].track.starts_at < t + dt:
             track = talks_for_slot[0].track
             tracks.append(track)
         cell = {'track': track, 'talks': talks_for_slot}
@@ -449,6 +453,34 @@ def page_not_found(error):
 def talks_for_room_and_day(room, day):
   tracks = room.tracks
   talks = sum([track.talks for track in tracks], [])
-  talks = [ talk for talk in talks if talk.starts_at ]
+  talks = [talk for talk in talks if talk.starts_at]
   talks.sort(key=lambda x: x.starts_at)
   return talks
+
+
+#
+# New code for 2014
+#
+@route('/participants/')
+def participants():
+  users = User2.query.order_by(User2.last_name).all()
+  page = dict(title=_("Participants"))
+  return render_template("participants.html", page=page, participants=users)
+
+
+def picture_url(participant, size=100):
+  if participant.picture_url:
+    return participant.picture_url
+
+  # Defaults to using Gravatar
+  email = participant.email
+  digest = hashlib.md5(email.lower()).hexdigest()
+  gravatar_url = "http://www.gravatar.com/avatar/{}?".format(digest)
+  default = "http://www.openworldforum.paris/static/images/silhouette_unknown.png"
+  gravatar_url += urllib.urlencode({'d': default, 's': str(size)})
+  return gravatar_url
+
+
+@localized.context_processor
+def inject_picture_url():
+  return {'picture_url': picture_url}

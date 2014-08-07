@@ -150,6 +150,7 @@ def authorized_google(resp):
 
   user.auth_provider = "google"
   user.oauth_id = me.data['id']
+  user.google_id = user.oauth_id
   user.access_token = access_token
   user.first_name = me.data['given_name']
   user.last_name = me.data['family_name']
