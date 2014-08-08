@@ -6291,8 +6291,11 @@ img#home-jumbotron {
 }
 .card-content {
   padding: 0px;
-  border-radius: 2px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.06), 0 1px 3px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border-color: #eeeeee #dddddd #bbbbbb;
+  border-width: 1px;
+  border-style: solid;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 1px 3px;
   overflow: hidden;
   position: relative;
   height: 116px;
@@ -6304,8 +6307,11 @@ img#home-jumbotron {
 }
 .member-card-content {
   padding: 0px;
-  border-radius: 2px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.06), 0 1px 3px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border-color: #eeeeee #dddddd #bbbbbb;
+  border-width: 1px;
+  border-style: solid;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 1px 3px;
   overflow: hidden;
   position: relative;
   height: 116px;

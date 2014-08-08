@@ -25,6 +25,7 @@ from ..config import MAIN_MENU, FEED_MAX_LINKS, IMAGE_SIZES
 from ..content import Page, get_news, get_page_or_404, get_pages, get_blocks, \
   get_page
 from ..crm.models import Speaker, Track2, Talk, Room
+
 from website.auth import User2
 
 

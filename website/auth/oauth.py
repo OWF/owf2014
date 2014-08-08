@@ -72,6 +72,14 @@ stackoverflow = oauth.remote_app('stackoverflow',
                                  authorize_url='https://stackexchange.com/oauth',
                                  app_key='STACKOVERFLOW')
 
+linuxfr = oauth.remote_app('linuxfr',
+                           base_url="https://api.stackexchange.com/2.1/",
+                           request_token_url=None,
+                           access_token_method='POST',
+                           access_token_url='https://linuxfr.org/auth/oauth/access_token',
+                           authorize_url='https://linuxfr.org/auth/oauth/authorize',
+                           app_key='LINUXFR')
+
 servers = {
   'twitter': twitter,
   'facebook': facebook,
@@ -80,6 +88,7 @@ servers = {
   'google': google,
   'xing': xing,
   'stackoverflow': stackoverflow,
+  'linuxfr': linuxfr,
 }
 
 
@@ -253,6 +262,41 @@ def authorized_github(resp):
   flash(_(u"Login successful."), "success")
   session['user_id'] = user.id
   session['auth_provider'] = 'github'
+  next_url = session.get('next_url')
+  if next_url:
+    del session['next_url']
+  return redirect(next_url or "/")
+
+
+#
+# Linuxfr
+#
+@route("/authorized_linuxfr")
+@linuxfr.authorized_handler
+def authorized_linuxfr(resp):
+  if resp is None:
+    return 'Access denied'
+
+  access_token = resp['access_token']
+  session['oauth_token'] = (access_token, '')
+
+  me = linuxfr.get('user')
+
+  email = me.data['email']
+  user = User2.query.filter(User2.email == email).first()
+  if not user:
+    user = User2(email=email)
+    db.session.add(user)
+
+  user.auth_provider = "linuxfr"
+  user.oauth_id = me.data['login']
+  user.access_token = access_token
+  # user.linuxfr_login = me.data['login']
+  db.session.commit()
+
+  flash(_(u"Login successful."), "success")
+  session['user_id'] = user.id
+  session['auth_provider'] = 'linuxfr'
   next_url = session.get('next_url')
   if next_url:
     del session['next_url']
