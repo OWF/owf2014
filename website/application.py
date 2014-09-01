@@ -218,15 +218,15 @@ def setup_freezer(app):
 
 def setup_monitoring(app):
   try:
+    import appenlight_client.ext.flask as appenlight
+    app = appenlight.add_appenlight(app)
+  except ImportError:
+    pass
+
+  try:
     from raven.contrib.flask import Sentry
     sentry = Sentry(app)
   except ImportError:
     pass
-
-  # try:
-  #   import appenlight_client.ext.flask as appenlight
-  #   app = appenlight.add_appenlight(app)
-  # except ImportError:
-  #   pass
 
   return app
