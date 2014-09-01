@@ -39,7 +39,7 @@ def create_app(config=None):
   app = Application(__name__, instance_relative_config=True)
   if not config:
     from . import config
-    #app.config.from_pyfile('secrets.cfg', silent=True)
+    # app.config.from_pyfile('secrets.cfg', silent=True)
     app.config.from_pyfile('secrets.cfg')
   app.config.from_object(config)
   setup(app)
@@ -52,7 +52,7 @@ def create_app(config=None):
 def setup(app):
   db.init_app(app)
   mail.init_app(app)
-  #login_manager.init_app(app)
+  # login_manager.init_app(app)
 
   admin = Admin(app)
   bootstrap = Bootstrap(app)
@@ -61,7 +61,7 @@ def setup(app):
   setup_filters_and_processors(app)
 
   app.register_plugin("website.views")
-  #app.register_plugin("website.cfp")
+  # app.register_plugin("website.cfp")
   #app.register_plugin("website.registration")
   app.register_plugin("website.crm")
   app.register_plugin("website.sdc")  # Students demo cup
@@ -96,6 +96,8 @@ def setup(app):
     #activity_service.init_app(app)
     #activity_service.start()
 
+  setup_monitoring(app)
+
 
 def setup_babel(app):
   """
@@ -113,7 +115,7 @@ def setup_babel(app):
 
   babel.add_translations('website')
   babel.localeselector(get_locale)
-  #babel.timezoneselector(get_timezone)
+  # babel.timezoneselector(get_timezone)
 
 
 def setup_template_loader(app):
@@ -139,11 +141,11 @@ def create_db(app):
     # alembic_ini = join(dirname(__file__), '..', 'alembic.ini')
     # alembic_cfg = flask_alembic.FlaskAlembicConfig(alembic_ini)
     # alembic_cfg.set_main_option('sqlalchemy.url',
-    #                             app.config.get('SQLALCHEMY_DATABASE_URI'))
+    # app.config.get('SQLALCHEMY_DATABASE_URI'))
     # alembic.command.stamp(alembic_cfg, "head")
 
     # if User.query.get(0) is None:
-    #   root = User(id=0, last_name=u'SYSTEM', email=u'system@example.com',
+    # root = User(id=0, last_name=u'SYSTEM', email=u'system@example.com',
     #               can_login=False)
     #   db.session.add(root)
     #   db.session.commit()
@@ -153,8 +155,8 @@ def load_tracks(app):
   with app.app_context():
     pass
     # if Track.query.count() == 0:
-    #   for track_id, track_title, track_theme, track_day in TRACKS:
-    #     track = Track(title=track_title, theme=track_theme, day=track_day)
+    # for track_id, track_title, track_theme, track_day in TRACKS:
+    # track = Track(title=track_title, theme=track_theme, day=track_day)
     #     db.session.add(track)
     #   db.session.commit()
 
@@ -212,3 +214,19 @@ def setup_freezer(app):
   freezer = Freezer(app)
   app.extensions['freezer'] = freezer
   freezer.register_generator(url_generator)
+
+
+def setup_monitoring(app):
+  try:
+    from raven.contrib.flask import Sentry
+    sentry = Sentry(app)
+  except ImportError:
+    pass
+
+  # try:
+  #   import appenlight_client.ext.flask as appenlight
+  #   app = appenlight.add_appenlight(app)
+  # except ImportError:
+  #   pass
+
+  return app

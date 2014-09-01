@@ -12,3 +12,13 @@ Flask-OAuthlib
 Frozen-Flask
 icalendar
 
+# Legacy
+SAValidation==0.2.1
+
+# Testing
+Flask-LinkTester>=0.2
+
+# Monitoring
+raven
+appenlight-client
+

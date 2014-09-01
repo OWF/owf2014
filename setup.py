@@ -2,10 +2,6 @@
 
 import os
 import setuptools
-import setup_util as deps
-
-requires = deps.parse_requirements(['deps.txt'])
-depend_links = deps.parse_dependency_links(['deps_txt'])
 
 setuptools.setup(
   name='owf2014',
@@ -19,9 +15,6 @@ setuptools.setup(
   packages=['website'],
   zip_safe=False,
   platforms='any',
-  setup_requires=['setuptools-git'],
-  install_requires=requires,
-  dependency_links=depend_links,
   include_package_data=True,
   classifiers=[
     'Development Status :: 3 - Alpha',
