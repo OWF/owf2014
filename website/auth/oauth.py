@@ -163,7 +163,7 @@ def authorized_google(resp):
   user.access_token = access_token
   user.first_name = me.data['given_name']
   user.last_name = me.data['family_name']
-  user.gender = me.data['gender']
+  user.gender = me.data.get('gender', u"")
   user.picture_url = me.data['picture']
   db.session.commit()
 
@@ -256,7 +256,7 @@ def authorized_github(resp):
   user.url = me.data['blog']
   user.picture_url = me.data['avatar_url']
   user.github_handle = me.data['login']
-  user.organization = me.data['company']
+  user.organization = me.data['company'] or u""
   db.session.commit()
 
   flash(_(u"Login successful."), "success")
