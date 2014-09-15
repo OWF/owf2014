@@ -111,6 +111,9 @@ def setup_babel(app):
       lang = session.get('lang')
     if not lang:
       lang = preferred_language()
+
+    if not lang in app.config['ALLOWED_LANGS']:
+      lang = 'en'
     return lang
 
   babel.add_translations('website')
@@ -189,7 +192,7 @@ def setup_filters_and_processors(app):
     else:
       g.lang = ''
     if g.lang and not g.lang in app.config['ALLOWED_LANGS']:
-      abort(404)
+      return redirect("/en/")
 
   @app.context_processor
   def inject_context():
@@ -197,6 +200,9 @@ def setup_filters_and_processors(app):
 
   @app.before_request
   def before_request():
+    m = re.match("/(..)/", request.path)
+    if m and not m.group(1) in app.config['ALLOWED_LANGS']:
+      return redirect("/en/")
     if request.path.startswith("/crm"):
       if not current_user.is_authenticated():
         return redirect("/login")
