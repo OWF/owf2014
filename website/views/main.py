@@ -4,16 +4,21 @@ Main view (mostly technical views like sitemap or images).
 
 from cStringIO import StringIO
 import mimetypes
+import os
 from os.path import join
+from tempfile import mktemp
+import traceback
 from PIL import Image
 import datetime
+from abilian.core.extensions import db
 from icalendar import Calendar, Event
 
 from flask import Blueprint, redirect, url_for, request, abort, make_response, \
-    render_template, current_app as app, session, jsonify, json, g
+  render_template, current_app as app, session, jsonify, json, g
 
 from ..content import get_pages
 from website.crm.models import Talk, Speaker, Track2
+from website.excel import Loader
 from website.util import preferred_language
 from werkzeug.routing import RequestRedirect
 
@@ -105,12 +110,15 @@ def sitemap_xml():
 #
 @main.route('api/talks')
 def talks():
-  all_talks = Talk.query.filter(Talk.starts_at != None).order_by(Talk.starts_at).all()
+  all_talks = Talk.query.filter(Talk.starts_at != None).order_by(
+    Talk.starts_at).all()
+
   def isoformat(d):
     if d:
       return d.isoformat()
     else:
       return None
+
   all_talks = [
     {'id': talk.id,
      'title': talk.title,
@@ -204,7 +212,8 @@ def lanyrd():
     talk_d['speakers'] = [
       {'crowdsource_ref': "org.openworldforum/speakers/{}".format(speaker.id),
        'name': speaker.name,
-       'role': u"{}, {}".format(speaker.title or "Unknown", speaker.organisation),
+       'role': u"{}, {}".format(speaker.title or "Unknown",
+                                speaker.organisation),
        'bio': speaker.bio}
       for speaker in talk.speakers
     ]
@@ -213,4 +222,22 @@ def lanyrd():
   response = make_response(data)
   response.headers['Content-Type'] = 'application/json'
   return response
+
+
+@main.route("upload_excel_file", methods=['PUT'])
+def upload_excel_file():
+  fn = mktemp()
+  print fn
+  fd = open(fn, "wc")
+  fd.write(request.stream.read())
+  fd.flush()
+  loader = Loader(fn)
+  try:
+    loader.load()
+    db.session.commit()
+    os.unlink(fn)
+    return 'OK\n'
+  except:
+    os.unlink(fn)
+    return "\n".join(loader.log) + "\n" + traceback.format_exc()
 

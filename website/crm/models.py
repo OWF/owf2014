@@ -47,7 +47,7 @@ EmailAddress = UnicodeText
 
 logger = logging.getLogger(__package__)
 
-__all__ = ['Speaker'] # + Talk, Track, Session ?
+__all__ = ['Speaker']  # + Talk, Track, Session ?
 
 
 #
@@ -71,7 +71,7 @@ class Speaker(Entity, ValidationMixin):
                         info={'searchable': True, 'label': u'Organisation'})
 
   title = Column(UnicodeText, nullable=True,
-                        info={'searchable': True, 'label': u'Title'})
+                 info={'searchable': True, 'label': u'Title'})
 
   email = Column(EmailAddress,
                  info={'label': 'E-mail'})
@@ -79,8 +79,11 @@ class Speaker(Entity, ValidationMixin):
   telephone = Column(PhoneNumber, nullable=True,
                      info={'label': u'Telephone'})
 
-  bio = Column(UnicodeText, nullable=True,
-               info={'label': u'Biography'})
+  bio_fr = Column(UnicodeText, nullable=True,
+                  info={'label': u'Biography (FR)'})
+
+  bio_en = Column(UnicodeText, nullable=True,
+                  info={'label': u'Biography (EN)'})
 
   website = Column(UnicodeText, nullable=True,
                    info={'label': u'Web site'})
@@ -94,6 +97,9 @@ class Speaker(Entity, ValidationMixin):
   sourceforge_handle = Column(UnicodeText, nullable=True,
                               info={'label': u'Sourceforge handle'})
 
+  linkedin_handle = Column(UnicodeText, nullable=True,
+                           info={'label': u'Linkedin handle'})
+
   photo = deferred(Column(LargeBinary, nullable=True))
 
   @property
@@ -104,11 +110,11 @@ class Speaker(Entity, ValidationMixin):
 
   # @property
   # def has_bio(self):
-  #   return not not self.bio
+  # return not not self.bio
   #
   # @property
   # def has_photo(self):
-  #   return not not self.photo
+  # return not not self.photo
 
 
 class Room(Entity, ValidationMixin):
@@ -119,6 +125,8 @@ class Room(Entity, ValidationMixin):
 
   capacity = Column(Integer, nullable=False,
                     info={'label': u'Capacity'})
+
+  floor = Column(Integer, nullable=False)
 
 
 track_leader_to_track = Table(
@@ -141,7 +149,9 @@ class Track2(Entity, ValidationMixin):
   theme = Column(UnicodeText, nullable=True,
                  info={'label': u'Theme'})
 
-  description = Column(UnicodeText)
+  description_fr = Column(UnicodeText)
+
+  description_en = Column(UnicodeText)
 
   starts_at = Column(DateTime, nullable=True,
                      info={'label': u'Starts at'})
@@ -170,12 +180,15 @@ class Talk(Entity, ValidationMixin):
 
   track_id = Column(ForeignKey(Track2.id), nullable=False)
   track = relationship(Track2, foreign_keys=[track_id],
-                       backref=backref("talks", order_by=lambda: Talk.starts_at))
+                       backref=backref("talks",
+                                       order_by=lambda: Talk.starts_at))
 
   speakers = relationship(Speaker, secondary=speaker_to_talk,
                           backref='talks')
 
   title = Column(UnicodeText(200), nullable=False)
+
+  type = Column(UnicodeText(20))
 
   abstract = Column(UnicodeText(2000), nullable=False)
 

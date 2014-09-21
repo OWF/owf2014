@@ -2,26 +2,25 @@
 # coding=utf-8
 
 from datetime import datetime
-from dircache import listdir
 from logging import FileHandler
 from os import mkdir, system
 import os
 from os.path import exists
 import csv
+import random
+import string
 import bleach
 
 from flask import current_app as app
 from flask.ext.script import Manager
-from icalendar import Calendar
+from abilian.core.subjects import User
 
 from website.application import create_app, db
-from website.crm.models import Speaker, Talk, Track2
 
 
 DEBUG = True
 
 OSDC_DATA = u""""""
-
 
 manager = Manager(create_app)
 
@@ -77,22 +76,29 @@ def drop_db():
     db.drop_all()
 
 
+def gen_password(length=12):
+  chars = string.ascii_letters + string.digits + '!@#$%^&*()'
+  random.seed = (os.urandom(1024))
+  return ''.join(random.choice(chars) for i in range(length))
+
+
 @manager.command
-def add_user(email, password):
-  from website.security import User2
-  user = User2(email=email, password=password, active=True)
+def add_user(email):
+  password = gen_password(12)
+  print password
+  user = User(email=email, password=password)
   db.session.add(user)
   db.session.commit()
-  print "Password updated"
+
+  print("Password updated: {}".format(password))
 
 
 @manager.command
-def set_password(email, password):
-  from website.security import User2
-  user = User2.query.filter(User2.email==email).one()
-  user.password = password
-  db.session.commit()
-  print "Password updated"
+def import_excel():
+  from website.excel import Loader
+  loader = Loader("instance/data/OWF14 Program.xlsx")
+  loader.load()
+  #db.session.commit()
 
 
 @manager.command
@@ -128,57 +134,6 @@ def build():
   system("cp ./static/*.xml ./build/")
   print("Done.")
 
-
-@manager.command
-def load_osdc():
-  cal = Calendar.from_ical(open('data/osdc.ics','rb').read())
-  speakers = {}
-  osdc1 = Track2.query.get(28)
-  osdc2 = Track2.query.get(48)
-  osdc3 = Track2.query.get(49)
-
-  for component in cal.walk():
-    if component.name != 'VEVENT':
-      continue
-    title = component['summary']
-    room_name = component['location']
-    abstract = component['description']
-    speaker_name = component['organizer']
-    starts_at = component['dtstart'].dt
-    ends_at = component['dtend'].dt
-    duration = int((ends_at - starts_at).total_seconds() / 60)
-
-    speaker = speakers.get(speaker_name, None)
-    if not speaker:
-      speaker = Speaker(first_name="", last_name=speaker_name)
-      speakers[speaker_name] = speaker
-
-    talk = Talk(title=title, abstract=abstract,
-                starts_at=starts_at, duration=duration)
-    talk.speakers.append(speaker)
-
-    if 'Gopher' in room_name:
-      talk.track = osdc3
-    else:
-      if starts_at.day == 4:
-        talk.track = osdc1
-      else:
-        talk.track = osdc2
-
-    db.session.commit()
-
-@manager.command
-def update_osdc():
-  for line in OSDC_DATA.split("\n"):
-    first_name, last_name, email = line.split(",")
-    name = first_name + " " + last_name
-    speaker = Speaker.query.filter(Speaker.last_name == name).first()
-    if speaker:
-      print "Updating speaker", name
-      speaker.first_name = first_name
-      speaker.last_name = last_name
-      speaker.email = email
-  db.session.commit()
 
 @manager.command
 def serve(server='0.0.0.0', port=5000, debug=DEBUG):
