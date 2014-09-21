@@ -100,7 +100,7 @@ def alt_url_for(obj, *args, **kw):
     return url_for("localized.room", room_id=obj.id)
   elif isinstance(obj, Talk):
     return "%s#talk_%d" % (
-    url_for("localized.track", track_id=obj.track.id), obj.id)
+      url_for("localized.track", track_id=obj.track.id), obj.id)
   elif obj in ('THINK', 'CODE', 'EXPERIMENT'):
     return url_for("localized.page", path=obj.lower())
   elif g.lang:
@@ -464,7 +464,10 @@ def talks_for_room_and_day(room, day):
 #
 @route('/participants/')
 def participants():
-  users = User2.query.order_by(User2.last_name).all()
+  users = User2.query \
+    .filter(User2.last_name != u"") \
+    .filter(User2.first_name != u"") \
+    .order_by(User2.last_name).all()
   page = dict(title=_("Participants"))
   return render_template("participants.html", page=page, participants=users)
 
