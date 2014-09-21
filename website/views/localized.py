@@ -19,6 +19,7 @@ from flask import Blueprint, request, render_template, make_response, g, \
   url_for, session, redirect
 from flask import current_app as app
 from flask.ext.babel import gettext as _
+from sqlalchemy import func
 from werkzeug.exceptions import NotFound
 
 from ..config import MAIN_MENU, FEED_MAX_LINKS, IMAGE_SIZES
@@ -467,7 +468,7 @@ def participants():
   users = User2.query \
     .filter(User2.last_name != u"") \
     .filter(User2.first_name != u"") \
-    .order_by(User2.last_name).all()
+    .order_by(func.lower(User2.last_name)).all()
   page = dict(title=_("Participants"))
   return render_template("participants.html", page=page, participants=users)
 
