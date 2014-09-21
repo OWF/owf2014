@@ -1,4 +1,4 @@
-title: Become an Open World Forum Partner !
+title: Become an Open World Forum Partner!
 date: 2014/07/26
 
 
@@ -25,12 +25,12 @@ This event is a beautiful opportunity to meet and exchange with different player
 ###ASSOCIATE YOUR COMPANY, YOUR BRAND TO OWF, MEANS:
 
 
-Benefiting from high visibility through a great online presence
-Strengthen your leadership in France and abroad
-Develop your business
-Contribute to a sustainable digital future
-Being at the heart of the debate on free software
+- Benefiting from high visibility through a great online presence
+- Strengthen your leadership in France and abroad
+- Develop your business
+- Contribute to a sustainable digital future
+- Being at the heart of the debate on free software
 
 We encourage you to take advantage of this unique opportunity and become an OWF sponsor.
 
-### <p align="center"><a href="/static/Documents/Sponsoring opportunities 2014.pdf" target="_blank"> Discover our sponsorship opportunities </a> </p>
+### <p align="center"><a href="/static/Documents/Sponsoring_opportunities_2014.pdf" target="_blank"> Discover our sponsorship opportunities </a> </p>
