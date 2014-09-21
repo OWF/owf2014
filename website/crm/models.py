@@ -164,7 +164,8 @@ class Track2(Entity, ValidationMixin):
 
   @property
   def abstract(self):
-    return self.description
+    # TODO: use locale
+    return self.description_en or self.description_fr
 
 
 speaker_to_talk = Table(
