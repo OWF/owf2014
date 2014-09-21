@@ -209,5 +209,10 @@ class Talk(Entity, ValidationMixin):
       return self.starts_at + timedelta(minutes=self.duration)
 
   @property
+  def abstract(self):
+    # TODO: use locale
+    return self.abstract_en or self.abstract_fr
+
+  @property
   def abstract_rendered(self):
     return markdown(self.abstract)
