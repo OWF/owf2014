@@ -116,15 +116,14 @@ class Loader(object):
         'type': row[0].value,
         'track': self.tracks[row[1].value],
         'title': row[2].value,
-        'abstract': row[3].value,
-        # 'abstract_fr': row[3].value,
-        #'abstract_en': row[4].value,
-        'starts_at': parse_date(row[4].value),
-        'duration': int(row[5].value),
+        'abstract_fr': row[3].value,
+        'abstract_en': row[4].value,
+        'starts_at': parse_date(row[5].value),
+        'duration': int(row[6].value),
       }
 
       speakers = []
-      for i in range(6, 6 + 4):
+      for i in range(7, 7 + 4):
         speaker_email = row[i].value
         if speaker_email:
           speakers.append(self.speakers[speaker_email])

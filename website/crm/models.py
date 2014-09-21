@@ -190,7 +190,9 @@ class Talk(Entity, ValidationMixin):
 
   type = Column(UnicodeText(20))
 
-  abstract = Column(UnicodeText(2000), nullable=False)
+  abstract_en = Column(UnicodeText(5000), nullable=False)
+
+  abstract_fr = Column(UnicodeText(5000), nullable=False)
 
   starts_at = Column(DateTime, nullable=True,
                      info={'label': u'Starts at'})
