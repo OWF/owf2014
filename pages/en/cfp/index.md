@@ -5,7 +5,7 @@ title: Call For Paper
 
 ## Take Back Control !
 
-Open World Forum is back for a wholly new edition ! It will occur this year on October 30th, 31th and November 1st. Last year's edition was a big success, and we are looking forward to another event with even more talks, more workshops, and more social networking. We need you to make this happen! We encourage you to submit a talk if you have a great story to tell on any of the following topics. 
+Open World Forum is back for a wholly new edition ! It will occur this year on October 30th and 31th. Last year's edition was a big success, and we are looking forward to another event with even more talks, more workshops, and more social networking. We need you to make this happen! We encourage you to submit a talk if you have a great story to tell on any of the following topics. 
 Presentations purely promoting a product, solution or a company will not be accepted.
 
 This year's program will show you how to take back control of your digital world, including IT/IS and (personal) data, whether you are a professional or not.  Stop losing control and discover how Free and Open Source software may help you be more and more independent, whether technologically, legally or financially.

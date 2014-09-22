@@ -1,7 +1,7 @@
 title: Meet the OWF 2014 Team!
 date: 2014/05/15
 
-Open World Forum is back for a whole new edition! It will occur on October 30th, 31th and November 1st.
+Open World Forum is back for a whole new edition! It will occur on October 30th and 31th.
 
 Last year's edition was a big success, and we are looking forward to another event with even more talks, more workshops, and more social networking.
 
