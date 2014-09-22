@@ -1,6 +1,6 @@
 title: Programme
 
-L'Open World Forum 2014 se déroulera sur trois journées, du 30 octobre au 1er novembre.
+L'Open World Forum 2014 se déroulera sur deux journées, du 30 au 31 octobre.
 
 
 ### Jeudi 30 octobre

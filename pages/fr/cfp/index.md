@@ -8,7 +8,7 @@ title: Appel à participation
 ## Take back control! 
 
 
-Les 30, 31 octobre et 1er novembre 2014, l'Open World Forum est de retour ! Après le succès de l'an dernier, nous sommes impatients de vous retrouver pour cette nouvelle édition, que nous espérons encore plus riche en discussions, en ateliers et en rencontres. **Mais avant toute chose, nous avons besoin de vos contributions !**
+Les 30 et 31 octobre 2014, l'Open World Forum est de retour ! Après le succès de l'an dernier, nous sommes impatients de vous retrouver pour cette nouvelle édition, que nous espérons encore plus riche en discussions, en ateliers et en rencontres. **Mais avant toute chose, nous avons besoin de vos contributions !**
 
 Le programme de cette année va vous démontrer qu'il est possible de **retrouver la maîtrise de son environnement numérique**, en matière d'informatique comme de données (personnelles), que vous soyez professionnel ou non. Arrêtez de subir le monde digital et découvrez comment regagner votre indépendance technologique, juridique et financière grâce aux logiciels libres et Open Source.
 
