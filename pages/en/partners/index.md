@@ -5,7 +5,7 @@ date: 2014/07/26
 ###THE FIRST EUROPEAN SUMMIT ABOUT FREE AND OPEN TECHNOLOGY
 
 
-The Open World Forum 2014 is the first European Summit that gathers the decision-makers, the communities and the developers to cross-fertilize the technological, economic and societal initiatives, in order to build the future of digital technology. The event was established in 2008 and is held every year in Paris, with more than 200 speakers from 40 countries and an international audience of about 3,000 participants in 2014. The 7th edition of the event will take place from October 30th until November 1st, 2014, in the Beffroi of Montrouge. This popularity among main players in a free digital world stands as the first European summit bringing together decision-makers, communities and developers to cross-fertilize the technological, economic and societal initiatives started to build the digital future.
+The Open World Forum 2014 is the first European Summit that gathers the decision-makers, the communities and the developers to cross-fertilize the technological, economic and societal initiatives, in order to build the future of digital technology. The event was established in 2008 and is held every year in Paris, with more than 200 speakers from 40 countries and an international audience of about 3,000 participants in 2014. The 7th edition of the event will take place from October 30th to October 31th, 2014, at Eurosite Georges V in Paris. This popularity among main players in a free digital world stands as the first European summit bringing together decision-makers, communities and developers to cross-fertilize the technological, economic and societal initiatives started to build the digital future.
 
 
 ###TAKE BACK CONTROL

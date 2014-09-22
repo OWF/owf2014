@@ -2,7 +2,9 @@ title: Venue
 
 
 
-This year, the Open World Forum will be held at the Beffroi, in Montrouge
+This year, the Open World Forum will be held at Eurosite Georges V.
+
+<!-- TODO
 
 Centre culturel Le Beffroi
 2 Place Emile Cresp,
@@ -19,3 +21,5 @@ Getting there:
 **Bus** : numbers 68, 128 and 126, the *Mairie de Montrouge* stop
 
 **Parking** Parking Cresp, *Emile Cresp Plaza*, Montrouge
+
+-->

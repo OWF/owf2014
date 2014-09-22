@@ -1,6 +1,8 @@
 title: Lieu
 
-L'Open World Forum se déroulera au Beffroi de Montrouge.
+L'Open World Forum se déroulera à l'Eurosite Georges V à Paris.
+
+<!--
 
 **Centre culturel Le Beffroi**, 2 place Emilie Cresp - 92120 Montrouge <br>Tel.: +33(0)1 46 12 75 64
 
@@ -20,3 +22,5 @@ L'Open World Forum se déroulera au Beffroi de Montrouge.
 - **EN BUS** Lignes 68, 128, 126 (arrêt Mairie de Montrouge)</li>
 
 - **PARKINGS** Parking Cresp, place Emile Cresp. Montrouge</li>
+
+-->

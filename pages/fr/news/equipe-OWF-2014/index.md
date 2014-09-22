@@ -1,7 +1,7 @@
 title: Présentation de l'équipe OWF 2014
 date: 2014/05/15
 
-L’Open World Forum est de retour pour une nouvelle édition ! Cette année, l’événement se déroulera les 30,31 octobre et 1er novembre au Beffroi de Montrouge.
+L’Open World Forum est de retour pour une nouvelle édition ! Cette année, l’événement se déroulera les 30 et 31 octobre à l'Eurosiet Georges V.
 
 Pour sa 6e, l’OWF a connu un franc succès, et nous vous proposons, cette année, un nouveau programme avec encore plus de workshops, de speakers ainsi que de « social networking ».
 

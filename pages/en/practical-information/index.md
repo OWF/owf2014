@@ -2,7 +2,7 @@ title : Practical Information
 
 ## Attend
 
-This year, the Open World Forum will be held at the Beffroi, in Montrouge.
+This year, the Open World Forum will be held at Eurosite Georges V, in Paris.
 
 The Beffroi is a congress center of 10 000 square meters, with a plenary hall of 732 seats, a second, smaller amphitheater of 236 seats, a multi-use space of 1000 square meters which can be used for exhibitions and 9 other small rooms.
 
@@ -10,11 +10,12 @@ A terrace of 700 square meters on the roof of the building allows us to hold the
 
 ## How To Get There
 
-Le Beffroi<br>
-2 Place Emile Cresp,<br>
-92120 Montrouge<br>
+[Eurosite Georges V](http://www.eurosites.fr/eurosites/george-v/)<br>
+28, avenue Georges V<br>
+75008 Paris<br>
 FRANCE
 
+<!--
 <iframe width="425" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://www.openstreetmap.org/export/embed.html?bbox=2.3188635706901546%2C48.8184044505662%2C2.320687472820282%2C48.81999037829795&amp;layer=mapnik&amp;marker=48.819197420704356%2C2.3197755217552185" style="border: 1px solid black"></iframe><br/><small><a href="http://www.openstreetmap.org/?mlat=48.81920&amp;mlon=2.31978#map=19/48.81920/2.31978">Afficher une carte plus grande</a></small>
 
 
@@ -31,7 +32,7 @@ FRANCE
 <br>Parking Porte d'Orléans, 1, rue de la Légion Étrangère, Paris (less than 10 minutes walking distance from the Beffroi)</li>
 
 </ul>
-
+-->
 
 ## Where to sleep
 

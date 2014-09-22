@@ -4,7 +4,7 @@ date: 2014/07/25
 
 ### LE PREMIER SOMMET EUROPEEN DES TECHNOLOGIES LIBRES ET OUVERTES
 
-L'Open World Forum a été fondé en 2008 et se tient désormais chaque année à Paris, avec plus de 200 orateurs venus de 40 pays et une audience internationale attendue de 3000 participants en 2014. La 7e édition de l’événement se tiendra du 30 octobre au 1er novembre 2014, au Beffroi de Montrouge. 
+L'Open World Forum a été fondé en 2008 et se tient désormais chaque année à Paris, avec plus de 200 orateurs venus de 40 pays et une audience internationale attendue de 2000 participants en 2014. La 7e édition de l’événement se tiendra du 30 au 31 octobre 2014, à l'Eurosite Georges V. 
 
 Ce succès auprès des acteurs d’un monde numérique libre en fait le premier sommet européen rassemblant les décideurs, les communautés, les développeurs pour cross-fertiliser les initiatives technologiques, économiques et sociétales ouvertes, afin de bâtir le futur du numérique
 

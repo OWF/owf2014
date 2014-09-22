@@ -1,8 +1,9 @@
 title: Informations pratiques
 
 
-<p>L'Open World Forum se déroulera au Beffroi de Montrouge.</p>
+<p>L'Open World Forum se déroulera à l'Eurosite Georges V à Paris.</p>
 
+<!-- TODO
 <p>
 <b> Le Beffroi</b> 2 place Emile Cresp - 92120 Montrouge <br>Tel.: +33(0)1 46 12 75 64</p>&nbsp;<iframe width="425" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://www.openstreetmap.org/export/embed.html?bbox=2.3188635706901546%2C48.8184044505662%2C2.320687472820282%2C48.81999037829795&amp;layer=mapnik&amp;marker=48.819197420704356%2C2.3197755217552185" style="border: 1px solid black"></iframe><br/><small><a href="http://www.openstreetmap.org/?mlat=48.81920&amp;mlon=2.31978#map=19/48.81920/2.31978">Afficher une carte plus grande</a></small>
 
@@ -163,3 +164,5 @@ Notre Dame et le Musée du Louvre sont à moins de 10 minutes à pied.
 <br>E-mail eugenie.hotel@wanadoo.fr
 
 *A partir de 99 €*
+
+-->
