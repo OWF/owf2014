@@ -20,56 +20,6 @@
 
   {# ######################################################################## #}
 
-  <div class="container" id="home-domains">
-    <div class="row">
-      <div class="col-sm-4 domain">
-        <img class="hidden-xs" src="/static/pictures/idea-img.png" alt="THINK"/>
-
-        <h2 class="think">THINK</h2>
-
-        {{ blocks['think'] }}
-
-        <p>
-          <a href="/{{ lang }}/think/">
-            <button class="btn btn-default">{{ _("Learn more") }}</button>
-          </a>
-        </p>
-      </div>
-
-      <div class="col-sm-4 domain">
-        <img class="hidden-xs" src="/static/pictures/keyboard-img.png"
-            alt="Code"/>
-
-        <h2 class="code">CODE</h2>
-
-        {{ blocks['code'] }}
-
-        <p>
-          <a href="/{{ lang }}/code/">
-            <button class="btn btn-default">{{ _("Learn more") }}</button>
-          </a>
-        </p>
-      </div>
-
-      <div class="col-sm-4 domain">
-        <img class="hidden-xs" src="/static/pictures/experience-img.png"
-            alt="Experiment"/>
-
-        <h2 class="experiment">EXPERIMENT</h2>
-
-        {{ blocks['experiment'] }}
-
-        <p>
-          <a href="/{{ lang }}/experiment/">
-            <button class="btn btn-default">{{ _("Learn more") }}</button>
-          </a>
-        </p>
-      </div>
-    </div>
-  </div>
-
-  {# ######################################################################## #}
-
   {% if speakers %}
     <div id="home-speakers">
       <div class="container">
@@ -253,6 +203,7 @@
     </div>
   </div>
 
+
   {# ############################# 2013 ################################### #}
 
   <div id="2013" class="hidden-xs last-year legible nospace clearfix">
@@ -271,7 +222,8 @@
         </div>
       </a>
       <ul class="flipboard"></ul>
-      <script id="card-template" type="text/template"><li>
+      <script id="card-template" type="text/template">
+        <li>
           <div class="flipcard">
             <p class="face front"></p>
 

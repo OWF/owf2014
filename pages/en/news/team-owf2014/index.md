@@ -42,11 +42,11 @@ More information on Twitter and LinkedIn:
 
 <img src="/static/pictures/Team/MSallieres.jpg">
 
-After having assisted companies in the establishment of management solutions and business intelligence as a consultant or project manager in an international  area, Marc SALLIERES, 25 years of experiences, founder of the [Altic society](http://www.altic.org/), assist and support companies in their analysis phases, restructuration and the re-engineering of their IT system.
+After having assisted companies in the establishment of management solutions and business intelligence as a consultant or project manager in an international  area, Marc SALLIERES, 25 years of experiences, founder of the [Altic society](http://www.altic.org/), assists and supports companies in their analysis phases, restructuration and the re-engineering of their IT system.
 
-Since 10 years, with his associate Charly CLAIRMONT, Marc SALLIERES defend  the free software and the Open Source solutions as an alternative for organisations and companies for IT system. Member of most of the Open Source associations such as ASS2L, PLOSS, CNLL, OW2, April, HUG, he leaded the Opendays during the two first Open World Forum, event dedicate to companies.
+Since 10 years, with his associate Charly CLAIRMONT, Marc SALLIERES has been defending free software and Open Source solutions as an alternative for organisations and companies for IT system. Member of most of the Open Source associations such as ASS2L, PLOSS, CNLL, OW2, April, HUG, he lead the Opendays during the two first Open World Forums, event dedicate to companies.
 
-With his team, Marc SALLIERES spread the Open Source, the free software  and alternatives IT systems values in several Universities in Paris *(UPCM, Dauphine, Jussieu, Paris XIII)*.
+With his team, Marc SALLIERES spreads the Open Source, the free software  and alternatives IT systems values in several Universities in Paris *(UPCM, Dauphine, Jussieu, Paris XIII)*.
 
 More information on Twitter and LinkedIn:
 <a href="https://www.linkedin.com/pub/marc-sallieres/2/a63/407" target="_blank"><img src="/static/pictures/linkedin.png" width="34" ></a></a> <a href="https://twitter.com/msallieres" target="_blank"><img src="/static/pictures/Twitter.jpg" width="34" ></a></a>

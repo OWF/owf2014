@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2014-08-06 16:50+0200\n"
+"POT-Creation-Date: 2014-09-22 17:27+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -49,12 +49,12 @@ msgstr ""
 msgid "Biography"
 msgstr ""
 
-#: website/auth/oauth.py:142 website/auth/oauth.py:190
+#: website/auth/oauth.py:151 website/auth/oauth.py:200
 msgid "Your email needs to be verified with your identity provider."
 msgstr ""
 
-#: website/auth/oauth.py:160 website/auth/oauth.py:207
-#: website/auth/oauth.py:252
+#: website/auth/oauth.py:170 website/auth/oauth.py:217
+#: website/auth/oauth.py:262 website/auth/oauth.py:297
 msgid "Login successful."
 msgstr ""
 
@@ -74,18 +74,6 @@ msgstr ""
 msgid ""
 "These information will appear on the OWF\n"
 "          website."
-msgstr ""
-
-#: website/auth/templates/auth/login.html:13
-msgid "Please sign in"
-msgstr ""
-
-#: website/auth/templates/auth/login.html:15
-msgid ""
-"You need to create an account on the OWF or sign in, using one of the "
-"identity providers below (in case of doubt use <a "
-"href=\"https://login.persona.org\" target=\"_blank\">Mozilla "
-"Persona</a>)."
 msgstr ""
 
 #: website/auth/templates/auth/logout.html:12 website/templates/base.html:68
@@ -173,27 +161,27 @@ msgstr ""
 msgid "Co-organizers"
 msgstr ""
 
-#: website/templates/_sponsors.html:69
+#: website/templates/_sponsors.html:67
 msgid "Platinum sponsors"
 msgstr ""
 
-#: website/templates/_sponsors.html:76
+#: website/templates/_sponsors.html:74
 msgid "Gold sponsors"
 msgstr ""
 
-#: website/templates/_sponsors.html:85
+#: website/templates/_sponsors.html:86
 msgid "Silver sponsors"
 msgstr ""
 
-#: website/templates/_sponsors.html:97
+#: website/templates/_sponsors.html:98
 msgid "Community Partners"
 msgstr ""
 
-#: website/templates/_sponsors.html:115
+#: website/templates/_sponsors.html:124
 msgid "WebTV Partner"
 msgstr ""
 
-#: website/templates/_sponsors.html:125
+#: website/templates/_sponsors.html:134
 msgid "Press partners"
 msgstr ""
 
@@ -210,7 +198,7 @@ msgid "The plenary session takes place in room \"Grand Auditorium\"."
 msgstr ""
 
 #: website/templates/day1.html:33 website/templates/speakers.html:14
-#: website/templates/track.html:66 website/views/localized.py:342
+#: website/templates/track.html:66 website/views/localized.py:359
 msgid "Speakers"
 msgstr ""
 
@@ -261,24 +249,19 @@ msgstr ""
 msgid "Tracks details"
 msgstr ""
 
-#: website/templates/index.html:34 website/templates/index.html:49
-#: website/templates/index.html:64
-msgid "Learn more"
-msgstr ""
-
-#: website/templates/index.html:76
+#: website/templates/index.html:26
 msgid "Some speakers"
 msgstr ""
 
-#: website/templates/index.html:79
+#: website/templates/index.html:29
 msgid "All the speakers"
 msgstr ""
 
-#: website/templates/index.html:132
+#: website/templates/index.html:82
 msgid "Latest news"
 msgstr ""
 
-#: website/templates/index.html:135 website/templates/index.html:249
+#: website/templates/index.html:85 website/templates/index.html:199
 msgid "All the latest news"
 msgstr ""
 
@@ -294,12 +277,16 @@ msgstr ""
 msgid "Recent items"
 msgstr ""
 
+#: website/templates/participants.html:9 website/views/localized.py:472
+msgid "Participants"
+msgstr ""
+
 #: website/templates/program.html:54 website/templates/speaker.html:35
-#: website/templates/track.html:43 website/views/localized.py:303
+#: website/templates/track.html:43 website/views/localized.py:318
 msgid "Talks"
 msgstr ""
 
-#: website/templates/search.html:10 website/views/localized.py:260
+#: website/templates/search.html:10 website/views/localized.py:275
 msgid "Search results"
 msgstr ""
 
@@ -483,42 +470,42 @@ msgstr ""
 msgid "Delete attachment?"
 msgstr ""
 
-#: website/views/localized.py:162
+#: website/views/localized.py:173
 msgid "News"
 msgstr ""
 
-#: website/views/localized.py:251
+#: website/views/localized.py:266
 msgid "Site map"
 msgstr ""
 
-#: website/views/localized.py:274 website/views/localized.py:292
+#: website/views/localized.py:289 website/views/localized.py:307
 msgid "Program"
 msgstr ""
 
-#: website/views/localized.py:290
+#: website/views/localized.py:305
 #, python-format
 msgid "Program for theme %(theme)s"
 msgstr ""
 
-#: website/views/localized.py:313
+#: website/views/localized.py:329
 msgid "Rooms"
 msgstr ""
 
-#: website/views/localized.py:328
+#: website/views/localized.py:345
 #, python-format
 msgid "Program for room %(room)s"
 msgstr ""
 
-#: website/views/localized.py:389
+#: website/views/localized.py:407
 msgid "Day 1 - Plenary session"
 msgstr ""
 
-#: website/views/localized.py:425
+#: website/views/localized.py:444
 #, python-format
 msgid "Day %(day)d - At a glance"
 msgstr ""
 
-#: website/views/localized.py:432
+#: website/views/localized.py:451
 msgid "Page not found"
 msgstr ""
 
