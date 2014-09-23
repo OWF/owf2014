@@ -119,11 +119,12 @@ class Loader(object):
         'abstract_fr': row[3].value,
         'abstract_en': row[4].value,
         'starts_at': parse_date(row[5].value),
-        'duration': int(row[6].value),
+        'duration': int(row[6].value or 0),
+        #'lang': int(row[7].value),
       }
 
       speakers = []
-      for i in range(7, 7 + 4):
+      for i in range(8, 8 + 4):
         speaker_email = row[i].value
         if speaker_email:
           speakers.append(self.speakers[speaker_email])
