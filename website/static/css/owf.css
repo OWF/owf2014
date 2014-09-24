@@ -6362,7 +6362,15 @@ img#home-jumbotron {
   overflow: hidden;
   text-overflow: ellipsis;
 }
-.speakers article img.speaker-photo {
+.speakers img.speaker-photo {
+  margin-top: 40px;
+  margin-bottom: 20px;
+  max-width: 100% !important;
+}
+.speakers .details {
+  margin-top: 100px;
+}
+.speaker img.speaker-photo {
   margin-top: 40px;
   margin-bottom: 20px;
   max-width: 100% !important;

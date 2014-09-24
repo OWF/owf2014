@@ -3,57 +3,53 @@
 {% from "_macros.html" import m_sidebar, m_speaker_details %}
 
 {% block main %}
-  <div class="container">
+  <div class="container speaker">
+    <div class="row clear-both">
+      <article>
+        <div class="col-md-8">
+          <h1 class="page-title">{{ page.title }}</h1>
 
-    <div class="row">
-      <div class="col-md-12">
+          <h2>Biography</h2>
 
-        <div class="row clear-both">
-          <article id="speaker">
-            <div class="col-md-8">
-              <h1 class="page-title">{{ page.title }}</h1>
+          {% if speaker.bio %}
+            {{ speaker.bio|markdown }}
+          {% else %}
+            {{ linuxipsum() }}
+          {% endif %}
 
-              <h2>Biography</h2>
+          {% if speaker.leads_tracks %}
+            <h2>{{ _("Track leader on") }}</h2>
 
-              {% if speaker.bio %}
-                {{ speaker.bio|markdown }}
-              {% else %}
-                {{ linuxipsum() }}
-              {% endif %}
+            {% for track in speaker.leads_tracks %}
+              <h3><a href="{{ url_for(track) }}">{{ track }}</a></h3>
 
-              {% if speaker.leads_tracks %}
-                <h2>{{ _("Track leader on") }}</h2>
+              {{ track.abstract|markdown }}
+            {% endfor %}
+          {% endif %}
 
-                {% for track in speaker.leads_tracks %}
-                  <h3><a href="{{ url_for(track) }}">{{ track }}</a></h3>
+          {% if speaker.talks %}
+            <h2>{{ _("Talks") }}</h2>
 
-                  {{ track.abstract|markdown }}
-                {% endfor %}
-              {% endif %}
+            {% for talk in speaker.talks %}
+              <h3><a href="{{ url_for(talk) }}">{{ talk }}</a></h3>
 
-              {% if speaker.talks %}
-                <h2>{{ _("Talks") }}</h2>
+              <p>Track: <a
+                  href="{{ url_for(talk.track) }}">{{ talk.track._name }}</a>
+              </p>
 
-                {% for talk in speaker.talks %}
-                  <h3><a href="{{ url_for(talk) }}">{{ talk }}</a></h3>
-
-                  <p>Track: <a
-                      href="{{ url_for(talk.track) }}">{{ talk.track._name }}</a>
-                  </p>
-
-                  {{ talk.abstract|markdown }}
-                {% endfor %}
-              {% endif %}
-            </div>
-
-            <div class="col-md-3">
-              <img class="speaker-img"
-                  src="{{ url_for(".photo", speaker_id=speaker.id, s=220) }}">
-            </div>
-
-          </article>
+              {{ talk.abstract|markdown }}
+            {% endfor %}
+          {% endif %}
         </div>
-      </div>
+
+        <div class="col-md-4">
+          <img class="speaker-photo bordered"
+              src="{{ url_for(".photo", speaker_id=speaker.id, s=220) }}">
+        </div>
+
+      </article>
     </div>
+  </div>
+  </div>
   </div>
 {% endblock %}
