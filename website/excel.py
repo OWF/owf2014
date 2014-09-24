@@ -1,5 +1,7 @@
 """Excel importer
 """
+from datetime import datetime
+import traceback
 
 import aniso8601
 import xlrd
@@ -16,10 +18,17 @@ def parse_date(isodatestr):
 class Loader(object):
   def __init__(self, filename):
     self.wb = xlrd.open_workbook(filename)
-    self.log = []
+    self._log = []
     self.rooms = {}
     self.speakers = {}
     self.tracks = {}
+
+  def debug(self, msg):
+    self._log.append(str(msg))
+
+  @property
+  def log(self):
+    return "\n".join(self._log)
 
   def load(self):
     self.clean()
@@ -36,9 +45,10 @@ class Loader(object):
     db.session.flush()
 
   def load_rooms(self):
-    self.log.append("Parsing rooms")
+    self.debug("Parsing rooms")
     sheet = self.wb.sheet_by_name("Room")
     for i in range(1, sheet.nrows):
+      self.debug("... {}".format(i))
       row = sheet.row(i)
       args = {
         'name': row[0].value,
@@ -51,9 +61,10 @@ class Loader(object):
     db.session.flush()
 
   def load_speakers(self):
-    self.log.append("Parsing speakers")
+    self.debug("Parsing speakers")
     sheet = self.wb.sheet_by_name("Speakers")
     for i in range(1, sheet.nrows):
+      self.debug("... {}".format(i))
       row = sheet.row(i)
 
       keys = [
@@ -81,9 +92,10 @@ class Loader(object):
     db.session.flush()
 
   def load_tracks(self):
-    self.log.append("Parsing tracks")
+    self.debug("Parsing tracks")
     sheet = self.wb.sheet_by_name("Tracks")
     for i in range(1, sheet.nrows):
+      self.debug("... {}".format(i))
       row = sheet.row(i)
       room_name = row[0].value
       args = {
@@ -92,8 +104,8 @@ class Loader(object):
         'theme': row[2].value,
         'description_fr': row[3].value,
         'description_en': row[4].value,
-        'starts_at': parse_date(row[5].value),
-        'ends_at': parse_date(row[6].value),
+        'starts_at': parse_date(row[5].value) or datetime(1970, 1, 1),
+        'ends_at': parse_date(row[6].value) or datetime(1970, 1, 1),
       }
       track_leaders = []
       for i in range(7, 7 + 4):
@@ -108,29 +120,36 @@ class Loader(object):
     db.session.flush()
 
   def load_talks(self):
-    self.log.append("Parsing talks")
+    self.debug("Parsing talks")
     sheet = self.wb.sheet_by_name("Talk")
     for i in range(1, sheet.nrows):
+      self.debug("... {}".format(i))
       row = sheet.row(i)
-      args = {
-        'type': row[0].value,
-        'track': self.tracks[row[1].value],
-        'title': row[2].value,
-        'abstract_fr': row[3].value,
-        'abstract_en': row[4].value,
-        'starts_at': parse_date(row[5].value),
-        'duration': int(row[6].value or 0),
-        #'lang': int(row[7].value),
-      }
-
-      speakers = []
-      for i in range(8, 8 + 4):
-        speaker_email = row[i].value
-        if speaker_email:
-          speakers.append(self.speakers[speaker_email])
-      args['speakers'] = speakers
-
-      talk = Talk(**args)
-      db.session.add(talk)
+      try:
+        self.load_talk(row)
+      except:
+        self.debug(traceback.format_exc())
 
     db.session.flush()
+
+  def load_talk(self, row):
+    args = {
+      'type': row[0].value,
+      'track': self.tracks[row[1].value],
+      'title': row[2].value,
+      'abstract_fr': row[3].value,
+      'abstract_en': row[4].value,
+      'starts_at': parse_date(row[5].value) or datetime(1970, 1, 1),
+      'duration': int(row[6].value or 0),
+      # 'lang': int(row[7].value),
+    }
+
+    speakers = []
+    for i in range(8, 8 + 4):
+      speaker_email = row[i].value
+      if speaker_email:
+        speakers.append(self.speakers[speaker_email])
+    args['speakers'] = speakers
+
+    talk = Talk(**args)
+    db.session.add(talk)

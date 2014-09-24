@@ -227,7 +227,6 @@ def lanyrd():
 @main.route("upload_excel_file", methods=['PUT'])
 def upload_excel_file():
   fn = mktemp()
-  print fn
   fd = open(fn, "wc")
   fd.write(request.stream.read())
   fd.flush()
@@ -235,9 +234,9 @@ def upload_excel_file():
   try:
     loader.load()
     db.session.commit()
-    os.unlink(fn)
-    return 'OK\n'
+    return loader.log
   except:
+    return loader.log + "\n" + traceback.format_exc()
+  finally:
     os.unlink(fn)
-    return "\n".join(loader.log) + "\n" + traceback.format_exc()
 
