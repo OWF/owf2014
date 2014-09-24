@@ -86,6 +86,10 @@ class Loader(object):
       args = {}
       for i, key in enumerate(keys):
         args[key] = row[i].value.strip()
+
+      if not args['website'].startswith("http"):
+        args['website'] = 'http://' + args['website']
+
       speaker = Speaker(**args)
       db.session.add(speaker)
       self.speakers[speaker.email] = speaker

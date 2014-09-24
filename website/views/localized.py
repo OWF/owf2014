@@ -287,7 +287,7 @@ def program():
   days = groupby(tracks, lambda t: t.starts_at.date())
   days = [(day, list(tracks)) for day, tracks in days]
   page = dict(title=_(u"Program"))
-  return render_template("program.html", page=page, days=days)
+  return render_template("program/program.html", page=page, days=days)
 
 
 @route('/tracks/')
@@ -306,7 +306,7 @@ def tracks():
   else:
     title = _(u"Program")
   page = dict(title=title)
-  return render_template("program.html", page=page, days=days)
+  return render_template("program/program.html", page=page, days=days)
 
 
 @route('/talks/')
@@ -316,7 +316,7 @@ def talks():
   days = groupby(talks, lambda t: t.starts_at.date())
   days = [(day, list(talks)) for day, talks in days]
   page = dict(title=_(u"Talks"))
-  return render_template("talks.html", page=page, days=days)
+  return render_template("program/talks.html", page=page, days=days)
 
 
 @route('/rooms/')
@@ -327,7 +327,7 @@ def rooms():
            room, tracks in rooms]
   rooms.sort(key=lambda r: -r[0].capacity)
   page = dict(title=_(u"Rooms"))
-  return render_template("rooms.html", page=page, rooms=rooms)
+  return render_template("program/rooms.html", page=page, rooms=rooms)
 
 
 @route('/rooms/<int:room_id>')
@@ -343,21 +343,21 @@ def room(room_id):
   days = [(day, list(tracks)) for day, tracks in days]
 
   page = dict(title=_(u"Program for room %(room)s", room=room.name))
-  return render_template("program.html", page=page, days=days)
+  return render_template("program/program.html", page=page, days=days)
 
 
 @route('/tracks/<int:track_id>')
 def track(track_id):
   track = Track2.query.get_or_404(track_id)
   page = {'title': track.name}
-  return render_template("track.html", page=page, track=track)
+  return render_template("program/track.html", page=page, track=track)
 
 
 @route('/speakers/')
 def speakers():
   speakers = Speaker.query.order_by(Speaker.last_name).all()
   page = dict(title=_("Speakers"))
-  return render_template("speakers.html", page=page, speakers=speakers)
+  return render_template("program/speakers.html", page=page, speakers=speakers)
 
 
 @route('/speakers/<int:speaker_id>/')
@@ -367,7 +367,7 @@ def speaker(speaker_id):
     raise NotFound()
 
   page = dict(title=speaker._name)
-  return render_template("speaker.html", page=page, speaker=speaker)
+  return render_template("program/speaker.html", page=page, speaker=speaker)
 
 
 @route('/speakers/<int:speaker_id>/photo')

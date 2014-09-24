@@ -167,9 +167,11 @@ class Track2(Entity, ValidationMixin):
                                backref='leads_tracks')
 
   @property
-  def abstract(self):
+  def description(self):
     # TODO: use locale
     return self.description_en or self.description_fr
+
+  abstract = description
 
 
 speaker_to_talk = Table(

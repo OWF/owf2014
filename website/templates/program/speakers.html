@@ -1,0 +1,48 @@
+{% extends "_base.html" %}
+
+{% from "_macros.html" import m_sidebar, m_speaker_details %}
+
+{% block main %}
+  <div class="container speakers program">
+
+    <div class="alert alert-danger">
+      <p>This preliminary list of tracks, talks and speakers will be completed
+        shortly. Please stay tuned.</p>
+    </div>
+
+    <article class="speakers">
+      <h1 class="page-title">{{ _("Our speakers and organizers") }}</h1>
+
+      {% for speaker in speakers %}
+        <div class="row speaker-card">
+          <div class="col-md-2">
+            <img class="speaker-photo bordered"
+                src="{{ url_for(".photo", speaker_id=speaker.id, s=150) }}">
+          </div>
+
+          <div class="col-md-7">
+            <h2 class="speaker-name"><a
+                href="{{ url_for(speaker) }}">{{ speaker }}</a>
+            </h2>
+
+            <p>{{ speaker.bio|markdown }}</p>
+
+            {% if speaker.talks %}
+              <h3 class="speaker-talks">Talks</h3>
+
+              {% for talk in speaker.talks %}
+                <p><a href="{{ url_for(talk) }}"><b>{{ talk.title }}</b></a>
+                  (Track: <a
+                      href="{{ url_for(talk.track) }}">{{ talk.track.name }}</a>)
+                </p>
+              {% endfor %}
+            {% endif %}
+          </div>
+          <div class="col-md-3 speaker-details">
+            {{ m_speaker_details(speaker) }}
+          </div>
+        </div>
+      {% endfor %}
+    </article>
+  </div>
+{% endblock %}

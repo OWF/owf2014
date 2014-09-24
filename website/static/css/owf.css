@@ -6388,6 +6388,11 @@ img#home-jumbotron {
   margin-top: 15px;
   margin-bottom: 5px;
 }
+.speakers .speaker-card {
+  border-top: solid 1px #eee;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
 .speakers h2.speaker-name {
   margin-top: 20px !important;
 }
@@ -6395,8 +6400,8 @@ img#home-jumbotron {
   margin-top: 30px;
   margin-bottom: 20px;
 }
-.speakers .details {
-  margin-top: 100px;
+.speakers .speaker-details {
+  margin-top: 82px;
 }
 .speaker img.speaker-photo {
   margin-top: 40px;

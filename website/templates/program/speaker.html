@@ -4,15 +4,12 @@
 
 {% block main %}
   <div class="container speaker">
+    <div class="alert alert-danger">
+      <p>This preliminary list of tracks, talks and speakers will be
+        completed shortly. Please stay tuned.</p>
+    </div>
+
     <div class="row clear-both">
-
-      <div class="col-lg-12">
-        <div class="alert alert-danger">
-          <p>This preliminary list of tracks, talks and speakers will be
-            completed shortly. Please stay tuned.</p>
-        </div>
-      </div>
-
       <article>
         <div class="col-md-8">
 
@@ -20,11 +17,7 @@
 
           <h2>Biography</h2>
 
-          {% if speaker.bio %}
-            {{ speaker.bio|markdown }}
-          {% else %}
-            {{ linuxipsum() }}
-          {% endif %}
+          {{ speaker.bio|markdown }}
 
           {% if speaker.leads_tracks %}
             <h2>{{ _("Track leader on") }}</h2>
