@@ -3,30 +3,20 @@ title: Informations pratiques
 
 <p>L'Open World Forum se déroulera à l'Eurosite Georges V à Paris.</p>
 
-<!-- TODO
-<p>
-<b> Le Beffroi</b> 2 place Emile Cresp - 92120 Montrouge <br>Tel.: +33(0)1 46 12 75 64</p>&nbsp;<iframe width="425" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://www.openstreetmap.org/export/embed.html?bbox=2.3188635706901546%2C48.8184044505662%2C2.320687472820282%2C48.81999037829795&amp;layer=mapnik&amp;marker=48.819197420704356%2C2.3197755217552185" style="border: 1px solid black"></iframe><br/><small><a href="http://www.openstreetmap.org/?mlat=48.81920&amp;mlon=2.31978#map=19/48.81920/2.31978">Afficher une carte plus grande</a></small>
+**Eurosites George V**, 28, Avenue George V - 75008 Paris <br>Tel.: +33(0)1 46 12 75 64
 
-<h2>Comment accéder au Beffroi ?</h2>
-
-<p><b>Le Beffroi</b> est situé à la sortie de la nouvelle station de métro « Mairie de Montrouge », à l’extrémité de la ligne 4. 
+<iframe width="425" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://www.openstreetmap.org/export/embed.html?bbox=2.3001256585121155%2C48.86740020125844%2C2.3021212220191956%2C48.86855055567364&amp;layer=mapnik" style="border: 1px solid black"></iframe><br/><small><a href="http://www.openstreetmap.org/#map=19/48.86798/2.30112">Afficher une carte plus grande</a></small>
 
 
-</p>
+#### Comment accéder à l'Eurosites ?
 
-<ul>
-<li>
-&nbsp;<b>EN MÉTRO</b><br>Montrouge (ligne 4) </li>
+- **EN MÉTRO** Station George V (ligne 1 ) ou station Alma Marceau (ligne 9) </li>
 
-<li>
-&nbsp;<b>EN BUS</b><br>Lignes 68, 128, 126 (arrêt Mairie de Montrouge)</li>
+- **EN BUS** Lignes 32, 42, 63, 72, 73, 80 et 92.</li>
 
-<li>
-&nbsp;<b>PARKINGS</b><br>Parking Emile Cresp, place Emile Cresp. Montrouge
-<br>Parking Porte d'Orléans, 1, rue de la Légion Étrangère, Paris (à moins de dix minutes à pieds du Beffroi)</li>
+- **PARKINGS** Vinci Champs Élysées et Alma George V.</li>
 
-</ul>
-
+<!-- 
 
 ##Où se loger?
 
