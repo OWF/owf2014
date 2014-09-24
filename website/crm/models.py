@@ -108,6 +108,10 @@ class Speaker(Entity, ValidationMixin):
 
   name = _name
 
+  @property
+  def bio(self):
+    return self.bio_en or self.bio_fr
+
   # @property
   # def has_bio(self):
   # return not not self.bio

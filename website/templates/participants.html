@@ -11,9 +11,7 @@
       {% for participant in participants %}
         <div class="member-card col-md-6 col-xs-12">
           <div class="member-card-content">
-            <img class="member-image"
-                src="{{ picture_url(participant) }}"
-                src="http://2013.openworldforum.org/fr/speakers/21/photo?s=150">
+            <img class="member-image" src="{{ picture_url(participant) }}">
 
             <div class="member-name">
               {{ participant.first_name }}
@@ -30,10 +28,12 @@
 
             <div class="member-links">
               {% if participant.url %}
-                <a href="{{ participant.url }}"><span class="fa fa-2x fa-home"></span></a>
+                <a href="{{ participant.url }}"><span
+                    class="fa fa-2x fa-home"></span></a>
               {% endif %}
               {% if participant.twitter_handle %}
-                <a href="https://twitter.com/{{ participant.twitter_handle }}"><span class="fa fa-2x fa-twitter"></span></a>
+                <a href="https://twitter.com/{{ participant.twitter_handle }}"><span
+                    class="fa fa-2x fa-twitter"></span></a>
               {% endif %}
             </div>
 

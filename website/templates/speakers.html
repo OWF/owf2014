@@ -3,53 +3,45 @@
 {% from "_macros.html" import m_sidebar, m_speaker_details %}
 
 {% block main %}
-  <div class="container">
+  <div class="container speakers">
 
     <div class="row">
       <div class="col-md-12">
+        <article class="speakers">
+          <h1 class="page-title">{{ _("Our speakers and organizers") }}</h1>
 
-        <div class="row clear-both">
-          <div class="col-md-12 main-column two-columns-right">
-            <article class="speakers" id="speakers">
-              <h1 class="page-title">{{ _("Speakers") }}</h1>
+          {% for speaker in speakers %}
+            <div class="row" style="border-top: solid 1px #eee;">
+              <div class="col-md-2">
+                <img class="speaker-photo bordered"
+                    src="{{ url_for(".photo", speaker_id=speaker.id, s=150) }}">
+              </div>
 
-              {% for speaker in speakers %}
-                <div class="row" style="border-top: solid 1px #eee;">
-                  <span class="col-md-2">
-                    <img style="border-radius: 50%;"
-                        src="{{ url_for(".photo", speaker_id=speaker.id, s=150) }}">
-                  </span>
+              <div class="col-md-7">
+                <h2><a href="{{ url_for(speaker) }}">{{ speaker }}</a>
+                </h2>
 
-                  <span class="col-md-7">
-                    <h2><a href="{{ url_for(speaker) }}">{{ speaker }}</a>
-                    </h2>
+                {% if speaker.bio %}
+                  <p>{{ speaker.bio|markdown }}</p>
+                {% else %}
+                  <p>{{ linuxipsum() }}</p>
+                {% endif %}
 
-                    {% if speaker.bio %}
-                      <p>{{ speaker.bio|markdown }}</p>
-                    {% else %}
-                      <p>{{ linuxipsum() }}</p>
-                    {% endif %}
+                {% if speaker.talks %}
+                  <h3>Talks</h3>
 
-                    {% if speaker.talks %}
-                      <h3>Talks</h3>
-
-                      {% for talk in speaker.talks %}
-                        <p><a href="{{ url_for(talk) }}"><b>{{ talk.title }}</b></a>
-                          (Track: <a
-                              href="{{ url_for(talk.track) }}">{{ talk.track.name }}</a>)
-                        </p>
-                      {% endfor %}
-                    {% endif %}
-                  </span>
-
-                  <span class="col-md-12 details">
-                    {{ m_speaker_details(speaker) }}
-                  </span>
-                </div>
-              {% endfor %}
-            </article>
-          </div>
-        </div>
+                  {% for talk in speaker.talks %}
+                    <p><a href="{{ url_for(talk) }}"><b>{{ talk.title }}</b></a>
+                      (Track: <a
+                          href="{{ url_for(talk.track) }}">{{ talk.track.name }}</a>)
+                    </p>
+                  {% endfor %}
+                {% endif %}
+                {{ m_speaker_details(speaker) }}
+              </div>
+            </div>
+          {% endfor %}
+        </article>
       </div>
     </div>
   </div>

@@ -8,6 +8,7 @@ import os
 from os.path import join
 from tempfile import mktemp
 import traceback
+import zipfile
 from PIL import Image
 import datetime
 from abilian.core.extensions import db
@@ -240,3 +241,27 @@ def upload_excel_file():
   finally:
     os.unlink(fn)
 
+
+@main.route("upload_photos", methods=['PUT'])
+def upload_photos():
+  fn = mktemp()
+  fd = open(fn, "wc")
+  fd.write(request.stream.read())
+  fd.flush()
+  zip = zipfile.ZipFile(fn)
+  for info in zip.infolist():
+    name = info.filename.split("/")[-1]
+    if not name.endswith(".jpg"):
+      continue
+    email = name[0:-4]
+    data = zip.read(info.filename)
+    speaker = Speaker.query.filter(Speaker.email == email).first()
+    if not speaker:
+      print "Skipping {}".format(email)
+      continue
+    speaker.photo = data
+    print "Adding picture for {}".format(email)
+  db.session.commit()
+
+  os.unlink(fn)
+  return "OK"
