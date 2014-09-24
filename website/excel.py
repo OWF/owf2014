@@ -87,7 +87,10 @@ class Loader(object):
       for i, key in enumerate(keys):
         args[key] = row[i].value.strip()
 
-      if not args['website'].startswith("http"):
+      if not args['last_name']:
+        self.debug("!! Speaker has no last name.")
+        continue
+      if args['website'] and not args['website'].startswith("http"):
         args['website'] = 'http://' + args['website']
 
       speaker = Speaker(**args)
