@@ -5,6 +5,11 @@
 {% block main %}
   <div class="container speakers program">
 
+    <div class="alert alert-danger">
+      <p>This preliminary list of tracks, talks and speakers will be completed
+        shortly. Please stay tuned.</p>
+    </div>
+
     <div class="row">
       <div class="col-md-12">
         <article class="speakers">
@@ -18,7 +23,8 @@
               </div>
 
               <div class="col-md-7">
-                <h2 class="speaker-name"><a href="{{ url_for(speaker) }}">{{ speaker }}</a>
+                <h2 class="speaker-name"><a
+                    href="{{ url_for(speaker) }}">{{ speaker }}</a>
                 </h2>
 
                 {% if speaker.bio %}
