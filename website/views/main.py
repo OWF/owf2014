@@ -3,6 +3,7 @@ Main view (mostly technical views like sitemap or images).
 """
 
 from cStringIO import StringIO
+import hashlib
 import mimetypes
 import os
 from os.path import join
@@ -16,8 +17,10 @@ from icalendar import Calendar, Event
 
 from flask import Blueprint, redirect, url_for, request, abort, make_response, \
   render_template, current_app as app, session, jsonify, json, g
+import requests
 
 from ..content import get_pages
+from website.auth import User2
 from website.crm.models import Talk, Speaker, Track2
 from website.excel import Loader
 from website.util import preferred_language
@@ -261,6 +264,29 @@ def upload_photos():
       continue
     speaker.photo = data
     print "Adding picture for {}".format(email)
+
+  for speaker in Speaker.query.all():
+    user = User2.query.filter(User2.email == speaker.email).first()
+    if not user or not user.picture_url:
+      continue
+    print "Adding external picture for {}".format(speaker.email)
+    response = requests.get(user.picture_url)
+    speaker.photo = response.content
+
+  for speaker in Speaker.query.all():
+    email = speaker.email.lower()
+    size = 200
+    hash = hashlib.md5(email.lower()).hexdigest()
+    json_url = "http://www.gravatar.com/%s.json" % hash
+    response = requests.get(json_url)
+    if response.json() == u'User not found':
+      continue
+
+    print "Adding gravatar picture for {}".format(speaker.email)
+    image_url = "http://www.gravatar.com/avatar/{}.jpg?s={}".format(hash, size)
+    response = requests.get(image_url)
+    speaker.photo = response.content
+
   db.session.commit()
 
   os.unlink(fn)

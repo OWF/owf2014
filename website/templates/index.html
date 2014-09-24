@@ -20,8 +20,8 @@
 
   {# ######################################################################## #}
 
-  {% if false %}
-    <div id="home-speakers">
+  {% if speakers %}
+    <div class="home-speakers" id="home-speakers">
       <div class="container">
         <h1 class="section-title">{{ _("Some speakers") }}</h1>
 
@@ -31,11 +31,11 @@
         <div class="clear"></div>
 
         <div class="row">
-          {% for speaker in speakers[0:6] %}
-            <div class="col-md-2">
+          {% for speaker in speakers[0:4] %}
+            <div class="col-md-3">
               <a href="{{ url_for(speaker) }}">
                 <img class="speaker-img"
-                    src="{{ url_for(".photo", speaker_id=speaker.id, s=140) }}"
+                    src="{{ url_for(".photo", speaker_id=speaker.id, s=213) }}"
                     alt="Speaker"/>
 
                 <h5 class="speaker-name">{{ speaker.first_name }}
@@ -50,11 +50,11 @@
               </a>
             </div>
           {% endfor %}
-          {% for speaker in speakers[6:12] %}
-            <div class="col-md-2">
+          {% for speaker in speakers[4:8] %}
+            <div class="col-md-3">
               <a href="{{ url_for(speaker) }}">
                 <img class="speaker-img"
-                    src="{{ url_for(".photo", speaker_id=speaker.id, s=140) }}"
+                    src="{{ url_for(".photo", speaker_id=speaker.id, s=213) }}"
                     alt="Speaker"/>
 
                 <h5 class="speaker-name">{{ speaker.first_name }}

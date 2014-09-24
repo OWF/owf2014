@@ -5476,9 +5476,8 @@ img#home-jumbotron {
 #home-speakers {
   background-color: #4F5961;
 }
-#home-speakers img {
-  width: 140px;
-  height: 140px;
+#home-speakers img.speaker-img {
+  width: 100%;
   background-color: white;
 }
 #home-speakers h6 {
@@ -6362,8 +6361,11 @@ img#home-jumbotron {
   overflow: hidden;
   text-overflow: ellipsis;
 }
+.speakers h2.speaker-name {
+  margin-top: 20px !important;
+}
 .speakers img.speaker-photo {
-  margin-top: 40px;
+  margin-top: 30px;
   margin-bottom: 20px;
   max-width: 100% !important;
 }

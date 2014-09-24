@@ -139,9 +139,9 @@ def home():
   template = "index.html"
   page = {'title': 'Open World Forum 2014'}
   news = get_news(lang=g.lang, limit=6)
-  speakers = Speaker.query.all()
-  if len(speakers) >= 12:
-    speakers = random.sample(speakers, 12)
+  speakers = Speaker.query.filter(Speaker.photo != None).all()
+  if len(speakers) >= 8:
+    speakers = random.sample(speakers, 8)
   else:
     speakers = []
   blocks = get_blocks(g.lang)
