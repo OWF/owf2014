@@ -3,7 +3,7 @@
 {% from "_macros.html" import m_sidebar, m_speaker with context %}
 
 {% block main %}
-  <div class="container track">
+  <div class="container track program">
 
     <div class="row">
       <div class="col-md-12">
@@ -81,14 +81,16 @@
                 {% if talk.speakers|length == 1 %}
                   {% set speaker = talk.speakers[0] %}
                   <a href="{{ url_for(speaker) }}">
-                    <img
-                        style="float: right; margin: 10px 10px 0 0; width: 200px; border-radius: 50%;"
+
+                    <img class="speaker-photo bordered"
+                        style="float: right; margin: 10px 10px 0 0; width: 200px;"
                         src="{{ url_for(".photo", speaker_id=speaker.id, s=200) }}"/>
                   </a>
                 {% else %}
+                  {# TODO: smaller images #}
                   {% for speaker in talk.speakers %}
                     <a href="{{ url_for(speaker) }}">
-                      <img class="bordered"
+                      <img class="bordered speaker-photo"
                           src="{{ url_for(".photo", speaker_id=speaker.id, s=100) }}"/>
                     </a>
                   {% endfor %}
