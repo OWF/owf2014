@@ -275,6 +275,9 @@ def upload_photos():
 
   for speaker in Speaker.query.all():
     email = speaker.email.lower()
+    if 'oxiane' in email:
+      continue
+
     size = 200
     hash = hashlib.md5(email.lower()).hexdigest()
     json_url = "http://www.gravatar.com/%s.json" % hash

@@ -3,107 +3,102 @@
 {% from "_macros.html" import m_sidebar, m_speaker with context %}
 
 {% block main %}
-  <div class="container">
+  <div class="container track">
 
     <div class="row">
       <div class="col-md-12">
 
-        <div class="row clear-both">
-          <div class="col-md-12 main-column two-columns-right">
-            <article>
-              <h1 class="page-title">{{ _("Track: {}").format(track.name) }}</h1>
+        <article>
+          <h1 class="page-title">{{ _("Track: {}").format(track.name) }}</h1>
 
-              <p>{{ _("Theme") }}: <a
-                  href="{{ url_for(track.theme) }}">{{ track.theme }}</a></p>
+          <p>{{ _("Theme") }}: <a
+              href="{{ url_for(track.theme) }}">{{ track.theme }}</a></p>
 
-              <p>{{ _("Room") }}: <a
-                  href="{{ url_for(track.room) }}">{{ track.room }}</a></p>
+          <p>{{ _("Room") }}: <a
+              href="{{ url_for(track.room) }}">{{ track.room }}</a></p>
 
-              <p>{{ _("On") }}: {{ track.starts_at|dateformat }}, {{ _("from") }} {{ track.starts_at.strftime("%H:%M") }} {{ _("to") }} {{ track.ends_at.strftime("%H:%M") }}</p>
+          <p>{{ _("On") }}: {{ track.starts_at|dateformat }}, {{ _("from") }} {{ track.starts_at.strftime("%H:%M") }} {{ _("to") }} {{ track.ends_at.strftime("%H:%M") }}</p>
 
-              {% if track.track_leaders %}
-                <p>Track leader(s):
-                  {%- for track_leader in track.track_leaders %}
-                    {{ m_speaker(track_leader) }}
-                    {%- if not loop.last %} / {%- endif %}
-                  {%- endfor %}
-                </p>
-              {% endif %}
+          {% if track.track_leaders %}
+            <p>Track leader(s):
+              {%- for track_leader in track.track_leaders %}
+                {{ m_speaker(track_leader) }}
+                {%- if not loop.last %} / {%- endif %}
+              {%- endfor %}
+            </p>
+          {% endif %}
 
-              {% if track.description %}
-                <p>
-                  {{ track.description|markdown }}
-                </p>
-              {% else %}
-                <p>
-                  {{ linuxipsum() }}
-                </p>
-              {% endif %}
+          {% if track.description %}
+            <p>
+              {{ track.description|markdown }}
+            </p>
+          {% else %}
+            <p>
+              {{ linuxipsum() }}
+            </p>
+          {% endif %}
 
-              <h2>{{ _("Talks") }}</h2>
-              {#
+          <h2>{{ _("Talks") }}</h2>
+          {#
               {% for talk in track.talks|sort(attribute='starts_at') %}
               #}
-              {% for talk in track.talks %}
+          {% for talk in track.talks %}
 
-                <hr>
+            <hr>
 
-                <div class="row">
+            <div class="row">
 
-                  <span class="span9">
-                  <a id="talk_{{ talk.id }}"></a>
-                  <h3 style="margin: 10px 0;">
-                    {% if talk.starts_at %}
-                      {{ talk.starts_at.strftime("%H:%M") }} -
-                    {% endif %}
-                    {{ talk.title }}
-                  </h3>
+              <div class="col-md-9">
+                <a id="talk_{{ talk.id }}"></a>
 
-                    {% if talk.duration %}
-                      <p>{{ _("Duration") }}: {{ talk.duration }} {{ _("minutes") }}</p>
-                    {% endif %}
+                <h3 style="margin: 10px 0;">
+                  {% if talk.starts_at %}
+                    {{ talk.starts_at.strftime("%H:%M") }} -
+                  {% endif %}
+                  {{ talk.title }}
+                </h3>
 
-                    <p>{{ _("Speakers") }}:
-                      {% for speaker in talk.speakers %}
-                        {{ m_speaker(speaker) }}
-                        {%- if not loop.last %} / {%- endif %}
-                      {% endfor %}
-                    </p>
+                {% if talk.duration %}
+                  <p>{{ _("Duration") }}: {{ talk.duration }} {{ _("minutes") }}</p>
+                {% endif %}
 
-                    {% if talk.abstract %}
-                      {{ talk.abstract|markdown }}
-                    {% else %}
-                      <p>
-                        {{ linuxipsum() }}
-                      </p>
-                    {% endif %}
-                  </span>
-                  <span class="span3">
-                    {% if talk.speakers|length == 1 %}
-                      {% set speaker = talk.speakers[0] %}
-                      <a href="{{ url_for(speaker) }}">
-                      <img
-                          style="float: right; margin: 10px 10px 0 0; width: 200px; border-radius: 50%;"
-                          src="{{ url_for(".photo", speaker_id=speaker.id, s=200) }}"/>
-                      </a>
-                    {% else %}
-                      {% for speaker in talk.speakers %}
-                        <a href="{{ url_for(speaker) }}">
-                        <img
-                            style="float: right; margin: 10px 10px 0 0; width: 100px; border-radius: 50%;"
-                            src="{{ url_for(".photo", speaker_id=speaker.id, s=100) }}"/>
-                        </a>
-                      {% endfor %}
-                    {% endif %}
-                  </span>
-                </div>
+                <p>{{ _("Speakers") }}:
+                  {% for speaker in talk.speakers %}
+                    {{ m_speaker(speaker) }}
+                    {%- if not loop.last %} / {%- endif %}
+                  {% endfor %}
+                </p>
 
-              {% endfor %}
-            </article>
-          </div>
-        </div>
+                {% if talk.abstract %}
+                  {{ talk.abstract|markdown }}
+                {% else %}
+                  <p>
+                    {{ linuxipsum() }}
+                  </p>
+                {% endif %}
+              </div>
+              <div class="col-md-3">
+                {% if talk.speakers|length == 1 %}
+                  {% set speaker = talk.speakers[0] %}
+                  <a href="{{ url_for(speaker) }}">
+                    <img
+                        style="float: right; margin: 10px 10px 0 0; width: 200px; border-radius: 50%;"
+                        src="{{ url_for(".photo", speaker_id=speaker.id, s=200) }}"/>
+                  </a>
+                {% else %}
+                  {% for speaker in talk.speakers %}
+                    <a href="{{ url_for(speaker) }}">
+                      <img class="bordered"
+                          src="{{ url_for(".photo", speaker_id=speaker.id, s=100) }}"/>
+                    </a>
+                  {% endfor %}
+                {% endif %}
+              </div>
+            </div>
+
+          {% endfor %}
+        </article>
       </div>
     </div>
   </div>
-
 {% endblock %}
