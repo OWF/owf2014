@@ -15,12 +15,12 @@
 
       {% for speaker in speakers %}
         <div class="row speaker-card">
-          <div class="col-md-2">
-            <img class="speaker-photo bordered"
+          <div class="col-sm-2">
+            <img class="speaker-photo bordered {% if not speaker.photo %}hidden-xs{% endif %}"
                 src="{{ url_for(".photo", speaker_id=speaker.id, s=150) }}">
           </div>
 
-          <div class="col-md-7">
+          <div class="col-sm-7">
             <h2 class="speaker-name"><a
                 href="{{ url_for(speaker) }}">{{ speaker }}</a>
             </h2>
@@ -38,7 +38,7 @@
               {% endfor %}
             {% endif %}
           </div>
-          <div class="col-md-3 speaker-details">
+          <div class="col-sm-3 speaker-details">
             {{ m_speaker_details(speaker) }}
           </div>
         </div>

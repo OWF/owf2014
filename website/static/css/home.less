@@ -21,18 +21,23 @@ img#home-jumbotron {
   margin-bottom: 20px;
 }
 
-#home-speakers {
+.home-speakers {
   background-color: #4F5961;
+  .speaker a:hover {
+    text-decoration: none;
+  }
   img.speaker-img {
     width: 100%;
     background-color: white;
   }
-  h6 {
+  .section-title {
+    .text-overflow();
+    color: white;
+  }
+  .speaker-job {
+    .text-overflow();
     text-overflow: ellipsis;
     white-space: nowrap;
-  }
-  .section-title {
-    color: white;
   }
   .speaker-name {
     text-align: center;
@@ -70,7 +75,7 @@ img#home-jumbotron {
   }
   .latest-news-card {
     background-color: white;
-//    box-shadow: 2px 2px 2px #bfbfb9;
+    //    box-shadow: 2px 2px 2px #bfbfb9;
     img {
       width: 100%;
     }

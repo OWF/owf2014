@@ -5359,7 +5359,8 @@ fieldset[disabled] .btn-project.active {
 #fast-acces-menu li:first-child {
   padding-left: 0;
 }
-#logo {
+.header .logo {
+  position: relative;
   float: left;
 }
 #navbar-ul {
@@ -5367,7 +5368,7 @@ fieldset[disabled] .btn-project.active {
   overflow: hidden;
   padding: 0;
   float: right;
-  margin: 65px 0 30px 0;
+  margin: 35px 0 30px 0;
 }
 #navbar-ul li {
   float: left;
@@ -5478,21 +5479,28 @@ img#home-jumbotron {
   width: 100%;
   margin-bottom: 20px;
 }
-#home-speakers {
+.home-speakers {
   background-color: #4F5961;
 }
-#home-speakers img.speaker-img {
+.home-speakers .speaker a:hover {
+  text-decoration: none;
+}
+.home-speakers img.speaker-img {
   width: 100%;
   background-color: white;
 }
-#home-speakers h6 {
+.home-speakers .section-title {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  color: white;
+}
+.home-speakers .speaker-job {
+  overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
 }
-#home-speakers .section-title {
-  color: white;
-}
-#home-speakers .speaker-name {
+.home-speakers .speaker-name {
   text-align: center;
   color: white;
   background-color: #B40001;
@@ -5504,7 +5512,7 @@ img#home-jumbotron {
   font-weight: normal;
   line-height: 1.2em;
 }
-#home-speakers .speaker-job {
+.home-speakers .speaker-job {
   background-color: white;
   text-align: center;
   font-family: 'Open Sans Condensed', sans-serif;

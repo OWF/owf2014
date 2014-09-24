@@ -29,7 +29,8 @@
 #fast-acces-menu li:first-child {
   padding-left: 0;
 }
-#logo {
+.header .logo {
+  position: relative;
   float: left;
 }
 #navbar-ul {
@@ -37,7 +38,7 @@
   overflow: hidden;
   padding: 0;
   float: right;
-  margin: 65px 0 30px 0;
+  margin: 35px 0 30px 0;
 }
 #navbar-ul li {
   float: left;
