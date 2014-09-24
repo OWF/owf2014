@@ -17,4 +17,3 @@ L'Open World Forum se déroulera à l'Eurosite Georges V à Paris.
 
 - **PARKINGS** Vinci Champs Élysées et Alma George V.</li>
 
--->
