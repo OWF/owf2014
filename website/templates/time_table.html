@@ -76,7 +76,7 @@
 
                     <div class="text-center" style="margin-top: 10px;">
                       <a href="{{ url_for(talk) }}"
-                          class="btn btn-mini">{{ _("More info") }}</a>
+                          class="btn btn-default btn-mini">{{ _("More info") }}</a>
                     </div>
 
                     {% if not loop.last %}
@@ -112,7 +112,7 @@
           {{ track.description|markdown }}
         </p>
 
-        <p><a class="btn" href="{{ url_for(track) }}">{{ _("More info") }}</a>
+        <p><a class="btn btn-default" href="{{ url_for(track) }}">{{ _("More info") }}</a>
         </p>
       {% endfor %}
     </article>
