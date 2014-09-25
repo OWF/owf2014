@@ -395,55 +395,93 @@ def photo(speaker_id):
   return response
 
 
+# @route("/schedule/")
+# @route("/schedule/<int:day>/")
+# def schedule(day=None):
+#   if not day:
+#     return redirect(url_for(".schedule", day=1))
+#
+#   if day == 1:
+#     track = Track2.query.get(8)
+#     talks = sorted(track.talks, key=lambda x: x.starts_at)
+#     page = dict(title=_(u"Day 1 - Plenary session"))
+#
+#     def get_track(id):
+#       return Track2.query.get(int(id))
+#
+#     return render_template("day1.html", day=day, page=page, talks=talks,
+#                            get_track=get_track)
+#
+#   else:
+#     talks_by_room = []
+#     rooms = Room.query.order_by(Room.capacity.desc()).all()
+#     for room in rooms:
+#       talks = talks_for_room_and_day(room, None)
+#       talks_by_room.append([room, talks])
+#
+#     time_table = []
+#     tracks = []
+#     for room in rooms:
+#       column = []
+#       talks = talks_for_room_and_day(room, None)
+#       t = datetime.datetime(2013, 10, 2 + day, 9, 0)
+#       dt = datetime.timedelta(minutes=60)
+#       while t < datetime.datetime(2013, 10, 2 + day, 20, 0):
+#         talks_for_slot = [talk for talk in talks if
+#                           t <= talk.starts_at < t + dt]
+#         track = None
+#         if talks_for_slot:
+#           if t <= talks_for_slot[0].track.starts_at < t + dt:
+#             track = talks_for_slot[0].track
+#             tracks.append(track)
+#         cell = {'track': track, 'talks': talks_for_slot}
+#         column.append(cell)
+#         t += dt
+#       time_table.append(column)
+#
+#     time_table = zip(*time_table)
+#
+#     page = dict(title=_(u"Day %(day)d - At a glance", day=day))
+#     return render_template("day23.html", day=day, page=page,
+#                            rooms=rooms, time_table=time_table, tracks=tracks)
+
 @route("/schedule/")
 @route("/schedule/<int:day>/")
 def schedule(day=None):
   if not day:
     return redirect(url_for(".schedule", day=1))
 
-  if day == 1:
-    track = Track2.query.get(8)
-    talks = sorted(track.talks, key=lambda x: x.starts_at)
-    page = dict(title=_(u"Day 1 - Plenary session"))
+  talks_by_room = []
+  rooms = Room.query.order_by(Room.capacity.desc()).all()
+  for room in rooms:
+    talks = talks_for_room_and_day(room, None)
+    talks_by_room.append([room, talks])
 
-    def get_track(id):
-      return Track2.query.get(int(id))
+  time_table = []
+  tracks = []
+  for room in rooms:
+    column = []
+    talks = talks_for_room_and_day(room, None)
+    t = datetime.datetime(2014, 10, 29 + day, 9, 0)
+    dt = datetime.timedelta(minutes=60)
+    while t < datetime.datetime(2014, 10, 29 + day, 21, 0):
+      talks_for_slot = [talk for talk in talks if
+                        t <= talk.starts_at < t + dt]
+      track = None
+      if talks_for_slot:
+        if t <= talks_for_slot[0].track.starts_at < t + dt:
+          track = talks_for_slot[0].track
+          tracks.append(track)
+      cell = {'track': track, 'talks': talks_for_slot}
+      column.append(cell)
+      t += dt
+    time_table.append(column)
 
-    return render_template("day1.html", day=day, page=page, talks=talks,
-                           get_track=get_track)
+  time_table = zip(*time_table)
 
-  else:
-    talks_by_room = []
-    rooms = Room.query.order_by(Room.capacity.desc()).all()
-    for room in rooms:
-      talks = talks_for_room_and_day(room, None)
-      talks_by_room.append([room, talks])
-
-    time_table = []
-    tracks = []
-    for room in rooms:
-      column = []
-      talks = talks_for_room_and_day(room, None)
-      t = datetime.datetime(2013, 10, 2 + day, 9, 0)
-      dt = datetime.timedelta(minutes=60)
-      while t < datetime.datetime(2013, 10, 2 + day, 20, 0):
-        talks_for_slot = [talk for talk in talks if
-                          t <= talk.starts_at < t + dt]
-        track = None
-        if talks_for_slot:
-          if t <= talks_for_slot[0].track.starts_at < t + dt:
-            track = talks_for_slot[0].track
-            tracks.append(track)
-        cell = {'track': track, 'talks': talks_for_slot}
-        column.append(cell)
-        t += dt
-      time_table.append(column)
-
-    time_table = zip(*time_table)
-
-    page = dict(title=_(u"Day %(day)d - At a glance", day=day))
-    return render_template("day23.html", day=day, page=page,
-                           rooms=rooms, time_table=time_table, tracks=tracks)
+  page = dict(title=_(u"Day %(day)d - At a glance", day=day))
+  return render_template("time_table.html", day=day, page=page,
+                         rooms=rooms, time_table=time_table, tracks=tracks)
 
 
 @localized.errorhandler(404)
