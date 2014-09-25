@@ -11,7 +11,7 @@
   > li {
     float: left;
   }
-  &>li>a, &>li>span>a {
+  & > li > a, & > li > span > a {
     font-family: 'Open Sans', sans-serif;
     padding: 4px 10px;
     color: white;
@@ -35,6 +35,11 @@
   .logo {
     position: relative;
     float: left;
+  }
+  @media (max-width: @screen-xs-max) {
+    img {
+      width: 50px;
+    }
   }
 }
 
