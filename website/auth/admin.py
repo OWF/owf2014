@@ -27,8 +27,7 @@ class UserModelView(SecureModelView):
     output = StringIO.StringIO()
     writer = csv.writer(output)
     for user in User2.query.all():
-      row = [user.created_at.strftime("%Y/%m/%d"),
-             user.confirmed_at,
+      row = [user.confirmed_at.strftime("%Y/%m/%d"),
              user.email.encode("utf8"),
              user.first_name.encode("utf8"),
              user.last_name.encode("utf8"),
@@ -39,7 +38,7 @@ class UserModelView(SecureModelView):
              user.organization_type.encode("utf8"),
 
              user.url.encode("utf8"),
-             user.picture_url.encode("utf8"),]
+             user.picture_url.encode("utf8"), ]
       writer.writerow(row)
     response = make_response(output.getvalue())
     response.headers['Content-Type'] = 'application/csv'
