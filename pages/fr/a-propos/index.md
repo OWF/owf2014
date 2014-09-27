@@ -7,6 +7,10 @@ L'Open World Forum est une conférence annuelle, organisée depuis 2008, dont le
  
 L'OWF fait intervenir les plus grands noms de la technologie, des affaires et de la prospective, et les communautés les plus dynamiques du domaine, et vous accueille, deux jours durant (30-31 octobre 2014), au coeur du quartier des affaires de Paris (avenue Georges V).
 
+<div class="btn-bar" style="margin-top: 2em;">
+<a class="btn btn-primary btn-large" href="/register/">Je m'inscris gratuitement</a>
+</div>
+
 
 ## Pourquoi participer ?
 
@@ -218,6 +222,4 @@ Vous pouvez retrouver ci-dessous le bilan de l'édition 2013 de l'Open World For
 
 <div class="btn-bar" style="margin-top: 2em;">
 <a class="btn btn-primary btn-large" href="/register/">Je suis convaincu, je m'inscris gratuitement :)</a>
-</div>
-
 </div>
