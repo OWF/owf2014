@@ -42,8 +42,10 @@ Venir à l'Open World Forum, c'est l'opportunité de rencontrer et d'échanger a
 - Constellation Matrix
 - Dataiku
 - Ecreall
+- Elao
 - Enalean
 - Entr'ouvert
+- Five by Five
 - Henix
 - Inno3
 - Libon
@@ -59,11 +61,13 @@ Venir à l'Open World Forum, c'est l'opportunité de rencontrer et d'échanger a
 - OpenSearchServer
 - O'Reilly
 - OVH
+- Oxiane
 - Red Hat
 - Savoir Faire Linux
 - SensioLabs
 - SMILE
 - Softeam
+- Theodo
 - UShareSoft
 - VLC
 
@@ -82,6 +86,7 @@ Venir à l'Open World Forum, c'est l'opportunité de rencontrer et d'échanger a
 - EDITIS - SEJER
 - Engineering Group
 - GFI Informatique
+- Google
 - Hewlett-Packard
 - IBM
 - Numergy
@@ -122,6 +127,7 @@ Venir à l'Open World Forum, c'est l'opportunité de rencontrer et d'échanger a
 - Ecole Normale Supérieure Paris
 - Epita
 - Epitech
+- Eurecom
 - Inalco
 - Inria
 - Institut Telecom
@@ -163,11 +169,14 @@ Venir à l'Open World Forum, c'est l'opportunité de rencontrer et d'échanger a
 - NUMA (ex Silicon Sentier)
 - OKFN (Open Knowledge Foundation)
 - Open Forum Europe
+- Open Government Partnership
+- Open Invention Network
 - Open Source Initiative
 - Open Street Map
 - OpenStack Foundation
 - OWASP
 - OW2
+- Les petits débrouillards
 - PLOSS
 - Reporters sans frontières
 - SoLibre
