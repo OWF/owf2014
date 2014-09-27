@@ -47,6 +47,7 @@ Just a few include:
 - SensioLabs
 - SMILE
 - UShareSoft
+- VLC
 
 
 #### Big companies that are deeply involved with open source
