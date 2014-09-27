@@ -1,6 +1,13 @@
 title: A propos de l'Open World Forum
 id: about
 
+## L'Open World Forum, c'est quoi ?
+
+L'Open World Forum est une conférence annuelle, organisée depuis 2008, dont le but est d'explorer les enjeux, d'approfondir la réflexion, de partager les expériences et de susciter le passage à l'action dans les domaines du logiciel libre et open source, de l'open hardware, de l'open data, de l'Open Web et de l'open innovation.
+ 
+L'OWF fait intervenir les plus grands noms de la technologie, des affaires et de la prospective, et les communautés les plus dynamiques du domaine, et vous accueille, deux jours durant (30-31 octobre 2014), au coeur du quartier des affaires de Paris (avenue Georges V).
+
+
 ## Pourquoi participer ?
 
 S'il vous faut une raison pour vous inscrire à l'OWF, pensez aux point qui suivent:
