@@ -5048,9 +5048,10 @@ button.close {
   padding-bottom: 2em;
 }
 .btn-bar {
+  font-size: 1.1em;
   text-align: center;
-  padding-top: 1em;
-  padding-bottom: 1em;
+  margin-top: 1em;
+  margin-bottom: 1em;
 }
 body {
   background: #ffffff url("../pictures/background.png") no-repeat center 32px;
@@ -5338,7 +5339,7 @@ img#home-jumbotron {
   font-weight: bold;
 }
 .home-about .btn-bar {
-  margin-top: 35px;
+  margin-bottom: 0;
 }
 .home-about .btn {
   font-family: 'Open Sans Condensed', sans-serif;

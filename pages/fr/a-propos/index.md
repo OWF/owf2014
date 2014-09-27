@@ -27,7 +27,7 @@ Les sujets et les technologies les plus en vogues vont être traités: Big Data,
 
 ### Les organisations les plus importantes de l'écosystème vont y participer
 
-Venir à l'Open World Forum, c'est l'opportunité d'échanger avec des représentants des organisations (entreprises, administrations, collectivités, associations...) les plus importantes de l'écosystème du logiciel libre, notamment:
+Venir à l'Open World Forum, c'est l'opportunité de rencontrer et d'échanger avec les représentants des organisations (entreprises, administrations, collectivités, associations...) les plus importantes de l'écosystème du logiciel libre, notamment:
 
 #### Les spécialistes de l'open source
 
@@ -112,14 +112,15 @@ Venir à l'Open World Forum, c'est l'opportunité d'échanger avec des représen
 
 #### Le monde de l'enseignement et de la recherche
 
-- Ecole 42
 - CNRS
+- Ecole 42
 - EIT ICT Labs
-- ENS Paris
+- Ecole Normale Supérieure Paris
 - Epita
 - Epitech
 - Inalco
 - Inria
+- Institut Telecom
 - Irill
 - IRT SystemX
 - Science Po
@@ -155,11 +156,13 @@ Venir à l'Open World Forum, c'est l'opportunité d'échanger avec des représen
 - Linux Foundation
 - Linuxfr.org
 - Mozilla Foundation
+- NUMA (ex Silicon Sentier)
 - OKFN (Open Knowledge Foundation)
 - Open Forum Europe
 - Open Source Initiative
 - Open Street Map
 - OpenStack Foundation
+- OWASP
 - OW2
 - PLOSS
 - Reporters sans frontières
@@ -176,11 +179,11 @@ Venir à l'Open World Forum, c'est l'opportunité d'échanger avec des représen
 
 ### Un événement unique
 
-L’Open World Forum est le seul sommet européen à rassembler les décideurs, les communautés, les développeurs et le grand public pour cross-fertiliser toutes les initiatives technologiques, économiques et sociétales ouvertes, afin de bâtir le futur du numérique. L’événement a été fondé en 2008 et se tient désormais chaque année à Paris, avec plus de 200 orateurs venus de 40 pays et une audience internationale attendue de 3000 participants en 2014.
+L’Open World Forum est le seul sommet européen à rassembler les décideurs, les communautés, les développeurs et le grand public pour cross-fertiliser toutes les initiatives technologiques, économiques et sociétales ouvertes, afin de bâtir le futur du numérique. L’événement a été fondé en 2008 et se tient désormais chaque année à Paris, avec plus de 200 orateurs et une audience internationale attendue de 2000 participants venus de 40 pays en 2014.
 
 ### Organisation et gouvernance
 
-L'Open World Forum est un événement organisé par une association à but non lucratif, avec le soutien de plusieurs sociétés et organisations majeurs de l'open source en France, la contribution financière de nombreux sponsors, publics et privés, et la contribution bénévoles centaines de membres des communautés open source. De ce fait, chaque Euro investi par les organisateurs et les soutiens de l'événement est consacré à produire le meilleur événement possible, pour le bénéfice des participants et le rayonnement de l'écosystème francilien du logiciel libre.
+L'Open World Forum est un événement organisé par une association à but non lucratif, avec le soutien opérationnel de plusieurs sociétés et organisations majeures de l'open source en France, la contribution financière de nombreux sponsors, publics et privés, et le travail bénévoles de centaines de membres des communautés open source. De ce fait, chaque Euro investi par les organisateurs et les soutiens de l'événement est consacré à produire le meilleur événement possible, pour le bénéfice des participants et le rayonnement de l'écosystème francilien du logiciel libre.
 
 Le Forum est gouverné par une structure de pilotage rassemblant les principales communautés technologiques internationales ([Linux Foundation](http://www.linuxfoundation.org/), [Open Source Initiative](http://www.opensource.org/), [OW2](http://www.ow2.org/), [Eclipse Foundation](http://www.eclipse.org/)), et les grandes associations francophones du Logiciel Libre ([Adullact](http://www.adullact.org/), [AFUL](http://www.aful.org/), [CNLL](http://www.cnll.fr/), [PLOSS](http://www.ploss.fr/), [NUMA](http://numa.paris/)), avec le soutien de grands acteurs institutionnels européens (Commission Européenne) et français (DIRECCTE, Mairie de Paris, Région Ile-de-France, Agence Régionale de Développement).
 
