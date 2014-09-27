@@ -1,4 +1,5 @@
 title: A propos de l'Open World Forum
+id: about
 
 ## Pourquoi participer ?
 
@@ -18,7 +19,7 @@ L'OWF est l'occasion unique de rencontrer ces intervenants de haut niveau et tou
 
 ### Les sujets et les technologies les plus en vogues vont être traités
 
-Les sujets et les technologies les plus en vogues vont être traités: Big Data, Cloud, Web, embarqué, open hardware, devops, open data, sécurité, business models, droit, respect de la vie privée, patent trolls... Que vous soyez développeur, architecte, chercheur, entrepreneur, DSI, directeur technique, chef de projet, ou simplement quelqu'un de passionné par la prospective et la technologie, vous allez trouver une session pour vous.  
+Les sujets et les technologies les plus en vogues vont être traités: Big Data, machine learning, Cloud, Web, embarqué, mobiles, interne des objets, open hardware, devops, open data, sécurité, business models, droit, respect de la vie privée, patent trolls, open innovation... Que vous soyez développeur, architecte, chercheur, entrepreneur, DSI, directeur technique, chef de projet, ou simplement quelqu'un de passionné par la prospective et la technologie, vous allez trouver une session pour vous.  
 
 <div class="btn-bar">
 <a class="btn btn-info" href="/fr/tracks/">Découvrir le programme</a>
@@ -57,6 +58,7 @@ Venir à l'Open World Forum, c'est l'opportunité de rencontrer et d'échanger a
 - Open Wide
 - OpenSearchServer
 - O'Reilly
+- OVH
 - Red Hat
 - Savoir Faire Linux
 - SensioLabs
@@ -103,6 +105,8 @@ Venir à l'Open World Forum, c'est l'opportunité de rencontrer et d'échanger a
 - Ministère de l'Education nationale / Pôle de Paris
 - Ministère de l'intérieur - DGGN - ST(SI)²
 - Ministère des Finances
+- Paris Région Lab
+- Paris Région Entreprises
 - Open Data Lab Belarus
 - Région Ile-de-France
 - Sécurité routière
@@ -198,4 +202,6 @@ Vous pouvez retrouver ci-dessous le bilan de l'édition 2013 de l'Open World For
 
 <div class="btn-bar" style="margin-top: 2em;">
 <a class="btn btn-primary btn-large" href="/register/">Je suis convaincu, je m'inscris gratuitement :)</a>
+</div>
+
 </div>
