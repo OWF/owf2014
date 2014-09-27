@@ -27,7 +27,7 @@ class UserModelView(SecureModelView):
     output = StringIO.StringIO()
     writer = csv.writer(output)
     for user in User2.query.all():
-      row = [user.confirmed_at.strftime("%Y/%m/%d"),
+      row = [user.confirmed_at.strftime("%Y/%m/%d") if user.confirmed_at else "",
              user.email.encode("utf8"),
              user.first_name.encode("utf8"),
              user.last_name.encode("utf8"),
