@@ -1,4 +1,7 @@
-from flask import current_app
+import StringIO
+import csv
+from flask import current_app, make_response
+from flask.ext.admin import expose
 from flask.ext.admin.contrib.sqla import ModelView
 from flask.ext.login import current_user
 
@@ -17,6 +20,30 @@ class SecureModelView(ModelView):
 class UserModelView(SecureModelView):
   column_list = ('id', 'email', 'first_name', 'last_name', 'organization',
                  'organization_type')
+
+
+  @expose("/export.csv")
+  def csv(self):
+    output = StringIO.StringIO()
+    writer = csv.writer(output)
+    for user in User2.query.all():
+      row = [user.created_at.strftime("%Y/%m/%d"),
+             user.confirmed_at,
+             user.email.encode("utf8"),
+             user.first_name.encode("utf8"),
+             user.last_name.encode("utf8"),
+             user.gender.encode("utf8"),
+
+             user.title.encode("utf8"),
+             user.organization.encode("utf8"),
+             user.organization_type.encode("utf8"),
+
+             user.url.encode("utf8"),
+             user.picture_url.encode("utf8"),]
+      writer.writerow(row)
+    response = make_response(output.getvalue())
+    response.headers['Content-Type'] = 'application/csv'
+    return response
 
 
 def register_admin_views(app):
