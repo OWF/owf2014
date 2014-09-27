@@ -109,51 +109,6 @@ def sitemap_xml():
   return response
 
 
-#
-# API
-#
-@main.route('api/talks')
-def talks():
-  all_talks = Talk.query.filter(Talk.starts_at != None).order_by(
-    Talk.starts_at).all()
-
-  def isoformat(d):
-    if d:
-      return d.isoformat()
-    else:
-      return None
-
-  all_talks = [
-    {'id': talk.id,
-     'title': talk.title,
-     'abstract': talk.abstract,
-     'theme': talk.track.theme,
-     'track': talk.track.name,
-     'room': talk.track.room.name,
-     'starts_at': isoformat(talk.starts_at),
-     'ends_at': isoformat(talk.ends_at),
-     'duration': talk.duration,
-     'speakers': [speaker.id for speaker in talk.speakers],
-    } for talk in all_talks
-  ]
-  return jsonify(talks=all_talks)
-
-
-@main.route('api/speakers')
-def speakers():
-  all_speakers = Speaker.query.all()
-  all_speakers = [
-    {'id': speaker.id,
-     'name': speaker.name,
-     'bio': speaker.bio,
-     'organisation': speaker.organisation,
-     'website': speaker.website,
-     'talks': [talk.id for talk in speaker.talks],
-    } for speaker in all_speakers
-  ]
-  return jsonify(speakers=all_speakers)
-
-
 @main.route('ical/talks.ics')
 def talks_ics():
   cal = Calendar()

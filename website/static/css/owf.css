@@ -4989,47 +4989,47 @@ img.bordered {
   font-size: 4em;
   line-height: 1em;
 }
-#main {
+.main {
   background-color: #fdfdfd;
   padding-top: 2em;
 }
-#main h1 {
+.main h1 {
   margin-bottom: 20px;
 }
-#main h2 {
+.main h2 {
   color: #4F5962;
   font-family: 'Open Sans Condensed', sans-serif;
   font-weight: normal;
   font-size: 3em;
   margin: 30px 0 20px 0;
 }
-#main h3 {
+.main h3 {
   color: #B30000;
   font-weight: normal;
   font-size: 1.7em;
   line-height: 1.4em;
   margin: 30px 0 20px 0;
 }
-#main h4 {
+.main h4 {
   font-weight: normal;
   font-size: 1.3em;
   line-height: 1.3em;
 }
-#main h5 {
+.main h5 {
   font-weight: normal;
   font-size: 1.2em;
   line-height: 1.2em;
 }
-#main p,
-#main li {
+.main p,
+.main li {
   font-size: 1.1em;
   line-height: 1.4em;
 }
-#main .sidebar {
+.main .sidebar {
   font-family: 'Open Sans Condensed', sans-serif;
   margin-top: 30px;
 }
-#main .sidebar h2 {
+.main .sidebar h2 {
   color: #F4F4F4;
   background-color: #B40001;
   font-size: 2.6em;
@@ -5038,24 +5038,24 @@ img.bordered {
   padding-left: 10px;
   margin: 0;
 }
-#main .sidebar ul {
+.main .sidebar ul {
   background-color: #F4F4F4;
   margin: 0;
   padding: 0;
 }
-#main .sidebar li {
+.main .sidebar li {
   list-style: none;
   margin: 0;
   padding: 15px;
 }
-#main .sidebar span {
+.main .sidebar span {
   display: block;
 }
-#main .sidebar a {
+.main .sidebar a {
   color: #4F5962;
   font-size: 1.3em;
 }
-#main .sidebar .hr {
+.main .sidebar .hr {
   margin-left: 15px;
   margin-right: 15px;
 }
@@ -5484,8 +5484,31 @@ img#home-jumbotron {
   width: 100%;
   margin-bottom: 20px;
 }
+.home-about {
+  background-color: #eee;
+  font-size: 1.95em;
+  line-height: 1.4em;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.home-about p {
+  margin-bottom: 0;
+}
+.home-about p em {
+  font-style: normal;
+  font-weight: bold;
+}
+.home-about .btn-bar {
+  margin-top: 35px;
+}
+.home-about .btn {
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 1.4em;
+}
 .home-speakers {
   background-color: #4F5961;
+  padding-top: 30px;
+  padding-bottom: 50px;
 }
 .home-speakers .speaker a:hover {
   text-decoration: none;
@@ -5530,7 +5553,8 @@ img#home-jumbotron {
 }
 #home-latest-news {
   background-color: #eee;
-  padding-bottom: 30px;
+  padding-top: 30px;
+  padding-bottom: 50px;
 }
 #home-latest-news .section-title {
   color: #B40001;

@@ -1,9 +1,7 @@
 {% extends "_base.html" %}
 
 {% block hero %}
-  <div class="clear"></div>
-
-  <div class="container">
+  <div class="container clear">
     <img id="home-jumbotron" src="/static/pictures/middle-img-{{ lang }}.png">
   </div>
 {% endblock %}
@@ -17,6 +15,45 @@
       src="http://api.dmcloud.net/player/embed/5072e9f306361d1c4a000710/524a765a94a6f67e38000009?auth=1696091725-0-fbp87awq-afd14de1ac25718707bf01364b8ad220"></iframe>
   </div>
 #}
+
+  {# ######################################################################## #}
+
+  <div class="home-about">
+    <div class="container">
+      {% if lang=='en' %}
+        <p class="centered">
+          Explore <em>Open Source</em>, <em>Open Hardware</em>, <em>Open
+          Data</em>
+          and the <em>Open Web</em> with the world's <em>top technical, business
+          and thought leaders</em>, and the most vibrant communities, for two
+          days in the heart of Paris's downtown
+          business and entertainment district. </p>
+
+        <div class="btn-bar centered">
+          <a href="about/" class="btn btn-info btn-large">Why attend?</a>
+          <a href="/register/" class="btn btn-primary btn-large">Register for
+            free</a>
+        </div>
+      {% else %}
+        <p class="centered">
+          Explorez les enjeux du <em>logiciel libre et open source</em>,
+          de l'<em>open hardware</em>, de l'<em>open data</em>
+          et de l'<em>Open Web</em> avec <em>les plus grands noms de la
+          technologie,
+          des affaires et de la prospective</em>, et les communautés les plus
+          dynamiques du domaine, deux jours durant (30-31 octobre
+          2014), au coeur du quartier des affaires de Paris</p>
+
+        <div class="btn-bar centered">
+          <a href="about/" class="btn btn-info btn-large">Pourquoi participer
+            ?</a>
+          <a href="/register/" class="btn btn-primary btn-large">Je m'inscris
+            gratuitement</a>
+        </div>
+      {% endif %}
+    </div>
+  </div>
+
 
   {# ######################################################################## #}
 

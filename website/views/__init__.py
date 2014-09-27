@@ -2,14 +2,10 @@
 # Register blueprints on app
 #
 def register_plugin(app):
-  from .localized import register
-  register(app)
+  from . import localized, main, redirects, metadata, api
 
-  from .main import register
-  register(app)
-
-  from .redirects import register
-  register(app)
-
-  from .metadata import register
-  register(app)
+  localized.register(app)
+  main.register(app)
+  redirects.register(app)
+  metadata.register(app)
+  api.register(app)

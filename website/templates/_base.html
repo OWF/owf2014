@@ -39,12 +39,12 @@
 
 {% include "_header.html" %}
 
-<div id="hero">
+<div class="hero">
   {% block hero %}
   {% endblock %}
 </div>
 
-<div id="main">
+<div id="main" class="main">
   {%- with messages = get_flashed_messages(with_categories=true) %}
     {% if messages %}
       <div class="container">
