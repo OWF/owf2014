@@ -18,9 +18,9 @@ S'il vous faut une raison pour vous inscrire à l'OWF, pensez aux point qui suiv
 
 ### Des intervenants de très haut niveau
 
-Nos orateurs ont été sélectionnés par notre commité de programme indépendant à l'issue d'un appel à contributions ouvert qui a reçu plusieurs centaines de propositions. Nous avons également invité les plus grands noms des sujets clefs à s'exprimer au cours de notre session de keynotes.
+Nos orateurs ont été sélectionnés par notre comité de programme indépendant à l'issue d'un appel à contributions ouvert qui a reçu plusieurs centaines de propositions. Nous avons également invité les plus grands noms des sujets clefs à s'exprimer au cours de notre session de keynotes.
 
-L'OWF est l'occasion unique de rencontrer ces intervenants de haut niveau et tous les autres membres de notre communauté dans un cadre ouvert et détendu.
+L'OWF est l'occasion unique de rencontrer ces intervenants de haut niveau et tous les autres membres de notre communauté dans un cadre ouvert et convivial.
 
 <div class="btn-bar">
 <a class="btn btn-info" href="/fr/speakers/">Découvrir les intervenants</a>
@@ -51,6 +51,7 @@ Venir à l'Open World Forum, c'est l'opportunité de rencontrer et d'échanger a
 - CKAB
 - CloudOrbit
 - Constellation Matrix
+- Coupengo
 - Dataiku
 - Ecreall
 - Elao

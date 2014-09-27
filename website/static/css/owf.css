@@ -5053,6 +5053,9 @@ button.close {
   margin-top: 1em;
   margin-bottom: 1em;
 }
+.btn-bar .btn {
+  font-size: 1.2em;
+}
 body {
   background: #ffffff url("../pictures/background.png") no-repeat center 32px;
   font-family: "Open Sans", sans-serif;
@@ -5326,6 +5329,7 @@ img#home-jumbotron {
 }
 .home-about {
   background-color: #eee;
+  text-align: center;
   font-size: 1.95em;
   line-height: 1.4em;
   padding-top: 50px;
