@@ -69,6 +69,7 @@ Venir à l'Open World Forum, c'est l'opportunité de rencontrer et d'échanger a
 - MNCC
 - MVVP
 - Normation
+- Nuxeo
 - Open Wide
 - OpenSearchServer
 - O'Reilly
@@ -168,7 +169,7 @@ Venir à l'Open World Forum, c'est l'opportunité de rencontrer et d'échanger a
 - CETIC
 - CNLL
 - CIGREF
-- The Document Foundation
+- Document Foundation
 - Eclipse Foundation
 - EPI (Enseignement Public et Informatique)
 - Fedora Project
@@ -189,6 +190,7 @@ Venir à l'Open World Forum, c'est l'opportunité de rencontrer et d'échanger a
 - OWASP
 - OW2
 - Les petits débrouillards
+- Parinux
 - PLOSS
 - Reporters sans frontières
 - SoLibre
@@ -222,5 +224,5 @@ Vous pouvez retrouver ci-dessous le bilan de l'édition 2013 de l'Open World For
 <iframe src="http://www.slideshare.net/slideshow/embed_code/30905313" width="476" height="400" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>
 
 <div class="btn-bar" style="margin-top: 2em;">
-<a class="btn btn-primary btn-large" href="/register/">Je suis convaincu, je m'inscris gratuitement :)</a>
+<a class="btn btn-primary btn-large" href="/register/">N'en jetez plus, je m'inscris gratuitement! :)</a>
 </div>
