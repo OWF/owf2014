@@ -146,8 +146,9 @@ def authorized_google(resp):
   session['oauth_token'] = (access_token, '')
 
   me = google.get('userinfo')
-  email = me.data['email']
-  if not me.data['verified_email']:
+  data = me.data
+  email = data.get('email')
+  if not email or not data['verified_email']:
     msg = _(u"Your email needs to be verified with your identity provider.")
     flash(msg, "danger")
     return redirect(".login")
@@ -158,13 +159,13 @@ def authorized_google(resp):
     db.session.add(user)
 
   user.auth_provider = "google"
-  user.oauth_id = me.data['id']
+  user.oauth_id = data['id']
   user.google_id = user.oauth_id
   user.access_token = access_token
-  user.first_name = me.data['given_name']
-  user.last_name = me.data['family_name']
-  user.gender = me.data.get('gender', u"")
-  user.picture_url = me.data['picture']
+  user.first_name = data['given_name']
+  user.last_name = data['family_name']
+  user.gender = data.get('gender', u"")
+  user.picture_url = data['picture']
   db.session.commit()
 
   flash(_(u"Login successful."), "success")
@@ -194,9 +195,10 @@ def authorized_facebook(resp):
   session['oauth_token'] = (access_token, '')
 
   me = facebook.get('/me')
+  data = me.data
 
-  email = me.data['email']
-  if not me.data['verified']:
+  email = data.get('email')
+  if not email or not data['verified']:
     msg = _(u"Your email needs to be verified with your identity provider.")
     flash(msg, "danger")
     return redirect(".login")
@@ -207,11 +209,11 @@ def authorized_facebook(resp):
     db.session.add(user)
 
   user.auth_provider = "facebook"
-  user.oauth_id = me.data['id']
+  user.oauth_id = data['id']
   user.access_token = access_token
-  user.first_name = me.data['first_name']
-  user.last_name = me.data['last_name']
-  user.gender = me.data['gender']
+  user.first_name = data['first_name']
+  user.last_name = data['last_name']
+  user.gender = data['gender']
   db.session.commit()
 
   flash(_(u"Login successful."), "success")
@@ -241,7 +243,12 @@ def authorized_github(resp):
   me = github.get('user')
   data = me.data
 
-  email = data['email']
+  email = data.get('email')
+  if not email:
+    msg = _(u"Your email needs to be verified with your identity provider.")
+    flash(msg, "danger")
+    return redirect(".login")
+
   user = User2.query.filter(User2.email == email).first()
   if not user:
     user = User2(email=email)
