@@ -33,7 +33,9 @@ def talks():
      'speakers': [speaker.id for speaker in talk.speakers],
     } for talk in all_talks
   ]
-  return jsonify(talks=all_talks)
+  res = jsonify(talks=all_talks)
+  res.headers["Access-Control-Allow-Origin"] = "*"
+  return res
 
 
 @route('speakers')
@@ -48,7 +50,9 @@ def speakers():
      'talks': [talk.id for talk in speaker.talks],
     } for speaker in all_speakers
   ]
-  return jsonify(speakers=all_speakers)
+  res = jsonify(speakers=all_speakers)
+  res.headers["Access-Control-Allow-Origin"] = "*"
+  return res
 
 
 def register(app):

@@ -136,7 +136,7 @@ def logout():
 @route("/authorized_google")
 @google.authorized_handler
 def authorized_google(resp):
-  if resp is None:
+  if resp is None or isinstance(resp, OAuthException):
     return 'Access denied: reason=%s error=%s' % (
       request.args['error_reason'],
       request.args['error_description']
@@ -239,24 +239,25 @@ def authorized_github(resp):
   session['oauth_token'] = (access_token, '')
 
   me = github.get('user')
+  data = me.data
 
-  email = me.data['email']
+  email = data['email']
   user = User2.query.filter(User2.email == email).first()
   if not user:
     user = User2(email=email)
     db.session.add(user)
 
   user.auth_provider = "github"
-  user.oauth_id = me.data['id']
+  user.oauth_id = data['id']
   user.access_token = access_token
   try:
-    user.first_name, user.last_name = me.data['name'].split(" ", 2)
+    user.first_name, user.last_name = data['name'].split(" ", 2)
   except:
     pass
-  user.url = me.data['blog']
-  user.picture_url = me.data['avatar_url']
-  user.github_handle = me.data['login']
-  user.organization = me.data['company'] or u""
+  user.url = data['blog']
+  user.picture_url = data['avatar_url']
+  user.github_handle = data['login']
+  user.organization = data['company'] or u""
   db.session.commit()
 
   flash(_(u"Login successful."), "success")
