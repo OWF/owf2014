@@ -1,4 +1,5 @@
 # Define models
+from datetime import datetime
 from sqlalchemy import Column, Integer, String, Boolean, DateTime, UnicodeText
 from flask.ext.security import RoleMixin, UserMixin, SQLAlchemyUserDatastore
 from abilian.core.extensions import db
@@ -26,7 +27,7 @@ class User2(db.Model, UserMixin):
 
   password = Column(String(255))
   active = Column(Boolean())
-  confirmed_at = Column(DateTime())
+  confirmed_at = Column(DateTime(), default=datetime.utcnow())
 
   auth_provider = Column(String(20))
   oauth_id = Column(String(100))
