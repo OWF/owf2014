@@ -448,7 +448,7 @@ def photo(speaker_id):
 @route("/schedule/")
 @route("/schedule/<int:day>/")
 def schedule(day=None):
-  if not day:
+  if not day in [1, 2]:
     return redirect(url_for(".schedule", day=1))
 
   talks_by_room = []
