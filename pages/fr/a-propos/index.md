@@ -102,6 +102,7 @@ Venir à l'Open World Forum, c'est l'opportunité de rencontrer et d'échanger a
 - Google
 - Hewlett-Packard
 - IBM
+- Ineo
 - Numergy
 - Oracle
 - Orange / Orange labs
@@ -123,6 +124,7 @@ Venir à l'Open World Forum, c'est l'opportunité de rencontrer et d'échanger a
 - Ministère de l'Education nationale / Pôle de Paris
 - Ministère de l'intérieur - DGGN - ST(SI)²
 - Ministère des Finances
+- Ministère des Affaires Sociales
 - Paris Région Lab
 - Paris Région Entreprises
 - Open Data Lab Belarus
@@ -134,6 +136,7 @@ Venir à l'Open World Forum, c'est l'opportunité de rencontrer et d'échanger a
 
 #### Le monde de l'enseignement et de la recherche
 
+- CNAM
 - CNRS
 - Ecole 42
 - EIT ICT Labs
@@ -147,11 +150,14 @@ Venir à l'Open World Forum, c'est l'opportunité de rencontrer et d'échanger a
 - Irill
 - IRT SystemX
 - Science Po
-- UPMC (Université Pierre et Marie Curie)
+- Université d'Angers
 - Université Denis Diderot
 - Université Alioune Diop de Bambey du Senegal
 - Université d'Evry
 - Université Paris Ouest Nanterre la Défense
+- Université du Littoral
+- UPMC (Université Pierre et Marie Curie)
+- UTC
 - UVSQ
 - Vrije Iniversiteit Brussel
 
@@ -197,6 +203,7 @@ Venir à l'Open World Forum, c'est l'opportunité de rencontrer et d'échanger a
 - Systematic / GTLL
 - SIF (Société Informatique de France)
 - Syntec Numérique
+- Ubuntu-fr
 - VECAM
 
 <div class="btn-bar">
