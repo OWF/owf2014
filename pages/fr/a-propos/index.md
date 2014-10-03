@@ -51,6 +51,7 @@ Venir à l'Open World Forum, c'est l'opportunité de rencontrer et d'échanger a
 - CKAB
 - CloudOrbit
 - Constellation Matrix
+- Couchbase
 - Coupengo
 - Dataiku
 - Ecreall
@@ -58,10 +59,12 @@ Venir à l'Open World Forum, c'est l'opportunité de rencontrer et d'échanger a
 - Enalean
 - Entr'ouvert
 - Five by Five
+- Genymobile
 - Henix
 - Inno3
 - Libon
 - Linkbynet
+- Lizenn
 - Logilab
 - Maarch
 - MariaDB
@@ -72,7 +75,7 @@ Venir à l'Open World Forum, c'est l'opportunité de rencontrer et d'échanger a
 - Nuxeo
 - Open Wide
 - OpenSearchServer
-- O'Reilly
+- O'Reilly Media
 - OVH
 - Oxiane
 - Red Hat
@@ -100,7 +103,9 @@ Venir à l'Open World Forum, c'est l'opportunité de rencontrer et d'échanger a
 - Engineering Group
 - GFI Informatique
 - Google
+- Groupe Beaumanoir
 - Hewlett-Packard
+- Huawei
 - IBM
 - Ineo
 - Numergy
@@ -121,6 +126,7 @@ Venir à l'Open World Forum, c'est l'opportunité de rencontrer et d'échanger a
 - Direction de l'information légale et administrative (DILA)
 - Etalab
 - European Commission - DG Informatics
+- INA
 - Ministère de l'Education nationale / Pôle de Paris
 - Ministère de l'intérieur - DGGN - ST(SI)²
 - Ministère des Finances
@@ -136,11 +142,13 @@ Venir à l'Open World Forum, c'est l'opportunité de rencontrer et d'échanger a
 
 #### Le monde de l'enseignement et de la recherche
 
+- Académie de Paris
 - CNAM
 - CNRS
 - Ecole 42
 - EIT ICT Labs
-- Ecole Normale Supérieure Paris
+- ENS Cachan
+- ENS Paris (rue d'Ulm)
 - Epita
 - Epitech
 - Eurecom

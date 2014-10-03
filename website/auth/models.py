@@ -27,7 +27,7 @@ class User2(db.Model, UserMixin):
 
   password = Column(String(255))
   active = Column(Boolean())
-  confirmed_at = Column(DateTime(), default=datetime.utcnow())
+  confirmed_at = Column(DateTime(), default=datetime.utcnow)
 
   auth_provider = Column(String(20))
   oauth_id = Column(String(100))

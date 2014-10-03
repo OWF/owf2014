@@ -60,6 +60,7 @@ Just a few include:
 - EDITIS - SEJER
 - Engineering Group
 - GFI Informatique
+- Groupe Beaumanoir
 - Hewlett-Packard
 - Numergy
 - Oracle

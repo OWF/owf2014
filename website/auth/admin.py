@@ -1,8 +1,9 @@
 import StringIO
 import csv
+import datetime
 
 from flask import current_app, make_response
-from flask.ext.admin import expose
+from flask.ext.admin import expose, BaseView
 from flask.ext.admin.contrib.sqla import ModelView
 from flask.ext.login import current_user
 from marshmallow import Serializer
@@ -34,11 +35,13 @@ class UserModelView(SecureModelView):
 
     for user in User2.query.all():
       d = UserSerializer(user).data
+
       def encode(x):
         if isinstance(x, unicode):
           return x.encode('utf8')
         else:
           return str(x)
+
       row = [encode(d[k]) for k in headers]
       writer.writerow(row)
 
@@ -47,8 +50,23 @@ class UserModelView(SecureModelView):
     return response
 
 
+class DashboardView(BaseView):
+  @expose("/")
+  def index(self):
+    day = datetime.date(2014, 9, 15)
+    for i in range(0, 45):
+      day_plus_one = day + datetime.timedelta(days=1)
+      count = User2.query \
+        .filter(User2.confirmed_at >= day) \
+        .filter(User2.confirmed_at < day_plus_one).count()
+      day = day_plus_one
+      print day, day_plus_one, count
+    return "OK"
+
+
 def register_admin_views(app):
   admin = app.extensions['admin'][0]
+  admin.add_view(DashboardView(name="dashboard"))
   admin.add_view(UserModelView(User2, db.session))
   admin.add_view(SecureModelView(Role, db.session))
 
