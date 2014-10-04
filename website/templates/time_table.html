@@ -60,8 +60,10 @@
               style="white-space: nowrap; text-wrap: none; text-align: right;">{{ row[0].t_start.strftime("%H:%M") }}-{{ row[0].t_end.strftime("%H:%M") }}</span>
           </td>
           {% for cell in row %}
-            {% if row_index in [2, 4] %}
-              <td>Pause</td>
+            {% if row_index == 2 %}
+              <td>{{ _("Coffee break") }}</td>
+            {% elif row_index == 4 %}
+              <td>{{ _("Lunch break") }}</td>
             {% else %}
               <td>
                 {% if cell.track %}
