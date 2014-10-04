@@ -18,21 +18,20 @@
         completed shortly. Please stay tuned.</p>
     </div>
 
-    <ul>
-      {% for track in tracks %}
-        <li>
-          {#            <span class="track{{ track.id }}"#}
-          {#                style="border: 1px solid black; width: 100px; height: 10px;">#}
-          {#            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#}
-          {#            </span>#}
-          {#          &nbsp;#}
-          <a href="#track-{{ track.id }}">{{ track.name }}</a>
-          ({{ _("Room") }} {{ track.room }},
-          {{ track.starts_at.strftime("%H:%M") }}-{{ track.ends_at.strftime("%H:%M") }})
-          - <a href="{{ url_for(track) }}">{{ _("details") }}</a>
-        </li>
-      {% endfor %}
-    </ul>
+    {% for group in tracks|groupby('theme') %}
+      <h4>{{ group.grouper }}</h4>
+      <ul>
+        {% for track in group.list %}
+          <li>
+            <a href="#track-{{ track.id }}">{{ track.name }}</a>
+            ({{ _("Room") }} {{ track.room }},
+            {{ track.starts_at.strftime("%H:%M") }}-{{ track.ends_at.strftime("%H:%M") }})
+            - <a href="{{ url_for(track) }}">{{ _("details") }}</a>
+
+          </li>
+        {% endfor %}
+      </ul>
+    {% endfor %}
 
     <h3>{{ _("Time table") }}</h3>
 
