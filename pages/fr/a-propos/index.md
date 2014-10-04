@@ -97,10 +97,12 @@ Venir à l'Open World Forum, c'est l'opportunité de rencontrer et d'échanger a
 - Cisco Systems
 - Cloudwatt
 - Citrix
+- Delphi
 - EDF
 - Éditions Francis Lefebvre
 - EDITIS - SEJER
 - Engineering Group
+- Fujitsu
 - GFI Informatique
 - Google
 - Groupe Beaumanoir
@@ -143,6 +145,7 @@ Venir à l'Open World Forum, c'est l'opportunité de rencontrer et d'échanger a
 #### Le monde de l'enseignement et de la recherche
 
 - Académie de Paris
+- CEA
 - CNAM
 - CNRS
 - Ecole 42
@@ -164,6 +167,7 @@ Venir à l'Open World Forum, c'est l'opportunité de rencontrer et d'échanger a
 - Université d'Evry
 - Université Paris Ouest Nanterre la Défense
 - Université du Littoral
+- University of Redlands
 - UPMC (Université Pierre et Marie Curie)
 - UTC
 - UVSQ

@@ -7,6 +7,7 @@ import hashlib
 from itertools import groupby
 import mimetypes
 from os.path import join, exists
+from pprint import pprint
 import random
 import re
 import datetime
@@ -398,11 +399,11 @@ def photo(speaker_id):
 # @route("/schedule/")
 # @route("/schedule/<int:day>/")
 # def schedule(day=None):
-#   if not day:
-#     return redirect(url_for(".schedule", day=1))
+# if not day:
+# return redirect(url_for(".schedule", day=1))
 #
-#   if day == 1:
-#     track = Track2.query.get(8)
+# if day == 1:
+# track = Track2.query.get(8)
 #     talks = sorted(track.talks, key=lambda x: x.starts_at)
 #     page = dict(title=_(u"Day 1 - Plenary session"))
 #
@@ -446,42 +447,72 @@ def photo(speaker_id):
 #                            rooms=rooms, time_table=time_table, tracks=tracks)
 
 @route("/schedule/")
-@route("/schedule/<int:day>/")
-def schedule(day=None):
-  if not day in [1, 2]:
-    return redirect(url_for(".schedule", day=1))
+@route("/schedule/<int:day_num>/")
+def schedule(day_num=None):
+  TICKS = [
+    datetime.timedelta(hours=9),
+    datetime.timedelta(hours=10, minutes=30),
+    datetime.timedelta(hours=11),
+    datetime.timedelta(hours=12, minutes=30),
+    datetime.timedelta(hours=13, minutes=30),
+    datetime.timedelta(hours=14),
+    datetime.timedelta(hours=15),
+    datetime.timedelta(hours=16),
+    datetime.timedelta(hours=17),
+    datetime.timedelta(hours=18),
+    datetime.timedelta(hours=19),
+    datetime.timedelta(hours=20),
+  ]
+  if not day_num in [1, 2]:
+    return redirect(url_for(".schedule", day_num=1))
 
   talks_by_room = []
   rooms = Room.query.order_by(Room.capacity.desc()).all()
   for room in rooms:
-    talks = talks_for_room_and_day(room, None)
+    talks = talks_for_room(room)
     talks_by_room.append([room, talks])
 
   time_table = []
-  tracks = []
+  all_tracks = set()
+
   for room in rooms:
     column = []
-    talks = talks_for_room_and_day(room, None)
-    t = datetime.datetime(2014, 10, 29 + day, 9, 0)
-    dt = datetime.timedelta(minutes=60)
-    while t < datetime.datetime(2014, 10, 29 + day, 21, 0):
-      talks_for_slot = [talk for talk in talks if
-                        t <= talk.starts_at < t + dt]
-      track = None
-      if talks_for_slot:
-        if t <= talks_for_slot[0].track.starts_at < t + dt:
-          track = talks_for_slot[0].track
-          tracks.append(track)
-      cell = {'track': track, 'talks': talks_for_slot}
+    talks = talks_for_room(room)
+    tracks = room.tracks
+    day = datetime.datetime(2014, 10, 29 + day_num)
+    for i in range(0, len(TICKS) - 1):
+      t0 = t_start = day + TICKS[i]
+      t1 = t_end = day + TICKS[i + 1]
+      talks_for_slot = [k for k in talks if
+                        t_start <= k.starts_at < t_end]
+      tracks_for_slot = set(track for track in tracks
+                         if (t0 <= track.starts_at < t1)
+                         or (track.starts_at <= t0 and t1 < track.ends_at)
+                         or (t0 <= track.ends_at < t1))
+      if len(tracks_for_slot) > 1:
+        print "CONFLICT: room:{}, start: {}, end: {}, tracks: {}".format(
+          room, t0, t1, tracks_for_slot)
+      #assert len(tracks_for_slot) in [0, 1]
+      if tracks_for_slot:
+        track = tracks_for_slot.pop()
+        tracks.append(track)
+        all_tracks.add(track)
+      else:
+        track = None
+
+      cell = {'t_start': t_start,
+              't_end': t_end,
+              'track': track,
+              'talks': talks_for_slot}
       column.append(cell)
-      t += dt
     time_table.append(column)
 
+  all_tracks = sorted(list(all_tracks), key=lambda x: x.starts_at)
   time_table = zip(*time_table)
 
-  page = dict(title=_(u"Day %(day)d - At a glance", day=day))
-  return render_template("time_table.html", day=day, page=page,
-                         rooms=rooms, time_table=time_table, tracks=tracks)
+  page = dict(title=_(u"Day %(day)d - At a glance", day=day_num))
+  return render_template("time_table.html", day=day_num, page=page,
+                         rooms=rooms, time_table=time_table, tracks=all_tracks)
 
 
 @localized.errorhandler(404)
@@ -490,7 +521,7 @@ def page_not_found(error):
   return render_template('404.html', page=page), 404
 
 
-def talks_for_room_and_day(room, day):
+def talks_for_room(room):
   tracks = room.tracks
   talks = sum([track.talks for track in tracks], [])
   talks = [talk for talk in talks if talk.starts_at]

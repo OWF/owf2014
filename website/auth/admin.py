@@ -59,8 +59,8 @@ class DashboardView(BaseView):
       count = User2.query \
         .filter(User2.confirmed_at >= day) \
         .filter(User2.confirmed_at < day_plus_one).count()
-      day = day_plus_one
       print day, day_plus_one, count
+      day = day_plus_one
     return "OK"
 
 
