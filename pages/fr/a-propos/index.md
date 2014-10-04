@@ -245,3 +245,24 @@ Vous pouvez retrouver ci-dessous le bilan de l'édition 2013 de l'Open World For
 <div class="btn-bar" style="margin-top: 2em;">
 <a class="btn btn-primary btn-large" href="/register/">N'en jetez plus, je m'inscris gratuitement! :)</a>
 </div>
+
+## Faite la promotion de l'OWF
+
+[Télécharger toutes les bannières (fichier ZIP)](/static/images/banners/banners.zip)
+
+### Bannières en anglais
+
+<img src="/static/images/banners/OWF_2014_468x60_ang.jpg">
+
+<img src="/static/images/banners/OWF_2014_250X250_ang.jpg">
+
+<img src="/static/images/banners/OWF_2014_120X600_ang.jpg">
+
+### Bannières en français
+
+<img src="/static/images/banners/OWF_2014_468x60_fr.jpg">
+
+<img src="/static/images/banners/OWF_2014_250X250_fr.jpg">
+
+<img src="/static/images/banners/OWF_2014_120X600_fr.jpg">
+

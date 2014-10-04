@@ -120,3 +120,24 @@ The Open World Forum will take place at [Eurosite Georges V, in Paris](/en/pract
 The summary for the 2013 edition of the Open World Forum can be found below:
 
 <iframe src="http://www.slideshare.net/slideshow/embed_code/30905313" width="476" height="400" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>
+
+## Promote OWF
+
+[Download all banners (ZIP file)](/static/images/banners/banners.zip)
+
+### Banners in English
+
+<img src="/static/images/banners/OWF_2014_468x60_ang.jpg">
+
+<img src="/static/images/banners/OWF_2014_250X250_ang.jpg">
+
+<img src="/static/images/banners/OWF_2014_120X600_ang.jpg">
+
+### Banners in French
+
+<img src="/static/images/banners/OWF_2014_468x60_fr.jpg">
+
+<img src="/static/images/banners/OWF_2014_250X250_fr.jpg">
+
+<img src="/static/images/banners/OWF_2014_120X600_fr.jpg">
+
