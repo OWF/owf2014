@@ -128,7 +128,7 @@ class Loader(object):
       if speaker_email:
         try:
           track_leaders.append(self.speakers[speaker_email])
-        except KeyError::
+        except KeyError:
           self.debug("Speaker: {} not fount".format(speaker_email))
     args['track_leaders'] = track_leaders
     track = Track2(**args)
@@ -167,7 +167,7 @@ class Loader(object):
       if speaker_email:
         try:
           speakers.append(self.speakers[speaker_email])
-        except KeyError::
+        except KeyError:
           self.debug("Speaker: {} not fount".format(speaker_email))
 
     args['speakers'] = speakers
