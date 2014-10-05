@@ -104,27 +104,37 @@ class Loader(object):
     for i in range(1, sheet.nrows):
       self.debug("... {}".format(i))
       row = sheet.row(i)
-      room_name = row[0].value
-      args = {
-        'room': self.rooms.get(room_name),
-        'name': row[1].value,
-        'theme': row[2].value,
-        'description_fr': row[3].value,
-        'description_en': row[4].value,
-        'starts_at': parse_date(row[5].value) or datetime(1970, 1, 1),
-        'ends_at': parse_date(row[6].value) or datetime(1970, 1, 1),
-      }
-      track_leaders = []
-      for i in range(7, 7 + 4):
-        speaker_email = row[i].value
-        if speaker_email:
-          track_leaders.append(self.speakers[speaker_email])
-      args['track_leaders'] = track_leaders
-      track = Track2(**args)
-      db.session.add(track)
-      self.tracks[track.name] = track
+      try:
+        self.load_track(row)
+      except:
+        self.debug(traceback.format_exc())
 
     db.session.flush()
+
+  def load_track(self, row):
+    room_name = row[0].value
+    args = {
+      'room': self.rooms.get(room_name),
+      'name': row[1].value,
+      'theme': row[2].value,
+      'description_fr': row[3].value,
+      'description_en': row[4].value,
+      'starts_at': parse_date(row[5].value) or datetime(1970, 1, 1),
+      'ends_at': parse_date(row[6].value) or datetime(1970, 1, 1),
+    }
+    track_leaders = []
+    for i in range(7, 7 + 4):
+      speaker_email = row[i].value
+      if speaker_email:
+        try:
+          track_leaders.append(self.speakers[speaker_email])
+        except:
+          print "Speaker: {} not fount".format(speaker_email)
+    args['track_leaders'] = track_leaders
+    track = Track2(**args)
+    db.session.add(track)
+    self.tracks[track.name] = track
+
 
   def load_talks(self):
     self.debug("Parsing talks")

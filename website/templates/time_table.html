@@ -19,15 +19,16 @@
     </div>
 
     {% for group in tracks|groupby('theme') %}
-      <h4>{{ group.grouper }}</h4>
+      <h4><span class="track-{{ group.grouper|lower }}">{{ group.grouper }}</span></h4>
       <ul>
         {% for track in group.list %}
           <li>
-            <a href="#track-{{ track.id }}">{{ track.name }}</a>
-            ({{ _("Room") }} {{ track.room }},
-            {{ track.starts_at.strftime("%H:%M") }}-{{ track.ends_at.strftime("%H:%M") }})
-            - <a href="{{ url_for(track) }}">{{ _("details") }}</a>
-
+            <div >
+              <a href="#track-{{ track.id }}">{{ track.name }}</a>
+              ({{ _("Room") }} {{ track.room }},
+              {{ track.starts_at.strftime("%H:%M") }}-{{ track.ends_at.strftime("%H:%M") }})
+              - <a href="{{ url_for(track) }}">{{ _("details") }}</a>
+            </div>
           </li>
         {% endfor %}
       </ul>
@@ -60,10 +61,14 @@
               style="white-space: nowrap; text-wrap: none; text-align: right;">{{ row[0].t_start.strftime("%H:%M") }}-{{ row[0].t_end.strftime("%H:%M") }}</span>
           </td>
           {% for cell in row %}
-            {% if row_index == 2 %}
+            {% if row_index == 1 %}
+              <td>{{ _("Welcome / registration") }}</td>
+            {% elif row_index in (3, 7) %}
               <td>{{ _("Coffee break") }}</td>
-            {% elif row_index == 4 %}
+            {% elif row_index == 5 %}
               <td>{{ _("Lunch break") }}</td>
+            {% elif row_index == 9 %}
+              <td>{{ _("Break") }}</td>
             {% else %}
               <td>
                 {% if cell.track %}

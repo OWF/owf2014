@@ -450,16 +450,15 @@ def photo(speaker_id):
 @route("/schedule/<int:day_num>/")
 def schedule(day_num=None):
   TICKS = [
+    datetime.timedelta(hours=8, minutes=30),
     datetime.timedelta(hours=9),
     datetime.timedelta(hours=10, minutes=30),
     datetime.timedelta(hours=11),
     datetime.timedelta(hours=12, minutes=30),
     datetime.timedelta(hours=13, minutes=30),
-    datetime.timedelta(hours=14),
-    datetime.timedelta(hours=15),
-    datetime.timedelta(hours=16),
-    datetime.timedelta(hours=17),
-    datetime.timedelta(hours=18),
+    datetime.timedelta(hours=15, minutes=35),
+    datetime.timedelta(hours=16, minutes=10),
+    datetime.timedelta(hours=18, minutes=15),
     datetime.timedelta(hours=19),
     datetime.timedelta(hours=20),
   ]

@@ -1,5 +1,17 @@
 // Specific rules for the talk schedule.
 
+.track-think {
+  background-color: lighten(@think-color, 30%);
+}
+
+.track-code {
+  background-color: lighten(@code-color, 30%);
+}
+
+.track-experiment {
+  background-color: lighten(@experiment-color, 30%);
+}
+
 #schedule {
   border-collapse: collapse;
   width: 1200px;
@@ -15,15 +27,6 @@
     a {
       color: black;
     }
-  }
-  .track-think {
-    background-color: lighten(@think-color, 30%);
-  }
-  .track-code {
-    background-color: lighten(@code-color, 30%);
-  }
-  .track-experiment {
-    background-color: lighten(@experiment-color, 30%);
   }
   .talk {
     padding: 3px;

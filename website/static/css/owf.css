@@ -5596,6 +5596,15 @@ img#home-jumbotron {
   color: white;
   margin-bottom: 20px;
 }
+.track-think {
+  background-color: #fce0c6;
+}
+.track-code {
+  background-color: #96dd9d;
+}
+.track-experiment {
+  background-color: #c7e4f2;
+}
 #schedule {
   border-collapse: collapse;
   width: 1200px;
@@ -5612,15 +5621,6 @@ img#home-jumbotron {
 }
 #schedule .track a {
   color: black;
-}
-#schedule .track-think {
-  background-color: #fce0c6;
-}
-#schedule .track-code {
-  background-color: #96dd9d;
-}
-#schedule .track-experiment {
-  background-color: #c7e4f2;
 }
 #schedule .talk {
   padding: 3px;
