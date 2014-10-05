@@ -128,8 +128,8 @@ class Loader(object):
       if speaker_email:
         try:
           track_leaders.append(self.speakers[speaker_email])
-        except:
-          print "Speaker: {} not fount".format(speaker_email)
+        except KeyError::
+          self.debug("Speaker: {} not fount".format(speaker_email))
     args['track_leaders'] = track_leaders
     track = Track2(**args)
     db.session.add(track)
@@ -165,7 +165,11 @@ class Loader(object):
     for i in range(8, 8 + 4):
       speaker_email = row[i].value
       if speaker_email:
-        speakers.append(self.speakers[speaker_email])
+        try:
+          speakers.append(self.speakers[speaker_email])
+        except KeyError::
+          self.debug("Speaker: {} not fount".format(speaker_email))
+
     args['speakers'] = speakers
 
     talk = Talk(**args)
