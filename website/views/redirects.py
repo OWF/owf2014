@@ -40,6 +40,7 @@ REDIRECTS = [
   ('/programme/', '/fr/programme/'),
   ('/Programme/', '/fr/programme/'),
   ('/Register', '/auth/'),
+  ('/register/', '/auth/'),
   ('/registration/', '/auth/'),
   ('/rss/feed/news', '/en/feed/'),
   ('/rss/RSS', '/en/feed/'),
