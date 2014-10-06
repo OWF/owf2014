@@ -1,5 +1,5 @@
 title: Big Data
-date: 
+date: 2014/10/06
 
 
 ##Interview: Ori Pekelman, Big Data track leader
@@ -40,3 +40,6 @@ Anyway, the balances has not yet tilted, and there is an enormous spaces to be o
 **In which way the Open Source ecosystem is important for the Big Data?**
 
 Well, I can think of only a few solutions in the domain that don't have as a prefix "apache"; Big Data is very much an Open Source game, and I don't see any serious contenders from the proprietary world, anyway not on the infrastructure level. There will be providers in the "value added" chain, stuff around specific algorithmes (often coupled with proprietary data sources) and around "interconnects"; As always the "As A service" Crowd, which is becoming the more potent rival to Free software will be important (but most of them will run Open Source solutions in any case). Hey but nobody ever said there was no place for proprietary software. Well, as long as it stays the minority exception. There is a strong ethical reason we want to fight not only for open source but also for open data, because the advent of opaque systems with smart algorithms and an extreme amount of data on us (the proprietary data + as a service model) is not only going to be bad for our privacy, its going to have tangible effects on our livelihoods, on our place is society as it can introduce an extreme form of information asymmetry at a scale not seen before. It is possible that in this domain more then in others the actors of Free Software need to be more vigilant and by working with the other actors of freedom make sure we are not constructing the tools of our demise.
+
+
+*Made by Laurent Séguin, French speaking Libre Software Users' Association President*
