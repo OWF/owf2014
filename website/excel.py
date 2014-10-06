@@ -150,14 +150,26 @@ class Loader(object):
     db.session.flush()
 
   def load_talk(self, row):
+    track = self.tracks[row[1].value]
+
+    starts_at_raw = row[3].value
+    if not starts_at_raw:
+      starts_at = track.starts_at
+    elif isinstance(starts_at_raw, float):
+      h, m, s = xlrd.xldate_as_tuple(starts_at_raw, 0)[3:]
+      date = track.starts_at.date()
+      starts_at = datetime(date.year, date.month, date.day, h, m)
+    else:
+      starts_at = parse_date(starts_at_raw) or track.starts_at
+
     args = {
       'type': row[0].value,
-      'track': self.tracks[row[1].value],
+      'track': track,
       'title': row[2].value,
-      'abstract_fr': row[3].value,
-      'abstract_en': row[4].value,
-      'starts_at': parse_date(row[5].value) or datetime(1970, 1, 1),
-      'duration': int(row[6].value or 0),
+      'starts_at': starts_at,
+      'duration': int(row[4].value or 0),
+      'abstract_fr': row[5].value,
+      'abstract_en': row[6].value,
       # 'lang': int(row[7].value),
     }
 
