@@ -112,9 +112,11 @@ Venir à l'Open World Forum, c'est l'opportunité de rencontrer et d'échanger a
 - Ineo
 - Numergy
 - Oracle
-- Orange / Orange labs
+- Orange / Orange labs / Orange Business Services
+- Pivotal
 - PSA Peugeot Citroen
 - Qualcomm
+- SFR
 - SNCF
 - Sopra
 - STIME / Groupement les Mousquetaires
@@ -154,6 +156,7 @@ Venir à l'Open World Forum, c'est l'opportunité de rencontrer et d'échanger a
 - ENS Paris (rue d'Ulm)
 - Epita
 - Epitech
+- ESSEC
 - Eurecom
 - Inalco
 - Inria
@@ -161,6 +164,8 @@ Venir à l'Open World Forum, c'est l'opportunité de rencontrer et d'échanger a
 - Irill
 - IRT SystemX
 - Science Po
+- Simplon
+- Telecom Paristech
 - Université d'Angers
 - Université Denis Diderot
 - Université Alioune Diop de Bambey du Senegal
@@ -168,6 +173,8 @@ Venir à l'Open World Forum, c'est l'opportunité de rencontrer et d'échanger a
 - Université Paris Ouest Nanterre la Défense
 - Université du Littoral
 - University of Redlands
+- University of Skövde, Sweden
+- Université de Trento
 - UPMC (Université Pierre et Marie Curie)
 - UTC
 - UVSQ
