@@ -122,6 +122,8 @@ class Loader(object):
       'starts_at': parse_date(row[5].value) or datetime(1970, 1, 1),
       'ends_at': parse_date(row[6].value) or datetime(1970, 1, 1),
     }
+    if not args['name']:
+      return
     track_leaders = []
     for i in range(7, 7 + 4):
       speaker_email = row[i].value
