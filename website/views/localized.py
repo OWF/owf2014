@@ -106,8 +106,13 @@ def alt_url_for(obj, *args, **kw):
       url_for("localized.track", track_id=obj.track.id), obj.id)
   elif obj in ('THINK', 'CODE', 'EXPERIMENT'):
     return url_for("localized.page", path=obj.lower())
+  elif obj == "":
+    return "http://openworldforum.paris/"
   elif g.lang:
-    return url_for(obj, *args, lang=g.lang, **kw)
+    try:
+      return url_for(obj, *args, lang=g.lang, **kw)
+    except BuildError:
+      return "http://openworldforum.paris/"
   else:
     try:
       return url_for(obj, *args, **kw)
