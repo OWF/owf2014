@@ -118,7 +118,9 @@ Venir à l'Open World Forum, c'est l'opportunité de rencontrer et d'échanger a
 - Qualcomm
 - SFR
 - SNCF
+- Société Générale
 - Sopra
+- Steria
 - STIME / Groupement les Mousquetaires
 - Thales
 - Valeo
@@ -142,6 +144,7 @@ Venir à l'Open World Forum, c'est l'opportunité de rencontrer et d'échanger a
 - Sécurité routière
 - UNESCO
 - Ville de Paris
+- Ville de St Ouen
 
 
 #### Le monde de l'enseignement et de la recherche
@@ -163,6 +166,7 @@ Venir à l'Open World Forum, c'est l'opportunité de rencontrer et d'échanger a
 - Institut Telecom
 - Irill
 - IRT SystemX
+- IUT Paris Descartes
 - Science Po
 - Simplon
 - Telecom Paristech
@@ -175,6 +179,7 @@ Venir à l'Open World Forum, c'est l'opportunité de rencontrer et d'échanger a
 - University of Redlands
 - University of Skövde, Sweden
 - Université de Trento
+- ULB
 - UPMC (Université Pierre et Marie Curie)
 - UTC
 - UVSQ
