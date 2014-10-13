@@ -22,6 +22,7 @@ from flask import current_app as app
 from flask.ext.babel import gettext as _
 from sqlalchemy import func
 from werkzeug.exceptions import NotFound
+from werkzeug.routing import BuildError
 
 from ..config import MAIN_MENU, FEED_MAX_LINKS, IMAGE_SIZES
 from ..content import Page, get_news, get_page_or_404, get_pages, get_blocks, \
@@ -108,7 +109,10 @@ def alt_url_for(obj, *args, **kw):
   elif g.lang:
     return url_for(obj, *args, lang=g.lang, **kw)
   else:
-    return url_for(obj, *args, **kw)
+    try:
+      return url_for(obj, *args, **kw)
+    except BuildError:
+      return "http://openworldforum.paris/"
 
 
 @localized.context_processor
