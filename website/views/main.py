@@ -208,7 +208,7 @@ def upload_photos():
   fd.flush()
   zip = zipfile.ZipFile(fn)
   for info in zip.infolist():
-    name = info.filename.split("/")[-1]
+    name = info.filename.split("/")[-1].lower()
     if not name.endswith(".jpg"):
       continue
     email = name[0:-4]
