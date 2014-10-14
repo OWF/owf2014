@@ -7,6 +7,7 @@ import hashlib
 import mimetypes
 import os
 from os.path import join
+import re
 from tempfile import mktemp
 import traceback
 import zipfile
@@ -209,9 +210,10 @@ def upload_photos():
   zip = zipfile.ZipFile(fn)
   for info in zip.infolist():
     name = info.filename.split("/")[-1].lower()
-    if not name.endswith(".jpg"):
+    m = re.match(r"(.*)\.(jpeg|jpg", name)
+    if not m:
       continue
-    email = name[0:-4]
+    email = m.group(1)
     data = zip.read(info.filename)
     speaker = Speaker.query.filter(Speaker.email == email).first()
     if not speaker:
