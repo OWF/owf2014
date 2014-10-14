@@ -210,7 +210,7 @@ def upload_photos():
   zip = zipfile.ZipFile(fn)
   for info in zip.infolist():
     name = info.filename.split("/")[-1].lower()
-    m = re.match(r"(.*)\.(jpeg|jpg", name)
+    m = re.match(r"(.*)\.(jpeg|jpg)", name)
     if not m:
       continue
     email = m.group(1)
