@@ -85,7 +85,12 @@ class Loader(object):
       ]
       args = {}
       for i, key in enumerate(keys):
-        args[key] = row[i].value.strip()
+        try:
+          args[key] = row[i].value.strip()
+        except:
+          self.debug(u"row[{}] = {}".format(i, row[i].value))
+          self.debug(traceback.format_exc())
+
 
       if not args['last_name']:
         self.debug("!! Speaker has no last name.")
