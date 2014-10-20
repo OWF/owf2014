@@ -37,7 +37,7 @@ from markdown import markdown
 from abilian.core.extensions import db
 from sqlalchemy.orm import relationship, deferred, backref
 from sqlalchemy.schema import Column, ForeignKey, Table, UniqueConstraint
-from sqlalchemy.types import UnicodeText, DateTime, Integer, LargeBinary
+from sqlalchemy.types import UnicodeText, DateTime, Integer, LargeBinary, String
 from savalidation import ValidationMixin
 from abilian.core.entities import Entity
 
@@ -55,6 +55,8 @@ __all__ = ['Speaker']  # + Talk, Track, Session ?
 #
 class Speaker(Entity, ValidationMixin):
   __tablename__ = 'speaker'
+
+  slug = Column(String, nullable=False)
 
   salutation = Column(UnicodeText, nullable=True,
                       info={'label': u'Salutation'})
@@ -124,6 +126,8 @@ class Speaker(Entity, ValidationMixin):
 class Room(Entity, ValidationMixin):
   __tablename__ = 'room'
 
+  slug = Column(String, nullable=False)
+
   name = Column(UnicodeText, nullable=False,
                 info={'label': u'Name'})
 
@@ -143,6 +147,8 @@ track_leader_to_track = Table(
 
 class Track2(Entity, ValidationMixin):
   __tablename__ = 'track2'
+
+  slug = Column(String, nullable=False)
 
   room_id = Column(ForeignKey(Room.id), nullable=True)
   room = relationship(Room, backref="tracks", foreign_keys=[room_id])
@@ -184,6 +190,8 @@ speaker_to_talk = Table(
 
 class Talk(Entity, ValidationMixin):
   __tablename__ = 'talk'
+
+  slug = Column(String, nullable=False)
 
   track_id = Column(ForeignKey(Track2.id), nullable=False)
   track = relationship(Track2, foreign_keys=[track_id],
