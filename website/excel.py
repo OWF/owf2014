@@ -181,7 +181,7 @@ class Loader(object):
     }
 
     speakers = []
-    for i in range(8, 8 + 4):
+    for i in range(8, 8 + 7):
       speaker_email = row[i].value
       if speaker_email:
         try:

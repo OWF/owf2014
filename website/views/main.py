@@ -194,11 +194,26 @@ def upload_excel_file():
   try:
     loader.load()
     db.session.commit()
-    return loader.log
+    log = loader.log
   except:
-    return loader.log + "\n" + traceback.format_exc()
+    log = loader.log + "\n" + traceback.format_exc()
   finally:
     os.unlink(fn)
+
+  fix_speaker_bios()
+
+  return log
+
+
+def fix_speaker_bios():
+  for speaker in Speaker.query.filter().all():
+    if speaker.bio_fr or speaker.bio_en:
+      continue
+    user = User2.query.filter(User2.email == speaker.email).first()
+    if not user or not user.biography:
+      continue
+    speaker.bio_en = user.biography
+  db.session.commit()
 
 
 @main.route("upload_photos", methods=['PUT'])
