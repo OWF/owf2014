@@ -92,18 +92,21 @@ def alt_url_for(obj, *args, **kw):
       return url_for("localized.news_item", slug=obj.meta['slug'])
     else:
       return url_for("localized.page", path=obj.meta['path'][3:])
+
   elif isinstance(obj, Speaker):
-    return url_for("localized.speaker", speaker_id=obj.id)
+    return url_for("localized.speaker", slug=obj.slug)
+  elif isinstance(obj, Track2):
+    return url_for("localized.track", slug=obj.slug)
+  elif isinstance(obj, Room):
+    return url_for("localized.room", slug=obj.slug)
+  elif isinstance(obj, Talk):
+    url = url_for("localized.track", slug=obj.track.slug)
+    return "%s#talk_%d" % (url, obj.id)
+
   elif isinstance(obj, User2):
     return "#"  # TODO
     # return url_for("localized.participant", participant_id=obj.id)
-  elif isinstance(obj, Track2):
-    return url_for("localized.track", track_id=obj.id)
-  elif isinstance(obj, Room):
-    return url_for("localized.room", room_id=obj.id)
-  elif isinstance(obj, Talk):
-    return "%s#talk_%d" % (
-      url_for("localized.track", track_id=obj.track.id), obj.id)
+
   elif obj in ('THINK', 'CODE', 'EXPERIMENT'):
     return url_for("localized.page", path=obj.lower())
   elif obj == "":
@@ -340,11 +343,19 @@ def rooms():
   return render_template("program/rooms.html", page=page, rooms=rooms)
 
 
-@route('/rooms/<int:room_id>')
-def room(room_id):
-  room = Room.query.get_or_404(room_id)
-  if not room:
+def get_object_by_slug(cls, slug):
+  obj = cls.query.filter(cls.slug == slug).first()
+  if not obj:
+    id = int(slug)
+    obj = cls.query.get(id)
+  if not obj:
     raise NotFound()
+  return obj
+
+
+@route('/rooms/<slug>')
+def room(slug):
+  room = get_object_by_slug(Room, slug)
 
   tracks = Track2.query.order_by(Track2.starts_at).filter(
     Track2.room == room).all()
@@ -356,9 +367,10 @@ def room(room_id):
   return render_template("program/program.html", page=page, days=days)
 
 
-@route('/tracks/<int:track_id>')
-def track(track_id):
-  track = Track2.query.get_or_404(track_id)
+@route('/tracks/<slug>')
+def track(slug):
+  track = get_object_by_slug(Track2, slug)
+
   page = {'title': track.name}
   return render_template("program/track.html", page=page, track=track)
 
@@ -370,11 +382,9 @@ def speakers():
   return render_template("program/speakers.html", page=page, speakers=speakers)
 
 
-@route('/speakers/<int:speaker_id>/')
-def speaker(speaker_id):
-  speaker = Speaker.query.get(speaker_id)
-  if not speaker:
-    raise NotFound()
+@route('/speakers/<slug>/')
+def speaker(slug):
+  speaker = get_object_by_slug(Speaker, slug)
 
   page = dict(title=speaker._name)
   return render_template("program/speaker.html", page=page, speaker=speaker)

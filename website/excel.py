@@ -54,6 +54,7 @@ class Loader(object):
         'name': row[0].value,
         'capacity': row[1].value,
         'floor': row[2].value,
+        'slug': row[3].value,
       }
       room = Room(**args)
       db.session.add(room)
@@ -82,15 +83,20 @@ class Loader(object):
         'github_handle',
         'sourceforge_handle',
         'linkedin_handle',
+        '',
+        'slug',
       ]
       args = {}
       for i, key in enumerate(keys):
+        if not key:
+          continue
         try:
           args[key] = row[i].value.strip()
         except:
           self.debug(u"row[{}] = {}".format(i, row[i].value))
           self.debug(traceback.format_exc())
 
+      args['email'] = args['email'].lower()
 
       if not args['last_name']:
         self.debug("!! Speaker has no last name.")
@@ -178,6 +184,7 @@ class Loader(object):
       'duration': int(row[4].value or 0),
       'abstract_fr': row[5].value,
       'abstract_en': row[6].value,
+      'slug': row[15].value,
       # 'lang': int(row[7].value),
     }
 
@@ -188,7 +195,7 @@ class Loader(object):
         try:
           speakers.append(self.speakers[speaker_email])
         except KeyError:
-          self.debug("Speaker: {} not fount".format(speaker_email))
+          self.debug("Speaker: {} not found".format(speaker_email))
 
     args['speakers'] = speakers
 

@@ -237,6 +237,8 @@ def upload_photos():
     speaker.photo = data
     print "Adding picture for {}".format(email)
 
+  db.session.commit()
+
   for speaker in Speaker.query.filter(Speaker.photo == None).all():
     user = User2.query.filter(User2.email == speaker.email).first()
     if not user or not user.picture_url:
@@ -244,6 +246,8 @@ def upload_photos():
     print "Adding external picture for {}".format(speaker.email)
     response = requests.get(user.picture_url)
     speaker.photo = response.content
+
+  db.session.commit()
 
   for speaker in Speaker.query.filter(Speaker.photo == None).all():
     email = speaker.email.lower()
