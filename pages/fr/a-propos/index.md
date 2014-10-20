@@ -130,6 +130,7 @@ Venir à l'Open World Forum, c'est l'opportunité de rencontrer et d'échanger a
 
 - Conseil régional d'Aquitaine
 - Direction de l'information légale et administrative (DILA)
+- Direction Générale des Entreprises (DGE)
 - Etalab
 - European Commission - DG Informatics
 - INA
