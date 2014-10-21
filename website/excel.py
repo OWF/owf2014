@@ -98,6 +98,10 @@ class Loader(object):
 
       args['email'] = args['email'].lower()
 
+      website = args['website']
+      if not website and not website.startswith("http"):
+        args['website'] = "http://" + website
+
       if not args['last_name']:
         self.debug("!! Speaker has no last name.")
         continue

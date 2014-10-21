@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2014-09-22 17:27+0200\n"
+"POT-Creation-Date: 2014-10-21 15:24+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -25,11 +25,11 @@ msgstr ""
 msgid "Last name"
 msgstr ""
 
-#: website/auth/forms.py:28 website/templates/_macros.html:26
+#: website/auth/forms.py:28 website/templates/_macros.html:30
 msgid "Title"
 msgstr ""
 
-#: website/auth/forms.py:31 website/templates/_macros.html:30
+#: website/auth/forms.py:31 website/templates/_macros.html:26
 msgid "Organization"
 msgstr ""
 
@@ -49,12 +49,13 @@ msgstr ""
 msgid "Biography"
 msgstr ""
 
-#: website/auth/oauth.py:151 website/auth/oauth.py:200
+#: website/auth/oauth.py:152 website/auth/oauth.py:202
+#: website/auth/oauth.py:248
 msgid "Your email needs to be verified with your identity provider."
 msgstr ""
 
-#: website/auth/oauth.py:170 website/auth/oauth.py:217
-#: website/auth/oauth.py:262 website/auth/oauth.py:297
+#: website/auth/oauth.py:171 website/auth/oauth.py:219
+#: website/auth/oauth.py:270 website/auth/oauth.py:305
 msgid "Login successful."
 msgstr ""
 
@@ -74,6 +75,25 @@ msgstr ""
 msgid ""
 "These information will appear on the OWF\n"
 "          website."
+msgstr ""
+
+#: website/auth/templates/auth/login.html:13
+msgid "Please sign in"
+msgstr ""
+
+#: website/auth/templates/auth/login.html:15
+msgid ""
+"\n"
+"      <p>The Open World Forum 2014 is a FREE event but you need to "
+"register first to participate.</p>\n"
+"\n"
+"      <p>You need to create an account on the OWF or sign in, using one "
+"of the identity providers below.</p>\n"
+"\n"
+"      <p>(In case of doubt use <a href=\"https://login.persona.org\" "
+"target=\"_blank\">Mozilla Persona</a> - if you don't have an account on "
+"Mozilla Persona yet, it's very easy to set up).</p>\n"
+"      "
 msgstr ""
 
 #: website/auth/templates/auth/logout.html:12 website/templates/base.html:68
@@ -120,7 +140,7 @@ msgstr ""
 msgid "Sign in"
 msgstr ""
 
-#: website/templates/_header.html:116 website/templates/_header.html:147
+#: website/templates/_header.html:117 website/templates/_header.html:148
 #: website/templates/base.html:75
 msgid "Search"
 msgstr ""
@@ -129,16 +149,12 @@ msgstr ""
 msgid "Website"
 msgstr ""
 
-#: website/templates/_macros.html:58
-msgid "Day 1 - Thursday Oct. 3rd"
-msgstr ""
-
-#: website/templates/_macros.html:59
-msgid "Day 2 - Friday Oct. 4th"
-msgstr ""
-
 #: website/templates/_macros.html:60
-msgid "Day 3 - Saturday Oct. 5th"
+msgid "Day 1 - Thursday Oct. 30th"
+msgstr ""
+
+#: website/templates/_macros.html:62
+msgid "Day 2 - Friday Oct. 31th"
 msgstr ""
 
 #: website/templates/_sponsors.html:6
@@ -150,42 +166,43 @@ msgid "Institutional partners"
 msgstr ""
 
 #: website/templates/_sponsors.html:34
-msgid "Diamond Sponsor"
-msgstr ""
-
-#: website/templates/_sponsors.html:43
 msgid "Organizer"
 msgstr ""
 
-#: website/templates/_sponsors.html:50
+#: website/templates/_sponsors.html:41
 msgid "Co-organizers"
 msgstr ""
 
-#: website/templates/_sponsors.html:67
+#: website/templates/_sponsors.html:58
+msgid "Diamond Sponsor"
+msgstr ""
+
+#: website/templates/_sponsors.html:66
 msgid "Platinum sponsors"
 msgstr ""
 
-#: website/templates/_sponsors.html:74
+#: website/templates/_sponsors.html:78
 msgid "Gold sponsors"
 msgstr ""
 
-#: website/templates/_sponsors.html:86
+#: website/templates/_sponsors.html:90
 msgid "Silver sponsors"
 msgstr ""
 
-#: website/templates/_sponsors.html:98
+#: website/templates/_sponsors.html:107
 msgid "Community Partners"
 msgstr ""
 
-#: website/templates/_sponsors.html:124
+#: website/templates/_sponsors.html:133
 msgid "WebTV Partner"
 msgstr ""
 
-#: website/templates/_sponsors.html:134
+#: website/templates/_sponsors.html:143
 msgid "Press partners"
 msgstr ""
 
 #: website/templates/day1.html:15 website/templates/day23.html:14
+#: website/templates/time_table.html:8
 msgid "Schedule"
 msgstr ""
 
@@ -197,8 +214,8 @@ msgstr ""
 msgid "The plenary session takes place in room \"Grand Auditorium\"."
 msgstr ""
 
-#: website/templates/day1.html:33 website/templates/speakers.html:14
-#: website/templates/track.html:66 website/views/localized.py:359
+#: website/templates/day1.html:33 website/templates/program/track.html:61
+#: website/views/localized.py:381
 msgid "Speakers"
 msgstr ""
 
@@ -216,24 +233,25 @@ msgid ""
 "                "
 msgstr ""
 
-#: website/templates/day23.html:28
+#: website/templates/day23.html:28 website/templates/time_table.html:14
 msgid "All tracks for today"
 msgstr ""
 
 #: website/templates/day23.html:39 website/templates/day23.html:53
-#: website/templates/track.html:19
+#: website/templates/time_table.html:28 website/templates/time_table.html:46
+#: website/templates/program/track.html:19
 msgid "Room"
 msgstr ""
 
-#: website/templates/day23.html:41
+#: website/templates/day23.html:41 website/templates/time_table.html:30
 msgid "details"
 msgstr ""
 
-#: website/templates/day23.html:46
+#: website/templates/day23.html:46 website/templates/time_table.html:37
 msgid "Time table"
 msgstr ""
 
-#: website/templates/day23.html:56
+#: website/templates/day23.html:56 website/templates/time_table.html:52
 msgid "seats"
 msgstr ""
 
@@ -242,26 +260,27 @@ msgid "Track"
 msgstr ""
 
 #: website/templates/day23.html:92 website/templates/day23.html:130
+#: website/templates/time_table.html:101 website/templates/time_table.html:139
 msgid "More info"
 msgstr ""
 
-#: website/templates/day23.html:108
+#: website/templates/day23.html:108 website/templates/time_table.html:118
 msgid "Tracks details"
 msgstr ""
 
-#: website/templates/index.html:26
-msgid "Some speakers"
+#: website/templates/index.html:65
+msgid "Our speakers"
 msgstr ""
 
-#: website/templates/index.html:29
+#: website/templates/index.html:68
 msgid "All the speakers"
 msgstr ""
 
-#: website/templates/index.html:82
+#: website/templates/index.html:102
 msgid "Latest news"
 msgstr ""
 
-#: website/templates/index.html:85 website/templates/index.html:199
+#: website/templates/index.html:105 website/templates/index.html:219
 msgid "All the latest news"
 msgstr ""
 
@@ -277,16 +296,11 @@ msgstr ""
 msgid "Recent items"
 msgstr ""
 
-#: website/templates/participants.html:9 website/views/localized.py:472
+#: website/templates/participants.html:9 website/views/localized.py:559
 msgid "Participants"
 msgstr ""
 
-#: website/templates/program.html:54 website/templates/speaker.html:35
-#: website/templates/track.html:43 website/views/localized.py:318
-msgid "Talks"
-msgstr ""
-
-#: website/templates/search.html:10 website/views/localized.py:275
+#: website/templates/search.html:10 website/views/localized.py:288
 msgid "Search results"
 msgstr ""
 
@@ -294,36 +308,20 @@ msgstr ""
 msgid "Your request didn't produce any results."
 msgstr ""
 
-#: website/templates/speaker.html:25
-msgid "Track leader on"
+#: website/templates/time_table.html:65
+msgid "Welcome / registration"
 msgstr ""
 
-#: website/templates/track.html:14
-msgid "Track: {}"
+#: website/templates/time_table.html:67
+msgid "Coffee break"
 msgstr ""
 
-#: website/templates/track.html:16
-msgid "Theme"
+#: website/templates/time_table.html:69
+msgid "Lunch break"
 msgstr ""
 
-#: website/templates/track.html:22
-msgid "On"
-msgstr ""
-
-#: website/templates/track.html:22
-msgid "from"
-msgstr ""
-
-#: website/templates/track.html:22
-msgid "to"
-msgstr ""
-
-#: website/templates/track.html:63
-msgid "Duration"
-msgstr ""
-
-#: website/templates/track.html:63
-msgid "minutes"
+#: website/templates/time_table.html:71
+msgid "Break"
 msgstr ""
 
 #: website/templates/crm/home.html:7
@@ -470,42 +468,80 @@ msgstr ""
 msgid "Delete attachment?"
 msgstr ""
 
-#: website/views/localized.py:173
+#: website/templates/program/program.html:47
+#: website/templates/program/speaker.html:33
+#: website/templates/program/track.html:37 website/views/localized.py:331
+msgid "Talks"
+msgstr ""
+
+#: website/templates/program/speaker.html:23
+msgid "Track leader on"
+msgstr ""
+
+#: website/templates/program/speakers.html:14
+msgid "Our speakers and organizers"
+msgstr ""
+
+#: website/templates/program/track.html:14
+msgid "Track: {}"
+msgstr ""
+
+#: website/templates/program/track.html:16
+msgid "Theme"
+msgstr ""
+
+#: website/templates/program/track.html:22
+msgid "On"
+msgstr ""
+
+#: website/templates/program/track.html:22
+msgid "from"
+msgstr ""
+
+#: website/templates/program/track.html:22
+msgid "to"
+msgstr ""
+
+#: website/templates/program/track.html:58
+msgid "Duration"
+msgstr ""
+
+#: website/templates/program/track.html:58
+msgid "minutes"
+msgstr ""
+
+#: website/views/localized.py:186
 msgid "News"
 msgstr ""
 
-#: website/views/localized.py:266
+#: website/views/localized.py:279
 msgid "Site map"
 msgstr ""
 
-#: website/views/localized.py:289 website/views/localized.py:307
+#: website/views/localized.py:302 website/views/localized.py:320
 msgid "Program"
 msgstr ""
 
-#: website/views/localized.py:305
+#: website/views/localized.py:318
 #, python-format
 msgid "Program for theme %(theme)s"
 msgstr ""
 
-#: website/views/localized.py:329
+#: website/views/localized.py:342
 msgid "Rooms"
 msgstr ""
 
-#: website/views/localized.py:345
+#: website/views/localized.py:366
 #, python-format
 msgid "Program for room %(room)s"
 msgstr ""
 
-#: website/views/localized.py:407
-msgid "Day 1 - Plenary session"
-msgstr ""
-
-#: website/views/localized.py:444
+#: website/views/localized.py:531
 #, python-format
 msgid "Day %(day)d - At a glance"
 msgstr ""
 
-#: website/views/localized.py:451
+#: website/views/localized.py:538
 msgid "Page not found"
 msgstr ""
 

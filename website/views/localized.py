@@ -346,7 +346,7 @@ def rooms():
 def get_object_by_slug(cls, slug):
   obj = cls.query.filter(cls.slug == slug).first()
   if not obj:
-    id = int(slug)
+    id = int(slug.strip())
     obj = cls.query.get(id)
   if not obj:
     raise NotFound()

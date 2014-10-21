@@ -270,3 +270,19 @@ def upload_photos():
 
   os.unlink(fn)
   return "OK"
+
+
+@main.route("fixes")
+def fixes():
+  users = User2.query.all()
+  for u in users:
+    if u.url and not u.url.startswith("http"):
+      u.url = 'http://' + u.url
+    if u.twitter_handle and u.twitter_handle.startswith("@"):
+      u.twitter_handle = u.twitter_handle[1:]
+    if u.twitter_handle and u.twitter_handle.startswith("http://twitter.com/"):
+      u.twitter_handle = u.twitter_handle[len("http://twitter.com/"):]
+    if u.twitter_handle and u.twitter_handle.startswith("https://twitter.com/"):
+      u.twitter_handle = u.twitter_handle[len("https://twitter.com/"):]
+  db.session.commit()
+  return 'ok'
