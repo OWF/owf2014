@@ -213,7 +213,7 @@ def authorized_facebook(resp):
   user.access_token = access_token
   user.first_name = data['first_name']
   user.last_name = data['last_name']
-  user.gender = data['gender']
+  user.gender = data.get('gender', u"")
   db.session.commit()
 
   flash(_(u"Login successful."), "success")
