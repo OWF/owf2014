@@ -86,6 +86,3 @@ Smile, c'est également 37,1 millions d’euros de CA en 2011 et, à ce jour, 60
 16 agences : Paris, Lyon, Nantes, Bordeaux, Montpellier, Marseille, Lille, Grenoble, Barcelone (Espagne), Kiev et
 Kharkov (Ukraine), Genève (Suisse), Casablanca (Maroc), Amsterdam, Utrecht et Bruxelles (Benelux).
 
-### Les sponsors
-
-Coming soon.
