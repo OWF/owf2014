@@ -69,10 +69,11 @@ Dans ce contexte, nous avons une forte activité de R&D, notamment dans le libre
 <a name="inria"></a>
 <a href="http://www.inria.fr/" target="_blank"><img src="/static/pictures/page sponsor et organisateurs/INRIA_sponsor page.jpg" width="400" alt="Inria"></a>
 
-Etablissement public de recherche à caractère scientifique et technologique (EPST), [**Inria**](http://inria.fr/), créé en 1967, est le
-seul institut public de recherche entièrement dédié aux sciences du numérique. A l’interface des sciences informatiques
-et des mathématiques, les 3 400 chercheurs d'Inria inventent les technologies numériques de demain.
-
+Créé en 1967, [**Inria**](http://inria.fr/) est le seul institut public de recherche entièrement dédié aux sciences du numérique.
+A l’interface des sciences informatiques et des mathématiques, les 3500 chercheurs d’Inria inventent les technologies numériques de demain. Issus des plus grandes universités internationales, ils croisent avec créativité recherche fondamentale et recherche appliquée. Ils se consacrent à des problèmes concrets, collaborent avec les acteurs de la recherche publique et privée en France et à l’étranger, et transfèrent le fruit de leurs travaux vers les entreprises innovantes.
+Les chercheurs des équipes Inria ont publié plus de 4450 articles en 2012. Ils sont à l'origine de plus de 250 brevets actifs et de 120 start-up. Les 180 équipes-projets Inria sont réparties dans huit centres de recherche implantés en région.
+ En savoir plus sur [inria.fr](http://inria.fr/)
+Suivre Inria sur [twitter.com/inria](http://twitter.com/inria)
 
 <a name="smile"></a>
 <a href="http://www.smile.fr/" target="_blank"><img src="/static/pictures/page sponsor et organisateurs/smile_sponsor page.png" width="400" alt="Smile"></a>
