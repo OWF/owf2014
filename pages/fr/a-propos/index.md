@@ -91,6 +91,7 @@ Venir à l'Open World Forum, c'est l'opportunité de rencontrer et d'échanger a
 #### Les grandes entreprises profondément impliquées dans l'open source
 
 - Alcatel-Lucent
+- Atos
 - Bearing Point
 - Bureau Veritas
 - Bull
@@ -110,6 +111,7 @@ Venir à l'Open World Forum, c'est l'opportunité de rencontrer et d'échanger a
 - Huawei
 - IBM
 - Ineo
+- Microsoft
 - Numergy
 - Oracle
 - Orange / Orange labs / Orange Business Services
