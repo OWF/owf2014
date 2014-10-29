@@ -99,14 +99,12 @@ class Loader(object):
       args['email'] = args['email'].lower()
 
       website = args['website']
-      if not website and not website.startswith("http"):
+      if website and not website.startswith("http"):
         args['website'] = "http://" + website
 
       if not args['last_name']:
         self.debug("!! Speaker has no last name.")
         continue
-      if args['website'] and not args['website'].startswith("http"):
-        args['website'] = 'http://' + args['website']
 
       speaker = Speaker(**args)
       db.session.add(speaker)
