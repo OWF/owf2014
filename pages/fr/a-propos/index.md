@@ -46,10 +46,12 @@ Venir à l'Open World Forum, c'est l'opportunité de rencontrer et d'échanger a
 - Abilian
 - Alter Way
 - Altic
+- Avencall
 - Bearstech
 - CityPassenger
 - CKAB
 - CloudOrbit
+- Commerce Guys
 - Constellation Matrix
 - Couchbase
 - Coupengo
@@ -64,6 +66,7 @@ Venir à l'Open World Forum, c'est l'opportunité de rencontrer et d'échanger a
 - Inno3
 - Libon
 - Linkbynet
+- Linutop
 - Lizenn
 - Logilab
 - Maarch
@@ -104,6 +107,7 @@ Venir à l'Open World Forum, c'est l'opportunité de rencontrer et d'échanger a
 - EDITIS - SEJER
 - Engineering Group
 - Fujitsu
+- Gemalto
 - GFI Informatique
 - Google
 - Groupe Beaumanoir
@@ -113,11 +117,13 @@ Venir à l'Open World Forum, c'est l'opportunité de rencontrer et d'échanger a
 - Ineo
 - Microsoft
 - Numergy
+- Oberthur Technology
 - Oracle
 - Orange / Orange labs / Orange Business Services
 - Pivotal
 - PSA Peugeot Citroen
 - Qualcomm
+- Seagate
 - SFR
 - SNCF
 - Société Générale
@@ -130,6 +136,7 @@ Venir à l'Open World Forum, c'est l'opportunité de rencontrer et d'échanger a
 
 #### Le secteur public et parapublic
 
+- ANSSI
 - Conseil régional d'Aquitaine
 - Direction de l'information légale et administrative (DILA)
 - Direction Générale des Entreprises (DGE)
@@ -159,9 +166,11 @@ Venir à l'Open World Forum, c'est l'opportunité de rencontrer et d'échanger a
 - Ecole 42
 - EIT ICT Labs
 - ENS Cachan
+- ENS Lyon
 - ENS Paris (rue d'Ulm)
 - Epita
 - Epitech
+- ESCP Europe
 - ESSEC
 - Eurecom
 - Inalco
@@ -170,9 +179,12 @@ Venir à l'Open World Forum, c'est l'opportunité de rencontrer et d'échanger a
 - Irill
 - IRT SystemX
 - IUT Paris Descartes
+- IUT Troyes
+- IUT du Havre
 - Science Po
 - Simplon
 - Telecom Paristech
+- Universidad de Las Palmas de Gran Canaria
 - Université d'Angers
 - Université Denis Diderot
 - Université Alioune Diop de Bambey du Senegal

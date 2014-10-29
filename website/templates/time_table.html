@@ -13,11 +13,6 @@
 
     <h3>{{ _("All tracks for today") }}</h3>
 
-    <div class="alert alert-danger">
-      <p>This preliminary list of tracks, talks and speakers will be
-        completed shortly. Please stay tuned.</p>
-    </div>
-
     {% for group in tracks|groupby('theme') %}
       <h4><span class="track-{{ group.grouper|lower }}">{{ group.grouper }}</span></h4>
       <ul>
@@ -35,11 +30,6 @@
     {% endfor %}
 
     <h3>{{ _("Time table") }}</h3>
-
-    <div class="alert alert-danger">
-      <p>This preliminary list of tracks, talks and speakers will be
-        completed shortly. Please stay tuned.</p>
-    </div>
 
     <table id="schedule">
       <tr>
