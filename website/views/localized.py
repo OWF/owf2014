@@ -476,7 +476,7 @@ def schedule(day_num=None):
     datetime.timedelta(hours=12, minutes=30),
     datetime.timedelta(hours=13, minutes=30),
     datetime.timedelta(hours=15, minutes=35),
-    datetime.timedelta(hours=16, minutes=10),
+    datetime.timedelta(hours=16),
     # datetime.timedelta(hours=18, minutes=15),
     # datetime.timedelta(hours=19),
     datetime.timedelta(hours=20),
