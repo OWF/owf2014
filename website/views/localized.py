@@ -482,7 +482,7 @@ def schedule(day_num=None):
     datetime.timedelta(hours=20),
   ]
   if not day_num in [1, 2]:
-    return redirect(url_for(".schedule", day_num=1))
+    return redirect(url_for(".schedule", day_num=2))
 
   talks_by_room = []
   rooms = Room.query.order_by(Room.capacity.desc()).all()
