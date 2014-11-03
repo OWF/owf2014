@@ -1,0 +1,16 @@
+title: Couverture presse
+date: 2014/11/03
+
+L'OWF 2014 est terminé, retrouvez les moments forts dans la presse:
+
+
+- [Silicon.fr](http://www.silicon.fr/open-world-forum-lopen-source-pese-4-milliards-deuros-en-france-100706.html)
+- [01net](http://pro.01net.com/editorial/629926/open-world-forum-reprenez-le-controle-de-vos-donnees/)
+- [ZDnet](http://www.zdnet.fr/actualites/open-world-forum-open-source-it-s-the-economy-stupid-39808747.htm)
+- [CIO](http://www.cio-online.com/actualites/lire-open-world-forum-2014-le-libre-permet-de-garder-le-controle-de-son-infrastructure-it-7180.html)
+- [CMSWire](http://www.cmswire.com/cms/information-management/in-the-city-of-love-microsoft-courts-open-source-owf14-027017.php)
+- [CMSWire encore](http://www.cmswire.com/cms/information-management/free-the-web-from-google-cage-the-it-gorillas-owf14-027019.php)
+- [Le Monde Informatique](http://www.lemondeinformatique.fr/actualites/lire-open-world-forum%C2%A0-les-entreprises-doivent-reprendre-le-controle-de-leur-si-59131.html)
+- [Journal du Net](http://www.journaldunet.com/solutions/dsi/open-cio-summit-2014.shtml?een=c24ab2aaa35b82de4d369e2707b7c31a&utm_source=greenarrow&utm_medium=mail&utm_campaign=ml49_specialopensour)
+
+(Liste non exhaustive, destinée à évoluer).
