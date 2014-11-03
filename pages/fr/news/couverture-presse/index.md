@@ -12,5 +12,6 @@ L'OWF 2014 est terminé, retrouvez les moments forts dans la presse:
 - [CMSWire encore](http://www.cmswire.com/cms/information-management/free-the-web-from-google-cage-the-it-gorillas-owf14-027019.php)
 - [Le Monde Informatique](http://www.lemondeinformatique.fr/actualites/lire-open-world-forum%C2%A0-les-entreprises-doivent-reprendre-le-controle-de-leur-si-59131.html)
 - [Journal du Net](http://www.journaldunet.com/solutions/dsi/open-cio-summit-2014.shtml?een=c24ab2aaa35b82de4d369e2707b7c31a&utm_source=greenarrow&utm_medium=mail&utm_campaign=ml49_specialopensour)
+- [Standblog (blog de Tristan Nitot)](http://standblog.org/blog/post/2014/11/02/Open-World-Forum-2014)
 
 (Liste non exhaustive, destinée à évoluer).
