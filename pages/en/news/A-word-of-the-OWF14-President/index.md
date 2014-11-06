@@ -1,4 +1,4 @@
-title: A word of the #OWF14 President
+title: 'A word from the #OWF14 President'
 date: 2014/11/06
 
 
