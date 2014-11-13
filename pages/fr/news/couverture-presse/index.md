@@ -17,5 +17,8 @@ L'OWF 2014 est terminé, retrouvez les moments forts dans la presse:
 - [01net: L’Open source et l’Inria, une relation durable](http://pro.01net.com/editorial/630702/l-open-source-et-l-inria-une-relation-durable/)
 - [Le Village de la Justice: L’Open Law forum a lancé 6 mois d’innovations pour les données juridiques](http://www.village-justice.com/articles/open-law,18156.html)
 - [ZDnet: Créatifs libres et open source: les lauréats étudiants de l'Open World Forum](http://www.zdnet.fr/actualites/creatifs-libres-et-open-source-les-laureats-etudiants-de-l-open-world-forum-39809259.htm)
+- [Linuxfr: Retour sur l'Open World Forum 2014 #OWF14](http://linuxfr.org/news/retour-sur-l-open-world-forum-2014-owf14)
+- [Blog de Brian Proffit: Open World Forum 2014 Report](http://community.redhat.com/blog/2014/11/open-world-forum-2014-report/)
+- [Solutions Logiciels: VIDEO EXCLUSIVE : Florent Zara président de l'OPEN WORLD FORUM 2014](http://www.solutions-logiciels.com/actualites.php?titre=VIDEO-EXCLUSIVE-Florent-Zara-president-de-lOPEN-WORLD-FORUM-2014&actu=15124)
 
 (Liste non exhaustive, destinée à évoluer).
