@@ -115,3 +115,48 @@ Open Source as seen by CIOs
 Veronique Torner, President, Alterway
 Video >> http://bit.ly/1wEmzg2
 Slides >> http://bit.ly/1ymuPwL
+
+
+### Tracks
+
+From Open Data to Open Gov, the role of the civil society
+Videos >> http://bit.ly/1zU2eks
+
+European Collaborative Innovation
+Videos >> http://bit.ly/1vTSAhn
+
+Community Summit 
+Videos >> http://bit.ly/1vvWOx0
+
+When Open Source Fosters Open Innovation
+Videos >> http://bit.ly/1FYT7TH
+
+Embedded
+Videos >> http://bit.ly/1yhbGMU
+
+DevOps / ALM
+Videos >> http://bit.ly/1q1ziXV
+
+Internet of Things
+Videos >> http://bit.ly/1FYTvlb
+
+Web
+Videos >> http://bit.ly/1rW86uZ
+
+Open Law 
+Videos >> http://bit.ly/15SEtAw
+
+Cloud Computing 
+Videos >> http://bit.ly/1tlTyzy
+
+Control your Cloud
+Videos >> http://bit.ly/1A059YZ
+
+From commons to openness
+Videos >> http://bit.ly/1q1zHd0
+
+Security/SecDev
+Videos >> http://bit.ly/1tR2gpJ
+
+Privacy
+Videos >> http://bit.ly/1ymwWk8
