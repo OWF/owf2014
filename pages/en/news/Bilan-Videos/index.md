@@ -16,7 +16,7 @@ Video >> http://bit.ly/1AtCNHu
 Video >> http://bit.ly/1w5k0nM
 Slides >> http://bit.ly/1xwLIrD
 
-**Has the law passed the challenge of Open Source ? **
+**Has the law passed the challenge of Open Source ?**
 *Severine Dussolier, Director, CRIDS (Research Centre in Information, Law & Society)*
 Video >> http://bit.ly/1yTJu5z
 
@@ -64,7 +64,7 @@ Slides >> http://bit.ly/1FYRoh2
 Video >> http://bit.ly/1FTxTVh
 Slides >> http://bit.ly/1tQYKM5
 
-**Proprietary, Open Source ... More in commin than you might think? From competencies to business ... Mixed environments. **
+**Proprietary, Open Source ... More in commin than you might think? From competencies to business ... Mixed environments.**
 *Frederic Aatz, Director of Interoperability Strategy, Microsoft*
 Video >> http://bit.ly/1CML4ey
 Slides >> http://bit.ly/1zuuH0j
@@ -125,7 +125,7 @@ Videos >> http://bit.ly/1zU2eks
 **European Collaborative Innovation**
 Videos >> http://bit.ly/1vTSAhn
 
-**Community Summit **
+**Community Summit**
 Videos >> http://bit.ly/1vvWOx0
 
 **When Open Source Fosters Open Innovation**
@@ -143,10 +143,10 @@ Videos >> http://bit.ly/1FYTvlb
 **Web**
 Videos >> http://bit.ly/1rW86uZ
 
-**Open Law **
+**Open Law**
 Videos >> http://bit.ly/15SEtAw
 
-**Cloud Computing **
+**Cloud Computing**
 Videos >> http://bit.ly/1tlTyzy
 
 **Control your Cloud**
